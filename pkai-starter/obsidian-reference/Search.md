@@ -13,7 +13,7 @@ Obsidian's built-in Search plugin provides full-text search across all notes in 
 | Operator | Example | What it does |
 |----------|---------|--------------|
 | `path:` | `path:Course Journals` | Search only in a specific folder |
-| `file:` | `file:Victoria` | Search by filename |
+| `file:` | `file:Iris` | Search by filename |
 | `tag:` | `tag:folder-readme` | Search by tag |
 | `line:` | `line:(Claude Code)` | Match entire phrase on a single line |
 | `-` | `-path:Templates` | Exclude results |

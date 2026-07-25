@@ -15,7 +15,7 @@ You don't need to complete any of the onboarding questions (role, what you're us
 
 ## Tell Git Who You Are
 
-Git needs to know your name and email so it can label your changes. Open Terminal (Mac) or Git Bash (Windows) and run these two commands, replacing the name and email with your own:
+Git needs to know your name and email so it can label your changes. Open your terminal — Terminal or iTerm2 on Mac, Windows Terminal (PowerShell) on Windows — and run these two commands, replacing the name and email with your own:
 
 ```
 git config --global user.name "Your Name"

@@ -46,19 +46,19 @@ Go to [https://git-scm.com/](https://git-scm.com/) and download the installer.
 
 ### Step 2: Run the installer
 
-Run the downloaded file and accept the default options all the way through. The defaults are fine and include **Git Bash**, which is a terminal environment that Claude Code needs.
+Run the downloaded file and accept the default options all the way through. The defaults are fine. The installer also bundles Git Bash along the way, but you won't need it for this guide -- Claude Code runs in **PowerShell inside Windows Terminal**.
 
 ### Step 3: Verify
 
-Open the Start menu, type **Git Bash**, and open it. In the Git Bash window, type:
+Open **Windows Terminal**, on a **PowerShell** tab, and type:
 
 ```
 git --version
 ```
 
-You should see a version number. If "Git Bash" doesn't appear in the Start menu, the installer didn't work -- try downloading and running it again.
+You should see a version number. If Git isn't found, the installer didn't work -- try downloading and running it again.
 
-**Important:** On Windows, use **Git Bash** (not Command Prompt or PowerShell) when working with Claude Code. Claude Code needs the bash environment that Git for Windows provides.
+**Important:** On Windows, run Claude Code from **PowerShell inside Windows Terminal**, not Git Bash or Command Prompt.
 
 ## Troubleshooting
 
@@ -66,9 +66,9 @@ You should see a version number. If "Git Bash" doesn't appear in the Start menu,
 
 **Mac: The dialogue box disappeared.** It's probably behind another window. Use Cmd+Tab to look for a "Software Update" or "Install" window.
 
-**Windows: "bash is not recognized as an internal or external command."** Git for Windows isn't installed. Install it from [https://git-scm.com/](https://git-scm.com/) -- this includes Git Bash.
+**Windows: `git` is not recognized as an internal or external command.** Git for Windows isn't installed, or you need to open a new PowerShell tab so it picks up the updated PATH. Install it from [https://git-scm.com/](https://git-scm.com/) if you haven't already.
 
-**Claude Code says it can't find Git.** On Mac, make sure the Xcode Command Line Tools finished installing. On Windows, make sure you're running Claude Code from Git Bash, not Command Prompt.
+**Claude Code says it can't find Git.** On Mac, make sure the Xcode Command Line Tools finished installing. On Windows, make sure Git for Windows installed successfully and that you're running Claude Code from PowerShell in Windows Terminal.
 
 ## Next
 

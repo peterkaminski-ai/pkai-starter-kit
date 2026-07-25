@@ -16,15 +16,11 @@ Ignore the initial estimate — it may say 16 hours. The actual download typical
 
 **Mac:** Make sure the Xcode Command Line Tools have finished installing. Open Terminal and run `git --version` to check.
 
-**Windows:** Install Git for Windows from [git-scm.com](https://git-scm.com/). This includes Git Bash, which Claude Code needs.
+**Windows:** Install Git for Windows from [git-scm.com](https://git-scm.com/). Verify it in **Windows Terminal**, on a **PowerShell** tab, by running `git --version`.
 
-### Windows: "bash is not recognized as an internal or external command"
+### Windows: `git` is not recognized as an internal or external command
 
-Git for Windows is not installed, or you're using Command Prompt instead of Git Bash. Install Git for Windows from [git-scm.com](https://git-scm.com/) and use **Git Bash** for all terminal commands.
-
-### Node.js installation didn't seem to work
-
-Open a new terminal window (close and reopen Terminal or Git Bash) and try `node --version`. If it still doesn't work, download and install again from [nodejs.org](https://nodejs.org/).
+Git for Windows isn't installed, or you need a fresh PowerShell tab so it picks up the updated PATH. Install Git for Windows from [git-scm.com](https://git-scm.com/), then open a new PowerShell tab in Windows Terminal and try again.
 
 ## GitHub Issues
 
@@ -45,21 +41,9 @@ GitHub no longer accepts regular passwords for Git operations. You need either:
 
 ## Obsidian Issues
 
-### BRAT is installed but I can't find the smiley-face icon
-
-Make sure BRAT is **enabled**, not just installed. Go to Settings, then Community plugins, and check that the toggle next to BRAT is on.
-
-### The Claude sidebar shows an error on first open
-
-Close the panel and reopen it. If the problem persists, try restarting Obsidian entirely (quit and relaunch).
-
 ### My settings didn't carry over from another vault
 
 This is expected — Obsidian settings are per-vault. You need to configure each vault separately. See [Configuring Obsidian](Configuring%20Obsidian.md) for the recommended settings.
-
-### Windows: "pip install pywinpty" error in the Claude sidebar
-
-Run `pip install pywinpty` in Command Prompt (not Git Bash), then restart Obsidian. If `pip` isn't recognized, install Python first from [python.org](https://python.org/).
 
 ## Git and Sync Issues
 

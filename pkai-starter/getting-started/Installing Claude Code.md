@@ -1,42 +1,32 @@
 # Installing Claude Code
 
-Claude Code is a command-line tool that runs in a terminal. It can read and write files on your computer, manage Git operations, and help you with all kinds of knowledge work. You install it once, then connect it to Obsidian in a later step.
+Claude Code is a command-line tool that runs in a terminal. It can read and write files on your computer, manage Git operations, and help you with all kinds of knowledge work. The terminal is the primary way you'll use it in this kit.
 
 ## Mac
 
-### Step 1: Install Node.js
+### Step 1: Install Claude Code
 
-Claude Code requires Node.js to run.
+In a browser, go to [code.claude.com](https://code.claude.com/) — it may redirect you somewhere; that's expected. You'll see several options — choose the **Terminal** version (not VS Code, not the Desktop app, not Web). Copy the install command shown on the page.
 
-1. Go to [nodejs.org](https://nodejs.org/)
-2. Click the **LTS** download button (LTS means "Long Term Support" — it's the stable version)
-3. Open the downloaded `.pkg` file
-4. Follow the installer prompts like any Mac app
+Go to Terminal (or iTerm2 if you use it). Paste the command and — before hitting Enter — check that it looks right. Then hit Enter. The download may take a minute or two.
 
-> [!tip]
-> If you installed Homebrew earlier, you can also install Node.js with `brew install node` in Terminal.
-
-### Step 2: Install Claude Code
-
-In a browser, go to [claude.ai/code](https://claude.ai/code). You'll see several options — choose **Terminal** (not VS Code, not Desktop). Copy the install command shown on the page.
-
-Go to Terminal. Paste the command and — before hitting Enter — check that it looks right. Then hit Enter. The download may take a minute or two.
-
-After the install finishes, you may see a line starting with `echo` followed by a long string. Copy that entire line and paste it into Terminal, then hit Enter. It will look like nothing happened — that's correct. This line adds Claude Code to your system path so you can run it from anywhere.
+> [!warning]
+> **Don't skip this step.** After the install finishes, the installer prints a block starting with `⚠ Setup notes` telling you that `~/.local/bin` isn't in your PATH yet, followed by a command to copy. On a fresh Mac, that command typically looks like this:
+> ```
+> echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+> ```
+> Yours may differ slightly — always trust the exact line the installer shows you over this example. Copy that whole line and paste it into the **same** terminal window, then hit Enter. It will look like nothing happened — that's correct. You only need to do this once.
+>
+> If you skip this step, typing `claude` will say "command not found" — even if you close Terminal and open a brand-new window.
 
 > [!tip]
 > As a general rule, never paste commands from the internet into your terminal without verifying them. In this case, you're trusting Anthropic's official install page.
 
-### Step 3: Run Claude Code for the First Time
+### Step 2: Run Claude Code for the First Time
 
-Type `claude` and hit Enter. You'll be walked through a brief setup:
+Type `claude` and hit Enter. The first time you run it, it walks you through a short setup: you'll sign in with your Claude account in a browser tab (choose the subscription sign-in, not API billing), acknowledge a couple of notices, and land at a prompt where you can type.
 
-1. Hit Enter to accept the default settings
-2. Choose **Claude Pro** billing (not API billing) — hit Enter
-3. A browser tab will open asking you to authorize Claude Code with your Claude account. Click to allow, then close that browser tab
-4. Back in Terminal, you'll see "Login successful." Hit Enter to continue
-5. You'll see a warning about prompt injection — hit Enter (or "Yes") to acknowledge
-6. When asked about adding Claude Code to your terminal profile, choose **No** (option 2) — you'll be running Claude Code inside Obsidian instead
+If what you see looks a little different from this description or from any screenshots you've come across, that's normal — setup changes from time to time. Follow along and take the defaults; they're fine.
 
 That's it — Claude Code is installed on your Mac.
 
@@ -44,47 +34,38 @@ That's it — Claude Code is installed on your Mac.
 
 ## Windows
 
-### Step 1: Install Node.js
+### Step 1: Install Claude Code
 
-1. Go to [nodejs.org](https://nodejs.org/)
-2. Click the **LTS** download button
-3. Run the downloaded installer and follow the prompts
+Open **Windows Terminal** running **PowerShell** (not Command Prompt). In a browser, go to [code.claude.com](https://code.claude.com/) — it may redirect you somewhere; that's expected. Choose the **Terminal** version (not VS Code, not the Desktop app, not Web). Copy the PowerShell install command shown on the page.
 
-### Step 2: Install Claude Code
+Paste it into your PowerShell window and hit Enter. The download may take a minute or two.
 
-Open **Git Bash** (not Command Prompt — Claude Code needs bash). In a browser, go to [claude.ai/code](https://claude.ai/code). Choose **Terminal**. Copy the install command.
+> [!tip]
+> Windows may also show a setup note after the install finishes, similar to the Mac one above. If you see one, follow whatever it tells you to do.
 
-Paste it into Git Bash (right-click to paste) and hit Enter. The download may take a minute or two.
+> [!tip]
+> As a general rule, never paste commands from the internet into your terminal without verifying them. In this case, you're trusting Anthropic's official install page.
 
-After the install finishes, you may see a line starting with `echo` followed by a long string. If so, copy that entire line and paste it into Git Bash, then hit Enter. This adds Claude Code to your system path.
+### Step 2: Run Claude Code for the First Time
 
-### Step 3: Run Claude Code for the First Time
+In your PowerShell window, type `claude` and hit Enter. The first time you run it, it walks you through a short setup: you'll sign in with your Claude account in a browser tab (choose the subscription sign-in, not API billing), acknowledge a couple of notices, and land at a prompt where you can type.
 
-In Git Bash, type `claude` and hit Enter. Follow the setup prompts:
-
-1. Hit Enter to accept the default settings
-2. Choose **Claude Pro** billing (not API billing) — hit Enter
-3. A browser tab will open asking you to authorize Claude Code. Click to allow, then close that browser tab
-4. Back in Git Bash, you'll see "Login successful." Hit Enter to continue
-5. You'll see a warning about prompt injection — hit Enter (or "Yes") to acknowledge
-6. When asked about adding Claude Code to your terminal profile, choose **No** (option 2) — you'll be running Claude Code inside Obsidian instead
+If what you see looks a little different from this description or from any screenshots you've come across, that's normal — setup changes from time to time. Follow along and take the defaults; they're fine.
 
 That's it — Claude Code is installed on your Windows machine.
-
-> [!warning]
-> **Windows troubleshooting:** If you see an error about `pip install pywinpty` when you later open the Claude sidebar in Obsidian, run `pip install pywinpty` in Command Prompt, then restart Obsidian. If `pip` isn't recognized, you may need to install Python first from [python.org](https://python.org/).
 
 ---
 
 ## Other Ways to Run Claude Code
 
-The sidebar in Obsidian (covered in [Connecting Claude Code to Obsidian](Connecting%20Claude%20Code%20to%20Obsidian.md)) is the recommended way to use Claude Code alongside your notes. But you can also run it in:
+This kit assumes you're using Claude Code in a terminal, but it also runs in a few other places, all optional:
 
 - **VS Code** — via the official Claude Code extension
-- **Any terminal** — Terminal/iTerm2 on Mac, Git Bash/PowerShell on Windows
+- **Obsidian** — via a sidebar plugin, for people who use Obsidian
+- **Desktop app** — a standalone app
 
-You can mix and match depending on where your focus is.
+You can mix and match depending on where your focus is, but everything in this guide uses the terminal.
 
 ## Next Step
 
-Move on to [Connecting Claude Code to Obsidian](Connecting%20Claude%20Code%20to%20Obsidian.md) to set up the sidebar plugin.
+Move on to [Choosing Your Terminal](Choosing%20Your%20Terminal.md).

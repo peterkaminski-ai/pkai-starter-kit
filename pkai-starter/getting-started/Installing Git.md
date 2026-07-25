@@ -68,7 +68,7 @@ This is optional but recommended. It makes the GitHub authentication step (next 
 
 ## Windows
 
-On Windows, you install Git for Windows, which includes Git Bash — a terminal environment that Claude Code needs.
+On Windows, you install Git for Windows. Its installer also bundles Git Bash, but that's just along for the ride — Claude Code itself runs in **PowerShell inside Windows Terminal**, not Git Bash.
 
 ### Step 1: Download Git for Windows
 
@@ -76,20 +76,20 @@ Go to [git-scm.com](https://git-scm.com/) and click the download button.
 
 ### Step 2: Run the installer
 
-Run the downloaded installer. **Accept the default options all the way through** — the defaults are fine and include Git Bash.
+Run the downloaded installer. **Accept the default options all the way through** — the defaults are fine.
 
 ### Step 3: Verify the installation
 
-Open the Start menu, type **Git Bash**, and open it. In the Git Bash window, type:
+Open **Windows Terminal** (it comes pre-installed on modern Windows), make sure you're on a **PowerShell** tab, and type:
 
 ```
 git --version
 ```
 
-You should see a version number. If "Git Bash" doesn't appear in the Start menu, the installer didn't work — try downloading and running it again.
+You should see a version number. If Git isn't found, the installer didn't work — try downloading and running it again.
 
-> [!warning]
-> On Windows, use **Git Bash** for all terminal commands in this guide — not Command Prompt and not PowerShell. Claude Code needs a bash environment to work properly.
+> [!tip]
+> Windows Terminal can host several kinds of tabs — PowerShell, Command Prompt, and the Git Bash that came along with the Git for Windows install. Use the **PowerShell** tab for everything in this guide, including running Claude Code.
 
 ---
 

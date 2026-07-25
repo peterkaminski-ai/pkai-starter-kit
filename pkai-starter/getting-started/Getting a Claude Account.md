@@ -2,14 +2,14 @@
 
 Claude is an AI assistant made by Anthropic. You'll use it in two ways: as a chatbot (for conversations and questions) and as Claude Code (for working with files on your computer).
 
-## Sign Up for Claude Pro
+## Sign Up for a Claude Plan
 
 1. Go to [claude.ai](https://claude.ai/)
 2. Create an account with your email
-3. Subscribe to **Claude Pro** ($20/month)
+3. Subscribe to a paid plan — all of Anthropic's paid plans include Claude Code
 
 > [!tip]
-> The Pro plan is sufficient for everything in this guide. You can optionally add a small "Extra Usage" top-up ($5-$20) as a buffer for heavy usage days, but most people never need it.
+> Current plans and pricing are always at [claude.ai](https://claude.ai/) — pick whatever suits you now, and you can change plans later. Some plans offer an optional usage top-up as a buffer for heavy usage days, but most people never need it.
 
 ## Start with the Chatbot
 
@@ -26,10 +26,10 @@ When you're ready, move on to installing the tools. Claude Code uses the same un
 
 ## What You're Paying For
 
-The $20/month Claude Pro subscription gives you:
+A paid Claude plan gives you:
 
 - **Claude chatbot** — conversations in your browser at claude.ai
 - **Claude Code** — the terminal-based tool that works with your local files
 - **Higher usage limits** than the free tier
 
-You don't need to pay for anything else. No API keys, no separate billing for Claude Code — it's all included in Pro.
+You don't need to pay for anything else. No API keys, no separate billing for Claude Code — it's all included in your plan.

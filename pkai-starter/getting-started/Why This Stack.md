@@ -1,58 +1,37 @@
 # Why This Stack
 
-You're about to set up three tools that work together as an integrated system for knowledge work. Here's what each one does and why they fit together.
-
-## Obsidian — Where You Read and Write
-
-Obsidian is a free note-taking app that stores everything as plain text files (Markdown) in a folder on your computer. Unlike Google Docs or Notion, your files aren't locked in someone else's cloud — they're just files on your hard drive, and you can open them with any text editor.
-
-Obsidian organizes files into "vaults." A vault is just a folder. Inside it, you create pages, link them together, and build up a personal wiki or knowledge base.
-
-## Git and GitHub — How You Save and Share
-
-Git is a version-control tool used by software teams worldwide. It keeps a complete history of every change you make — like an infinite undo button that remembers every version of every file.
-
-GitHub is a website that stores a copy of your files in the cloud. When you "push" your work to GitHub, it's backed up and visible to anyone you're collaborating with. When you "pull," you download their latest changes.
-
-The key idea: Git gives you full history and the ability to work offline. GitHub gives you backup and collaboration. Together, they replace the auto-save-to-cloud model (like Google Docs) with something more deliberate — you decide when to save and sync.
+You're about to set up a small system of tools that work together. Here's what each one does and why they fit together.
 
 ## Claude Code — Your AI Assistant
 
-Claude Code is an AI tool made by Anthropic. It runs in a terminal (a text-based interface) and can read and write files on your computer. When you connect it to Obsidian, it sits in a sidebar panel where you can talk to it while you work.
+Claude Code is an AI tool made by Anthropic. It runs in a terminal — a plain text-based window where you type to it and it types back — and it reads and writes ordinary files on your computer directly. This kit turns it into a persistent personal assistant: a name, a memory that carries across sessions, and a home folder where it keeps its notes about you and your work.
 
-What makes Claude Code special for this workflow:
+The terminal is where you talk to it. That's the whole interface — no app to open, no sidebar to configure. You type what you want, in plain English, and your assistant does it.
 
-- **It handles Git for you.** You say "pull the latest changes" or "commit and push my work" in plain English. No commands to memorize.
-- **It understands your files.** Claude Code can read the pages in your vault, help you write, reorganize, summarize, or create new content.
-- **It works locally.** Your files stay on your computer. Claude Code reads them directly — nothing gets uploaded unless you tell it to push to GitHub.
+## Markdown Files — Where Everything Lives
 
-## How They Fit Together
+Everything your assistant works with — its own memory, your notes, your projects — is stored as plain text files (Markdown) on your own hard drive. Unlike Google Docs or Notion, none of it is locked in someone else's cloud. You can open these files with any text editor, move them anywhere, back them up however you like, and they'll still be perfectly readable in twenty years — Markdown is just text with a few simple conventions (`#` for a heading, `**bold**` for bold), not a proprietary format.
 
-```
-You write in Obsidian
-        ↓
-Claude Code helps you manage files and sync
-        ↓
-Git tracks every change (locally)
-        ↓
-GitHub stores your backup in the cloud
-```
+## A Markdown Editor — Where You Read and Write Comfortably
 
-The daily rhythm is simple:
+You can read Markdown files in any text editor, but a dedicated Markdown editor makes them pleasant to work in: headers look like headers, bold looks bold, lists look like lists, with no raw `##` or `**` cluttering the screen.
 
-1. Open your vault in Obsidian
-2. Ask Claude Code to "pull the latest" (grab any new changes from GitHub)
-3. Do your work — write, edit, organize
-4. Ask Claude Code to "commit and push" (save and upload)
+[Typora](https://typora.io/) (recommended, a one-time $15 purchase) and [MarkText](https://www.marktext.app/) (free) both do this well, shown side by side with your terminal — terminal for talking to your assistant, editor for looking at what it wrote.
 
-You never need to touch Git directly. Claude Code translates your plain-English requests into the right commands.
+Obsidian is a more powerful, free note-taking app that works with the same files and is a fine choice if you want it, but it's a bigger, more power-user-oriented tool than most people need on day one.
 
-## Why Not Just Use Google Docs?
+> [!tip]
+> See [Viewing Your Files](Viewing%20Your%20Files.md) for the full comparison and setup details.
 
-Google Docs is great for many things. This stack is better when you want:
+## Git and GitHub — The Quiet Safety Layer
 
-- **Full version history** of every file, forever
-- **Offline access** — everything is on your computer
-- **Plain text files** you truly own and can move anywhere
-- **An AI assistant** that can read and work with all your files at once
-- **Collaboration** without giving up control of your data
+Git is a version-control tool used by software teams worldwide. It keeps a complete history of every change you make — like an infinite undo button that remembers every version of every file. GitHub is a website that stores a copy of your files in the cloud, so they're backed up and, if you choose, visible to collaborators.
+
+Here's the part that's different in this kit: **your assistant handles git for you, silently.** You don't memorize commands, and you don't get asked about commits — your assistant just keeps a careful history running in the background as you work with it. If you're curious how that works under the hood, or want to add GitHub for cloud backup, that's covered in the optional sections later in this wiki — but nothing about getting started requires it.
+
+> [!tip]
+> This is still more deliberate than auto-save-to-cloud. Your assistant is checkpointing meaningful units of work into a real history, not silently overwriting the only copy of a file the moment you type.
+
+## Why This Combination
+
+Put together, this is a system where you own your files outright, an assistant works directly on them at your direction, and every change is automatically checkpointed into a recoverable history. The result is private (nothing leaves your computer unless you choose), durable (plain text you can still read in twenty years), auditable (every change is a readable record, not a black box), and it gets more useful the longer you use it — because your assistant's memory and your own body of notes both keep growing.

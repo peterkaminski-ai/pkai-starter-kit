@@ -5,7 +5,7 @@ Links to official documentation, learning materials, and community resources for
 ## Claude
 
 - [Claude](https://claude.ai/) — the chatbot interface
-- [Claude Code](https://claude.ai/code) — installation page for Claude Code
+- [Claude Code](https://code.claude.com/) — installation page for Claude Code
 - [Claude Documentation](https://docs.anthropic.com/) — official docs from Anthropic
 - [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code) — detailed Claude Code reference
 
@@ -29,10 +29,6 @@ Links to official documentation, learning materials, and community resources for
 
 - [Markdown Guide](https://www.markdownguide.org/) — comprehensive reference for Markdown syntax
 - [Obsidian Markdown Reference](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax) — Obsidian-specific formatting
-
-## Node.js
-
-- [Node.js](https://nodejs.org/) — download page (required by Claude Code)
 
 ## Other Useful Tools
 

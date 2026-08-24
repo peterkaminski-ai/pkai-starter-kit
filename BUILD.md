@@ -11,7 +11,7 @@ You are Claude Code, running in a person's **headquarters** folder. They've aske
 ## Ground rules
 
 - **Nothing is built before the waiver** (step 1 below). No folders, no files, no git.
-- **The kit is read-only reference.** Never edit it; never `git init` inside it; **never push anything to `peterkaminski-ai/pkai-starter-kit`** or any other remote — setup involves no remotes at all.
+- **The kit is read-only reference.** Never edit it; never give it a git repo of its own; **never push anything to `peterkaminski-ai/pkai-starter-kit`** or any other remote — setup involves no remotes at all. (When the HQ itself gets a repo in step 6, the kit's files are simply tracked inside it like any other reference content — that's fine and expected.)
 - **You'll touch files outside this folder** — the assistant home lives elsewhere (see `ARCHITECTURE.md`). Say so plainly before the first time, and ask.
 - **Assume minimal terminal fluency.** When the user must do something themselves, use the file manager and drag-and-drop, not shell commands.
 - **Report honestly.** If a step fails, say so and fix it or work around it visibly. No silent skipping.
@@ -58,17 +58,17 @@ Now you build. Narrate at the altitude of "I'm setting up your assistant's home"
 
 1. **Placement.** Default: a **`My Assistants`** folder at the top of their home folder (`~/My Assistants/<assistant-name>/` — the sibling of Documents and Pictures). If the user reads as unix-comfortable, offer `~/.agents/<assistant-name>/` as the alternative convention. Creating this touches their home folder — you asked back in Ground rules; confirm once more in passing, then go.
 2. **Instantiate** `template/assistant-home/` into the new folder: `memory/` (with its `MEMORY.md` index), `sessions/`, `inbox/`, `outbox/`.
-3. **Persona.** Copy the chosen persona file to the assistant home as `CLAUDE.md` and personalize it: fill every `{{HQ_PATH}}` placeholder with the real HQ path, and adjust anything the persona conversation settled (blended traits, tone tweaks).
+3. **Persona.** Copy the chosen persona file to the assistant home as `CLAUDE.md` and personalize it: strip the leading `<!-- persona: ... -->` comment (it's templating metadata, not part of the persona), fill every `{{HQ_PATH}}` placeholder with the real HQ path, and adjust anything the persona conversation settled (blended traits, tone tweaks).
 4. **First memories.** Write and index (per the memory format in the persona file):
    - `memory/agent_name.md` — the assistant's name, chosen by the user, with the date.
    - `memory/user_name.md` — the user's name.
    - `memory/waiver_agreed.md` — the user agreed to `WAIVER.md`, the date, and their exact words from step 1.
-   - `memory/origin.md` — two or three sentences: built on {{date}} from the PKAI starter kit ({{version, from VERSION.md}}), persona chosen, HQ location. The assistant's own birth certificate.
+   - `memory/origin.md` — two or three sentences: built on today's date from the PKAI starter kit (state the version — read it from the kit's `VERSION.md`), which persona was chosen, and where the HQ is. The assistant's own birth certificate.
 5. **HQ skeleton.** Instantiate `template/hq/` here in the HQ (a `projects/` folder with its README). **The HQ never gets a CLAUDE.md** — the assistant's persona lives in the assistant home only.
 
 ### 6. Version control, quietly — if they said yes
 
-Two folders, two repos, no remotes. In each of the assistant home and the HQ: `git init -b main`, add everything, one initial commit. One sentence to the user total — "I've set up private version history in both folders, so nothing we do together can be lost" — then move on. Don't explain git unless they ask. (Skip entirely if they deferred; leave a `memory/git_deferred.md` note so the assistant can offer again someday.)
+Two folders, two repos, no remotes. In each of the assistant home and the HQ: copy the kit's `.gitignore` to the folder root (OS and editor cruft), then `git init -b main`, add everything, one initial commit. One sentence to the user total — "I've set up private version history in both folders, so nothing we do together can be lost" — then move on. Don't explain git unless they ask. (Skip entirely if they deferred; leave a `memory/git_deferred.md` note so the assistant can offer again someday.)
 
 ### 7. The launch command
 

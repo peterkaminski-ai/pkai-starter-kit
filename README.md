@@ -8,7 +8,7 @@ This kit is a **reference library, not a house**. You don't move into it — you
 
 ## If you're a person
 
-Don't start here — start with the home page, or go straight to **`SETUP.md`**, the short instructions you'll drive. The shape of it:
+Don't start here — start with the home page, or go straight to **`START-HERE.md`**, the short instructions you'll drive. The shape of it:
 
 1. Check **`REQUIREMENTS.md`** — what you need before you begin (a Claude Pro or Max account, Claude Code installed, a couple of basics).
 2. Make an empty **headquarters** folder and start Claude Code in it.
@@ -20,7 +20,7 @@ You've been asked to help a person set up their own assistant. **Read `BUILD.md`
 
 ## What's inside
 
-- **`SETUP.md`** — the setup instructions, addressed to the person. They drive; Claude does the heavy lifting.
+- **`START-HERE.md`** — the setup instructions, addressed to the person. They drive; Claude does the heavy lifting.
 - **`BUILD.md`** — the build reference, addressed to the Claude doing the building.
 - **`REQUIREMENTS.md`** — what you need: account, computer basics, and the two *surfaces* (a chat surface and a review surface).
 - **`ARCHITECTURE.md`** — the shape of what you're building: assistant home, headquarters, and how they relate.

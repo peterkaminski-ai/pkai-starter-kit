@@ -6,7 +6,7 @@ Thanks for thinking about contributing. This document is for *everyone* — you 
 
 All of these help:
 
-- **Typos and small wording fixes** in any of the documents (`README.md`, `SETUP.md`, the personas, anything under `pkai-starter/`).
+- **Typos and small wording fixes** in any of the documents (`README.md`, `START-HERE.md`, the personas, anything under `pkai-starter/`).
 - **"This sentence confused me."** Often the most useful kind of feedback. If something didn't make sense, that's a real signal — even if you can't articulate exactly what was wrong.
 - **"My agent did something weird."** Bug reports about the setup flow, your assistant's behavior, or anything else. Include what you said and what your agent did.
 - **Suggestions for the starter material.** Missing topic? Outdated screenshot? A step that doesn't work on your machine?

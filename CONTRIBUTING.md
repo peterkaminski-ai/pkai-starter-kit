@@ -6,9 +6,9 @@ Thanks for thinking about contributing. This document is for *everyone* — you 
 
 All of these help:
 
-- **Typos and small wording fixes** in any of the documents (`README.md`, `CLAUDE.md`, anything under `pkai-starter/`).
+- **Typos and small wording fixes** in any of the documents (`README.md`, `SETUP.md`, the personas, anything under `pkai-starter/`).
 - **"This sentence confused me."** Often the most useful kind of feedback. If something didn't make sense, that's a real signal — even if you can't articulate exactly what was wrong.
-- **"My agent did something weird."** Bug reports about the first-run flow, the agent's behavior, or anything else. Include what you said and what your agent did.
+- **"My agent did something weird."** Bug reports about the setup flow, your assistant's behavior, or anything else. Include what you said and what your agent did.
 - **Suggestions for the starter material.** Missing topic? Outdated screenshot? A step that doesn't work on your machine?
 - **New ideas.** Things this template could do but doesn't yet.
 
@@ -37,7 +37,7 @@ If you have a GitHub account, you can open an "issue" — a public note on this 
 
 That's it. Pete will see it.
 
-If you're not sure how to phrase your issue, **ask your agent** — the one you set up from this template can help you write it up. That's literally one of the things they're good at.
+If you're not sure how to phrase your issue, **ask your agent** — the one you set up from this kit can help you write it up. That's literally one of the things they're good at.
 
 ### 3. Open a Pull Request
 
@@ -57,7 +57,7 @@ If any of that was a foreign language, **use option 1 or 2 instead** — there's
 
 - **Be specific.** "The Obsidian section is unclear" is harder to act on than "The third paragraph of `pkai-starter/obsidian-reference/Recommended Settings.md` says to turn on X but doesn't say where the setting is."
 - **One thing at a time.** Smaller changes are easier to review and easier to land. If you have five ideas, that's better as five issues or five PRs, not one big one.
-- **Your agent can help.** If you set up a personal agent from this template, you can ask them to help you write the issue, draft the PR description, or even make the file edit. That's what they're here for.
+- **Your agent can help.** If you set up a personal assistant from this kit, you can ask them to help you write the issue, draft the PR description, or even make the file edit. That's what they're here for.
 
 ## License of contributions
 

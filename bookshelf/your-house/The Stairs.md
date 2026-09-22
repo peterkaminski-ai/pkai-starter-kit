@@ -9,7 +9,7 @@ Nobody arrives at "I run a house full of agents" in one step. People come up a s
 3. **Try a kit, or buy one.** You're ready to try a starter kit — or to pay someone to hand you an agent in a box. This kit is offered here.
 4. **An agent on your own machine.** You run it. It's on your computer, reading your files, with your name on it.
 5. **It isn't going to hurt you.** You've found that out. Now you just chat with it, ask it things, get to know it. This is a good stair; plenty of people stay here a long time and are well served.
-6. **Real work.** You want to *do* things with it — and at some point the small house you set up isn't what you want any more. You don't want one agent in one home; you want the agent home with several agents in it. *Your HQ turns into your large house.*
+6. **Real work.** You want to *do* things with it — and at some point the small house you set up isn't what you want any more. You don't want one agent in one home; you want the agent home with several agents in it. *Your house gets larger.*
 
 The steps are the person's, not the software's. A house doesn't graduate; a person does, and then asks the house to grow.
 

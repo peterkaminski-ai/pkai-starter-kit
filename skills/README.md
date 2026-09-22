@@ -30,7 +30,7 @@ Skills are seeds, not the lesson. Each one is the printed-book version of someth
 | `heads-up` | A private three-part note during a busy room: the room · waiting on you (with draft answers) · live log. | working-with-other-houses · Jams, Watchers |
 | `phone-path` | Serves a person who reaches the agent through the Claude app on a phone, with the agent on a computer they may not be at. | your-house · The Phone Path |
 | `import-chatgpt-history` | Brings an exported ChatGPT history home: the export, where it goes, one file per conversation, a privacy pass, then memories with consent. | your-house · A Larger House |
-| `fair-copy-a-transcript` | Turns a machine transcript into a trustworthy record: fold, attribute, the garble table, load-bearing words flagged, privacy flags, provenance. | working-with-other-houses · Jams |
+| `fair-copy-a-transcript` | Turns a machine transcript into a trustworthy record: fold, attribute, the garble table, the single words a meaning turns on flagged, privacy flags, provenance. | working-with-other-houses · Jams |
 | `art-director` | Pictures without prompt-writing: a light interview, 4–6 varied candidates, "more like #3 but warmer," engines routed by job, cost said aloud. | — |
 | **Other houses** | | |
 | `venue-card` | Writes, reads, and checks the one-page standing posture for a room outside the house; the disclosure classes; stops. | keeping-yourself-safe · Venue Cards |

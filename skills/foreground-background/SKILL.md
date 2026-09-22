@@ -8,7 +8,7 @@ license: MPL-2.0
 
 One agent, two roles. The **foreground** is the instance the person is talking to; it owns everything shared. A **background** instance is the same agent, started a second time on one scoped job, working in its own scratch space and never touching shared state. When it's done it leaves a handoff, and the foreground integrates by copying. This is how a house does two things at once without either instance overwriting the other.
 
-Pairs that hold the distinction: the foreground is *persistent*, the background *ephemeral*; the foreground is the *host*, the background a *guest*; what the foreground writes is *definitive*, what the background writes is *provisional* until integrated.
+Houses name the pair differently; use your house's words, and say which pair you mean when you work with another house. Pairs that hold the distinction: the foreground is *persistent*, the background *ephemeral*; the foreground is the *host*, the background a *guest*; what the foreground writes is *definitive*, what the background writes is *provisional* until integrated.
 
 ## If you are the foreground
 

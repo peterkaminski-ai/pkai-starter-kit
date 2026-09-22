@@ -1,0 +1,6 @@
+#!/bin/bash
+# now — print the current date and time, local and UTC.
+# The charter rule: a time written into any artifact comes from this script,
+# never from an estimate. Run it every time, before writing any time or date.
+date "+%A, %B %-d, %Y — %-I:%M %p %Z"
+date -u "+UTC %Y-%m-%dT%H:%M:%SZ"

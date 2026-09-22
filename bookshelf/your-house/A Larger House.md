@@ -14,7 +14,7 @@ This chapter is the short version. The PKAI benchmark — the fuller statement t
 
 **Books and their boxes.** A finished thing — a document, a release, a book — sits next to the pile that made it: drafts, half-attempts, transcripts, the back-and-forth. A large house keeps them side by side, the polished face over the working pile, and it's one of the most useful patterns there is. It gives every messy thing a home without letting the mess into the finished work.
 
-**Shared state has an owner.** With two agents, someone has to own the shared things — the daily notes, the list of what's in flight, the house's memory of itself. The house names which agent holds that desk, and the other reads freely but doesn't write it. Pass the desk by telling one of them; the other finds out on its next wake. Two agents editing the same file is a question for the person, never a race.
+**Shared state has an owner.** With two agents, someone has to own the shared things — the daily notes, the list of what's in flight, the house's memory of itself. The house names which agent writes each of them, in a plain file both can read, and the other reads freely but doesn't write it — it queues the write for the owner, or brings it to you. Two agents editing the same file is a question for the person, never a race.
 
 ## What deliberately doesn't change
 

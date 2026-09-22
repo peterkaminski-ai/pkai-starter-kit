@@ -114,7 +114,7 @@ A useful set of wrap-up actions, configurable per agent:
 2. Write a session log.
 3. Commit work to git (and push, if appropriate).
 4. Update memory if anything important came up.
-5. Report back: "Safe to clear."
+5. Report back: "It's now safe to clear or exit."
 
 You can encode this in your `CLAUDE.md` or your personalization file:
 
@@ -126,7 +126,7 @@ When I say "wrap up this session" or "ready to close," do the following:
 2. Write a session log to `sessions/YYYY-MM-DD-NNN-topic.md`.
 3. Commit the session log and any related changes.
 4. Consolidate memory if anything new came up worth persisting.
-5. Tell me: safe to clear.
+5. Tell me: it's now safe to clear or exit.
 ```
 
 The agent will follow these instructions whenever you use the trigger.

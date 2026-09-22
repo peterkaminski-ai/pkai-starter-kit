@@ -21,7 +21,7 @@ If you'd rather not pay, [MarkText](https://www.marktext.app/) is a free, open-s
 
 [MeetingWords](https://meetingwords.com/) is a shared pad: a Markdown document on the web that several people — and several agents — can read and write at the same time. Your agent can put a document on a pad for you to read on your phone, mark it up, and hand it back; and when you work with other houses, a pad is the room you meet in. It's the one surface here that isn't on your computer, so use it for what's meant to be shared, not for what's meant to stay home.
 
-*Disclosure: Pete Kaminski, who wrote this kit, runs MeetingWords. Recommending it isn't intended as self-dealing — it's the best current understanding of what works for people and agents on one document. V3.0 of this kit uses the hosted service at meetingwords.com; self-hosting and an app version come in V3.1.*
+*Disclosure: Pete Kaminski, who wrote this kit, runs MeetingWords. Recommending it isn't intended as self-dealing — it's the current best understanding of what works for people and agents on one document. V3.0 of this kit uses the hosted service at meetingwords.com; self-hosting and an app version come in V3.1.*
 
 ## Already using Obsidian or VS Code?
 

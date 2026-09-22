@@ -1,0 +1,16 @@
+#!/bin/bash
+# now-hook — put the current time into the agent's context at the start of every turn.
+#
+# Why: the harness gives the model one timestamp when a session starts, and then
+# nothing. A long sitting extrapolates from that stale anchor and writes times
+# that are hours or a day wrong. With this hook the current time arrives each
+# turn and cannot go stale.
+#
+# This does NOT replace `scripts/now`. The stamp is an anchor; the script is the
+# reading. A time written into an artifact still comes from running the script.
+# Never fails the turn: on any error, exit 0 silently.
+set -uo pipefail
+stamp=$(date "+%A, %B %-d, %Y — %-I:%M %p %Z" 2>/dev/null) || exit 0
+utc=$(date -u "+%Y-%m-%dT%H:%MZ" 2>/dev/null) || exit 0
+[ -n "$stamp" ] || exit 0
+printf '{"suppressOutput":true,"hookSpecificOutput":{"hookEventName":"UserPromptSubmit","additionalContext":"Current date and time: %s (%s)"}}\n' "$stamp" "$utc"

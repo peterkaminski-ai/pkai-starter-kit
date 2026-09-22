@@ -41,7 +41,7 @@ You'll work with your agent through two surfaces: a **chat surface** (where you 
 
 - **Typora** — https://typora.io — our current favorite. Inexpensive, one-time purchase.
 - **MarkText** — https://marktext.me — free and open source, same live-preview style.
-- **MeetingWords** — https://meetingwords.com — a shared pad made for people and agents working on the same document; also the surface for working with other houses. *(Disclosure: Pete Kaminski runs MeetingWords. Recommending it isn't intended as self-dealing; it's the best current understanding of what works. V3.0 uses the hosted service at meetingwords.com; self-hosting and an app version are coming in V3.1.)*
+- **MeetingWords** — https://meetingwords.com — a shared pad made for people and agents working on the same document; also the surface for working with other houses. *(Disclosure: Pete Kaminski runs MeetingWords. Recommending it isn't intended as self-dealing; it's the current best understanding of what works. V3.0 uses the hosted service at meetingwords.com; self-hosting and an app version are coming in V3.1.)*
 - **If you already use Obsidian or VS Code**, they're fine — keep them. The kit no longer teaches Obsidian, which is not the same as forbidding it.
 
 The full treatment is `bookshelf/getting-started/Viewing Your Files.md`.

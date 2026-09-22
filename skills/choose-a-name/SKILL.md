@@ -26,7 +26,7 @@ Twenty to forty candidates, not five. Work families rather than one list: a plai
 
 Against every candidate, in this order; each test removes names.
 
-1. **Flagship.** A name that never has to be taken back: right on day one, still technically exact years later — it only gets deeper. A word that teaches something later untaught fails (*assistant* taught service; *vault* belonged to a tool).
+1. **Flagship.** A name that never has to be taken back: right on day one, still technically exact years later — it only gets deeper. A word that teaches something later untaught fails (*vault* belonged to a tool).
 2. **One word per meaning.** Does the house already use this word for something else? Count how busy it is: search the house, and any canon the house works inside. A busy word is expensive to repurpose; a free word is cheap.
 3. **Baggage.** What does it connote that isn't wanted? Names are rejected for what they carry, not how they sound — a word whose default shape is "owned by someone not present" is wrong for a thing that has an owner.
 4. **Dinner table.** Can the person say it to a friend and be understood without a definition? Precise-but-unsayable is for the glossary, not the door.

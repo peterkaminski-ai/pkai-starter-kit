@@ -58,7 +58,7 @@ The agent should:
 2. Write a session log (see [Session Logs](Session%20Logs.md)).
 3. Commit work to git.
 4. Update memory if anything important came up.
-5. Report back: "Safe to clear."
+5. Report back: "It's now safe to clear or exit."
 
 Then you `/clear`.
 

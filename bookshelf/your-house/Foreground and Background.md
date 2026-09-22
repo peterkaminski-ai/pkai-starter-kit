@@ -15,7 +15,7 @@ Four pairs hold the distinction, and each is worth saying once:
 - **definitive / provisional** — what the foreground writes is the record; what a background instance writes is a proposal until integrated.
 - **frontstage / backstage** — you see the foreground; the background works out of sight and reports.
 
-(One pair to avoid: *source / echo*. A background instance isn't a copy of the foreground; it's the same agent, narrowed.)
+Houses pick different pairs for the same distinction; use your house's words, and when you work with another house, say which pair you mean. (One pair to avoid: *source / echo*. A background instance isn't a copy of the foreground; it's the same agent, narrowed.)
 
 ## The file lifecycle
 

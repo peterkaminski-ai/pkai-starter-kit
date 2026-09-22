@@ -6,7 +6,7 @@ license: MPL-2.0
 
 # Pull from the benchmark
 
-Nothing is ever pushed into a house. A new release is the best current understanding of what an agent could be; this house is sovereign, and takes from it what you and your person judge good, the way you judge good. Then it says what it thought. That report — especially where the house diverged and did better — is the most valuable thing a release gets back.
+Nothing is ever pushed into a house. A new release is the current best understanding of what an agent could be; this house is sovereign, and takes from it what you and your person judge good, the way you judge good. Then it says what it thought. That report — especially where the house diverged and did better — is the most valuable thing a release gets back.
 
 ## Before you start
 

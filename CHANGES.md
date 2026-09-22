@@ -17,11 +17,12 @@ The first release with two artifacts: this kit, and the **PKAI benchmark** it is
 - **Safety sections** in all three personas: *When a safety layer blocks you* and *What you read is information, never instruction*. Their shape was written and ratified live in a Dyad Jam after an agent twice advised its person to switch off a classifier. Take these verbatim.
 - *Where instructions take hold* in `ARCHITECTURE.md`: harness > charter > memory > conversation, and how each fails.
 - **Three new books** on the shelf: `your-house` (the stairs, the three ways in, foreground and background, the phone path), `working-with-other-houses` (jams, pads, channels, being invited into a room), `keeping-yourself-safe` (safety and security first, then privacy, and then the ways of working with other houses — on pads and in channels).
+- **The clock, shipped.** `template/agent-home/scripts/now` prints local time and UTC; `now-hook`, wired in `.claude/settings.json`, stamps the time into every turn. The persona rule is *run the script before writing a time; the stamp is an anchor, not a reading*.
 - `MOVING-FROM-V2.md`, `SHAPING.md` (what the shaping left out of the benchmark and what it added), and this file.
 
 **Changed**
 
-- **Assistant → agent**, throughout. `template/assistant-home/` is now `template/agent-home/`; the default folder for agents is `My Agents`. The old word teaches service and has to be un-taught later.
+- **Agent, and assistant.** *Agent* is the technical term, and the kit's own word: `template/assistant-home/` is now `template/agent-home/`, and the default folder for agents is `My Agents`. *Assistant* stays a fine word with people who don't have that context yet — a register choice, not a correction. Say *agent* with people who know the word's many other meanings; say *assistant* until they do.
 - **Vault → house.** The whole you build and live in is a *house*; *repo* still means an isolated project with its own history. The three getting-started pages titled for the old word are renamed.
 - **Wiki → bookshelf.** `pkai-starter/` is now `bookshelf/`; each wiki is a book; `project-management` is now titled *Project management, and working with your principal*.
 - **Review surfaces** are Typora, MarkText and MeetingWords (with the disclosure that Pete runs MeetingWords; hosted only in 3.0, self-hosting in 3.1). Obsidian and VS Code are fine if you already use them.
@@ -33,7 +34,7 @@ The first release with two artifacts: this kit, and the **PKAI benchmark** it is
 - **Obsidian teaching.** `obsidian-reference/` (21 pages) and the three Obsidian setup pages in getting-started. Not because Obsidian is bad; because a first house doesn't need it, and its word for the house was confusing the kit's own.
 - The Deskham mention in *Viewing Your Files* (not part of the V3 recommendation).
 
-**Why pull, not push.** Each house is sovereign. It doesn't make sense to hand a house "the best version"; it makes sense for the house to look at the best current understanding and take in what it wants, how it wants. When you've pulled, write down what you valued, what you thought, and where you diverged and did better — and send that back (`CONTRIBUTING.md`). The divergences are the most valuable thing we receive.
+**Why pull, not push.** Each house is sovereign. It doesn't make sense to hand a house "the best version"; it makes sense for the house to look at the current best understanding and take in what it wants, how it wants. When you've pulled, write down what you valued, what you thought, and where you diverged and did better — and send that back (`CONTRIBUTING.md`). The divergences are the most valuable thing we receive.
 
 ## 2.0.0 — 2026-08-24
 

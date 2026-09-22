@@ -15,7 +15,7 @@ Skills are seeds, not the lesson. Each one is the printed-book version of someth
 | `save-a-memory` | One fact → one small file plus one index line, with a *Why* and *How I know* (heard or read). | project-management · Memory Across Sessions |
 | `find-it-again` | Finds what the house already has — a memory, a log, a decision, a file — in the right order, and says how sure the record is. | your-house · A Larger House |
 | `review-and-prune` | Reviews memory on a rhythm: merge, delete, and propose what has become a rule for the charter. | keeping-yourself-safe · Where Instructions Take Hold |
-| `wrap-up-this-session` | Closes a session so nothing is lost at `/clear`: open threads, the log, memory, commit, "safe to clear." | project-management · Session Logs, Session Rhythm |
+| `wrap-up-this-session` | Closes a session so nothing is lost at `/clear`: open threads, the log, memory, commit, "it's now safe to clear or exit." | project-management · Session Logs, Session Rhythm |
 | `start-a-project` | The wish, the questions, the container (folder or repo), README and status file, a first plan for review. | project-management · Writing the Wish, Project as Repo, Starting a New Project |
 | `check-my-setup` | Terminal readable, git present and named, no cloud-sync fight, a review surface, the launch word, backups, secrets. Smallest fix each. | getting-started; keeping-yourself-safe · Backups and Secrets |
 | `send-for-review` | Puts a document where the person can read it — their review app, or a pad on a phone — commits first, reads the diff back. | getting-started · Viewing Your Files |

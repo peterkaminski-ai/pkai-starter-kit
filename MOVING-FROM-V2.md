@@ -4,7 +4,7 @@ V3 sits beside V2; it doesn't replace it. If you built your house from the V2 ki
 
 ## What changed in words
 
-- **Assistant → agent.** V2 called it your *assistant*; V3 calls it your *agent*, and the folder `assistant-home` in the kit's template is now `agent-home`. Your own folders keep whatever names they have — `My Assistants` is still a fine place for an agent to live. If you'd like your agent to call itself an agent, say so; that's a one-line memory.
+- **Agent, and assistant.** V2 said *assistant*; V3's own word is *agent*, the technical term, and the folder `assistant-home` in the kit's template is now `agent-home`. *Assistant* isn't wrong — it's the word for people who don't have the context yet, and your own folders keep whatever names they have; `My Assistants` is still a fine place for an agent to live. If you'd like your agent to call itself an agent, say so; that's a one-line memory.
 - **Vault → house.** V2 sometimes borrowed Obsidian's word *vault* for the whole of what you built. V3 says **house**: your agent home and your HQ together. (*Repo* still means an isolated project with its own git history; the contrast is now house vs repo.)
 - **Wiki → bookshelf.** The four starter wikis under `pkai-starter/` are now books on a shelf under `bookshelf/`, with three new books beside them.
 

@@ -13,7 +13,7 @@ Claude Code asks before it does things that touch your computer — running a co
 
 The very first time you run `claude` inside your agent's folder (your agent home), it asks whether you trust the files in this folder. This is a general Claude Code safety check for any folder you open it in — some folders are ones you'd never want an AI assistant running around in unsupervised.
 
-For your own agent's folder — the one this wiki lives in — the answer is yes. This is your agent's home. You set it up, you're the one running it, and trusting it is what lets your agent actually do its job.
+For your own agent's folder — the one this book lives in — the answer is yes. This is your agent's home. You set it up, you're the one running it, and trusting it is what lets your agent actually do its job.
 
 ## The plain-language rule
 
@@ -35,7 +35,7 @@ For anything outbound (leaving your computer) or outside your agent's folder, it
 
 ## A note on modes
 
-Claude Code has modes that change how often it asks permission at all — a **plan mode** that has it lay out its intended steps before doing anything, and an **auto-accept mode** that lets it proceed without asking each time. As a new user, it's worth staying in the default mode — the one that asks — until you and your agent have worked together for a while and you have a feel for what it normally does. Once you're ready to explore the other modes, the project-management mini-wiki in this starter kit has a page that covers plan mode and auto mode in more depth.
+Claude Code has modes that change how often it asks permission at all — a **plan mode** that has it lay out its intended steps before doing anything, and an **auto-accept mode** that lets it proceed without asking each time. As a new user, it's worth staying in the default mode — the one that asks — until you and your agent have worked together for a while and you have a feel for what it normally does. Once you're ready to explore the other modes, the project-management book in this starter kit has a page that covers plan mode and auto mode in more depth.
 
 > [!warning]
 > **Windows users:** on Mac, Claude Code runs commands inside a macOS sandbox — a protective layer that limits what any single command is allowed to touch on your computer, even before you answer a permission question. **Windows doesn't have this sandboxing.** That means on Windows, your answers to these permission questions are doing more of the safety work themselves. The guidance above still applies — it just matters a little more that you actually read the question before answering, especially for anything outbound or outside your agent's folder.

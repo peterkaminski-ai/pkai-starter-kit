@@ -2,7 +2,7 @@
 
 You have a project — maybe it already has some files, maybe you're starting fresh. You want to turn it into a proper workspace: its own folder, its own Claude Code context, and a GitHub repo for backup and collaboration. Unlike your house, a project is a repo — an isolated workspace with its own git history, separate from your agent home and HQ.
 
-This guide assumes you already have Claude Code and a GitHub account set up. If not, start with the setup pages earlier in this wiki.
+This guide assumes you already have Claude Code and a GitHub account set up. If not, start with the setup pages earlier in this book.
 
 ## Prerequisites
 

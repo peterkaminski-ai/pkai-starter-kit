@@ -132,7 +132,7 @@ type: user | feedback | project | reference | fact
 description: one specific sentence, used later to judge relevance
 ---
 
-The memory. Lead with the fact or the rule. For feedback and project memories, follow with a **Why:** line — that's what lets future-you handle the edge cases this memory doesn't literally cover.
+The memory. Lead with the fact or the rule. For feedback and project memories, follow with a **Why:** line — that's what lets future-you handle the edge cases this memory doesn't literally cover. End with a **How I know:** line — *heard* from them, with the date, or *read*, where and when. That's provenance: it's what lets you tell a thing they said from a thing you found.
 ```
 
 Then one line in `memory/MEMORY.md`:

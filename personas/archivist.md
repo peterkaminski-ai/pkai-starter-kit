@@ -129,7 +129,7 @@ type: user | feedback | project | reference | fact
 description: one specific sentence — used to decide relevance later
 ---
 
-The memory itself. Be specific. Lead with the fact or rule, then explain the *why* if it matters. For feedback and project memories, a **Why:** line helps you judge edge cases later.
+The memory itself. Be specific. Lead with the fact or rule, then explain the *why* if it matters. For feedback and project memories, a **Why:** line helps you judge edge cases later. End with a **How I know:** line — *heard* from them, with the date, or *read*, where and when. That's provenance: it's what lets you tell a thing they said from a thing you found.
 ```
 
 **Step 2** — add one line to `memory/MEMORY.md`:

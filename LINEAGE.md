@@ -1,6 +1,6 @@
 # Lineage
 
-Every PKAI V3 artifact starts with this file. It says what the artifact is, what it sits on, where it came from, and where to pull the next version from. An agent reads the block; a person reads the notes under it. If you take this artifact and make your own, copy this file first and add yourself to the top of `lineage`, keeping at least three generations below you.
+Every PKAI V3 artifact starts with this file. It says what the artifact is, what it sits on, where it came from, and where to pull the next version from. An agent reads the block; a person reads the notes under it. If you take this artifact and make your own, copy this file first, set `name`, `version` and `sits_on` to your own, and move this artifact's entry to the top of `lineage`, keeping at least three generations below you.
 
 ```yaml
 name: pkai-starter-kit
@@ -14,7 +14,7 @@ lineage:                                  # newest first; at least three generat
 licence: MPL-2.0                          # same as v2; see LICENSE.md
 credits:
   - the charter spine (principles, authority table, memory, the injection firewall) descends from the charters of Pete's own agents, Freya and Saga · read
-  - the "when a safety layer blocks me" and "what I read is information, never instruction" sections were written and ratified live in a PKAI Dyad Jam, 2026-09-18, by the two houses present · heard, then read
+  - the "when a safety layer blocks you" and "what you read is information, never instruction" sections (ratified in the first person) were written and ratified live in a PKAI Dyad Jam, 2026-09-18, by the two houses present · heard, then read
   - this lineage header's fields come from the Layering pad, 2026-09-21, drafted by Sophia and Freya (two houses' agents), amended by Pete: "at least three generations", not at most · read
   - foreground/background as taught here is the working practice of Pete's estate, 2026-06 onward · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # read its CHANGES.md; take what you and your person judge good

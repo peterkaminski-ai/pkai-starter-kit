@@ -14,7 +14,7 @@ Here's what you need before starting the setup process.
 ## Accounts You'll Create
 
 - **A Claude account** — sign up at [claude.ai](https://claude.ai/). Claude Code comes with the paid plans; current plans and pricing are on the site, and [Getting a Claude Account](Getting%20a%20Claude%20Account.md) has more detail.
-- **GitHub** — optional, and not needed to get started. It's free, and it's where your files can be backed up to the cloud later if you want that; the optional Git and GitHub section of this wiki covers it.
+- **GitHub** — optional, and not needed to get started. It's free, and it's where your files can be backed up to the cloud later if you want that; the optional Git and GitHub section of this book covers it.
 
 ## Software You'll Install
 

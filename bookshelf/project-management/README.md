@@ -15,7 +15,7 @@ People who already have Claude Code and Git working, and want to know what to *d
 
 Once you have the tools, come back here.
 
-## How to read this wiki
+## How to read this book
 
 Pages stand alone, but they were written in this order. If you're starting from scratch, read top to bottom. If you're returning, jump to the page you want.
 

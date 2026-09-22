@@ -18,7 +18,7 @@ A table saw is also a motor with a giant blade attached. Without a table, withou
 
 Claude Code is the table saw. Project management is the table, the fence, the guards, the marked board.
 
-The point of the analogy isn't to scare you. It's to be honest about why the rest of this wiki exists. The tools below — projects-as-folders, the iteration loop, session logs, memory hygiene, commit cadence — are not bureaucracy. They are the table.
+The point of the analogy isn't to scare you. It's to be honest about why the rest of this book exists. The tools below — projects-as-folders, the iteration loop, session logs, memory hygiene, commit cadence — are not bureaucracy. They are the table.
 
 ## What "on rails" means
 
@@ -38,11 +38,11 @@ This is good news: it means you have a lot of leverage. It also means the ceilin
 
 If you have prior experience managing projects with humans — interns, contractors, teammates — most of it transfers. The same instincts apply: don't hand off without a brief, don't walk away without checking in, don't accept the first draft as the final draft.
 
-## What this wiki is about
+## What this book is about
 
 The rest of these pages are concrete, learnable habits that put Claude Code on rails. None are exotic. Most are what you'd do anyway with a competent intern; the difference is doing them deliberately, every time, because Claude Code can move fast enough that skipping them costs you a day instead of an hour.
 
 ## See also
 
-- [The Iteration Loop](The%20Iteration%20Loop.md) — the six-step cycle this wiki organizes around.
+- [The Iteration Loop](The%20Iteration%20Loop.md) — the six-step cycle this book organizes around.
 - [Anti-Patterns](Anti-Patterns.md) — what skipping the discipline looks like in practice.

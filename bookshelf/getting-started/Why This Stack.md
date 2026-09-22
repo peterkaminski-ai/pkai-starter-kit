@@ -25,7 +25,7 @@ You can read Markdown files in any text editor, but a dedicated Markdown editor 
 
 Git is a version-control tool used by software teams worldwide. It keeps a complete history of every change you make — like an infinite undo button that remembers every version of every file. GitHub is a website that stores a copy of your files in the cloud, so they're backed up and, if you choose, visible to collaborators.
 
-Here's the part that's different in this kit: **your agent handles git for you, silently.** You don't memorize commands, and you don't get asked about commits — your agent just keeps a careful history running in the background as you work with it. If you're curious how that works under the hood, or want to add GitHub for cloud backup, that's covered in the optional sections later in this wiki — but nothing about getting started requires it.
+Here's the part that's different in this kit: **your agent handles git for you, silently.** You don't memorize commands, and you don't get asked about commits — your agent just keeps a careful history running in the background as you work with it. If you're curious how that works under the hood, or want to add GitHub for cloud backup, that's covered in the optional sections later in this book — but nothing about getting started requires it.
 
 > [!tip]
 > This is still more deliberate than auto-save-to-cloud. Your agent is checkpointing meaningful units of work into a real history, not silently overwriting the only copy of a file the moment you type.

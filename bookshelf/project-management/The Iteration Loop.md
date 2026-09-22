@@ -1,6 +1,6 @@
 # The Iteration Loop
 
-The core practice. Six steps; the rest of this wiki is detail under one of them.
+The core practice. Six steps; the rest of this book is detail under one of them.
 
 ## The loop
 

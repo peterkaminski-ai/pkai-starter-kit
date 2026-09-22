@@ -1,6 +1,6 @@
 # Getting Started with Claude Code
 
-Welcome! This wiki walks you through setting up a modern knowledge-work toolkit from scratch. No prior experience with terminals or code editors is required.
+Welcome! This book walks you through setting up a modern knowledge-work toolkit from scratch. No prior experience with terminals or code editors is required.
 
 By the end, you'll have:
 
@@ -10,7 +10,7 @@ By the end, you'll have:
 
 Your agent handles the more technical machinery (like git version control) quietly on your behalf — there are optional sections below if you ever want to look under the hood.
 
-## How to Use This Wiki
+## How to Use This Book
 
 Start at the top and work through the core path in order. Most people can get set up in under half an hour.
 

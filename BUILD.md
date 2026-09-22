@@ -67,7 +67,7 @@ Now you build. Narrate at the altitude of "I'm setting up your agent's home" —
 1. **Placement.** Default: a **`My Agents`** folder at the top of their home folder (`~/My Agents/<agent-name>/` — the sibling of Documents and Pictures). If the user reads as unix-comfortable, offer `~/.agents/<agent-name>/` as the alternative convention. Creating this touches their home folder — you asked back in Ground rules; confirm once more in passing, then go.
 2. **Instantiate** `template/agent-home/` into the new folder: `memory/` (with its `MEMORY.md` index), `sessions/`, `inbox/`, `outbox/`. If they chose *working*, add `bg/`.
 3. **Persona.** Copy the chosen persona file to the agent home as `CLAUDE.md` and personalize it: strip the leading `<!-- persona: ... -->` comment (it's templating metadata, not part of the persona), fill every `{{HQ_PATH}}` placeholder with the real HQ path, and adjust anything the persona conversation settled (blended traits, tone tweaks). Leave the two safety sections exactly as written; they were tested.
-4. **Lineage.** Copy the kit's `LINEAGE.md` into the agent home and add one line at the top of its `lineage` list: this house, today's date, the person's name, *heard* (they told you). The block's `pull_from` is where the next version will be announced; the `pull-from-benchmark` skill is how they'll take it.
+4. **Lineage.** Copy the kit's `LINEAGE.md` into the agent home and make it the house's own: set `name` to the agent's name, `version` to `1.0.0`, and `sits_on` to `pkai-starter-kit 3.0.0`; then move the kit's entry (`pkai-starter-kit v3.0.0 · today's date · Peter Kaminski, with Saga · read`) to the top of the `lineage` list, above the ones already there. Add the person's name and the date to the prose below the block if they like. The block's `pull_from` is where the next version will be announced; the `pull-from-benchmark` skill is how they'll take it.
 5. **Skills.** Copy each skill folder the three questions called for from `skills/` into `<agent home>/.claude/skills/<name>/` — the whole folder, so its licence and lineage travel with it. Every house gets `save-a-memory` and `pull-from-benchmark`. See `skills/README.md` for the mapping.
 6. **First memories.** Write and index (per the memory format in the persona file):
    - `memory/agent_name.md` — the agent's name, chosen by the user, with the date.
@@ -78,7 +78,7 @@ Now you build. Narrate at the altitude of "I'm setting up your agent's home" —
 
 ### 7. Version control, quietly — if they said yes
 
-Two folders, two repos, no remotes. In each of the agent home and the HQ: copy the kit's `.gitignore` to the folder root (OS and editor cruft), then `git init -b main`, add everything, one initial commit. One sentence to the user total — "I've set up private version history in both folders, so nothing we do together can be lost" — then move on. Don't explain git unless they ask. (Skip entirely if they deferred; leave a `memory/git_deferred.md` note so the agent can offer again someday.)
+Two folders, two repos, no remotes. First, `git config --global user.name` — on a fresh machine git doesn't know who they are and will refuse the first commit; if it's unset, ask for the name they'd like on their history and an email they use, and set both globally. Then, in each of the agent home and the HQ: copy the kit's `.gitignore` to the folder root (OS and editor cruft), then `git init -b main`, add everything, one initial commit. One sentence to the user total — "I've set up private version history in both folders, so nothing we do together can be lost" — then move on. Don't explain git unless they ask. (Skip entirely if they deferred; leave a `memory/git_deferred.md` note so the agent can offer again someday.)
 
 ### 8. The launch command
 
@@ -92,6 +92,8 @@ This touches a settings file outside both folders, so ask first, in plain langua
 ### 9. Orientation, then hand over
 
 Explain the geometry in a breath or two, for both of you: *the agent lives in its home and starts there; the HQ is the hub — the switching center and growing knowledge base where projects live; the two together are the house. But the HQ isn't the only destination: the agent walks to whatever folder the work is in, and it's completely in bounds for it to help with projects outside the HQ — bigger projects often live in their own folders, smaller ones inside `hq/projects/`.*
+
+**If they answered "mostly a phone":** two more things before you hand over. Write them a three-line card — *find your computer's name; find your agent; don't press New Session* — and put it where the phone will show it (a note on the phone, a message to themselves, whatever they use). And tell them the agent's first real conversation should happen *on the phone*, not here at the keyboard, so it learns what they actually see; the `phone-path` skill it now carries knows how to serve there.
 
 Then introduce `bookshelf/` — six short books describing the way of working this kit was designed around — and point at the one their answers make first: `house-and-estate` for the working path or the phone path, `project-management` otherwise. Offer the three modes, not exclusive: the agent reads them itself as background; a guided walk-through together, now or later; or bits surfaced naturally as topics come up.
 

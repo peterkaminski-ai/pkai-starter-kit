@@ -63,7 +63,7 @@ Which renders as: **bold text**, *italic text*, ***bold and italic***.
 [Page Name](Page%20Name.md)
 ```
 
-Use the file name, with `%20` in place of spaces, the same way this wiki links between its own pages.
+Use the file name, with `%20` in place of spaces, the same way this book links between its own pages.
 
 ## Blockquotes
 
@@ -76,7 +76,7 @@ Use `>` at the start of a line:
 
 ## Callout Blocks
 
-This wiki uses callout blocks for tips, warnings, and notes — you'll see them throughout:
+This book uses callout blocks for tips, warnings, and notes — you'll see them throughout:
 
 ```markdown
 > [!tip]

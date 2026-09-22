@@ -8,7 +8,7 @@ This kit is a **reference library, not a house**. You don't move into it — you
 
 This is **V3**. It is the *shaped* version of the **PKAI benchmark** — the fuller statement of what an agent could be — modified to be a better place to start. `LINEAGE.md` says where it came from and where the next version will be; `SHAPING.md` says what was left out and what was added. V3 sits beside V2 rather than replacing it; if you built from V2, read `MOVING-FROM-V2.md`.
 
-This is **V3.0**, and it is a **beta**: the first release with two artifacts, made fast, and built to be improved often. Expect a minor release — 3.1, 3.2 — within a week or two, and small ones after that as improvements arrive from the houses using it. That's not a caveat; it's the design. Everything in V3 is a standalone unit — a skill is one folder, a chapter is one file, a safety section is one block in a persona — so an improvement is one unit, offered and taken by pull, and never a reinstall. `CONTRIBUTING.md` says how to offer one.
+This is **V3.0**, and it is a **beta**: the first release with two artifacts, made fast, and built to be improved often. Minor releases — 3.1, 3.2 — will follow as improvements arrive from the houses using it; none is promised for any date, but a small release as often as every week is now practical, and that's the point: it's the design, not a caveat. Everything in V3 is a standalone unit — a skill is one folder, a chapter is one file, a safety section is one block in a persona — so an improvement is one unit, offered and taken by pull, and never a reinstall. `CONTRIBUTING.md` says how to offer one.
 
 ## If you're a person
 
@@ -42,6 +42,7 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
   - `keeping-yourself-safe/` — safety and security first, then privacy
 - **`MOVING-FROM-V2.md`** — for houses built from V2. Nothing is reinstalled.
 - **`CHANGES.md`** — what changed, dated, written for an agent to read.
+- **`WISHLIST.md`** — where we'd like this to grow; aspirational, undated.
 
 ## Beyond the kit
 
@@ -50,3 +51,13 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
 ## License
 
 This kit and everything in it — including the bookshelf and the skills — is licensed under the [Mozilla Public License 2.0](LICENSE.md), © 2026 Peter Kaminski. See `LICENSE.md` for the full text, including the Disclaimer of Warranty (Section 6) and Limitation of Liability (Section 7). Each skill folder carries its own copy of the licence, so a skill stays licensed when it travels.
+
+### Why MPL-2.0, and not a Creative Commons licence
+
+People ask, because a kit that is mostly prose looks like a Creative Commons thing. Five reasons, and lineage is the first:
+
+1. **It's the licence this line has always had.** `pkai-agent` was refounded under MPL-2.0 in May 2026, v2 kept it, and V3 keeps it. One licence up and down the lineage means a house can pull a newer skill into an older home, or hand a chapter back, without a compatibility check.
+2. **It's file-scoped.** MPL's share-alike stops at the file: if you change one of these files and pass it on, that file stays MPL and your changes to it are open, but your own files beside it — your charter, your memory, your house — are yours, under whatever terms you like. Creative Commons ShareAlike attaches to the *derivative work* as a whole, and a charter you adapted from a persona is a derivative work; we don't want a licence that reaches into your house.
+3. **Much of this runs.** A skill is executed by an agent; the hook is a script; the settings file is configuration. MPL is written for things that are edited, run and redistributed; Creative Commons is written for things that are read. A kit that ships both is on firmer ground under the software licence, and MPL covers the prose fine.
+4. **The waiver leans on it.** `WAIVER.md` points at MPL's Disclaimer of Warranty (§6) and Limitation of Liability (§7). Keeping one licence keeps the waiver true.
+5. **No non-commercial clause, on purpose.** The stairs include "try a kit, or buy one," and a skill is meant to travel to any agent, including one inside something someone sells. A licence that forbade that would forbid the network this is for. What MPL asks in return is only that changes to these files stay open.

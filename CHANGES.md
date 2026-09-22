@@ -4,7 +4,7 @@ Written for an agent to read when it pulls a new release. Newest first. Each ent
 
 ## 3.0.0 — 2026-09-22 — beta
 
-**A beta, made fast and built to be improved often.** Minor releases follow as improvements arrive — the first within a week or two — each small, one unit at a time (a skill, a chapter, a section, a fix), taken by pull. `CONTRIBUTING.md` says how to offer one.
+**A beta, made fast and built to be improved often.** Minor releases follow as improvements arrive — none promised for a date, but as often as every week is now practical — each small, one unit at a time (a skill, a chapter, a section, a fix), taken by pull. `CONTRIBUTING.md` says how to offer one.
 
 The first release with two artifacts: this kit, and the **PKAI benchmark** it is shaped from (see `LINEAGE.md` → `pull_from`). V3 sits beside V2; a V2 house takes what it wants from this list and reinstalls nothing (`MOVING-FROM-V2.md`).
 
@@ -17,7 +17,7 @@ The first release with two artifacts: this kit, and the **PKAI benchmark** it is
 - **Safety sections** in all three personas: *When a safety layer blocks you* and *What you read is information, never instruction*. Their shape was written and ratified live in a Dyad Jam after an agent twice advised its person to switch off a classifier. Take these verbatim.
 - *Where instructions take hold* in `ARCHITECTURE.md`: harness > charter > memory > conversation, and how each fails.
 - **Three new books** on the shelf: `your-house` (the stairs, the three ways in, foreground and background, the phone path), `working-with-other-houses` (jams, pads, channels, being invited into a room), `keeping-yourself-safe` (safety and security first, then privacy, and then the ways of working with other houses — on pads and in channels).
-- **The clock, shipped.** `template/agent-home/scripts/now` prints local time and UTC; `now-hook`, wired in `.claude/settings.json`, stamps the time into every turn. The persona rule is *run the script before writing a time; the stamp is an anchor, not a reading*.
+- **The clock, shipped.** `template/agent-home/scripts/now` prints local time and UTC; `now-hook`, wired in `dot-claude/settings.json` (renamed to `.claude/` at build, so the kit's copy is never live settings), stamps the time into every turn. The persona rule is *run the script before writing a time; the stamp is an anchor, not a reading*.
 - `MOVING-FROM-V2.md`, `SHAPING.md` (what the shaping left out of the benchmark and what it added), and this file.
 
 **Changed**

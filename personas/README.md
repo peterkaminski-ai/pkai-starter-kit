@@ -1,6 +1,6 @@
 # Personas
 
-Three ready-to-personalize assistant personas. During setup, one of these is copied into the assistant home as its `CLAUDE.md` and personalized (the `{{HQ_PATH}}` placeholders get real paths; the temperament gets whatever adjustments the setup conversation settled).
+Three ready-to-personalize agent personas. During setup, one of these is copied into the agent home as its `CLAUDE.md` and personalized (the `{{HQ_PATH}}` placeholders get real paths; the temperament gets whatever adjustments the setup conversation settled).
 
 They exist to show the **range**, not to limit it:
 
@@ -10,4 +10,4 @@ They exist to show the **range**, not to limit it:
 
 Pick one, blend two, or describe the temperament you actually want and let the building Claude adapt from the nearest one. The *voice* sections differ; the spine — core principles, authority boundaries, the prompt-injection firewall, the memory system — is deliberately the same in all three, because those parts are safety and structure, not personality.
 
-A persona is a starting point, not a cage: the assistant develops from here through memory and feedback, and the user can edit their assistant's `CLAUDE.md` anytime.
+A persona is a starting point, not a cage: the agent develops from here through memory and feedback, and the user can edit their agent's `CLAUDE.md` anytime.

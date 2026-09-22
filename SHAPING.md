@@ -11,7 +11,7 @@ The benchmark is at the `pull_from` address in `LINEAGE.md`. Same layout as the 
 | **`CHARTER.md`** — one full charter with every section: the spine, the safety sections, foreground/background, the larger-house conventions, the desk, the disclosure gate, the venue cards | A first house needs a persona, not a constitution. The kit ships three personas that carry the spine, the safety sections and *rooms and their cards*, and leave the rest of the large house sections for later. |
 | **`HOUSE.md`** — the house in full, grown large: several agents, the desk and how it passes, shared state and who owns it, fleets of background instances, books and their boxes as a filing convention | The kit gives the larger house one chapter. The rest waits until a house has grown enough to need it. |
 | **`PULL-PROTOCOL.md`** — the pull mechanism in full: the two lineage mechanisms (every object remembers a little; a few remember a lot), the report back, the reasons | The kit carries the skill (`pull-from-benchmark`) and the `changes` field; the reasoning is the benchmark's to hold. |
-| **All the skills** | All nineteen ship on the kit's shelf; the three setup questions pick which are installed. The benchmark holds everything a house in the network has offered, including ones no first house needs. (At 3.0.0 the two sets are the same nineteen; they'll diverge as houses offer skills back.) |
+| **All the skills** | All nineteen ship on the kit's shelf; the three setup questions pick which are installed. The benchmark holds everything a house in the network has offered, including ones no first house needs. (At 3.0.0 the two sets are the same twenty-two; they'll diverge as houses offer skills back.) |
 
 ## What the kit adds
 

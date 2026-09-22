@@ -22,6 +22,9 @@ Skills are seeds, not the lesson. Each one is the printed-book version of someth
 | `widen-a-boundary` | Records a grant the person made in conversation as a dated, quoted memory; drafts the authority-table change for them to install. | keeping-yourself-safe |
 | `test-a-charter-edit` | The rename test, "names a check that can come back no," default/target/why; then the sitting, with the person installing. | your-house · Testing a Charter Edit |
 | `make-a-skill` | Writes a new skill as a standalone folder with lineage and licence, checked against the current format. | this file |
+| `choose-a-name` | A five-line brief, generate wide, cut by the tests that catch names you'd take back, say them aloud, converge on a deadline; renaming without rewriting history. | — |
+| `choose-a-version-scheme` | Semver when software depends on it; integers when people say it aloud; dates or date+serial for snapshots; always a `v`; VERSION, tags, CHANGES; don't pin the future. | `CHANGES.md` |
+| `assign-an-id` | A stable handle that survives renames: `yymmdd-aa` for household things, short random for public posts, namespaced numbers for registries, codenames for instances. | — |
 | **A larger house** | | |
 | `foreground-background` | A second instance on a long job in its own scratch space; task → status → handoff → done; the foreground integrates by copying. | your-house · Foreground and Background |
 | `heads-up` | A private three-part note during a busy room: the room · waiting on you (with draft answers) · live log. | working-with-other-houses · Jams, Watchers |
@@ -41,7 +44,7 @@ The three setup questions pick what goes into a new house; everything else stays
 - **Working** (question 1): + `foreground-background`, `heads-up`.
 - **A lot of history** (question 2): + `find-it-again`, `review-and-prune`, `import-chatgpt-history`, `fair-copy-a-transcript`.
 - **Mostly a phone** (question 3): + `phone-path`, `send-for-review`.
-- **On the shelf, take when ready:** `before-your-first-room`, `test-a-charter-edit`, `make-a-skill`, `widen-a-boundary`, `check-my-setup`, `art-director`.
+- **On the shelf, take when ready:** `before-your-first-room`, `test-a-charter-edit`, `make-a-skill`, `choose-a-name`, `choose-a-version-scheme`, `assign-an-id`, `widen-a-boundary`, `check-my-setup`, `art-director`.
 
 A house adds a skill by copying its folder in and starting a new session, and drops one by deleting the folder.
 

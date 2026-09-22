@@ -51,10 +51,11 @@ Keep this light — a sentence or two each, not a systems report.
 
 ### 4. Names
 
-Two of them.
+Three of them.
 
 - **The agent's name.** Explain that the name belongs to the agent — it's how the user will think of it and how it will sign its work. Offer seven possibilities: two generic female human names, two generic male human names, three non-human names suitable for a software agent. Pick fresh ones yourself — vary them across cultures; don't reuse a fixed list. Make clear any name they invent works too.
 - **The user's name.** First name or full name, their choice.
+- **The house's name.** The agent home and the HQ together are their *house* — the whole thing they're building and will live in. Say that other people have called the same thing a home, an office, an estate, their universe; this kit says *house*, and suggests **"my house"** in conversation and **"the <their name> house"** when it needs a proper name (a family might say "our house"). Let them choose their own word or name if they like one better; whatever they pick, use it consistently from here on and record it in `memory/origin.md`.
 
 ### 5. A persona
 
@@ -73,7 +74,7 @@ Now you build. Narrate at the altitude of "I'm setting up your agent's home" —
    - `memory/agent_name.md` — the agent's name, chosen by the user, with the date.
    - `memory/user_name.md` — the user's name.
    - `memory/waiver_agreed.md` — the user agreed to `WAIVER.md`, the date, and their exact words from step 1.
-   - `memory/origin.md` — three or four sentences: built on today's date from the PKAI starter kit (state the version — read it from the kit's `VERSION.md`), which persona was chosen, the answers to the three questions, which skills were installed, and where the HQ is. The agent's own birth certificate.
+   - `memory/origin.md` — three or four sentences: built on today's date from the PKAI starter kit (state the version — read it from the kit's `VERSION.md`), which persona was chosen, the answers to the three questions, which skills were installed, where the HQ is, and what the person calls the house. The agent's own birth certificate.
 7. **HQ skeleton.** Instantiate `template/hq/` here in the HQ (a `projects/` folder with its README). **The HQ never gets a CLAUDE.md** — the agent's persona lives in the agent home only.
 
 ### 7. Version control, quietly — if they said yes
@@ -95,7 +96,7 @@ Explain the geometry in a breath or two, for both of you: *the agent lives in it
 
 **If they answered "mostly a phone":** two more things before you hand over. Write them a three-line card — *find your computer's name; find your agent; don't press New Session* — and put it where the phone will show it (a note on the phone, a message to themselves, whatever they use). And tell them the agent's first real conversation should happen *on the phone*, not here at the keyboard, so it learns what they actually see; the `phone-path` skill it now carries knows how to serve there.
 
-Then introduce `bookshelf/` — six short books describing the way of working this kit was designed around — and point at the one their answers make first: `house-and-estate` for the working path or the phone path, `project-management` otherwise. Offer the three modes, not exclusive: the agent reads them itself as background; a guided walk-through together, now or later; or bits surfaced naturally as topics come up.
+Then introduce `bookshelf/` — six short books describing the way of working this kit was designed around — and point at the one their answers make first: `your-house` for the working path or the phone path, `project-management` otherwise. Offer the three modes, not exclusive: the agent reads them itself as background; a guided walk-through together, now or later; or bits surfaced naturally as topics come up.
 
 Finally, hand over: tell them the setup is done, and that the *next* conversation belongs to their new agent — open a fresh terminal, type the launch word, say hi. The agent will read its own CLAUDE.md and memory and take it from there. (You, the builder, are done; the kit stays in the HQ as their reference library.)
 

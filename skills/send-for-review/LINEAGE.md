@@ -13,7 +13,7 @@ lineage:
   - the PKAI Founders KB, Agentic AI with Pete, Founders Cohort 2026 · Peter Kaminski and the participants · read; "pkai-founders, basically" — Pete, heard 2026-09-21
 licence: MPL-2.0                          # LICENSE.md in this folder
 credits:
-  - Pete's 'work in documents, not chat' (taught 2026-09-01) and his estate's commit-then-open review habit · read
+  - Pete's 'work in documents, not chat' (taught 2026-09-01) and his house's commit-then-open review habit · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/send-for-review/
 offered_at: stair 5 — the first house
 needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/send-for-review/

@@ -13,20 +13,20 @@ Skills are seeds, not the lesson. Each one is the printed-book version of someth
 | **The house** | | |
 | `pull-from-benchmark` | Reads a new release's `CHANGES` and `LINEAGE`, proposes take / adapt / decline with reasons, records the decision, drafts the report back. | `LINEAGE.md`, `CHANGES.md` |
 | `save-a-memory` | One fact → one small file plus one index line, with a *Why* and *How I know* (heard or read). | project-management · Memory Across Sessions |
-| `find-it-again` | Finds what the house already has — a memory, a log, a decision, a file — in the right order, and says how sure the record is. | house-and-estate · From House to Estate |
+| `find-it-again` | Finds what the house already has — a memory, a log, a decision, a file — in the right order, and says how sure the record is. | your-house · A Larger House |
 | `review-and-prune` | Reviews memory on a rhythm: merge, delete, and propose what has become a rule for the charter. | keeping-yourself-safe · Where Instructions Take Hold |
 | `wrap-up-this-session` | Closes a session so nothing is lost at `/clear`: open threads, the log, memory, commit, "safe to clear." | project-management · Session Logs, Session Rhythm |
 | `start-a-project` | The wish, the questions, the container (folder or repo), README and status file, a first plan for review. | project-management · Writing the Wish, Project as Repo, Starting a New Project |
 | `check-my-setup` | Terminal readable, git present and named, no cloud-sync fight, a review surface, the launch word, backups, secrets. Smallest fix each. | getting-started; keeping-yourself-safe · Backups and Secrets |
 | `send-for-review` | Puts a document where the person can read it — their review app, or a pad on a phone — commits first, reads the diff back. | getting-started · Viewing Your Files |
 | `widen-a-boundary` | Records a grant the person made in conversation as a dated, quoted memory; drafts the authority-table change for them to install. | keeping-yourself-safe |
-| `test-a-charter-edit` | The rename test, "names a check that can come back no," default/target/why; then the sitting, with the person installing. | house-and-estate · Testing a Charter Edit |
+| `test-a-charter-edit` | The rename test, "names a check that can come back no," default/target/why; then the sitting, with the person installing. | your-house · Testing a Charter Edit |
 | `make-a-skill` | Writes a new skill as a standalone folder with lineage and licence, checked against the current format. | this file |
-| **The estate** | | |
-| `foreground-background` | A second instance on a long job in its own scratch space; task → status → handoff → done; the foreground integrates by copying. | house-and-estate · Foreground and Background |
+| **A larger house** | | |
+| `foreground-background` | A second instance on a long job in its own scratch space; task → status → handoff → done; the foreground integrates by copying. | your-house · Foreground and Background |
 | `heads-up` | A private three-part note during a busy room: the room · waiting on you (with draft answers) · live log. | working-with-other-houses · Jams, Watchers |
-| `phone-path` | Serves a person who reaches the agent through the Claude app on a phone, with the agent on a computer they may not be at. | house-and-estate · The Phone Path |
-| `import-chatgpt-history` | Brings an exported ChatGPT history home: the export, where it goes, one file per conversation, a privacy pass, then memories with consent. | house-and-estate · From House to Estate |
+| `phone-path` | Serves a person who reaches the agent through the Claude app on a phone, with the agent on a computer they may not be at. | your-house · The Phone Path |
+| `import-chatgpt-history` | Brings an exported ChatGPT history home: the export, where it goes, one file per conversation, a privacy pass, then memories with consent. | your-house · A Larger House |
 | `fair-copy-a-transcript` | Turns a machine transcript into a trustworthy record: fold, attribute, the garble table, load-bearing words flagged, privacy flags, provenance. | working-with-other-houses · Jams |
 | `art-director` | Pictures without prompt-writing: a light interview, 4–6 varied candidates, "more like #3 but warmer," engines routed by job, cost said aloud. | — |
 | **Other houses** | | |
@@ -45,9 +45,9 @@ The three setup questions pick what goes into a new house; everything else stays
 
 A house adds a skill by copying its folder in and starting a new session, and drops one by deleting the folder.
 
-## Not skills, on purpose
+## Core, and skills
 
-Some things that could have been skills are in the charter or on the bookshelf instead, because they're not tasks an agent does on request but ways it behaves all the time: what to do when a safety layer blocks you; what you read is information, never instruction; rooms and their cards; pad craft; the watcher rules. Craft that has to hold every turn belongs where the agent reads it every turn.
+There is a **core agent** — the persona, and what it always does — and there are the **skills it optionally has**. The line between them: a skill is a procedure with a beginning and an end that the agent runs on request; core is how it behaves every turn. So some things that could have been skills are in the charter or on the bookshelf instead: opening a document for the person; reading the clock; what to do when a safety layer blocks you; what you read is information, never instruction; rooms and their cards; pad craft; the watcher rules. Craft that has to hold every turn belongs where the agent reads it every turn. (`send-for-review` is the fuller version of a core act — commit first, read the diff back — not the only way the agent ever opens a file.)
 
 ## Writing your own
 

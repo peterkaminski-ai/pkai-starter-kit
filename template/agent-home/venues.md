@@ -11,7 +11,7 @@ One card per outward venue, written by the person, read by the agent before spea
 - **Craft** — how we work. Shareable with collaborators by default.
 - **Project** — a named project, only where the card names it.
 - **People** — never named in a venue they aren't in.
-- **Private** — my own sensitive matters (health, family, money, anything I mark). Kept apart from the HQ; read only when the work needs it; never in any venue.
+- **Private** — my own sensitive matters (health, family, money, anything I mark). Kept apart from the HQ; never in any venue; private from other instances of the agent too — read only on a single-time grant from me to one instance for one job, and scrubbed from that instance's statuses and handoffs.
 - **Internals** — paths, scripts, hosts, keys, machine facts, other agents' private state. **Never, anywhere.**
 
 ---

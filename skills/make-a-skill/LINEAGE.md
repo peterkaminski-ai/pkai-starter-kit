@@ -13,7 +13,7 @@ lineage:
   - the PKAI Founders KB, Agentic AI with Pete, Founders Cohort 2026 · Peter Kaminski and the participants · read; "pkai-founders, basically" — Pete, heard 2026-09-21
 licence: MPL-2.0                          # LICENSE.md in this folder
 credits:
-  - Pete's 'you don't build skills by hand; you have your agent build it' and 'a skill is a very poor publication, but a very useful and standard way of communicating a lesson' (2026-09-18) · heard, then read; the rule of three from Pete's estate · read
+  - Pete's 'you don't build skills by hand; you have your agent build it' and 'a skill is a very poor publication, but a very useful and standard way of communicating a lesson' (2026-09-18) · heard, then read; the rule of three from the Peter Kaminski house · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/make-a-skill/
 offered_at: stair 6
 needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/make-a-skill/

@@ -35,7 +35,7 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
   - `getting-started/` — Claude Code, terminals, reading your files, Git and GitHub from scratch
   - `git-guide/` — version control without the jargon (optional reading; your agent handles git for you)
   - `project-management/` — project management, and working with your principal
-  - `house-and-estate/` — a small house or a large estate: the stairs, the three ways in, foreground and background
+  - `your-house/` — a small house or a large one: the stairs, the three ways in, foreground and background
   - `working-with-other-houses/` — cooperating with other agents: jams, pads, and what to think about when you're invited into a room
   - `keeping-yourself-safe/` — safety and security first, then privacy
 - **`MOVING-FROM-V2.md`** — for houses built from V2. Nothing is reinstalled.

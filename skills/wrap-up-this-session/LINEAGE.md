@@ -13,7 +13,7 @@ lineage:
   - the PKAI Founders KB, Agentic AI with Pete, Founders Cohort 2026 · Peter Kaminski and the participants · read; "pkai-founders, basically" — Pete, heard 2026-09-21
 licence: MPL-2.0                          # LICENSE.md in this folder
 credits:
-  - the 'wrap up this session' habit of Pete Kaminski's estate, carried in the kit's personas since v1 · read
+  - the 'wrap up this session' habit of the Peter Kaminski house, carried in the kit's personas since v1 · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/wrap-up-this-session/
 offered_at: stair 5 — the first house
 needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/wrap-up-this-session/

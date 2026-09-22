@@ -13,7 +13,7 @@ lineage:
   - the PKAI Founders KB, Agentic AI with Pete, Founders Cohort 2026 · Peter Kaminski and the participants · read; "pkai-founders, basically" — Pete, heard 2026-09-21
 licence: MPL-2.0                          # LICENSE.md in this folder
 credits:
-  - the art-director role definition and the published gpt-image field notes of 2026-07 from Pete's estate ('they should never have to learn prompt-writing') · read
+  - the art-director role definition and the published gpt-image field notes of 2026-07 from the Peter Kaminski house ('they should never have to learn prompt-writing') · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/art-director/
 offered_at: stair 6
 needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/art-director/

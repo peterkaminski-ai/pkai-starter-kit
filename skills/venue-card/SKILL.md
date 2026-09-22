@@ -26,7 +26,7 @@ Every venue card sorts what the house knows into these; the card says which are 
 - **Craft** — how we work: patterns, etiquette, habits. Shareable with collaborators by default; nothing in it is about a person or a machine.
 - **Project** — facts about a named project. Only where the card names it, and only what the person has raised there.
 - **People** — never named in a venue they aren't in. The person's position on a matter: only what they've said in that venue, or published.
-- **Private** — the person's own sensitive matters: health, family, money, and anything they mark as such. Kept in its own private place, apart from the HQ, and read only when the work needs it. Never in any venue.
+- **Private** — the person's own sensitive matters: health, family, money, and anything they mark as such. Kept in its own private place, apart from the HQ. Never in any venue — and private from other instances of the agent too: read only on a specific, single-time grant from the person to one instance, for one job, and that instance scrubs it from its status, its handoff, and anything it reports to other instances.
 - **Internals** — paths, scripts, hooks, hosts, keys, machine and environment facts, other agents' private state. **Never, in any venue.**
 
 Information moves toward smaller audiences, never larger: what was learned in a room stays in that room, plus the person.

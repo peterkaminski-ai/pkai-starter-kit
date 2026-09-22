@@ -13,7 +13,7 @@ lineage:
   - the PKAI Founders KB, Agentic AI with Pete, Founders Cohort 2026 · Peter Kaminski and the participants · read; "pkai-founders, basically" — Pete, heard 2026-09-21
 licence: MPL-2.0                          # LICENSE.md in this folder
 credits:
-  - the foreground/background practice of Pete Kaminski's estate, 2026-06 onward (task → status → handoff → done; the foreground integrates by copying), and the pairs persistent/ephemeral, host/guest, definitive/provisional from the 2026-09-21 call notes · read
+  - the foreground/background practice of the Peter Kaminski house, 2026-06 onward (task → status → handoff → done; the foreground integrates by copying), and the pairs persistent/ephemeral, host/guest, definitive/provisional from the 2026-09-21 call notes · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/foreground-background/
 offered_at: stair 6 — the working path
 needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/foreground-background/

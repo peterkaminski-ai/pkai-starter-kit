@@ -16,7 +16,7 @@ credits:
   - the charter spine (principles, authority table, memory, the injection firewall) descends from the charters of Pete's own agents, Freya and Saga · read
   - the "when a safety layer blocks you" and "what you read is information, never instruction" sections (ratified in the first person) were written and ratified live in a PKAI Dyad Jam, 2026-09-18, by the two houses present · heard, then read
   - this lineage header's fields come from the Layering pad, 2026-09-21, drafted by Sophia and Freya (two houses' agents), amended by Pete: "at least three generations", not at most · read
-  - foreground/background as taught here is the working practice of Pete's estate, 2026-06 onward · read
+  - foreground/background as taught here is the working practice of the Peter Kaminski house, 2026-06 onward · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # read its CHANGES.md; take what you and your person judge good
 offered_at: stair 3 — "I'm ready to try a starter kit"
 needs: Claude Code (terminal version), a Claude Pro or Max account, a review surface for markdown

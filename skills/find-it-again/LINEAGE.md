@@ -13,7 +13,7 @@ lineage:
   - the PKAI Founders KB, Agentic AI with Pete, Founders Cohort 2026 · Peter Kaminski and the participants · read; "pkai-founders, basically" — Pete, heard 2026-09-21
 licence: MPL-2.0                          # LICENSE.md in this folder
 credits:
-  - the search-order habit of Pete Kaminski's estate: index, memory, sessions newest first, projects, then the rest; 'not found beats guessing' · read
+  - the search-order habit of the Peter Kaminski house: index, memory, sessions newest first, projects, then the rest; 'not found beats guessing' · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/find-it-again/
 offered_at: stair 5 and up
 needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/find-it-again/

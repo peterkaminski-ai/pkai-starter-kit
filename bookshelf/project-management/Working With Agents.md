@@ -48,7 +48,7 @@ Once you have a persistent agent, you'll want to run a long task without blockin
 - **Background** — a second instance of the same agent, on one scoped job, with a scratch folder it may write to and nothing else. It reads freely; it never commits shared state, writes memory, or sends anything.
 - **The foreground integrates** — when the background is done it leaves a handoff; the foreground reads it and performs the writes the background couldn't, by copying.
 
-This works because the boundary is in the charter, not the tool. It's more than most people need on day one, which is why it's the *working* path in setup rather than the default. The full mechanism is [Foreground and Background](../house-and-estate/Foreground%20and%20Background.md) on the shelf, and the `foreground-background` skill carries it for the agent.
+This works because the boundary is in the charter, not the tool. It's more than most people need on day one, which is why it's the *working* path in setup rather than the default. The full mechanism is [Foreground and Background](../your-house/Foreground%20and%20Background.md) on the shelf, and the `foreground-background` skill carries it for the agent.
 
 ## Sub-agents
 
@@ -81,4 +81,4 @@ The difference is *who* you're talking to and *what they remember about you*. An
 - [The Iteration Loop](The%20Iteration%20Loop.md) — runs the same with or without a personal agent.
 - [Memory Across Sessions](Memory%20Across%20Sessions.md) — what makes an agent persistent.
 - [Pair Programming with AI](Pair%20Programming%20with%20AI.md) — the real-time interaction style.
-- [From House to Estate](../house-and-estate/From%20House%20to%20Estate.md) — what several agents and a lot of history change.
+- [A Larger House](../your-house/A%20Larger%20House.md) — what several agents and a lot of history change.

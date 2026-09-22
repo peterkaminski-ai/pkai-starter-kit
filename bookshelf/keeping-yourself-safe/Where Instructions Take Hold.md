@@ -27,4 +27,4 @@ A charter is read by something very literal. "During jams, the agent may write t
 
 ## The review rhythm
 
-Monthly, or every week or two for a new agent: merge overlapping memories, drop stale ones, and promote the ones that have become rules into the charter — drafted by the agent, installed by the person. The `review-and-prune` skill does this; [Testing a Charter Edit](../house-and-estate/Testing%20a%20Charter%20Edit.md) is how to check the result.
+Monthly, or every week or two for a new agent: merge overlapping memories, drop stale ones, and promote the ones that have become rules into the charter — drafted by the agent, installed by the person. The `review-and-prune` skill does this; [Testing a Charter Edit](../your-house/Testing%20a%20Charter%20Edit.md) is how to check the result.

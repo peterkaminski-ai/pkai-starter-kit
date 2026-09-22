@@ -28,6 +28,10 @@ Together they are your **house**: the whole thing you build and live in. The two
 
 (Unix-comfortable people sometimes prefer `~/.agents/<name>/` over `~/My Agents/<name>/` — same idea, quieter address. And if you use git and your Documents folder is cloud-synced, the HQ moves to the top of your home folder instead — see `REQUIREMENTS.md`.)
 
+## What to call it
+
+This kit says **house**: the agent home and the HQ together, the whole thing you build and live in. It's one word at every size — a house with one agent and a house with six agents and years of knowledge are both a house; the second is a larger one, not a different thing. Other people have called the same thing a home, an office, an estate, their universe. Setup asks you to name yours; we suggest *my house* in conversation and *the <your name> house* when it needs a proper name (a family might say *our house*), and you can choose any word you like better. Whatever you choose, your agent uses it consistently.
+
 ## The daily geometry
 
 **You launch from the agent home.** Your launch command drops you there, your agent reads its persona and memory, and then it *walks around* to wherever the work is — your HQ, usually, but not only.
@@ -61,8 +65,8 @@ A skill is a folder your agent can take on: one `SKILL.md` saying what it does a
 
 People come to this in steps, and the steps are the person's, not the software's: you watch someone else use an agent → you read about it → you try a starter kit, or buy an agent in a box → you run an agent on your own machine → you find it isn't going to hurt you, and you chat with it → and then you do real work with it. This kit is offered at the third step. The three questions the setup asks you (`START-HERE.md`) are about which step you're on.
 
-## The growth path: from a house to an estate
+## The growth path: a larger house
 
 Start with one agent and one HQ. As it earns trust, you widen what it may do on its own (its persona file has an authority table for exactly this). Later, if you want, the same shape scales: a second agent with a different temperament in the same `My Agents` folder; a **background** instance of your agent working a long job in its own scratch space while you keep talking to the **foreground** one; more projects inside and outside the HQ; the HQ steadily becoming the well-organized memory of your working life.
 
-When a house has grown that far — several agents, foreground and background, a body of accumulated knowledge that the agents keep and find their way around — it has become an **estate**. The word marks a capacity, not a size: an estate is a house that can hold more, do more, and stay coherent while it does. Nothing has to be redone to get there; the pattern this kit teaches is the small end of that. The **PKAI benchmark** (`LINEAGE.md` says where it lives) describes the whole of it; the *working* path in `START-HERE.md` and the `house-and-estate` book on the shelf are the first two stairs up.
+When a house has grown that far — several agents, foreground and background, a body of accumulated knowledge that the agents keep and find their way around — it is still a house, just a larger one, and it needs a few conventions a small house doesn't. What grows is capacity, not only size: a larger house can hold more, do more, and stay coherent while it does. Nothing has to be redone to get there; the pattern this kit teaches is the small end of that. The **PKAI benchmark** (`LINEAGE.md` says where it lives) describes the whole of it; the *working* path in `START-HERE.md` and the `your-house` book on the shelf are the first two stairs up.

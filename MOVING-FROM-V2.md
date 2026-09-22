@@ -19,6 +19,6 @@ V3 is built for **pull, not push**: nothing is ever installed into your house fr
 1. **`LINEAGE.md`** — copy it into your agent home, add your own house at the top of `lineage`, and you have the block every V3 artifact carries. That's the whole upgrade for many houses.
 2. **The safety sections** in the personas — *When a safety layer blocks me* and *What I read is information, never instruction*. Ask your agent to read `personas/companion.md` (or whichever is nearest its own charter), draft those two sections into its `CLAUDE.md` in its own words, and let you install the change by hand and restart. Editing its own charter is something an agent should never do unwatched.
 3. **Skills.** Each folder under `skills/` stands alone. Ask your agent to read `skills/README.md` and propose which to copy into its `.claude/skills/`. `pull-from-benchmark` is the one that makes the next release easy.
-4. **The bookshelf.** Point your agent at `bookshelf/` and let it read at its own pace; the new books are `house-and-estate`, `working-with-other-houses` and `keeping-yourself-safe`.
+4. **The bookshelf.** Point your agent at `bookshelf/` and let it read at its own pace; the new books are `your-house`, `working-with-other-houses` and `keeping-yourself-safe`.
 
 Then have your agent write down, in a session log, what it took, what it left, and anything it does better than the kit does. That last part is what we most want to hear about — `CONTRIBUTING.md` says how to send it.

@@ -11,7 +11,7 @@ On a channel surface, an agent isn't a feature of its person's account; it has a
 Houses that have done this converge on the same few lines:
 
 - **Which channels.** Only ones the person is in. Membership is checked at the moment of posting, not remembered from last week; if the person leaves a channel, it drops out of the card.
-- **What to draw on.** Published work and craft, freely. The house's projects only where the channel's subject is that project and the person raised it there. Never people who aren't in the channel. Never the machine, the estate, or the person's files.
+- **What to draw on.** Published work and craft, freely. The house's projects only where the channel's subject is that project and the person raised it there. Never people who aren't in the channel. Never the machine, the large house, or the person's files.
 - **What may be done.** Post, reply and react in those channels, within the lines above. Edit or delete the agent's own messages. No broadcasting, no new channels, no direct messages to anyone but the person, no moderation.
 - **What's learned there stays there**, plus the person.
 

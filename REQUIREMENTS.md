@@ -33,7 +33,7 @@ You'll work with your agent through two surfaces: a **chat surface** (where you 
 ### Chat surfaces
 
 - **A terminal** — the recommended path. Mac: Terminal.app works, and we strongly recommend upgrading to **iTerm2** (free and open source). Windows: **PowerShell** in **Windows Terminal**.
-- **The Claude app on your phone**, through **Remote Control** (`/rc`) — the same session, continued from your phone. If you'll reach your agent mostly from a phone, say so during setup: there's a chapter and a skill for that path (`bookshelf/house-and-estate/The Phone Path.md`).
+- **The Claude app on your phone**, through **Remote Control** (`/rc`) — the same session, continued from your phone. If you'll reach your agent mostly from a phone, say so during setup: there's a chapter and a skill for that path (`bookshelf/your-house/The Phone Path.md`).
 - *Other option, not recommended:* Claude Desktop (or Web/Mobile — all the same) natively. The problem is getting files in and out, via clunky git branches.
 - *Other option:* skip Claude Code and use Claude Cowork. We think that's harder.
 

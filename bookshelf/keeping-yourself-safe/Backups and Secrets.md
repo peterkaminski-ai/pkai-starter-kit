@@ -26,4 +26,4 @@ When your agent needs to use a secret — an API key for a tool, a login — the
 
 ## A shared machine
 
-If your house lives on a computer someone else runs — see [The Phone Path](../house-and-estate/The%20Phone%20Path.md) — both rules get stronger. Your backup is your own responsibility, not the host's, unless you've agreed otherwise in words. And nothing secret goes on a shared machine at all: an agent there *could* wander into your folder, and among friends that's accepted on the understanding that the super-secret things live somewhere else.
+If your house lives on a computer someone else runs — see [The Phone Path](../your-house/The%20Phone%20Path.md) — both rules get stronger. Your backup is your own responsibility, not the host's, unless you've agreed otherwise in words. And nothing secret goes on a shared machine at all: an agent there *could* wander into your folder, and among friends that's accepted on the understanding that the super-secret things live somewhere else.

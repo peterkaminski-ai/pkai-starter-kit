@@ -8,10 +8,10 @@ The benchmark is at the `pull_from` address in `LINEAGE.md`. Same layout as the 
 
 | In the benchmark | Not in the kit, because |
 |---|---|
-| **`CHARTER.md`** — one full charter with every section: the spine, the safety sections, foreground/background, the estate conventions, the desk, the disclosure gate, the venue cards | A first house needs a persona, not a constitution. The kit ships three personas that carry the spine and the safety sections and leave the estate sections for later. |
+| **`CHARTER.md`** — one full charter with every section: the spine, the safety sections, foreground/background, the estate conventions, the desk, the disclosure gate, the venue cards | A first house needs a persona, not a constitution. The kit ships three personas that carry the spine, the safety sections and *rooms and their cards*, and leave the rest of the estate sections for later. |
 | **`ESTATE.md`** — the estate in full: several agents, the desk and how it passes, shared state and who owns it, fleets of background instances, books and their boxes as a filing convention | The kit names *estate* once, at the top of the stairs, and gives one chapter. The rest waits until a house has grown enough to need it. |
 | **`PULL-PROTOCOL.md`** — the pull mechanism in full: the two lineage mechanisms (every object remembers a little; a few remember a lot), the report back, the reasons | The kit carries the skill (`pull-from-benchmark`) and the `changes` field; the reasoning is the benchmark's to hold. |
-| **All the skills** | The kit's six are the ones the three setup questions call for. The benchmark holds everything a house in the network has offered, including ones no first house needs. (At 3.0.0 the two sets are the same six; they'll diverge as houses offer skills back.) |
+| **All the skills** | All nineteen ship on the kit's shelf; the three setup questions pick which are installed. The benchmark holds everything a house in the network has offered, including ones no first house needs. (At 3.0.0 the two sets are the same nineteen; they'll diverge as houses offer skills back.) |
 
 ## What the kit adds
 
@@ -19,7 +19,7 @@ The benchmark is at the `pull_from` address in `LINEAGE.md`. Same layout as the 
 |---|---|
 | **`START-HERE.md`** and **`BUILD.md`** — the guided build, the three questions, the kickoff message | The benchmark isn't installed; it's read. It has no setup path, on purpose. |
 | **`WAIVER.md`**, as the first gate of setup | The benchmark asks nothing of anyone. |
-| **`personas/`** — three temperaments, ready to personalize | Shaped from `CHARTER.md`: each persona is the spine plus one voice, minus the estate sections. |
+| **`personas/`** — three temperaments, ready to personalize | Shaped from `CHARTER.md`: each persona is the spine plus one voice, minus the estate sections other than rooms and their cards. |
 | **`template/`** — the folder skeletons the build instantiates | The benchmark describes the shape; the kit ships the empty folders. |
 | **`REQUIREMENTS.md`**, the getting-started book's install pages, and the *Moving from V2* note | Onboarding. The benchmark assumes a house exists. |
 | **The three questions** — exploring/working, history, computer/phone | The benchmark has no first day. |

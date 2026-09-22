@@ -11,8 +11,7 @@ The benchmark is at the `pull_from` address in `LINEAGE.md`. Same layout as the 
 | **`CHARTER.md`** — one full charter with every section: the spine, the safety sections, foreground/background, the estate conventions, the desk, the disclosure gate, the venue cards | A first house needs a persona, not a constitution. The kit ships three personas that carry the spine and the safety sections and leave the estate sections for later. |
 | **`ESTATE.md`** — the estate in full: several agents, the desk and how it passes, shared state and who owns it, fleets of background instances, books and their boxes as a filing convention | The kit names *estate* once, at the top of the stairs, and gives one chapter. The rest waits until a house has grown enough to need it. |
 | **`PULL-PROTOCOL.md`** — the pull mechanism in full: the two lineage mechanisms (every object remembers a little; a few remember a lot), the report back, the reasons | The kit carries the skill (`pull-from-benchmark`) and the `changes` field; the reasoning is the benchmark's to hold. |
-| **The whole shelf**, including the chapters marked *benchmark only* | Some chapters assume a house with history: the desk, fleets, genealogists. The kit's shelf is the same books with those chapters out. |
-| **All the skills** | The kit's six are the ones the three setup questions call for. The benchmark holds everything a house in the network has offered, including ones no first house needs. |
+| **All the skills** | The kit's six are the ones the three setup questions call for. The benchmark holds everything a house in the network has offered, including ones no first house needs. (At 3.0.0 the two sets are the same six; they'll diverge as houses offer skills back.) |
 
 ## What the kit adds
 
@@ -27,7 +26,7 @@ The benchmark is at the `pull_from` address in `LINEAGE.md`. Same layout as the 
 
 ## What is identical in both
 
-`LINEAGE.md` (with different `sits_on`), `CHANGES.md`, `LICENSE.md`, `skills/` for the six the kit carries, and every chapter of the shelf that isn't marked *benchmark only*. Where the two differ in a shared file, the benchmark is right and the kit has drifted; say so in the report back.
+`LICENSE.md`, `template/`, `skills/` for the six the kit carries, and every chapter of the shelf. `LINEAGE.md` differs only in `sits_on`; `CHANGES.md` is each artifact's own. Where the two differ in a shared file, the benchmark is right and the kit has drifted; say so in the report back.
 
 ## A note on direction
 

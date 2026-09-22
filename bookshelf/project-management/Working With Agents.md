@@ -1,95 +1,66 @@
 # Working With Agents
 
-When to use vanilla Claude Code, when to use a personal agent, and how to think about foreground / background instances.
+When to use vanilla Claude Code, when to use a personal agent, and where sub-agents, skills, and foreground/background fit.
 
 ## Vanilla Claude Code vs. a personal agent
 
 You don't need a named agent to do good work. Vanilla Claude Code, run inside a project folder with a sensible `CLAUDE.md`, is enough for many people for a long time.
 
-A personal agent is "Claude Code with extra personality and memories." Concretely:
+A personal agent is "Claude Code with a persona and a memory." Concretely:
 
-- A folder somewhere outside your project repos, e.g., `~/.agents/asimov/`.
-- A system prompt file in that folder describing the agent's persona, role, and conventions.
-- A shell alias that launches Claude Code with the system prompt appended and the working directory set to the agent's home.
-- Memory and session logs that accumulate over time, just like a project would.
+- A folder outside your project repos — the **agent home** — holding a charter (`CLAUDE.md`), memory, session logs, and the skills it has taken on.
+- A launch command — the agent's name — that opens a terminal in that folder and starts Claude Code there.
+- Memory and session logs that accumulate over time, the way a project's would, but about *you* and across all your work.
 
-When you invoke `asimov` (or `freya`, or whatever you named yours), you're running Claude Code, but it knows it's *that* agent — with its history, its conventions, its memory.
+When you type the agent's name, you're running Claude Code, but it knows it's *that* agent — with its history, its conventions, its memory. This kit builds one for you; `START-HERE.md` at the kit root is the way in.
 
 ## When vanilla is enough
 
 - You're new to this and learning.
 - You work in a few well-bounded project folders and don't need cross-project continuity.
-- Your `CLAUDE.md` per project gives the agent enough context.
+- Your `CLAUDE.md` per project gives Claude enough context.
 - You don't have a strong reason to give the agent a name yet.
 
 ## When a personal agent earns its keep
 
 - You want continuity across many projects — not just within one.
-- You delegate more than coding to the agent: research, triage, scheduling, writing.
+- You delegate more than coding: research, triage, scheduling, writing.
 - You want a stable identity that builds up context about *you*, not just about each project.
-- You want to start delegating things like inbox triage, calendar management, or routine work where the agent should have memory across all of it.
+- You want to start handing over routine things — inbox triage, keeping notes in order — where the agent should have memory across all of it.
 
 The decision is roughly: "do I want a colleague who knows me, across all my work?" If yes, build a personal agent.
 
-## Building one
+## The first conversation
 
-A working recipe (this is the pattern Pete used to bootstrap Asimov for Mark Scott):
+Two questions are worth asking any new agent early, whatever the kit set up:
 
-1. Create the folder: `~/.agents/<name>/`.
-2. Write a system prompt file inside: `~/.agents/<name>/<name>.md`.
-3. Add a shell alias to your `~/.zshrc`:
-
-   ```bash
-   alias asimov='cd ~/.agents/asimov/ && claude --model opus --append-system-prompt ~/.agents/asimov/asimov.md'
-   ```
-
-4. `git init` on `~/.agents/` (the parent — so multiple agents share one repo). Push to a new private GitHub repo.
-5. Test by running the alias in a fresh terminal. Say "hi, how can you help me?" Confirm the agent responds in character.
-
-The first conversation you should have with your new agent:
-
-> How will you and I remember what you did for me, and how will you manage the various memories you'll need?
-
-Then:
+> How will you and I remember what you did for me, and how will you manage the memories you'll need?
 
 > Get into a habit of session logs that you keep for yourself.
 
-That's the bootstrap. From there, the agent and you build out conventions together.
+From there, the agent and you build out conventions together. The `save-a-memory` skill is the kit's answer to the first; the persona's session-rhythm section is the answer to the second.
 
-## Foreground and background instances
+## Foreground and background
 
-Once you have a persistent agent, you'll occasionally want to run a long task without blocking your current conversation. The pattern Pete uses:
+Once you have a persistent agent, you'll want to run a long task without blocking the conversation you're in. The pattern:
 
-- **Foreground agent** — what you're talking to right now. It owns shared state: commits, memory writes, email, decisions.
-- **Background agent(s)** — spawned to do specific scoped work in parallel. They have read access to anything they need, and a scratch directory they can write to. They cannot commit, push, send email, or modify shared memory.
-- **Foreground integrates** — when the background work is done, it leaves a handoff note. The foreground agent reads it and performs the writes the background couldn't make: commits, memory updates, file moves.
+- **Foreground** — the instance you're talking to. It owns shared state: commits, memory, the charter, anything outbound.
+- **Background** — a second instance of the same agent, on one scoped job, with a scratch folder it may write to and nothing else. It reads freely; it never commits shared state, writes memory, or sends anything.
+- **The foreground integrates** — when the background is done it leaves a handoff; the foreground reads it and performs the writes the background couldn't, by copying.
 
-This works because the boundary is enforced by the agent's persona, not by the tool. The background instance is told "you don't write to shared state" and obeys. The foreground instance is told "check for handoffs from background instances at session start." Together you get parallelism without conflicts.
-
-This pattern is overkill for most users. Mention it here so you know it exists when you're ready.
+This works because the boundary is in the charter, not the tool. It's more than most people need on day one, which is why it's the *working* path in setup rather than the default. The full mechanism is [Foreground and Background](../house-and-estate/Foreground%20and%20Background.md) on the shelf, and the `foreground-background` skill carries it for the agent.
 
 ## Sub-agents
 
-Claude Code has a built-in concept of **sub-agents** — task-scoped agents you delegate specific pieces of work to within a session. Defined in `.claude/agents/` per project, with descriptions Claude reads to know when to invoke them.
+Claude Code has a built-in notion of **sub-agents** — task-scoped helpers you delegate specific pieces of work to *within* a session. Useful for keeping a long search out of your main context, or for dividing concerns (a reviewer, a test runner).
 
-Useful for:
-
-- Constraining a long search across the codebase to a sub-agent so the result doesn't blow up the main context window.
-- Dividing concerns (e.g., a "code reviewer" sub-agent vs. a "test runner" sub-agent).
-
-Different mechanism from a *personal* agent (Asimov / Freya), which runs as its own Claude Code session at the top level. Personal agents have lifespan; sub-agents have scope.
+A different thing from a background instance. A sub-agent has scope and lives inside one conversation; a background instance is your whole agent, started again, with a lifespan of its own and a handoff at the end. Sub-agents are for the agent's convenience; background instances are for yours.
 
 ## Skills
 
-Claude Code's **skills** are reusable instructions you invoke with slash commands. You can write your own. They're a lighter-weight pattern than a sub-agent: a markdown file that defines what to do when you say `/some-skill arg1 arg2`.
+A **skill** is a folder your agent can take on: a `SKILL.md` saying what it does and when it applies, plus any scripts or references, plus — in this kit — its own lineage, licence and credits, so it can travel to another house alone. Skills are good for repeated workflows, for a lesson you want to hand to someone, and for growing a house one step at a time. `skills/README.md` at the kit root lists the ones that ship with it; "make me a skill that does X" is a fine thing to ask your agent.
 
-Skills are good for:
-
-- Repeated workflows that always go the same way.
-- Templates with parameters.
-- Shorthand for a sequence of actions you don't want to retype.
-
-You can build skills directly with Claude Code: "Make me a slash command called `/triage` that does X, Y, Z."
+Don't slavishly turn everything into a skill because everyone else does. A skill is the printed-book version of a lesson — a very standard, very useful, and rather thin way to carry one. The lesson is the more important part.
 
 ## How agents change the iteration loop
 
@@ -110,3 +81,4 @@ The difference is *who* you're talking to and *what they remember about you*. An
 - [The Iteration Loop](The%20Iteration%20Loop.md) — runs the same with or without a personal agent.
 - [Memory Across Sessions](Memory%20Across%20Sessions.md) — what makes an agent persistent.
 - [Pair Programming with AI](Pair%20Programming%20with%20AI.md) — the real-time interaction style.
+- [From House to Estate](../house-and-estate/From%20House%20to%20Estate.md) — what several agents and a lot of history change.

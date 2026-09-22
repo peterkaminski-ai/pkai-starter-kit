@@ -1,8 +1,8 @@
-# PKAI Project Management
+# Project management, and working with your principal
 
-How Pete Kaminski works on projects with Claude Code.
+How Pete Kaminski works on projects with Claude Code — and, read from the other side, how an agent works with its principal, the person it belongs to.
 
-This is a small companion wiki to the rest of the PKAI series. The other repos in the series cover individual tools — Git, Claude Code itself, the integrated stack. This one covers the **practice** of using them together to actually get work done.
+This is one book on the shelf that comes with the PKAI starter kit. The other repos in the series cover individual tools — Git, Claude Code itself, the integrated stack. This one covers the **practice** of using them together to actually get work done.
 
 The bet of this stack is that working with agentic AI is mostly project management. The model does the work; you organize it. Claude Code is powerful enough to make a mess if you don't keep it on rails — and structured enough to be transformatively useful if you do.
 

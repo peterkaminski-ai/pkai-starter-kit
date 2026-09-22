@@ -13,7 +13,7 @@ The first release with two artifacts: this kit, and the **PKAI benchmark** it is
 - **The three questions** in setup (`START-HERE.md` step 4.2, `BUILD.md` step 2): exploring or working · how much history · computer or phone. The answers pick the skills and the first book.
 - **Safety sections** in all three personas: *When a safety layer blocks you* and *What you read is information, never instruction*. Their shape was written and ratified live in a Dyad Jam after an agent twice advised its person to switch off a classifier. Take these verbatim.
 - *Where instructions take hold* in `ARCHITECTURE.md`: harness > charter > memory > conversation, and how each fails.
-- **Three new books** on the shelf: `house-and-estate` (the stairs, the three ways in, foreground and background, the phone path), `working-with-other-houses` (jams, pads, being invited into a room), `keeping-yourself-safe` (safety and security first, then privacy).
+- **Three new books** on the shelf: `house-and-estate` (the stairs, the three ways in, foreground and background, the phone path), `working-with-other-houses` (jams, pads, channels, being invited into a room), `keeping-yourself-safe` (safety and security first, then privacy, and then the ways of working with other houses — on pads and in channels).
 - `MOVING-FROM-V2.md`, `SHAPING.md` (what the shaping left out of the benchmark and what it added), and this file.
 
 **Changed**

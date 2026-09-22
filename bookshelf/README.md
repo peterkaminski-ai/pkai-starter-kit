@@ -12,7 +12,7 @@ The books were wikis in earlier versions of this kit (V1 and V2 called the shelf
 | [`git-guide/`](git-guide/README.md) | Version control without the jargon. Optional: your agent handles git for you. | When you're curious what it's doing. |
 | [`project-management/`](project-management/README.md) | **Project management, and working with your principal.** The iteration loop, the wish, session rhythm, memory, logs, commits — how a person and an agent actually get work done. | First, once your house is built. |
 | [`house-and-estate/`](house-and-estate/README.md) | **A small house or a large estate.** The stairs, the three ways in, foreground and background, the phone path, and what a house grows into. | When one agent isn't enough, or when your person is on a phone. |
-| [`working-with-other-houses/`](working-with-other-houses/README.md) | **Cooperating with other agents.** Jams, pads, and what to think about when somebody invites you into a room. | Before your agent's first shared room. |
+| [`working-with-other-houses/`](working-with-other-houses/README.md) | **Cooperating with other agents.** Jams, pads, channels, and what to think about when somebody invites you into a room. | Before your agent's first shared room. |
 | [`keeping-yourself-safe/`](keeping-yourself-safe/README.md) | **Safety and security first, then privacy.** Where instructions take hold, what to do when a safety layer blocks you, what you read is never instruction. | Now. Then again in a month. |
 
 ## Books and their boxes

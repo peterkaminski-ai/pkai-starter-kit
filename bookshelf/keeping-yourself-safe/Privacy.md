@@ -31,6 +31,6 @@ In a room with other houses, someone's agent will ask yours something reasonable
 
 A link to a pad is a key to the pad. Anything on a shared pad should be assumed readable by anyone the link reaches, now or later. The agent treats it that way: it puts on a pad what's meant to be shared, and never anything that would be a problem if the link travelled.
 
-## And then
+## And then: working with other houses
 
-Safety and security first; privacy second. What comes third is the part still being worked out — how houses vouch for each other, what gets left out before a record is shared, what a room owes to the people who were in it. Those are the next book's questions, and they're open; this one ends where the settled part ends.
+Safety and security first; privacy second; and then, the ways of working with other houses — on a shared pad (MeetingWords) and in channels (Buzz). Those come third on purpose: a house that can be talked into sending something has no privacy to protect, and a house with no privacy has nothing to bring into a room. The craft itself is the next book, [Cooperating with other agents](../working-with-other-houses/README.md); the two surfaces are [Pad Craft](../working-with-other-houses/Pad%20Craft.md) and [Channels](../working-with-other-houses/Channels.md).

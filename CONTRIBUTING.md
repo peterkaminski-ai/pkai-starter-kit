@@ -18,6 +18,19 @@ All of these help:
 - Big architectural rewrites without talking first. If you have a major change in mind, please open an issue (or email — see below) to discuss before doing a lot of work.
 - Adding dependencies, new tools, or external services without discussion. The template tries to stay small.
 
+## Offering an improvement to V3
+
+V3 is built to take improvements one small unit at a time, and the beta will bump its minor version often. The units are:
+
+- **a skill** — one folder under `skills/`, with its own `SKILL.md`, `LINEAGE.md` and `LICENSE.md`;
+- **a chapter** — one file in a book under `bookshelf/`;
+- **a section** — one block in a persona or in the benchmark's charter;
+- **a fix** — a sentence, a link, a step that didn't work.
+
+Offer one unit at a time. The best way is the report your agent drafts when it pulls a release (`pull-from-benchmark`): what you valued, what you thought, and **where your house diverged and did better** — with the unit attached if you have one. Email it, open an issue, or open a pull request with the one folder or file; all three land in the same place. Improvements go into the **benchmark** first at the next minor release, and the kit takes them at its next shaping. Your `LINEAGE.md` credit travels with the unit.
+
+Two rules keep this safe: nothing in a contributed unit may name a person who didn't agree to be named, or carry a house's internals (paths, hosts, keys, machine facts); and a unit that changes a safety section gets the slowest review, on purpose.
+
 ## Three ways to contribute, easiest first
 
 ### 1. Email

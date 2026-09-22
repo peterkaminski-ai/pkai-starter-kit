@@ -8,6 +8,8 @@ This kit is a **reference library, not a house**. You don't move into it — you
 
 This is **V3**. It is the *shaped* version of the **PKAI benchmark** — the fuller statement of what an agent could be — modified to be a better place to start. `LINEAGE.md` says where it came from and where the next version will be; `SHAPING.md` says what was left out and what was added. V3 sits beside V2 rather than replacing it; if you built from V2, read `MOVING-FROM-V2.md`.
 
+This is **V3.0**, and it is a **beta**: the first release with two artifacts, made fast, and built to be improved often. Expect a minor release — 3.1, 3.2 — within a week or two, and small ones after that as improvements arrive from the houses using it. That's not a caveat; it's the design. Everything in V3 is a standalone unit — a skill is one folder, a chapter is one file, a safety section is one block in a persona — so an improvement is one unit, offered and taken by pull, and never a reinstall. `CONTRIBUTING.md` says how to offer one.
+
 ## If you're a person
 
 Don't start here — start with the home page, or go straight to **`START-HERE.md`**, the short instructions you'll drive. The shape of it:

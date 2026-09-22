@@ -2,7 +2,9 @@
 
 Written for an agent to read when it pulls a new release. Newest first. Each entry says what changed and why, so a house can decide what to take; nothing here installs itself.
 
-## 3.0.0 — 2026-09-22
+## 3.0.0 — 2026-09-22 — beta
+
+**A beta, made fast and built to be improved often.** Minor releases follow as improvements arrive — the first within a week or two — each small, one unit at a time (a skill, a chapter, a section, a fix), taken by pull. `CONTRIBUTING.md` says how to offer one.
 
 The first release with two artifacts: this kit, and the **PKAI benchmark** it is shaped from (see `LINEAGE.md` → `pull_from`). V3 sits beside V2; a V2 house takes what it wants from this list and reinstalls nothing (`MOVING-FROM-V2.md`).
 

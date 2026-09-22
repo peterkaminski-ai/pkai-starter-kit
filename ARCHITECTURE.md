@@ -59,7 +59,7 @@ One consequence worth knowing on day one: **a permission written in the charter 
 
 ## Skills
 
-A skill is a folder your agent can take on: one `SKILL.md` saying what it does and when it applies, plus whatever scripts or references it needs, plus its own lineage, licence and credits so it can travel alone. Skills live in the agent home, at `.claude/skills/<name>/`, because they belong to the agent, not the machine. The kit ships a handful; your agent can write more; you can trade them with other houses. They're seeds, not the lesson — a skill is the printed-book version of something better learned live — but they are the standard way to carry a lesson from one house to another.
+A skill is a folder your agent can take on: one `SKILL.md` saying what it does and when it applies, plus whatever scripts or references it needs, plus its own lineage, licence and credits so it can travel alone. Skills live in the agent home, at `.claude/skills/<name>/`, because they belong to the agent, not the machine. The kit ships a handful; your agent can write more; you can trade them with other houses. They're seeds, not the lesson — a skill is the printed-book version of something better learned live — but they are the standard way to carry a lesson from one house to another. They are also the unit the kit itself improves by: because every part of V3 is a standalone folder or file, an improvement is one unit, offered back and taken by pull, and the kit can get a little better every week without anyone reinstalling anything.
 
 ## The stairs
 

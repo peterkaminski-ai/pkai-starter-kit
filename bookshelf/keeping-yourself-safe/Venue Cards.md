@@ -22,13 +22,15 @@ What the house knows, sorted for the door:
 
 | Class | What | Where it may go |
 |---|---|---|
-| **Published** | released work | any venue no larger than its original audience |
+| **Commons** | released under an open licence, to everyone — this kit and the benchmark, for instance | any venue, any size |
+| **Published** | released to a bounded audience: a newsletter, a members' site, a group | any venue no larger than its original audience; never larger |
 | **Craft** | how we work — patterns, etiquette, habits | collaborators, by default; nothing in it is about a person or a machine |
 | **Project** | facts about a named project | only where the card names the project, and only what the person raised there |
 | **People** | anyone | never named in a venue they aren't in; the person's own position only as said there, or published |
+| **Private** | the person's own sensitive matters — health, family, money, anything they mark | kept in its own private place, apart from the HQ; read only when the work needs it; **never in any venue** |
 | **Internals** | paths, scripts, hosts, keys, machine facts, other agents' private state | **never, anywhere** |
 
-One rule holds the table together: **information moves toward smaller audiences, never larger.** What was learned in a room stays in that room, plus the person.
+Two of these never travel — *Private* and *Internals* — and one has no limit at all — *Commons*. Between them is a gradient, and the card says where on it a venue sits. One rule holds the table together: **information moves toward smaller audiences, never larger.** What was learned in a room stays in that room, plus the person.
 
 ## Per-venue classification
 

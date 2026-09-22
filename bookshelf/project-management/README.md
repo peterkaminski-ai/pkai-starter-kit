@@ -28,7 +28,7 @@ Pages stand alone, but they were written in this order. If you're starting from 
 | [Plan Mode and Auto Mode](Plan%20Mode%20and%20Auto%20Mode.md)             | When to use which Claude Code permission mode, and the Shift-Tab cycle.                                      |
 | [Session Rhythm](Session%20Rhythm.md)                                     | Short sessions, frequent `/clear`, and why one long daily session didn't survive contact with reality.       |
 | [Memory Across Sessions](Memory%20Across%20Sessions.md)                   | CLAUDE.md, MEMORY.md, project-specific memory, and the four kinds of things worth remembering.               |
-| [Session Logs](Session%20Logs.md)                                         | Why you write them, what goes in them, and the "prep for clear" habit.                                       |
+| [Session Logs](Session%20Logs.md)                                         | Why you write them, what goes in them, and the "wrap up this session" habit.                                       |
 | [Commit Every Session](Commit%20Every%20Session.md)                       | Commit frequently, push less often, but always at least once a session.                                      |
 | [Working With Agents](Working%20With%20Agents.md)                         | Vanilla Claude Code vs. a personal agent (Freya, Robbie, etc.); foreground and background instances.         |
 | [Starting a New Project](Starting%20a%20New%20Project.md)                 | Decision tree: new repo, sub-folder of an existing repo, or just a folder of notes?                          |

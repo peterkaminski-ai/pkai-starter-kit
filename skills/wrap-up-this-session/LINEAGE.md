@@ -1,9 +1,9 @@
-# Lineage — `prep-for-clear`
+# Lineage — `wrap-up-this-session`
 
 This skill travels alone, so it carries its own lineage, credits and licence. If you copy the folder, copy this file with it; if you make your own version, set `name`, `version` and `sits_on` to your own and move this one to the top of `lineage`.
 
 ```yaml
-name: prep-for-clear
+name: wrap-up-this-session
 version: 3.0.0
 sits_on: pkai-starter-kit 3.0.0          # shipped in the kit; also in pkai-benchmark 3.0.0
 lineage:
@@ -13,10 +13,10 @@ lineage:
   - the PKAI Founders KB, Agentic AI with Pete, Founders Cohort 2026 · Peter Kaminski and the participants · read; "pkai-founders, basically" — Pete, heard 2026-09-21
 licence: MPL-2.0                          # LICENSE.md in this folder
 credits:
-  - the 'prep for clear' habit of Pete Kaminski's estate, carried in the kit's personas since v1 · read
-pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/prep-for-clear/
+  - the 'wrap up this session' habit of Pete Kaminski's estate, carried in the kit's personas since v1 · read
+pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/wrap-up-this-session/
 offered_at: stair 5 — the first house
-needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/prep-for-clear/
+needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/wrap-up-this-session/
 changes: 3.0.0 — 2026-09-22 — first release
 thanks_to: https://peterkaminski.ai       # a practice, never a debt
 ```

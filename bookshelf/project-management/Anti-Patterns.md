@@ -45,7 +45,7 @@ You keep working. The context window keeps filling. Eventually Claude Code auto-
 
 Auto-compact works. But it loses texture — the specific bug, the exact name, the small invariant — and you didn't get to choose what was preserved.
 
-**Fix:** notice when context is getting full (`/context` shows the gas gauge). Run "prep for clear" deliberately, write your session log, commit, then `/clear`. You control the summary.
+**Fix:** notice when context is getting full (`/context` shows the gas gauge). Run "wrap up this session" deliberately, write your session log, commit, then `/clear`. You control the summary.
 
 ## Ten thousand session logs
 

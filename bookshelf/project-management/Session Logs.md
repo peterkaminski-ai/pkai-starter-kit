@@ -96,7 +96,7 @@ Both, mostly Claude.
 
 The pattern:
 
-1. You say "prep for clear" (or whatever your trigger phrase is).
+1. You say "wrap up this session" (or whatever your trigger phrase is).
 2. The agent reviews the session, drafts the log.
 3. You glance at it. Edit if needed.
 4. Commit and push.
@@ -106,9 +106,9 @@ The agent writes a better session log than most humans will, because it has the 
 
 If the agent's draft is missing something important — a tricky decision, a near-miss, a "we almost broke X" moment — say so. The agent will revise.
 
-## What "prep for clear" should do
+## What "wrap up this session" should do
 
-A useful set of prep-for-clear actions, configurable per agent:
+A useful set of wrap-up actions, configurable per agent:
 
 1. Note any open threads.
 2. Write a session log.
@@ -121,7 +121,7 @@ You can encode this in your `CLAUDE.md` or your personalization file:
 ```markdown
 ## Session close protocol
 
-When I say "prep for clear" or "ready to close," do the following:
+When I say "wrap up this session" or "ready to close," do the following:
 1. Check git status; flag uncommitted changes.
 2. Write a session log to `sessions/YYYY-MM-DD-NNN-topic.md`.
 3. Commit the session log and any related changes.

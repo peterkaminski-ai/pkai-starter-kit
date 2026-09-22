@@ -46,11 +46,11 @@ A few useful triggers:
 - **End of session.** You're walking away. Always clear before stepping away for an hour or more.
 - **Auto-compact warning.** If Claude Code is about to auto-compact, clear deliberately first so *you* control what gets summarized.
 
-## The "prep for clear" habit
+## The "wrap up this session" habit
 
 Don't just hit `/clear`. Tell the agent first:
 
-> Prep for clear.
+> Wrap up this session.
 
 The agent should:
 
@@ -90,7 +90,7 @@ Don't be afraid of any of these. They're cheap.
 
 The temptation, when you're deep in a problem, is to keep going. *I'll just figure this one thing out, then I'll log.* The session goes long. The context fills. You auto-compact. You lose nuance. Tomorrow you re-read the auto-compact summary and it's not enough to pick up where you were.
 
-The habit pays off because you're not relying on heroism. Short sessions, prep for clear, session log, commit, push when ready. Repeat.
+The habit pays off because you're not relying on heroism. Short sessions, wrap up this session, session log, commit, push when ready. Repeat.
 
 ## See also
 

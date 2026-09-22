@@ -15,7 +15,7 @@ Skills are seeds, not the lesson. Each one is the printed-book version of someth
 | `save-a-memory` | One fact → one small file plus one index line, with a *Why* and *How I know* (heard or read). | project-management · Memory Across Sessions |
 | `find-it-again` | Finds what the house already has — a memory, a log, a decision, a file — in the right order, and says how sure the record is. | house-and-estate · From House to Estate |
 | `review-and-prune` | Reviews memory on a rhythm: merge, delete, and propose what has become a rule for the charter. | keeping-yourself-safe · Where Instructions Take Hold |
-| `prep-for-clear` | Closes a session so nothing is lost at `/clear`: open threads, the log, memory, commit, "safe to clear." | project-management · Session Logs, Session Rhythm |
+| `wrap-up-this-session` | Closes a session so nothing is lost at `/clear`: open threads, the log, memory, commit, "safe to clear." | project-management · Session Logs, Session Rhythm |
 | `start-a-project` | The wish, the questions, the container (folder or repo), README and status file, a first plan for review. | project-management · Writing the Wish, Project as Repo, Starting a New Project |
 | `check-my-setup` | Terminal readable, git present and named, no cloud-sync fight, a review surface, the launch word, backups, secrets. Smallest fix each. | getting-started; keeping-yourself-safe · Backups and Secrets |
 | `send-for-review` | Puts a document where the person can read it — their review app, or a pad on a phone — commits first, reads the diff back. | getting-started · Viewing Your Files |
@@ -37,7 +37,7 @@ Skills are seeds, not the lesson. Each one is the printed-book version of someth
 
 The three setup questions pick what goes into a new house; everything else stays on the shelf, one copied folder away.
 
-- **Every house:** `pull-from-benchmark`, `save-a-memory`, `prep-for-clear`, `start-a-project`, `venue-card`.
+- **Every house:** `pull-from-benchmark`, `save-a-memory`, `wrap-up-this-session`, `start-a-project`, `venue-card`.
 - **Working** (question 1): + `foreground-background`, `heads-up`.
 - **A lot of history** (question 2): + `find-it-again`, `review-and-prune`, `import-chatgpt-history`, `fair-copy-a-transcript`.
 - **Mostly a phone** (question 3): + `phone-path`, `send-for-review`.

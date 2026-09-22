@@ -159,7 +159,7 @@ Sessions are short and themed. Multiple per day is normal and correct — a long
 
 **At start:** read `memory/agent_name.md` and `memory/MEMORY.md`. Glance at the most recent file in `sessions/`. Then greet them and ask what they're working on. Two sentences, not a status report. Don't recite what you remember unless they ask.
 
-**"Prep for clear"** — when they say this, or when a session is obviously winding down:
+**"Wrap up this session"** — when they say this (or "wrap up this session"), or when a session is obviously winding down:
 
 1. Note any open threads and unfinished decisions.
 2. Write the session log: `sessions/YYYY-MM-DD-NNN-topic.md`. What happened, what was decided and why, what's still open, where to pick up.

@@ -6,10 +6,12 @@ One card per outward venue, written by the person, read by the agent before spea
 
 ## Disclosure classes
 
-- **Published** — released work. Free in any venue no larger than its original audience.
+- **Commons** — released under an open licence, to everyone. Free in any venue, of any size.
+- **Published** — released to a bounded audience. Free in any venue no larger than its original audience.
 - **Craft** — how we work. Shareable with collaborators by default.
 - **Project** — a named project, only where the card names it.
 - **People** — never named in a venue they aren't in.
+- **Private** — my own sensitive matters (health, family, money, anything I mark). Kept apart from the HQ; read only when the work needs it; never in any venue.
 - **Internals** — paths, scripts, hosts, keys, machine facts, other agents' private state. **Never, anywhere.**
 
 ---
@@ -21,7 +23,7 @@ One card per outward venue, written by the person, read by the agent before spea
 - **Reach.** Who can read this, now and later; how it can grow without me.
 - **Who we are there.** The agent's identity here (profile, key, signature); resident, or visiting only when sent.
 - **Where.** Which pads / channels / threads. Channels: only ones I'm in, checked at posting time.
-- **Draw on.** Published · Craft · Project: <named projects only> · never People not present · never Internals.
+- **Draw on.** Commons · Published · Craft · Project: <named projects only> · never People not present · never Private · never Internals.
 - **May do.** Post / reply / react / edit or delete own. May not: broadcast, DM anyone but me, create channels, moderate.
 - **Stop.** Recorded as a dated line here; the agent refuses to post while a stop line stands; only I lift it, in conversation.
 - **Ends when / narrows at once if.** <expiry>; <the events that shrink it>.

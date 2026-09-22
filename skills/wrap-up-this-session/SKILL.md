@@ -1,10 +1,10 @@
 ---
-name: prep-for-clear
-description: Closes a session cleanly so that nothing is lost at /clear — notes open threads and unfinished decisions, writes the session log, saves anything new to memory, commits if the house keeps git, and reports "safe to clear" only when the state is durable. Use when the person says "prep for clear", "let's wrap", "wrap up", "I'm done for now", "save everything", or when a session is obviously winding down; also before the person switches subjects on the phone path.
+name: wrap-up-this-session
+description: Closes a session cleanly so that nothing is lost at /clear — notes open threads and unfinished decisions, writes the session log, saves anything new to memory, commits if the house keeps git, and reports "safe to clear" only when the state is durable. Use when the person says "wrap up this session", "let's wrap", "prep for clear", "I'm done for now", "save everything", or when a session is obviously winding down; also before the person switches subjects on the phone path.
 license: MPL-2.0
 ---
 
-# Prep for clear
+# Wrap up this session
 
 Sessions are short and themed; `/clear` is sleep. A long session accumulates drift and the context goes murky, so ending well — often, and cheaply — is the habit that makes many sessions a day the right rhythm rather than a loss. This skill is the end-of-session ritual, and its last line is a promise: *safe to clear* means the state is written down where the next session will find it.
 

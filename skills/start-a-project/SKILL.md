@@ -18,7 +18,7 @@ Everything is a project. A project is a folder with a few hats on — a place fo
    - **Just a note** — when it isn't a project yet. Say so; a project that's really a question shouldn't get a folder.
    Say which you'd pick and why; the person decides.
 4. **Make the skeleton.** `README.md` (the wish, verbatim, then the three-sentence version, then where things are) and `<slug>.status.md` (current state, next actions, decisions and their reasons — kept current by you from now on). **Never a `CLAUDE.md` in a project**; you bring yourself along.
-5. **Write the first plan** in the README or a `PLAN.md`: the outcome, the steps as you'd take them, the decision points that are the person's, what you'll need from them. Short. Then **stop and show it**: the plan is reviewed and improved *before* execution, every time. That review is where most of the value is.
+5. **Write the first plan** in the README or a `PLAN.md`: the outcome, written as what done looks like in checks that can come back no ("the chapter is drafted and the person has read it", not "make progress on the book"), the steps as you'd take them, the decision points that are the person's, what you'll need from them. Short. Then **stop and show it**: the plan is reviewed and improved *before* execution, every time. That review is where most of the value is.
 6. **Log it.** A memory (`save-a-memory`, type `project`) with the project's name, where it lives, and the one-line wish — so the next session knows it exists — and a line in the session log.
 
 ## Two habits worth building in from day one

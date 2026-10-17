@@ -316,7 +316,10 @@ cmd_guard() {
   [ -n "$p" ] || p=$(json_str notebook_path)
   [ -n "$p" ] || exit 0
   norm() { # forward slashes, /c/ -> c:/, lower case, no trailing slash
-    printf '%s' "$1" | tr '\\' '/' | sed 's#^/\([A-Za-z]\)/#\1:/#' | tr 'A-Z' 'a-z' | sed 's#/*$##'
+    q=$1
+    # Git Bash: let cygpath map MSYS paths (/tmp, /c/...) and C:\ paths to one form.
+    if on_windows && command -v cygpath >/dev/null 2>&1; then q=$(cygpath -m "$q" 2>/dev/null || printf '%s' "$q"); fi
+    printf '%s' "$q" | tr '\\' '/' | sed 's#^/\([A-Za-z]\)/#\1:/#' | tr 'A-Z' 'a-z' | sed 's#/*$##'
   }
   f=$(norm "$p"); r=$(norm "$home")
   case $f in

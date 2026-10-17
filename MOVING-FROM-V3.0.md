@@ -24,7 +24,7 @@ Copy from the release's `template/agent-home/scripts/` into your agent home's `s
 - `now-hook` and `now` — **replace** your 3.0 copies. They're now portable POSIX `sh` (3.0's used a `date` flag that Linux's `dash` and busybox don't have), and `now-hook` also refreshes the desk and says when handoffs are waiting. If you changed your copies, show the person the difference first and keep their changes.
 - On Windows without Git Bash only: `desk.ps1`, `now-hook.ps1`, `now.ps1`.
 
-On a Mac or Linux, `chmod +x` them. Nothing runs yet: the scripts do nothing until step 3 wires them.
+On a Mac or Linux, `chmod +x` them. Your 3.0 settings already run `now-hook` every turn, so from the next turn the new one asks `desk` to renew the lease; with no lease yet (none exists until step 3 wires session start), that does nothing and writes nothing.
 
 ### 2. `bg/` and the `.gitignore` line — touches the agent home and `.gitignore`
 
@@ -55,6 +55,8 @@ Before turning Claude Code's auto memory off, look in its folder (`~/.claude/pro
 
 And one charter line, drafted into `outbox/` for the person to add to the memory section of `CLAUDE.md`: *Claude Code has its own auto-memory folder too; the house turns it off in `.claude/settings.json`, and if an instruction ever names that folder instead, `memory/` is the memory of record and wins.*
 
+If the charter has no section on running more than one window (3.0's personas don't), the hooks and the `foreground-background` skill are enough to make the desk work, but a short section helps the agent explain it. Draft this one into `outbox/` too, adapted to the house's voice: *You may run as more than one instance. The foreground is the session that holds the desk; it owns everything shared. A session that starts while another holds the desk is a guest: session start says so and names its folder under `bg/`; it works there, writes a handoff, and doesn't change memory, this charter or the settings. Take the desk only when your person says so. As the foreground, mention waiting handoffs when they're listed, and integrate when your person says so. The `foreground-background` skill carries the procedure.*
+
 ### 5. Skills — touches `.claude/skills/`
 
 - **`foreground-background`** and **`heads-up`**: copy the whole folders in if the house doesn't have them. If it has 3.0's `foreground-background`, replace it with 3.1's: it now covers guests and the desk, and the guest context the hooks give points at its *If you are a guest* section.
@@ -70,7 +72,7 @@ If `origin.md` records an answer to *exploring or working?*, that question is re
 
 ### 7. `LINEAGE.md` — touches the house's own lineage
 
-Rename the field `sits_on` to `grows_from` and set it to `pkai-starter-kit 3.1.0`. Add the 3.1 entry at the top of `lineage`. In the notes under the block, if your house kept the old explanation, say `grows_from` is what the house grew out of.
+Rename the field `sits_on` to `grows_from` and set it to the release you read: `pkai-starter-kit 3.1.0` or `pkai-benchmark 3.1.0`. Add the 3.1 entry at the top of `lineage`. In the notes under the block, if your house kept the old explanation, say `grows_from` is what the house grew out of.
 
 ### 8. The bookshelf — touches the HQ's kit folder
 

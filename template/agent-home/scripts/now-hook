@@ -17,7 +17,7 @@
 here=$(dirname "$0")
 payload=$(cat 2>/dev/null)
 
-# Day and hour without leading zeros, without the GNU/BSD-only %-d and %-I.
+# Day and hour without leading zeros, without %-d and %-I, which POSIX date lacks.
 stamp=$(date "+%A, %B %d, %Y — %I:%M %p %Z" 2>/dev/null |
   sed 's/ 0\([0-9]\),/ \1,/; s/— 0\([0-9]\):/— \1:/')
 utc=$(date -u "+%Y-%m-%dT%H:%MZ" 2>/dev/null)

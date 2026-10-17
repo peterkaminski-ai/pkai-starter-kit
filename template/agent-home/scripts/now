@@ -2,6 +2,6 @@
 # now — print the current date and time, local and UTC.
 # The charter rule: a time written into any artifact comes from this script,
 # never from an estimate. Run it every time, before writing any time or date.
-# Portable POSIX sh: no %-d (GNU/BSD only), so leading zeros are stripped by sed.
+# Portable POSIX sh: POSIX date has no %-d, so leading zeros are stripped by sed.
 date "+%A, %B %d, %Y — %I:%M %p %Z" | sed 's/ 0\([0-9]\),/ \1,/; s/— 0\([0-9]\):/— \1:/'
 date -u "+UTC %Y-%m-%dT%H:%M:%SZ"

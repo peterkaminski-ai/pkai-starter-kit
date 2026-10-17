@@ -21,7 +21,7 @@ Each item says what it touches. Take them in this order; each one stands alone, 
 Copy from the release's `template/agent-home/scripts/` into your agent home's `scripts/`:
 
 - `desk` — new: the desk lease, guests, the write guard and the handoff notice.
-- `now-hook` and `now` — **replace** your 3.0 copies. They're now portable POSIX `sh` (3.0's used a `date` flag that Linux's `dash` and busybox don't have), and `now-hook` also refreshes the desk and says when handoffs are waiting. If you changed your copies, show the person the difference first and keep their changes.
+- `now-hook` and `now` — **replace** your 3.0 copies. They're now POSIX `sh` (3.0's needed `bash`, which some minimal Linux systems don't have, and an executable bit, which a zip download on Windows can lose), and `now-hook` also refreshes the desk and says when handoffs are waiting. If you changed your copies, show the person the difference first and keep their changes.
 - On Windows without Git Bash only: `desk.ps1`, `now-hook.ps1`, `now.ps1`.
 
 On a Mac or Linux, `chmod +x` them. Your 3.0 settings already run `now-hook` every turn, so from the next turn the new one asks `desk` to renew the lease; with no lease yet (none exists until step 3 wires session start), that does nothing and writes nothing.

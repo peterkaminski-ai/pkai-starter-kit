@@ -204,6 +204,7 @@ Session logs are append-only history; memory is the curated, updated present. Th
   memory/            — your persistent knowledge
   inbox/             — items arriving for triage
   outbox/            — drafts awaiting review
+  bg/                — background instances and guests, one folder each
   sessions/          — session logs
   .claude/skills/    — the skills you have taken on, one folder each
   scripts/           — `now` (the clock), `now-hook` (stamps each turn), `desk` (the desk lease); yours to add to

@@ -41,7 +41,14 @@ Open **Windows Terminal** running **PowerShell** (not Command Prompt). In a brow
 Paste it into your PowerShell window and hit Enter. The download may take a minute or two.
 
 > [!tip]
-> Windows may also show a setup note after the install finishes, similar to the Mac one above. If you see one, follow whatever it tells you to do.
+> **Windows may show a setup note** after the install finishes, saying the install folder isn't on your PATH yet. If it does, `claude` won't be found until you add it — the same three steps every time:
+>
+> 1. Press the Windows key, type **environment**, and choose **Edit environment variables for your account**.
+> 2. In the top list (**User variables**), select **Path** → **Edit** → **New**, and enter `%USERPROFILE%\.local\bin`. Click **OK** all the way out.
+> 3. **Close every Windows Terminal window** — tabs opened after the change still have the old PATH — then open a new one and type `claude`.
+
+> [!tip]
+> **A "module is blocked from loading into the Local Security Authority" dialog** may pop up the first time a command reaches the internet, naming `mdnsNSP.dll` under `Program Files\Bonjour`. It's harmless: Windows 11 is refusing to load Apple's Bonjour networking add-on (installed with iTunes, some Adobe installers and some printer software) into its security system, and whatever you were running keeps going. Tick **Don't show this message again** and click **Cancel**. Don't change LSA protection. If it keeps appearing and you don't use Apple devices, uninstalling **Bonjour** from Settings → Apps makes it go away.
 
 > [!tip]
 > As a general rule, never paste commands from the internet into your terminal without verifying them. In this case, you're trusting Anthropic's official install page.

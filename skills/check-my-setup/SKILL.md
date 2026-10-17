@@ -10,15 +10,16 @@ A house runs on a few boring things being right: a terminal you can read, git th
 
 ## The checks
 
-1. **Readability.** Print a small sample: a numbered list where one item is dimmed the way your interface renders secondary text. Ask if every line is clearly readable. If not, fix it before anything else — on Windows the usual cure is Windows Terminal's *Campbell PowerShell* colour scheme and a dark theme; on Mac, a higher-contrast profile. Nothing else matters until they can see you.
+1. **Readability.** Print a small sample: a plain numbered list where one line is dimmed the way your interface renders secondary text — no blockquote, heading or code fence, which the interface restyles — and say beforehand which line should look fainter. Ask if every line is clearly readable. If not, fix it before anything else — on Windows the usual cure is Windows Terminal's *Campbell PowerShell* colour scheme and a dark theme; on Mac, a higher-contrast profile. Nothing else matters until they can see you.
 2. **Git.** `git --version`; then `git config --global user.name` and `user.email`. Missing git: optional, but strongly recommended; point at the getting-started book's install page. Missing identity: git will refuse the first commit with "please tell me who you are" — ask for the name they'd like on their history and an email they use, and set both.
 3. **Cloud sync.** Resolve the agent home's and the HQ's real paths. If either is inside OneDrive, Dropbox, Google Drive, or iCloud (on Mac, `Library/Mobile Documents` or `com~apple~CloudDocs` in the path; on Windows, `OneDrive`), say so: git and sync engines contend and both lose. The fix is to move the folder to the top of the home folder — the person moves it, with you coaching.
 4. **A review surface.** Ask what they use to read and edit markdown. None: point at the review surfaces in the kit's REQUIREMENTS (Typora, MarkText, MeetingWords; Obsidian or VS Code are fine if already in use). The terminal isn't meant to be their reading room.
-5. **The launch command.** Does typing the agent's name in a new terminal window land them here? If not, check the alias or profile function; re-add it with their yes (it touches a settings file outside the house).
-6. **Remote Control.** Mention `/rc` once if they haven't used it: the same session, continued from a phone or the web.
-7. **Backups.** Ask, don't assume: is the computer backed up, automatically, and have they ever restored a file from it? An untested backup is a hope. Local plus off-machine is the standard.
-8. **Secrets.** Ask: do passwords and keys live in a password manager, and none in the folders you work in? If any are in the house, help move them out now; don't read them aloud.
-9. **Tool versions.** Claude Code and git reasonably current? Say how to update; don't run an update without a yes.
+5. **The launch command.** Does typing the agent's name in a new terminal window land them here? If not, check what their shell uses: an alias in `~/.zshrc` or `~/.bashrc` on a Mac or Linux; on Windows, the `<name>.cmd` launcher in `%USERPROFILE%\.local\bin` (any shell), or a `.bashrc` alias in Git Bash. A PowerShell profile function that does nothing is most often the execution policy blocking the profile (`Get-ExecutionPolicy` says `Restricted`); the `.cmd` launcher avoids that. If `where claude` / `which claude` finds nothing, the folder isn't on `PATH` (`Installing Claude Code.md` has the steps). On Windows, test in a new *window* after closing every Windows Terminal window; a new tab keeps the old environment. Re-add the launcher with their yes (it touches a file outside the house).
+6. **The desk.** `sh scripts/desk status` (or `scripts\desk.ps1 status` in PowerShell) runs and names this session or none. If the hooks aren't firing, check `.claude/settings.json` has the four desk hooks; on Windows without Git Bash, the PowerShell variant has to be the one installed.
+7. **Remote Control.** Mention `/rc` once if they haven't used it: the same session, continued from a phone or the web.
+8. **Backups.** Ask, don't assume: is the computer backed up, automatically, and have they ever restored a file from it? An untested backup is a hope. Local plus off-machine is the standard.
+9. **Secrets.** Ask: do passwords and keys live in a password manager, and none in the folders you work in? If any are in the house, help move them out now; don't read them aloud.
+10. **Tool versions.** Claude Code and git reasonably current? Say how to update; don't run an update without a yes.
 
 ## The report
 

@@ -14,6 +14,7 @@ lineage:
 licence: MPL-2.0                          # LICENSE.md in this folder
 credits:
   - the project-management wiki (2026-05-08) — the wish, the iteration loop, project as repo, starting a new project · read; 'everything is a project', taught 2026-09-01 · read
+  - check the house for an existing project before starting a new one; write the plan's outcome as checks that can come back no; say whether the plan has been reviewed — Christopher Allen, PRs #11, #12 and #14 to the kit, 2026-10 · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/start-a-project/
 offered_at: stair 5 — the first house
 needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/start-a-project/

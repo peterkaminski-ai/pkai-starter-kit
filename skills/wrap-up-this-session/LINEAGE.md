@@ -14,6 +14,7 @@ lineage:
 licence: MPL-2.0                          # LICENSE.md in this folder
 credits:
   - the 'wrap up this session' habit of the Peter Kaminski house, carried in the kit's personas since v1 · read
+  - the wider look-back and the context-gauge trigger; bringing the project's status file up to date; the log points to other records instead of repeating them — Christopher Allen, PRs #8, #15 and #26 to the kit, 2026-10 · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/wrap-up-this-session/
 offered_at: stair 5 — the first house
 needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/wrap-up-this-session/

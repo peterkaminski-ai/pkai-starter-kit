@@ -17,7 +17,7 @@ The steps are the person's, not the software's. A house doesn't graduate; a pers
 
 There are two ways to build an agent for someone on stair 3. You can give them one agent that already knows how to run a large house — foreground and background, several agents, the whole thing — with all of it dormant until they're ready. Or you can give them a smaller agent, ready to accept the pieces as skills when the time comes, and able to say "is it time to add this?"
 
-This kit does the second. Skills are how a house grows one step at a time, and how one house passes a step to another without handing over everything. Someone on stair 5 who only ever chats with their agent never has to carry the machinery of stair 6. Someone on stair 6 takes the `foreground-background` skill and the next chapter, and the house is bigger that afternoon.
+This kit does the second. Skills are how a house grows one step at a time, and how one house passes a step to another without handing over everything. Someone on stair 5 who only ever chats with their agent never has to carry the machinery of stair 6. Someone on stair 6 starts using the `foreground-background` skill their house already carries, reads the next chapter, and the house is bigger that afternoon.
 
 ## Belts, not ages
 

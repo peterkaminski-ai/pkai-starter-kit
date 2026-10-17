@@ -33,8 +33,7 @@ Copy this and paste it in as your first message:
 Claude takes it from there, one step at a time, and you say yes, no, or "wait, explain" at each one. The steps, so you know the shape:
 
 1. **The waiver.** Claude shows you `WAIVER.md`; agreeing is the gate to everything else.
-2. **Three questions about how you'll use your agent.** There are no wrong answers, and you can change your mind later:
-   - **Exploring, or working?** *Exploring* means one agent, and you get to know it. *Working* means you'll want several agents at once — one you talk to, others running long jobs in the background — and setup adds the skill for that.
+2. **Two questions about how you'll use your agent.** There are no wrong answers, and you can change your mind later:
    - **How much history are you bringing?** Not much, or years of email, notes and transcripts that you'd like your agent to help move into place. If a lot, setup adds the skills for saving and finding things.
    - **Mostly a computer, or mostly a phone?** Either works, and a computer setup can always be reached from a phone. If it's mostly a phone, setup adds the chapter and the skill for the phone path, and you'll want to read about the one button not to press.
 3. **Health checks.** Is git available (optional, but strongly recommended — Claude explains), can you read the terminal clearly, do you have a way to read markdown documents (see the surfaces list in `REQUIREMENTS.md`).

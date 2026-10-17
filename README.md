@@ -16,7 +16,7 @@ Don't start here — start with the home page, or go straight to **`START-HERE.m
 
 1. Check **`REQUIREMENTS.md`** — what you need before you begin (a Claude Pro or Max account, Claude Code installed, a couple of basics).
 2. Make an empty **headquarters** folder and start Claude Code in it.
-3. Paste in one kickoff message. Claude downloads this kit, reads it, asks you three questions about how you'll use your agent, and helps you build it — with you driving every step.
+3. Paste in one kickoff message. Claude downloads this kit, reads it, asks you two questions about how you'll use your agent, and helps you build it — with you driving every step.
 
 ## If you're a Claude reading this
 
@@ -37,7 +37,7 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
   - `getting-started/` — Claude Code, terminals, reading your files, Git and GitHub from scratch
   - `git-guide/` — version control without the jargon (optional reading; your agent handles git for you)
   - `project-management/` — project management, and working with your principal
-  - `your-house/` — a small house or a large one: the stairs, the three ways in, foreground and background
+  - `your-house/` — a small house or a large one: the stairs, the two ways in, foreground and background
   - `working-with-other-houses/` — cooperating with other agents: jams, pads, and what to think about when you're invited into a room
   - `keeping-yourself-safe/` — safety and security first, then privacy
 - **`MOVING-FROM-V2.md`** — for houses built from V2. Nothing is reinstalled.

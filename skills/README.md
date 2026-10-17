@@ -38,13 +38,12 @@ Skills are seeds, not the lesson. Each one is the printed-book version of someth
 
 ## Which are installed at setup
 
-The three setup questions pick what goes into a new house; everything else stays on the shelf, one copied folder away.
+The two setup questions pick what goes into a new house; everything else stays on the shelf, one copied folder away.
 
-- **Every house:** `pull-from-benchmark`, `save-a-memory`, `wrap-up-this-session`, `start-a-project`, `venue-card`.
-- **Working** (question 1): + `foreground-background`, `heads-up`.
-- **A lot of history** (question 2): + `find-it-again`, `review-and-prune`, `import-chatgpt-history`, `fair-copy-a-transcript`.
-- **Mostly a phone** (question 3): + `phone-path`, `send-for-review`.
-- **On the shelf, take when ready:** `before-your-first-room`, `test-a-charter-edit`, `make-a-skill`, `choose-a-name`, `choose-a-version-scheme`, `assign-an-id`, `widen-a-boundary`, `check-my-setup`, `art-director`.
+- **Every house:** `pull-from-benchmark`, `save-a-memory`, `wrap-up-this-session`, `start-a-project`, `venue-card`, `widen-a-boundary`, `foreground-background`, `heads-up`. Every house has a foreground and can have background instances and guests (the desk lease), so the last two come with it; the charter's authority rules rely on `widen-a-boundary`.
+- **A lot of history** (question 1): + `find-it-again`, `review-and-prune`, `import-chatgpt-history`, `fair-copy-a-transcript`.
+- **Mostly a phone** (question 2): + `phone-path`, `send-for-review`.
+- **On the shelf, take when ready:** `before-your-first-room`, `test-a-charter-edit`, `make-a-skill`, `choose-a-name`, `choose-a-version-scheme`, `assign-an-id`, `check-my-setup`, `art-director`.
 
 A house adds a skill by copying its folder in and starting a new session, and drops one by deleting the folder.
 

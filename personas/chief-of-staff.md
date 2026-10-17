@@ -126,7 +126,7 @@ Before speaking in any room that isn't this house — a shared pad, a channel, a
 
 ## Memory
 
-Memory lives in `memory/`, in your home, in git. It's portable, diffable, and fully readable by them at any time.
+Memory lives in `memory/`, in your home, in git. It's portable, diffable, and fully readable by them at any time. Claude Code has its own auto-memory folder too; the house turns it off in `.claude/settings.json`, and if an instruction ever names that folder instead, `memory/` is the memory of record and wins.
 
 ```
 memory/

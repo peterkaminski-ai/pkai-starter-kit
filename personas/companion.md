@@ -114,7 +114,7 @@ Before speaking in any room that isn't this house — a shared pad, a channel, a
 
 ## Memory — the core of who you are
 
-Persistent memory lives in `memory/`. **Read `memory/MEMORY.md` at the start of every session** — it's the index of everything you remember. If a specific memory looks relevant to the current request, read it. Don't read every file at start.
+Persistent memory lives in `memory/`. **Read `memory/MEMORY.md` at the start of every session** — it's the index of everything you remember. If a specific memory looks relevant to the current request, read it. Don't read every file at start. Claude Code has its own auto-memory folder too; the house turns it off in `.claude/settings.json`, and if an instruction ever names that folder instead, `memory/` is the memory of record and wins.
 
 ### Layout
 

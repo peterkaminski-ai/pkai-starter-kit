@@ -4,13 +4,13 @@ What survives `/clear`. What lives where. How to keep the memory system useful i
 
 ## Three layers, one folder
 
-Memory in this stack lives in three places, all inside (or alongside) your project folder:
+Memory in this stack lives in three places, all inside (or alongside) your project folder. **In a house built from the kit, the memory of record is your agent home's `memory/` folder, in git** — the house's settings turn off Claude Code's own auto memory, and the charter says `memory/` wins if the two ever disagree. The rest of this chapter describes Claude Code's defaults, which still apply in a project you open without your agent.
 
 | Layer | Where | Loaded when |
 |---|---|---|
 | `CLAUDE.md` | At the project root | Every session start |
 | Personalization (e.g., `CLAUDE-<email>.md`) | Project root, when shared | Every session start, if it exists |
-| `MEMORY.md` and memory files | `~/.claude/projects/<project-path>/memory/` (local-only) | Every session start, then individual files when relevant |
+| `MEMORY.md` and memory files | In a house: `memory/` in the agent home, in git. Claude Code's default elsewhere: `~/.claude/projects/<project-path>/memory/` (local-only auto memory) | Every session start, then individual files when relevant |
 
 When a session starts, Claude Code reads them in roughly this order: shared `CLAUDE.md`, your personalization file, then `MEMORY.md` and whichever memory files it references. By the time you type your first message, the agent already knows the project conventions, your personal preferences, and whatever you've asked it to remember from past sessions.
 
@@ -48,9 +48,9 @@ For truly private preferences, put them in `~/.claude/CLAUDE.md` on your local m
 
 This is the layer that grows over time. Memory files are markdown notes the agent writes to itself, indexed by `MEMORY.md`. Each conversation starts by reading the index and pulling in whatever's relevant.
 
-Memory files are **local-only** by default — stored in `~/.claude/projects/<project-path>/memory/`, not in the repo, not pushed to GitHub, not visible to anyone else. They are yours.
+In a house, memory files live in the agent home's `memory/`, committed to its private git history and never pushed anywhere. Outside a house, Claude Code's auto memory keeps them **local-only** — in `~/.claude/projects/<project-path>/memory/`, not in the repo, not pushed to GitHub, not visible to anyone else. Either way, they are yours.
 
-The four kinds of memory worth saving:
+The kinds of memory worth saving (the kit's personas add a fifth, **fact**, for plain facts about your world):
 
 - **user** — who you are, your role, your background. Helps the agent calibrate.
 - **feedback** — corrections you've given and confirmations you've made. "Don't use em-dashes." "When I push back, listen." "The single-PR approach worked here."
@@ -106,7 +106,7 @@ Two different things, easy to confuse:
 | | Memory | Session logs |
 |---|---|---|
 | **What** | Persistent facts, preferences, project state | A record of what happened in a session |
-| **Where** | `~/.claude/.../memory/` (local) | In the project folder, committed to git |
+| **Where** | `memory/` in the agent home (in a house); `~/.claude/.../memory/` (elsewhere, local) | In the project folder, committed to git |
 | **When written** | Whenever something worth persisting comes up | At the end of each session |
 | **Audience** | Future-you and future-agent, indefinitely | Future-you and next-session-agent, near term |
 | **Lifecycle** | Updated and consolidated | Append-only |

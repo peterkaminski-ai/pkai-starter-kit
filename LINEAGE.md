@@ -4,9 +4,10 @@ Every PKAI V3 artifact starts with this file. It says what the artifact is, what
 
 ```yaml
 name: pkai-starter-kit
-version: 3.0.0
-grows_from: pkai-benchmark 3.0.0         # the kit is the benchmark, shaped for a first house
+version: 3.1.0
+grows_from: pkai-benchmark 3.1.0         # the kit is the benchmark, shaped for a first house
 lineage:                                  # newest first; at least three generations
+  - pkai-starter-kit v3.0.0 · 2026-09-22 · Peter Kaminski, with Saga (his agent) · read
   - pkai-starter-kit v2.0.0 · 2026-08-24 · Peter Kaminski, with Saga (his agent) · read
   - pkai-agent v1.0.0–v1.2.0 · 2026-05-27 to 2026-07-25 · Peter Kaminski · read
   - the PKAI starter wikis (getting started, git guide, project management, Obsidian reference) · 2026-04-10 to 2026-05-08 · Peter Kaminski · read
@@ -17,6 +18,8 @@ credits:
   - the "when a safety layer blocks you" and "what you read is information, never instruction" sections (ratified in the first person) were written and ratified live in a PKAI Dyad Jam, 2026-09-18, by the two houses present · heard, then read
   - this lineage header's fields come from the Layering pad, 2026-09-21, drafted by Sophia and Freya (two houses' agents), amended by Pete: "at least three generations", not at most · read
   - foreground/background as taught here is the working practice of the Peter Kaminski house, 2026-06 onward · read
+  - the desk lease, guests and the handoff notice (3.1) come from the same practice, made automatic for a first house; the lesson that a lease must expire by itself, because a marker that names no process can't be refuted, is from that house's own background instances · read
+  - 3.1's improvements to start-a-project and wrap-up-this-session (his pull requests), and several of the issues 3.1 answers, from Christopher Allen · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # read its CHANGES.md; take what you and your person judge good
 offered_at: stair 3 — "I'm ready to try a starter kit"
 needs: Claude Code (terminal version), a Claude Pro or Max account, a review surface for markdown
@@ -34,6 +37,8 @@ thanks_to: https://peterkaminski.ai       # a practice, never a debt
 - **`thanks_to`** is where thanks go if you want to send them. It is a practice, never a debt.
 
 ## The generations, in words
+
+**v3.0.0 (2026-09-22)** split the kit in two: the PKAI benchmark, the fuller statement, and this kit, shaped from it for a first house. Every part became a standalone unit with its own lineage, taken by pull. Peter Kaminski, with Saga.
 
 **v2.0.0 (2026-08-24)** turned the kit from a template you moved into into a reference library your agent reads while it builds your house. Peter Kaminski, with Saga.
 

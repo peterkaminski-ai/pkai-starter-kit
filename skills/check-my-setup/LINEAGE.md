@@ -4,8 +4,8 @@ This skill travels alone, so it carries its own lineage, credits and licence. If
 
 ```yaml
 name: check-my-setup
-version: 3.0.0
-grows_from: pkai-starter-kit 3.0.0       # shipped in the kit; also in pkai-benchmark 3.0.0
+version: 3.1.0
+grows_from: pkai-starter-kit 3.1.0       # shipped in the kit; also in pkai-benchmark 3.1.0
 lineage:
   - pkai-starter-kit v3.0.0 · 2026-09-22 · Peter Kaminski, with Saga (his agent) · read
   - pkai-starter-kit v2.0.0 · 2026-08-24 · Peter Kaminski, with Saga · read
@@ -17,6 +17,6 @@ credits:
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # skills/check-my-setup/
 offered_at: stair 4 — an agent on your own machine
 needs: Claude Code with skills enabled; installed at <agent home>/.claude/skills/check-my-setup/
-changes: 3.0.0 — 2026-09-22 — first release
+changes: 3.1.0 — 2026-10-17 — the Windows launcher in any shell, PATH, a readability probe that can't misfire, the desk; 3.0.0 — 2026-09-22 — first release
 thanks_to: https://peterkaminski.ai       # a practice, never a debt
 ```

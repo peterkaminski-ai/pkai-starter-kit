@@ -2,6 +2,36 @@
 
 Written for an agent to read when it pulls a new release. Newest first. Each entry says what changed and why, so a house can decide what to take; nothing here installs itself.
 
+## 3.1.0 — 2026-10-17 — beta
+
+**One foreground per house, and a smoother first day.** The largest change is the desk: a house now notices when two windows are open on the same agent and makes the second one a guest. The rest is the first round of fixes from houses that installed 3.0, most of them Windows installs. Numbers are the kit's GitHub issues and pull requests. A 3.0 house takes these by pull: `MOVING-FROM-V3.0.md` walks through each piece, and `MOVING-FROM-V2.md` now leads a V2 house straight here.
+
+**Added**
+
+- **The desk lease, guests and the write guard** (#34). Hooks in the agent home keep one foreground per house: the first session holds the desk, every turn renews it, ending the session releases it, and a desk with no turn for 30 minutes (or, on a Mac or Linux, whose process has gone) is free. A session that starts while another holds the desk is a **guest**: it says so in one plain sentence, works in its own `bg/guest-<time>/` folder, and is stopped from writing `memory/`, `CLAUDE.md` and `.claude/` — a guard rail, not a lock. `scripts/desk take` hands the desk over when the person says so. `scripts/desk` is portable POSIX `sh` (macOS, Linux's `dash` and busybox, Git Bash on Windows) with no `jq`, Python or Node; `desk.ps1` and `settings.powershell.json` serve Windows machines without Git Bash, where Claude Code runs hooks under PowerShell.
+- **The handoff notice** (#36). The per-turn hook says, at most once an hour, when a background or guest handoff is waiting; session start lists them.
+- `MOVING-FROM-V3.0.md`: what changed and how to take each piece, including merging the new hooks into a `settings.json` that already has its own.
+- `Output Styles` in getting-started: what Claude Code's output styles are, why Proactive pulls against the persona, and why the kit leaves them at Default (#24).
+
+**Changed**
+
+- **Every house runs foreground and background** (#35). The *exploring or working?* question is gone; `foreground-background`, `heads-up` and a `bg/` folder come with every house. *Three Ways In* is now *Two Ways In*. `widen-a-boundary` joins the every-house set too, because the charter's authority rules point to it (#2); `save-a-memory` names `review-and-prune` only if it's installed (#2).
+- **`sits_on` is now `grows_from`** in every lineage block (#38): it says what a thing grew out of, not what it rests on. Read the old name as the new one. The Player+ line in `LINEAGE.md` no longer says "sit on".
+- **`memory/` is the memory of record** (#3). The house's settings turn off Claude Code's own auto memory, each persona says `memory/` wins, and *Memory Across Sessions* no longer says the opposite. (Its full rewrite is still to come.)
+- `BUILD.md`: why the house needs a name before asking it — "my house wants to teach your house how to make images" — with the default, a distinctness check, "it can change", and *house* versus *household* (#37); two naming tests for the agent's name, that it captions well and doesn't echo the person's own (#31); a readability probe with no Markdown the interface restyles, and the exact path to the color scheme (#30); the Windows launcher is a `<name>.cmd` that works from PowerShell, Command Prompt and Git Bash, after checking `claude` is on `PATH`, and "verify it cold" means a new window, not a tab (#25, #27); the hand-over is its own last step — `/exit` here, the launch word in a fresh window, and the second trust prompt is expected (#18).
+- `Installing Claude Code`: the three steps to put `claude` on `PATH` on Windows (#28), and the harmless Bonjour / Local Security Authority dialog (#29).
+- `check-my-setup` knows the `.cmd` launcher, execution policy, `PATH`, and the desk (#25).
+- `now` and `now-hook` are portable `sh`: 3.0's used a `date` flag that `dash` and busybox lack. The hooks run as `sh script`, so a lost executable bit (a zip download on Windows) doesn't break them, and none can block a tool call if it fails.
+- `start-a-project`: check the house for an existing project first (#11), write the outcome as checks that can come back no (#12), say whether the plan has been reviewed (#14) — Christopher Allen; a `CLAUDE.md` is fine in a project's own repo, never in a folder under the HQ (#10).
+- `wrap-up-this-session`: a wider look-back and a trigger on the context gauge (#8), bring the project's status file up to date (#15), the log points to other records instead of repeating them (#26) — Christopher Allen; show the person their own edits and commit them separately, before the session's commit (#7), and *Commit Every Session* says the same.
+- `foreground-background` covers guests and the desk; `pull-from-benchmark` reads `grows_from` or `sits_on`, finds the release's moving guide, and drafts merged settings into `outbox/` instead of overwriting.
+- *Working With Agents* names Claude Code's other uses of "agent" (#21).
+
+**Not in this release, known**
+
+- The session-start recommendation from #18 (open with one next step rather than "what are you working on?") is still open; 3.1 takes only the hand-over.
+- On Windows, the hooks were tested at script level under Git Bash and under Windows PowerShell 5.1, not in a full Claude Code session.
+
 ## 3.0.0 — 2026-09-22 — beta
 
 **A beta, made fast and built to be improved often.** Minor releases follow as improvements arrive — none promised for a date, but as often as every week is now practical — each small, one unit at a time (a skill, a chapter, a section, a fix), taken by pull. `CONTRIBUTING.md` says how to offer one.

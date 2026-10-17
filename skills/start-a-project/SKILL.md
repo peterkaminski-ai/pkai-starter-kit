@@ -21,10 +21,11 @@ Everything is a project. A project is a folder with a few hats on — a place fo
 5. **Write the first plan** in the README or a `PLAN.md`: the outcome, written as what done looks like in checks that can come back no ("the chapter is drafted and the person has read it", not "make progress on the book"), the steps as you'd take them, the decision points that are the person's, what you'll need from them. Short. Then **stop and show it**: the plan is reviewed and improved *before* execution, every time. That review is where most of the value is.
 6. **Log it.** A memory (`save-a-memory`, type `project`) with the project's name, where it lives, and the one-line wish — so the next session knows it exists — and a line in the session log.
 
-## Two habits worth building in from day one
+## Three habits worth building in from day one
 
 - **Agree on a destination before walking away.** If you'll work on this while the person is elsewhere, say which file the output lands in and what "done" means, so drift would be visible.
 - **The status file is the source of truth for "where does this stand."** Update it when things change, not at the end.
+- **The plan says whether it has been reviewed.** It opens with *Provisional* until the person approves it, then *Approved* with the date, so the state travels with what's being built on. If the person moves on without reviewing it, the plan still reads *Provisional*, and the next session sees that before building on it.
 
 ## What this skill never does
 

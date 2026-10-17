@@ -136,7 +136,10 @@ lease_stale() { # sets stale_why
     fi
     return 1
   fi
-  if [ "$a" -ge "$STALE_MIN" ]; then stale_why="no turn for $a minutes"; return 0; fi
+  if [ "$a" -ge "$STALE_MIN" ]; then
+    if [ "$a" -eq 1 ]; then stale_why="no turn for 1 minute"; else stale_why="no turn for $a minutes"; fi
+    return 0
+  fi
   pid=$(field "$L/holder" pid)
   host=$(field "$L/holder" host)
   if [ -n "$pid" ] && [ "$host" = "$(uname -n 2>/dev/null)" ] && ! on_windows; then

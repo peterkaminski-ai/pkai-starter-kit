@@ -76,7 +76,7 @@ function Lease-Stale {
     if ($age -ge $StaleMin) { $script:StaleWhy = 'its claim was never finished'; return $true }
     return $false
   }
-  if ($a -ge $StaleMin) { $script:StaleWhy = "no turn for $a minutes"; return $true }
+  if ($a -ge $StaleMin) { $script:StaleWhy = $(if ($a -eq 1) { "no turn for 1 minute" } else { "no turn for $a minutes" }); return $true }
   # Process liveness is not used on Windows: the clock is the only signal.
   return $false
 }

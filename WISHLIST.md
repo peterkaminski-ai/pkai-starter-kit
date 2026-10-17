@@ -6,3 +6,5 @@ Aspirational, not scheduled. Things we'd like V3 to grow into, with no date atta
 - **A self-hosted or app version of the shared-pad surface** (MeetingWords), so a house needn't depend on the hosted service.
 - **Watcher scripts** for the shapes the *Watchers* chapter describes.
 - **A genealogist**: someone, or some house, keeping the whole tree that each lineage block only remembers a little of (the benchmark's `PULL-PROTOCOL.md`).
+- **Spike: OpenCode with carefully chosen models on a better-situated server**, for grandmothers and newcomer houses. The newest, most diverse players need the best tools but most lack a computer or terminal, and Claude Code terms are one person per account (Pete, 9/22 call). (2026-10-17, from daybook proposal by bg-ostromir)
+- **Review Flemming Funch's AgentProjectFilesShare against the kit v3**, the way Christopher reviewed ours (AGENTS/CONVENTIONS/REGISTRY/STATUS/inbox; 18 files, 25 KB, untracked anywhere in the house) (2026-10-17, from daybook proposal by bg-incunable)

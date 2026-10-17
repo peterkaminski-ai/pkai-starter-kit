@@ -121,7 +121,7 @@ Its own step, because twice an install ended with the builder still open beside 
 1. Setup is done. **Type `/exit` here**, in this window — this is the builder, not their agent.
 2. **Open a fresh terminal window, type the launch word,** and say hi. The next conversation belongs to their new agent; it reads its own CLAUDE.md and memory and takes it from there.
 3. **The first time they type the launch word, Claude Code asks once more whether they trust the folder.** That's their agent's home, and yes is the answer.
-4. From now on, that one window is their agent. If they ever open a second window in the agent home while the first is working, the second says it is a *guest* and offers to hand over or take the desk; that's normal (`bookshelf/your-house/Foreground and Background.md`).
+4. From now on, that session is their agent. If they ever start a second session in the agent home while the first is working — another terminal, or the Claude app — the second says it is a *guest* and offers to hand over or take the desk; that's normal (`bookshelf/your-house/Foreground and Background.md`).
 
 Then stop. Don't write anything more to the agent home after this point; the agent's first session may already have started. (You, the builder, are done; the kit stays in the HQ as their reference library.)
 

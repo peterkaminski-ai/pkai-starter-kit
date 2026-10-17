@@ -125,8 +125,8 @@ function Guest-Text($sid, $folder, $why) {
 Desk: you are a GUEST in this house. $why ($active), so this session must not change the house's shared state.
 - Your folder is $folder/. Keep status.md there as you go; when you finish, write handoff.md (what you did, what the foreground should integrate) and then an empty DONE file. Follow the "If you are a guest" rules in the foreground-background skill.
 - Writes to memory/, CLAUDE.md and .claude/ are blocked for you; put what belongs there in your handoff instead.
-- Tell the person once, in one plain sentence, for example: "Another window is already working in this house, so I'll work here as a guest and leave notes for it." Then offer three choices: keep going as a guest (the default); switch to the other window; or take the desk, if the other window is closed or idle.
-- To take the desk, when the person says so: powershell -NoProfile -ExecutionPolicy Bypass -File scripts\desk.ps1 take $sid (add --force only after the person confirms the other window is closed).
+- Tell the person once, in one plain sentence, for example: "Another session is already working in this house — in another terminal, or in the Claude app — so I'll work here as a guest and leave notes for it." Then offer three choices: keep going as a guest (the default); switch to the other session; or take the desk, if the other session is closed or idle.
+- To take the desk, when the person says so: powershell -NoProfile -ExecutionPolicy Bypass -File scripts\desk.ps1 take $sid (add --force only after the person confirms the other session is closed).
 "@.Trim()
 }
 
@@ -228,7 +228,7 @@ function Cmd-Take($sid, [bool]$force) {
   if ((Test-Path -LiteralPath $L) -and -not (Lease-Stale) -and -not $force) {
     $a = Seen-AgeMin; if ($null -eq $a) { $a = 0 }
     "The other session was active $a minutes ago, so the desk isn't stale yet."
-    "If the person confirms that window is closed, run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts\desk.ps1 take $sid --force"
+    "If the person confirms that session is closed, run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts\desk.ps1 take $sid --force"
     exit 1
   }
   if ((Test-Path -LiteralPath $L) -and -not (Break-Stale)) { [Console]::Error.WriteLine("Couldn't take the desk; try again."); exit 1 }

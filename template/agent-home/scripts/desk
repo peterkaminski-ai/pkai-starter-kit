@@ -196,8 +196,8 @@ guest_text() { # SID FOLDER WHY
 Desk: you are a GUEST in this house. $3 ($active), so this session must not change the house's shared state.
 - Your folder is $2/. Keep status.md there as you go; when you finish, write handoff.md (what you did, what the foreground should integrate) and then an empty DONE file. Follow the "If you are a guest" rules in the foreground-background skill.
 - Writes to memory/, CLAUDE.md and .claude/ are blocked for you; put what belongs there in your handoff instead.
-- Tell the person once, in one plain sentence, for example: "Another window is already working in this house, so I'll work here as a guest and leave notes for it." Then offer three choices: keep going as a guest (the default); switch to the other window; or take the desk, if the other window is closed or idle.
-- To take the desk, when the person says so: sh scripts/desk take $1 (add --force only after the person confirms the other window is closed).
+- Tell the person once, in one plain sentence, for example: "Another session is already working in this house — in another terminal, or in the Claude app — so I'll work here as a guest and leave notes for it." Then offer three choices: keep going as a guest (the default); switch to the other session; or take the desk, if the other session is closed or idle.
+- To take the desk, when the person says so: sh scripts/desk take $1 (add --force only after the person confirms the other session is closed).
 EOF
 }
 
@@ -350,7 +350,7 @@ cmd_take() {
   if [ -d "$L" ] && ! lease_stale && [ "$force" != "--force" ]; then
     a=$(seen_age_min)
     echo "The other session was active ${a:-0} minutes ago, so the desk isn't stale yet."
-    echo "If the person confirms that window is closed, run: sh scripts/desk take $sid --force"
+    echo "If the person confirms that session is closed, run: sh scripts/desk take $sid --force"
     exit 1
   fi
   if [ -d "$L" ]; then break_stale || { echo "Couldn't take the desk; try again." >&2; exit 1; }; fi

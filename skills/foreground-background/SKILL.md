@@ -6,7 +6,7 @@ license: MPL-2.0
 
 # Foreground and background
 
-One agent, two roles. The **foreground** is the instance that holds the desk; it owns everything shared. A **background** instance is the same agent, started a second time on one scoped job, working in its own scratch space and never touching shared state. A **guest** is a background instance the person is talking to: a second window they opened while the foreground was already at work. When either is done it leaves a handoff, and the foreground integrates by copying. This is how a house does two things at once without either instance overwriting the other.
+One agent, two roles. The **foreground** is the instance that holds the desk; it owns everything shared. A **background** instance is the same agent, started a second time on one scoped job, working in its own scratch space and never touching shared state. A **guest** is a background instance the person is talking to: a second session they started — another terminal, or a conversation in the Claude app — while the foreground was already at work. When either is done it leaves a handoff, and the foreground integrates by copying. This is how a house does two things at once without either instance overwriting the other.
 
 ## The desk
 
@@ -39,10 +39,10 @@ You are the same agent, with a narrower charter for this run. A background insta
 
 Everything in the section above binds you, and three things more:
 
-- **Say it once, plainly.** At your first reply, one sentence: another window is already working in this house, so you'll work here as a guest and leave notes for it. Then offer three choices: keep going as a guest (the default); switch to the other window; or take the desk.
-- **Take the desk only when the person says so**, and only if the other session is closed or stale: `sh scripts/desk take <your session id>` (session start gives you the exact line). If the other session was active recently, the script refuses; run it again with `--force` only after the person confirms that window is closed. Once you hold the desk you are the foreground: integrate your own guest notes like any handoff.
+- **Say it once, plainly.** At your first reply, one sentence: another session is already working in this house (in another terminal, or in the Claude app), so you'll work here as a guest and leave notes for it. Then offer three choices: keep going as a guest (the default); switch to the other session; or take the desk.
+- **Take the desk only when the person says so**, and only if the other session is closed or stale: `sh scripts/desk take <your session id>` (session start gives you the exact line). If the other session was active recently, the script refuses; run it again with `--force` only after the person confirms that session is closed. Once you hold the desk you are the foreground: integrate your own guest notes like any handoff.
 - **If the desk becomes free**, the per-turn hook tells you once. Taking it is still the person's choice.
 
 ## Two instances, one house
 
-The person may start a background instance directly, or the foreground may, or open a second window and get a guest. Either way there is exactly one foreground at a time: the session holding the desk. If two instances would edit the same thing, that's a question for the person, not a race.
+The person may start a background instance directly, or the foreground may, or start a second session and get a guest. Either way there is exactly one foreground at a time: the session holding the desk. If two instances would edit the same thing, that's a question for the person, not a race.

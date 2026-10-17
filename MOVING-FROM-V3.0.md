@@ -6,7 +6,7 @@ If your house was built from the 3.0 kit, **nothing is reinstalled and nothing y
 
 ## What changed, in words
 
-- **The desk.** Every house now keeps one foreground per agent home. If you open a second window while the first is working, the second becomes a *guest*: it says so in one sentence, works in its own folder, and doesn't change memory, the charter or the settings. A desk nobody has touched for 30 minutes is free.
+- **The desk.** Every house now keeps one foreground per agent home. If you start a second session while the first is working (another terminal, or the Claude app), the second becomes a *guest*: it says so in one sentence, works in its own folder, and doesn't change memory, the charter or the settings. A desk nobody has touched for 30 minutes is free.
 - **Every house runs foreground and background.** The setup question *exploring or working?* is gone; `foreground-background` and `heads-up` are part of every house, and so is a `bg/` folder.
 - **`grows_from`.** The lineage field `sits_on` is now `grows_from`: it says what a thing grew out of, not what it rests on.
 - **`memory/` is the only memory.** The house's settings turn off Claude Code's own auto memory, and the charter says `memory/` wins if the two ever disagree.
@@ -47,7 +47,7 @@ This is the step that needs care, because your house may already have hooks of i
 
 Then the person copies `outbox/settings.json` over `.claude/settings.json` by hand, and restarts. On Windows without Git Bash, merge from the release's `settings.powershell.json` instead.
 
-**How to check it worked:** after the restart, `sh scripts/desk status` names this session. Open a second window in the agent home: it should say it's a guest. Close it.
+**How to check it worked:** after the restart, `sh scripts/desk status` names this session. Start a second session in the agent home: it should say it's a guest. Close it.
 
 ### 4. Auto memory off — touches `.claude/settings.json` (in step 3) and maybe `memory/`
 
@@ -55,7 +55,7 @@ Before turning Claude Code's auto memory off, look in its folder (`~/.claude/pro
 
 And one charter line, drafted into `outbox/` for the person to add to the memory section of `CLAUDE.md`: *Claude Code has its own auto-memory folder too; the house turns it off in `.claude/settings.json`, and if an instruction ever names that folder instead, `memory/` is the memory of record and wins.*
 
-If the charter has no section on running more than one window (3.0's personas don't), the hooks and the `foreground-background` skill are enough to make the desk work, but a short section helps the agent explain it. Draft this one into `outbox/` too, adapted to the house's voice: *You may run as more than one instance. The foreground is the session that holds the desk; it owns everything shared. A session that starts while another holds the desk is a guest: session start says so and names its folder under `bg/`; it works there, writes a handoff, and doesn't change memory, this charter or the settings. Take the desk only when your person says so. As the foreground, mention waiting handoffs when they're listed, and integrate when your person says so. The `foreground-background` skill carries the procedure.*
+If the charter has no section on running more than one session (3.0's personas don't), the hooks and the `foreground-background` skill are enough to make the desk work, but a short section helps the agent explain it. Draft this one into `outbox/` too, adapted to the house's voice: *You may run as more than one instance. The foreground is the session that holds the desk; it owns everything shared. A session that starts while another holds the desk is a guest: session start says so and names its folder under `bg/`; it works there, writes a handoff, and doesn't change memory, this charter or the settings. Take the desk only when your person says so. As the foreground, mention waiting handoffs when they're listed, and integrate when your person says so. The `foreground-background` skill carries the procedure.*
 
 ### 5. Skills — touches `.claude/skills/`
 

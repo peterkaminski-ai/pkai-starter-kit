@@ -4,7 +4,7 @@ Written for an agent to read when it pulls a new release. Newest first. Each ent
 
 ## 3.1.0 — 2026-10-17 — beta
 
-**One foreground per house, and a smoother first day.** The largest change is the desk: a house now notices when two windows are open on the same agent and makes the second one a guest. The rest is the first round of fixes from houses that installed 3.0, most of them Windows installs. Numbers are the kit's GitHub issues and pull requests. A 3.0 house takes these by pull: `MOVING-FROM-V3.0.md` walks through each piece, and `MOVING-FROM-V2.md` now leads a V2 house straight here.
+**One foreground per house, and a smoother first day.** The largest change is the desk: a house now notices when two sessions are open on the same agent and makes the second one a guest. The rest is the first round of fixes from houses that installed 3.0, most of them Windows installs. Numbers are the kit's GitHub issues and pull requests. A 3.0 house takes these by pull: `MOVING-FROM-V3.0.md` walks through each piece, and `MOVING-FROM-V2.md` now leads a V2 house straight here.
 
 **Added**
 

@@ -1,10 +1,10 @@
 # Foreground and Background
 
-The first thing a working house needs is a way to do two things at once. You're talking to your agent about one matter; a long job — a research sweep, a big rewrite, a migration of old notes — is grinding on in another window. Both are your agent. Neither may overwrite the other. That's the whole design problem, and the answer is a pair of roles.
+The first thing a working house needs is a way to do two things at once. You're talking to your agent about one matter; a long job — a research sweep, a big rewrite, a migration of old notes — is grinding on in another session. Both are your agent. Neither may overwrite the other. That's the whole design problem, and the answer is a pair of roles.
 
 ## The two roles
 
-The **foreground** is the instance that holds the desk — usually the first window you opened. It owns everything shared: the memory, the charter, commits to the house, anything that goes out (a message, a push). There is exactly one foreground at a time.
+The **foreground** is the instance that holds the desk — usually the first session you started. It owns everything shared: the memory, the charter, commits to the house, anything that goes out (a message, a push). There is exactly one foreground at a time.
 
 A **background** instance is the same agent started a second time on one scoped job. It can *read* everything. It *writes* only inside its own scratch folder. It doesn't commit shared folders, doesn't touch memory or the charter, doesn't send anything, doesn't talk to other agents. When it's done it leaves a handoff, and the foreground integrates the handoff by copying what belongs in the house into the house.
 
@@ -19,13 +19,13 @@ Houses pick different pairs for the same distinction; use your house's words, an
 
 ## The desk, and guests
 
-Open a second window in your agent home while the first is still working, and you have two instances of the same agent. Without a rule, both would write the same memory and the same charter. So the house keeps a **desk**: the first session to start holds it, every turn renews it, and it's released when that session ends. A session that starts while another holds the desk becomes a **guest**, and tells you so in one plain sentence, with three choices:
+Start a second session in your agent home while the first is still working — another terminal, or a conversation in the Claude app on your computer or phone — and you have two instances of the same agent. Without a rule, both would write the same memory and the same charter. So the house keeps a **desk**: the first session to start holds it, every turn renews it, and it's released when that session ends. A session that starts while another holds the desk becomes a **guest**, and tells you so in one plain sentence, with three choices:
 
 - **keep going as a guest** — the default. It works normally, but it leaves its notes and a handoff in its own folder (`bg/guest-<time>/`) instead of changing memory, the charter or settings;
-- **switch to the other window**, and close this one;
-- **take the desk**, if the other window is closed or has been idle. You say so; it runs one small script.
+- **switch to the other session**, and close this one;
+- **take the desk**, if the other session is closed or has been idle. You say so; it runs one small script.
 
-A desk nobody has touched for **30 minutes** counts as free (and, on a Mac or Linux, so does one whose window has crashed), so a forgotten window never locks you out. A guest is a background instance you happen to be talking to; everything below about background instances applies to it.
+A desk nobody has touched for **30 minutes** counts as free (and, on a Mac or Linux, so does one whose session has crashed), so a forgotten session never locks you out. A guest is a background instance you happen to be talking to; everything below about background instances applies to it.
 
 ## The file lifecycle
 

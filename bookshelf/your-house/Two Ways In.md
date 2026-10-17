@@ -2,7 +2,7 @@
 
 Setup asks you two questions before it builds anything. There are no wrong answers, and every answer can be changed later without rebuilding. But each one changes what gets built, so here is what they mean.
 
-Earlier versions asked a third question first, *exploring or working?*, and only a *working* house got the skills for running more than one instance of your agent at once. Every house now has a foreground and can have background instances and guests — open a second window in your agent home and you have one — so every house gets those skills, and the question is gone. [Foreground and Background](Foreground%20and%20Background.md) explains them; you'll use them when you're ready.
+Earlier versions asked a third question first, *exploring or working?*, and only a *working* house got the skills for running more than one instance of your agent at once. Every house now has a foreground and can have background instances and guests — start a second session in your agent home and you have one — so every house gets those skills, and the question is gone. [Foreground and Background](Foreground%20and%20Background.md) explains them; you'll use them when you're ready.
 
 ## How much history?
 

@@ -56,6 +56,14 @@ Claude Code has a built-in notion of **sub-agents** — task-scoped helpers you 
 
 A different thing from a background instance. A sub-agent has scope and lives inside one conversation; a background instance is your whole agent, started again, with a lifespan of its own and a handoff at the end. Sub-agents are for the agent's convenience; background instances are for yours.
 
+### Other things Claude Code calls "agents"
+
+The word has more than one use in Claude Code itself. In this kit, an agent is an agent home with a `CLAUDE.md` that you launch Claude Code in. These are different things:
+
+- **`.claude/agents/<name>.md`** (and `--agents`, which defines them inline) — agent files: a name, a description, optionally a model and tools, and a body that becomes that agent's system prompt. This is the sub-agent mechanism above, not a way to define or launch your agent.
+- **`claude --agent <name>`** and the `agent` setting — start a whole session as one of those agent files. Your agent doesn't need either; you start it by launching Claude Code in its home.
+- **`claude agents`** — manages background sessions started with `claude --bg`. A related idea to a background instance, but Claude Code's own mechanism; the kit's background instance is your agent started by hand in a second terminal.
+
 ## Skills
 
 A **skill** is a folder your agent can take on: a `SKILL.md` saying what it does and when it applies, plus any scripts or references, plus — in this kit — its own lineage, licence and credits, so it can travel to another house alone. Skills are good for repeated workflows, for a lesson you want to hand to someone, and for growing a house one step at a time. `skills/README.md` at the kit root lists the ones that ship with it; "make me a skill that does X" is a fine thing to ask your agent.

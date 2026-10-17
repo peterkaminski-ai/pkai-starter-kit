@@ -26,11 +26,12 @@ Written for an agent to read when it pulls a new release. Newest first. Each ent
 - `wrap-up-this-session`: a wider look-back and a trigger on the context gauge (#8), bring the project's status file up to date (#15), the log points to other records instead of repeating them (#26) — Christopher Allen; show the person their own edits and commit them separately, before the session's commit (#7), and *Commit Every Session* says the same.
 - `foreground-background` covers guests and the desk; `pull-from-benchmark` reads `grows_from` or `sits_on`, finds the release's moving guide, and drafts merged settings into `outbox/` instead of overwriting.
 - *Working With Agents* names Claude Code's other uses of "agent" (#21).
+- Every persona has a short *Foreground and background* section, and `desk` and `bg/` in its layout, so the charter explains what the hooks do.
 
 **Not in this release, known**
 
 - The session-start recommendation from #18 (open with one next step rather than "what are you working on?") is still open; 3.1 takes only the hand-over.
-- On Windows, the hooks were tested at script level under Git Bash and under Windows PowerShell 5.1, not in a full Claude Code session.
+- On Windows, the hooks were tested at script level — under Git Bash (with both `C:\` and MSYS path forms) and under Windows PowerShell 5.1, run the way Claude Code runs them — but not in a full Claude Code session. On macOS they were tested in real sessions, and on Linux at script level under `dash` and busybox.
 
 ## 3.0.0 — 2026-09-22 — beta
 

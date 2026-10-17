@@ -1,16 +1,41 @@
-#!/bin/bash
-# now-hook — put the current time into the agent's context at the start of every turn.
+#!/bin/sh
+# now-hook — runs at the start of every turn (UserPromptSubmit). It puts the
+# current time into the agent's context, and lets scripts/desk refresh the desk
+# lease and add a line when background handoffs are waiting.
 #
-# Why: the harness gives the model one timestamp when a session starts, and then
-# nothing. A long sitting extrapolates from that stale anchor and writes times
-# that are hours or a day wrong. With this hook the current time arrives each
-# turn and cannot go stale.
+# Why the clock: the harness gives the model one timestamp when a session starts,
+# and then nothing. A long sitting extrapolates from that stale anchor and writes
+# times that are hours or a day wrong. With this hook the current time arrives
+# each turn and cannot go stale.
 #
 # This does NOT replace `scripts/now`. The stamp is an anchor; the script is the
 # reading. A time written into an artifact still comes from running the script.
-# Never fails the turn: on any error, exit 0 silently.
-set -uo pipefail
-stamp=$(date "+%A, %B %-d, %Y — %-I:%M %p %Z" 2>/dev/null) || exit 0
-utc=$(date -u "+%Y-%m-%dT%H:%MZ" 2>/dev/null) || exit 0
-[ -n "$stamp" ] || exit 0
-printf '{"suppressOutput":true,"hookSpecificOutput":{"hookEventName":"UserPromptSubmit","additionalContext":"Current date and time: %s (%s)"}}\n' "$stamp" "$utc"
+#
+# Portable POSIX sh (macOS, Linux, Git Bash on Windows). Never fails the turn: on
+# any error it prints what it has, or nothing, and exits 0.
+
+here=$(dirname "$0")
+payload=$(cat 2>/dev/null)
+
+# Day and hour without leading zeros, without the GNU/BSD-only %-d and %-I.
+stamp=$(date "+%A, %B %d, %Y — %I:%M %p %Z" 2>/dev/null |
+  sed 's/ 0\([0-9]\),/ \1,/; s/— 0\([0-9]\):/— \1:/')
+utc=$(date -u "+%Y-%m-%dT%H:%MZ" 2>/dev/null)
+
+text=""
+[ -n "$stamp" ] && text="Current date and time: $stamp ($utc)"
+
+if [ -f "$here/desk" ]; then
+  extra=$(printf '%s' "$payload" | sh "$here/desk" turn 2>/dev/null)
+  [ -n "$extra" ] && text="${text:+$text
+}$extra"
+fi
+[ -n "$text" ] || exit 0
+
+esc=$(printf '%s' "$text" | awk 'BEGIN { ORS = "" } {
+  gsub(/\\/, "\\\\"); gsub(/"/, "\\\""); gsub(/\t/, "\\t")
+  if (NR > 1) printf "\\n"
+  print
+}')
+printf '{"suppressOutput":true,"hookSpecificOutput":{"hookEventName":"UserPromptSubmit","additionalContext":"%s"}}\n' "$esc"
+exit 0

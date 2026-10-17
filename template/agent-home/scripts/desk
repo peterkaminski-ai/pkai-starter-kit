@@ -1,0 +1,379 @@
+#!/bin/sh
+# desk — one foreground per agent home: the desk lease, guest sessions, and the
+# handoff notice. Run by the hooks in .claude/settings.json; the agent runs
+# `take` and `status` itself.
+#
+#   sh scripts/desk start              SessionStart: claim the desk, or start as a guest
+#   sh scripts/desk turn               per turn (called by now-hook): refresh, notices
+#   sh scripts/desk end                SessionEnd: release the desk if we hold it
+#   sh scripts/desk guard              PreToolUse on Write/Edit/MultiEdit/NotebookEdit
+#   sh scripts/desk take [<session-id>] [--force]  take the desk (the person said so)
+#   sh scripts/desk status             print who holds the desk
+#
+# Hooks pass a JSON payload on stdin; `take` and `status` read none.
+#
+# Why a lease and not a lock: a marker that names no process can't be refuted,
+# so it would block people with a stale lock they can't see. The lease expires by
+# itself after PKAI_DESK_STALE_MINUTES without a turn (default 30). On macOS and
+# Linux a dead holder process also makes it stale; on Windows the process ids
+# Git Bash sees aren't Windows ones, so only the clock counts there.
+#
+# Never breaks a session: on any internal error a hook allows and stays quiet.
+# The write guard is a guard rail, not a security boundary (Bash can get around
+# it); it keeps a guest from changing memory, the charter or settings by accident.
+#
+# Portable POSIX sh: macOS (bash 3.2 as sh), Linux (dash, busybox), Git Bash on
+# Windows. No jq, Python or Node. A PowerShell twin, desk.ps1, serves Windows
+# machines without Git Bash and uses the same files.
+
+STALE_MIN=${PKAI_DESK_STALE_MINUTES:-30}
+NOTICE_MIN=${PKAI_DESK_NOTICE_MINUTES:-60}
+
+# --- where we are -------------------------------------------------------------
+
+home=${CLAUDE_PROJECT_DIR:-}
+if [ -z "$home" ] || [ ! -d "$home" ]; then
+  home=$(cd "$(dirname "$0")/.." 2>/dev/null && pwd) || exit 0
+fi
+D="$home/.desk"
+L="$D/lease"
+
+now_epoch() { date +%s 2>/dev/null || echo 0; }
+
+on_windows() {
+  case $(uname -s 2>/dev/null) in MINGW*|MSYS*|CYGWIN*) return 0 ;; esac
+  return 1
+}
+
+# --- reading the hook payload -------------------------------------------------
+
+payload=""
+read_payload() { payload=$(cat 2>/dev/null | tr -d '\r\n'); }
+
+# json_str KEY — the first top-level-looking string value for KEY in $payload.
+# Anchored on a preceding { or , so a key quoted inside another string value
+# (which arrives as \"key\") can't be mistaken for the real one.
+json_str() {
+  printf '%s' "$payload" | awk -v key="$1" '
+  {
+    s = $0
+    if (!match(s, "[{,][ \t]*\"" key "\"[ \t]*:[ \t]*\"")) exit
+    s = substr(s, RSTART + RLENGTH); out = ""
+    while (length(s) > 0) {
+      c = substr(s, 1, 1)
+      if (c == "\\") {
+        n = substr(s, 2, 1)
+        if (n == "n") out = out "\n"; else if (n == "t") out = out "\t"; else out = out n
+        s = substr(s, 3)
+      } else if (c == "\"") { break }
+      else { out = out c; s = substr(s, 2) }
+    }
+    printf "%s", out
+  }'
+}
+
+session_ok() {
+  case $1 in ''|*[!A-Za-z0-9._-]*) return 1 ;; esac
+  return 0
+}
+
+# --- output to the agent ------------------------------------------------------
+
+json_escape() {
+  printf '%s' "$1" | awk 'BEGIN { ORS = "" } {
+    gsub(/\\/, "\\\\"); gsub(/"/, "\\\""); gsub(/\t/, "\\t")
+    if (NR > 1) printf "\\n"
+    print
+  }'
+}
+
+say_context() { # EVENT TEXT
+  [ -n "$2" ] || return 0
+  printf '{"suppressOutput":true,"hookSpecificOutput":{"hookEventName":"%s","additionalContext":"%s"}}\n' \
+    "$1" "$(json_escape "$2")"
+}
+
+# --- the lease ----------------------------------------------------------------
+
+field() { # FILE NAME
+  [ -f "$1" ] || return 0
+  sed -n "s/^$2=//p" "$1" 2>/dev/null | head -n 1
+}
+
+holder_session() { field "$L/holder" session; }
+
+seen_age_min() { # minutes since the holder's last turn; empty if unknown
+  s=$(cat "$L/seen" 2>/dev/null)
+  case $s in ''|*[!0-9]*) return 0 ;; esac
+  n=$(now_epoch)
+  [ "$n" -gt 0 ] || return 0
+  echo $(( (n - s) / 60 ))
+}
+
+# The claude process that ran this hook, where it can be found reliably.
+# Claude Code sets CLAUDE_PID for hooks (seen, not documented), so prefer it and
+# fall back to walking up from this hook to a process named claude.
+claude_pid() {
+  on_windows && return 0
+  case ${CLAUDE_PID:-} in ''|*[!0-9]*) ;; *) echo "$CLAUDE_PID"; return 0 ;; esac
+  p=$PPID; i=0
+  while [ "$i" -lt 6 ] && [ -n "$p" ] && [ "$p" -gt 1 ] 2>/dev/null; do
+    c=$(ps -o comm= -p "$p" 2>/dev/null) || return 0
+    case $c in claude|*/claude) echo "$p"; return 0 ;; esac
+    p=$(ps -o ppid= -p "$p" 2>/dev/null | tr -d ' ') || return 0
+    i=$((i + 1))
+  done
+}
+
+stale_why=""
+lease_stale() { # sets stale_why
+  [ -d "$L" ] || return 1
+  a=$(seen_age_min)
+  if [ -z "$a" ]; then
+    # Claimed but never stamped (a crash mid-claim): judge by the folder's age.
+    if [ -n "$(find "$L" -prune -mmin +"$STALE_MIN" 2>/dev/null)" ]; then
+      stale_why="its claim was never finished"; return 0
+    fi
+    return 1
+  fi
+  if [ "$a" -ge "$STALE_MIN" ]; then stale_why="no turn for $a minutes"; return 0; fi
+  pid=$(field "$L/holder" pid)
+  host=$(field "$L/holder" host)
+  if [ -n "$pid" ] && [ "$host" = "$(uname -n 2>/dev/null)" ] && ! on_windows; then
+    if ! kill -0 "$pid" 2>/dev/null; then stale_why="its process has ended"; return 0; fi
+  fi
+  return 1
+}
+
+write_lease() { # SID — into an $L we have just created
+  now_epoch > "$L/seen"
+  {
+    echo "session=$1"
+    echo "host=$(uname -n 2>/dev/null)"
+    echo "pid=$(claude_pid)"
+    echo "started=$(date -u +%Y-%m-%dT%H:%M:%SZ 2>/dev/null)"
+  } > "$L/holder.tmp" && mv -f "$L/holder.tmp" "$L/holder"
+}
+
+claim() { # SID — succeeds only if we made the lease
+  mkdir -p "$D" 2>/dev/null
+  mkdir "$L" 2>/dev/null || return 1
+  write_lease "$1"
+}
+
+break_stale() { # move a stale lease aside; only one session wins the rename
+  aside="$D/stale.$$.$(now_epoch)"
+  mv "$L" "$aside" 2>/dev/null || return 1
+  rm -rf "$aside" 2>/dev/null
+  return 0
+}
+
+refresh() { now_epoch > "$L/seen.tmp" 2>/dev/null && mv -f "$L/seen.tmp" "$L/seen" 2>/dev/null; }
+
+# --- guests -------------------------------------------------------------------
+
+guest_folder() { cat "$D/guests/$1" 2>/dev/null; }
+
+make_guest() { # SID — create bg/guest-<UTC>/ and record it; prints the folder
+  mkdir -p "$D/guests" "$home/bg" 2>/dev/null
+  stamp=$(date -u +%Y%m%dT%H%M%SZ 2>/dev/null)
+  name="guest-$stamp"; n=1
+  while ! mkdir "$home/bg/$name" 2>/dev/null; do
+    n=$((n + 1)); name="guest-$stamp-$n"
+    [ "$n" -gt 20 ] && return 1
+  done
+  echo "bg/$name" > "$D/guests/$1"
+  echo "bg/$name"
+}
+
+guest_text() { # SID FOLDER WHY
+  age=$(seen_age_min)
+  if [ -n "$age" ]; then active="last active $age minutes ago"; else active="active now"; fi
+  cat <<EOF
+Desk: you are a GUEST in this house. $3 ($active), so this session must not change the house's shared state.
+- Your folder is $2/. Keep status.md there as you go; when you finish, write handoff.md (what you did, what the foreground should integrate) and then an empty DONE file. Follow the "If you are a guest" rules in the foreground-background skill.
+- Writes to memory/, CLAUDE.md and .claude/ are blocked for you; put what belongs there in your handoff instead.
+- Tell the person once, in one plain sentence, for example: "Another window is already working in this house, so I'll work here as a guest and leave notes for it." Then offer three choices: keep going as a guest (the default); switch to the other window; or take the desk, if the other window is closed or idle.
+- To take the desk, when the person says so: sh scripts/desk take $1 (add --force only after the person confirms the other window is closed).
+EOF
+}
+
+# --- waiting handoffs (the sweep and the hourly notice) -------------------------
+
+waiting_list() { # bg folders with DONE, or guest folders with a handoff
+  for d in "$home"/bg/*/; do
+    [ -d "$d" ] || continue
+    b=$(basename "$d")
+    [ "$b" = archive ] && continue
+    if [ -f "$d/DONE" ]; then echo "bg/$b"
+    else case $b in guest-*) [ -f "$d/handoff.md" ] && echo "bg/$b" ;; esac
+    fi
+  done
+}
+
+mark_told() { # record the waiting list as told, and when
+  mkdir -p "$D" 2>/dev/null
+  waiting_list > "$D/notice.told" 2>/dev/null
+  now_epoch > "$D/notice.at" 2>/dev/null
+}
+
+notice_line() { # one line if something new is waiting and the last notice is old enough
+  w=$(waiting_list)
+  [ -n "$w" ] || return 0
+  new=""
+  for x in $w; do
+    grep -qx "$x" "$D/notice.told" 2>/dev/null || new="$new $x"
+  done
+  [ -n "$new" ] || return 0
+  at=$(cat "$D/notice.at" 2>/dev/null)
+  case $at in ''|*[!0-9]*) at=0 ;; esac
+  [ $(( ($(now_epoch) - at) / 60 )) -ge "$NOTICE_MIN" ] || return 0
+  count=$(printf '%s\n' "$w" | grep -c .)
+  if [ "$count" -eq 1 ]; then what="1 background handoff is"; else what="$count background handoffs are"; fi
+  mark_told
+  echo "Handoffs: $what waiting ($(printf '%s ' $w | sed 's/ $//')). Tell the person in one line, for example: \"$what waiting; say 'integrate' when it suits.\" Integrate with the foreground-background skill when they say so."
+}
+
+# --- the commands ---------------------------------------------------------------
+
+cmd_start() {
+  read_payload
+  sid=$(json_str session_id)
+  session_ok "$sid" || exit 0
+  why=""
+  if claim "$sid"; then
+    :
+  elif [ "$(holder_session)" = "$sid" ]; then
+    write_lease "$sid"                          # resume, compact: still ours; a new process
+  elif lease_stale; then
+    if break_stale && claim "$sid"; then
+      why="You took over the desk from a session that had stopped ($stale_why)."
+    fi
+  fi
+  if [ "$(holder_session)" = "$sid" ]; then
+    rm -f "$D/guests/$sid" 2>/dev/null
+    w=$(waiting_list)
+    text=$why
+    if [ -n "$w" ]; then
+      text="${text:+$text
+}Waiting to integrate: $(printf '%s ' $w | sed 's/ $//'). Mention it to the person in one line; integrate when they say so (foreground-background skill)."
+      mark_told
+    fi
+    say_context SessionStart "$text"
+    exit 0
+  fi
+  # Someone else holds a live desk: this session is a guest.
+  g=$(guest_folder "$sid")
+  [ -n "$g" ] || g=$(make_guest "$sid") || exit 0
+  say_context SessionStart "$(guest_text "$sid" "$g" "Another session holds the desk")"
+}
+
+# Prints context lines for the per-turn hook (now-hook adds the clock).
+cmd_turn() {
+  read_payload
+  sid=$(json_str session_id)
+  session_ok "$sid" || exit 0
+  h=$(holder_session)
+  if [ -n "$h" ] && [ "$h" = "$sid" ]; then
+    refresh
+    notice_line
+    return 0
+  fi
+  if [ -z "$h" ] || lease_stale; then
+    # The desk is free. Say so once; taking it is the person's choice.
+    if [ -n "$(guest_folder "$sid")" ] && [ ! -f "$D/guests/$sid.told-free" ]; then
+      : > "$D/guests/$sid.told-free"
+      echo "Desk: the other session has closed or gone idle, so the desk is free. You may offer to take it: sh scripts/desk take $sid"
+    fi
+    return 0
+  fi
+  # Another session holds the desk. If this session never had a guest folder
+  # (its desk was taken while it was idle), it becomes a guest now.
+  if [ -z "$(guest_folder "$sid")" ]; then
+    g=$(make_guest "$sid") || return 0
+    guest_text "$sid" "$g" "Another session took the desk while this one was idle"
+  fi
+}
+
+cmd_end() {
+  read_payload
+  sid=$(json_str session_id)
+  session_ok "$sid" || exit 0
+  if [ "$(holder_session)" = "$sid" ]; then
+    rm -rf "$L" 2>/dev/null
+  fi
+  rm -f "$D/guests/$sid.told-free" 2>/dev/null
+  exit 0
+}
+
+cmd_guard() {
+  read_payload
+  sid=$(json_str session_id)
+  session_ok "$sid" || exit 0
+  [ -n "$(guest_folder "$sid")" ] || exit 0       # not a guest: allow
+  [ "$(holder_session)" = "$sid" ] && exit 0      # holds the desk: allow
+  p=$(json_str file_path)
+  [ -n "$p" ] || p=$(json_str notebook_path)
+  [ -n "$p" ] || exit 0
+  norm() { # forward slashes, /c/ -> c:/, lower case, no trailing slash
+    printf '%s' "$1" | tr '\\' '/' | sed 's#^/\([A-Za-z]\)/#\1:/#' | tr 'A-Z' 'a-z' | sed 's#/*$##'
+  }
+  f=$(norm "$p"); r=$(norm "$home")
+  case $f in
+    "$r/memory"|"$r/memory/"*|"$r/claude.md"|"$r/.claude"|"$r/.claude/"*)
+      g=$(guest_folder "$sid")
+      reason="This session is a guest: another session holds the desk, so memory/, CLAUDE.md and .claude/ are the foreground's to change. Put this change in your handoff ($g/handoff.md) instead, or ask the person whether to take the desk."
+      printf '{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"deny","permissionDecisionReason":"%s"}}\n' "$(json_escape "$reason")"
+      ;;
+  esac
+  exit 0
+}
+
+cmd_take() {
+  sid=$1; force=$2
+  if [ "$sid" = "--force" ]; then force=--force; sid=""; fi
+  [ -n "$sid" ] || sid=${CLAUDE_CODE_SESSION_ID:-}   # set in the agent's shell (seen, not documented)
+  if ! session_ok "$sid"; then
+    echo "usage: sh scripts/desk take <session-id> [--force]" >&2; exit 2
+  fi
+  mkdir -p "$D" 2>/dev/null
+  h=$(holder_session)
+  if [ -n "$h" ] && [ "$h" = "$sid" ]; then
+    echo "This session already holds the desk."; exit 0
+  fi
+  if [ -d "$L" ] && ! lease_stale && [ "$force" != "--force" ]; then
+    a=$(seen_age_min)
+    echo "The other session was active ${a:-0} minutes ago, so the desk isn't stale yet."
+    echo "If the person confirms that window is closed, run: sh scripts/desk take $sid --force"
+    exit 1
+  fi
+  if [ -d "$L" ]; then break_stale || { echo "Couldn't take the desk; try again." >&2; exit 1; }; fi
+  if claim "$sid"; then
+    g=$(guest_folder "$sid")
+    rm -f "$D/guests/$sid" "$D/guests/$sid.told-free" 2>/dev/null
+    echo "This session now holds the desk; the write guard is off for it."
+    [ -n "$g" ] && echo "Your guest notes are still in $g/; integrate them as the foreground."
+    exit 0
+  fi
+  echo "Another session claimed the desk at the same moment; this one is still a guest." >&2
+  exit 1
+}
+
+cmd_status() {
+  if [ ! -d "$L" ]; then echo "The desk is free."; exit 0; fi
+  s=$(holder_session); a=$(seen_age_min)
+  echo "Desk held by session ${s:-unknown} on $(field "$L/holder" host), since $(field "$L/holder" started); last active ${a:-?} minutes ago."
+  lease_stale && echo "That lease is stale: $stale_why."
+  exit 0
+}
+
+case ${1:-} in
+  start)  cmd_start ;;
+  turn)   cmd_turn ;;
+  end)    cmd_end ;;
+  guard)  cmd_guard ;;
+  take)   cmd_take "${2:-}" "${3:-}" ;;
+  status) cmd_status ;;
+  *) echo "usage: sh scripts/desk start|turn|end|guard|take <session-id> [--force]|status" >&2; exit 2 ;;
+esac
+exit 0

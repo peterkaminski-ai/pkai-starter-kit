@@ -32,3 +32,6 @@ $RECYCLE.BIN/
 *.swo
 .idea/
 .vscode/
+
+# The desk lease (scripts/desk): live session state, never history
+.desk/

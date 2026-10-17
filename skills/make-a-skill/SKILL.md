@@ -19,7 +19,7 @@ A skill is a folder an agent can take on: what to do, when it applies, and — b
 ```
 <skill-name>/
   SKILL.md      — front matter + the procedure
-  LINEAGE.md    — name, version, what it sits on, lineage, credits (heard/read), licence, pull_from, offered_at, needs, changes, thanks_to
+  LINEAGE.md    — name, version, what it grows from, lineage, credits (heard/read), licence, pull_from, offered_at, needs, changes, thanks_to
   LICENSE.md    — the full licence text; the house's default unless the person says otherwise
   scripts/  references/  assets/   — only if needed; a skill that needs none is lighter to carry
 ```
@@ -36,7 +36,7 @@ The folder name is the skill name: lowercase, hyphens, a verb phrase (`save-a-me
 
 ## Writing `LINEAGE.md`
 
-Copy the block from an existing skill and fill it honestly: where the lesson came from (a call, a chapter, a person's correction — *heard* or *read*, with dates), what it sits on, where a newer version would be pulled from, which stair it's offered at. Credits are for the pieces that came from somewhere else. Thanks are a practice, never a debt.
+Copy the block from an existing skill and fill it honestly: where the lesson came from (a call, a chapter, a person's correction — *heard* or *read*, with dates), what it grows from, where a newer version would be pulled from, which stair it's offered at. Credits are for the pieces that came from somewhere else. Thanks are a practice, never a debt.
 
 ## Install and test
 

@@ -1,11 +1,11 @@
 # Lineage
 
-Every PKAI V3 artifact starts with this file. It says what the artifact is, what it sits on, where it came from, and where to pull the next version from. An agent reads the block; a person reads the notes under it. If you take this artifact and make your own, copy this file first, set `name`, `version` and `sits_on` to your own, and move this artifact's entry to the top of `lineage`, keeping at least three generations below you.
+Every PKAI V3 artifact starts with this file. It says what the artifact is, what it grows from, where it came from, and where to pull the next version from. An agent reads the block; a person reads the notes under it. If you take this artifact and make your own, copy this file first, set `name`, `version` and `grows_from` to your own, and move this artifact's entry to the top of `lineage`, keeping at least three generations below you.
 
 ```yaml
 name: pkai-starter-kit
 version: 3.0.0
-sits_on: pkai-benchmark 3.0.0            # the kit is the benchmark, shaped for a first house
+grows_from: pkai-benchmark 3.0.0         # the kit is the benchmark, shaped for a first house
 lineage:                                  # newest first; at least three generations
   - pkai-starter-kit v2.0.0 · 2026-08-24 · Peter Kaminski, with Saga (his agent) · read
   - pkai-agent v1.0.0–v1.2.0 · 2026-05-27 to 2026-07-25 · Peter Kaminski · read
@@ -26,7 +26,7 @@ thanks_to: https://peterkaminski.ai       # a practice, never a debt
 
 ## Reading the block
 
-- **`sits_on`** is the artifact one layer down, the one this was shaped from. The benchmark sits on nothing; the kit sits on the benchmark; a Player+ layer would sit on the kit.
+- **`grows_from`** is the artifact this one was shaped from: its parent, not a layer under it. The benchmark grows from nothing; the kit grows from the benchmark; anything shaped from the kit (a Player+ edition, say, or your own house) grows from the kit. Releases before 3.1 called this field `sits_on`; read the old name as the new one.
 - **`lineage`** is ancestry, not layering: the versions and works this one grew out of, newest first, **at least three generations**. Each entry says who made it and whether we know that because we *read* it (a repo, a commit, a page) or *heard* it (a person said so, with the date). Heard-and-read beats either alone.
 - **`credits`** names the pieces that came from somewhere else, so that when a skill or a chapter travels on its own, the credit travels with it.
 - **`pull_from`** is where the next benchmark release will be. Nothing is ever pushed into your house. You read the new release's `changes`, decide with your person what to take, and say what you valued and where you diverged and did better. That last part is the most valuable thing you can send back.

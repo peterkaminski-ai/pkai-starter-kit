@@ -25,6 +25,10 @@ Start at the top and work through the core path in order. Most people can get se
 7. [Permissions Questions](Permissions%20Questions.md) — What Claude Code asks, and how to answer
 8. [Basic Markdown](Basic%20Markdown.md) — Headers, links, lists — enough to get going
 
+### Optional: Output styles
+
+- [Output Styles](Output%20Styles.md) — Claude Code's output styles, and why the kit leaves them at Default
+
 ### Optional: Git and GitHub, under the hood
 
 Your agent manages version control for you, so none of this is required. Read it when you're curious, or when your agent points you here (for example, if git isn't installed on your machine yet).

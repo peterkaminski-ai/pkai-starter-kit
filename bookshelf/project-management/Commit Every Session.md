@@ -21,7 +21,7 @@ For solo work, the urgency on push is "before I close my laptop tonight." For co
 Every session log should be a commit. The standard close-of-session move:
 
 1. Write the session log (see [Session Logs](Session%20Logs.md)).
-2. Commit the session log along with whatever else changed in the session.
+2. Commit the session log along with the rest of the session's own work. If you edited files by hand, have Claude Code show them to you and commit them separately, with your yes, before the session's own commit.
 3. Push if appropriate.
 4. `/clear`.
 
@@ -39,11 +39,11 @@ Even if you know Git well, this is a place where Claude Code earns its keep. The
 - "Push when ready" — push without prompting.
 - "Make a small commit with [these changes]" — scoped commit when you don't want everything bundled.
 
-A subtle gotcha Pete pointed out: **Claude Code tends to only commit files it edited.** If you edited files manually (in a text editor or another tool), you have to tell Claude Code explicitly:
+A subtle gotcha Pete pointed out: **Claude Code tends to only commit files it edited.** If you edited files manually (in a text editor or another tool), tell Claude Code, so your edits don't get left out:
 
-> Commit everything that's untracked, including changes I made by hand.
+> Show me what I changed by hand, and commit it separately before you commit your own work.
 
-Otherwise your manual edits get left out of the commit.
+Committing your hand edits under the agent's message would credit the agent with changes it didn't make, and could carry in a file you never meant to keep, such as a pasted secret. Seeing them first, and committing them on their own, avoids both.
 
 ## Multi-user repo hygiene
 

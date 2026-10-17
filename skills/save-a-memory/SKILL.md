@@ -49,4 +49,4 @@ Memory is what makes this agent *this person's* agent. One fact, one file, one i
 
 ## Keeping it honest
 
-Before acting on a memory that names a file, a person, or a claim, verify it's still true; a memory records what was true when it was written. A small number of well-scoped memories beats many thin ones — when the folder gets noisy, that's the `review-and-prune` skill's job.
+Before acting on a memory that names a file, a person, or a claim, verify it's still true; a memory records what was true when it was written. A small number of well-scoped memories beats many thin ones — when the folder gets noisy, that's the `review-and-prune` skill's job if it's installed; otherwise it's on the kit's shelf, one copied folder away.

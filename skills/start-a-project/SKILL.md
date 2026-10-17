@@ -10,7 +10,7 @@ Everything is a project. A project is a folder with a few hats on — a place fo
 
 ## Steps
 
-1. **Get the wish.** Ask the person for a short, plain-language note about what they want and why. A sloppy paragraph beats no paragraph; don't polish it for them. If they've already said it in conversation, write it down as they said it and confirm.
+1. **Get the wish.** Ask the person for a short, plain-language note about what they want and why. A sloppy paragraph beats no paragraph; don't polish it for them. If they've already said it in conversation, write it down as they said it and confirm. Then check it isn't already here: look for a project, memory or note that already covers the wish, in `projects/`, `memory/MEMORY.md` and the recent session logs (the `find-it-again` skill does this search, if the house has it). If something plausibly covers it, show the person and ask whether to pick that up instead of starting a second one.
 2. **Ask until it's clear.** Two or three questions at a time, not a form: what does done look like; who is it for; what already exists; what's the deadline, if any; what must it *not* do. Stop when you could explain the project to a stranger in three sentences.
 3. **Pick the container.** Three sizes, from the project-management book:
    - **A folder in the HQ** (`projects/<slug>/`) — most personal work. Version control comes for free from the HQ's own history.

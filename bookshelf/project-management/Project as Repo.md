@@ -21,7 +21,7 @@ The same folder plays all the roles, and most of them add nothing to it:
 | The project | `README.md`, `<slug>.status.md` |
 | Git | nothing in the folder — the HQ's `.git/` covers it |
 | Your agent | nothing — it brings itself along, so there's no `CLAUDE.md` here |
-| MarkPub | a MarkPub config folder, if you publish it |
+| Publishing | whatever config your publishing tool needs, if you publish it as a website |
 
 You don't pick one and commit to it. You let the folder be all of them.
 
@@ -60,7 +60,7 @@ For lots of personal work, this is the right grain. The whole HQ gets one histor
 Spin out a new repo when:
 
 - The project will be **shared with collaborators** who shouldn't see the rest of your house.
-- The project will be **made public** at some point — open source, MarkPub-published, or otherwise.
+- The project will be **made public** at some point — open source, as a website, or otherwise.
 - The project has **its own substantial conventions** (different language, framework, build, etc.) that deserve a dedicated `CLAUDE.md`.
 - The project has **substantial size or activity** that would clutter the HQ's git history.
 
@@ -81,9 +81,12 @@ What doesn't live there: memory and session logs. Those stay in your agent home,
 
 ## Where the folders go
 
-Your agent home and HQ are wherever setup put them. A project with its own repo goes outside the HQ, and wherever it goes, **don't put it inside iCloud, OneDrive, Dropbox, or any cloud-synced directory.** Git and cloud sync collide and produce conflicts and corruption.
+Your agent home and HQ are wherever setup put them: the agent home at the top of your home folder, as `<Name> (agent)`, and the HQ in Documents, or at the top of your home folder if Documents is synced. Neither is ever inside the other. A project with its own repo goes outside the HQ, and wherever it goes, **don't put it inside iCloud, OneDrive, Dropbox, or any cloud-synced directory.** Git and cloud sync collide and produce conflicts and corruption.
 
-On a Mac, `~/Documents` is often synced to iCloud, so a folder near the top of your home folder is the safer choice (for example, `~/repos/some-project/`).
+On a Mac, `~/Documents` is often synced to iCloud, and on Windows, OneDrive often syncs Documents, so a folder near the top of your home folder is the safer choice. This book uses `~/repos/<name>/` for a repo of its own.
+
+Your agent can work in that folder from its usual environment. If you want to see the folder in the desktop app's file pane too, grant it to your agent's environment, the way setup granted the HQ.
+<!-- VERIFY(cold-start): the exact label for granting another folder to an environment -->
 
 ## See also
 

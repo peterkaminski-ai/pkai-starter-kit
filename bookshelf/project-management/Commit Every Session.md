@@ -5,7 +5,7 @@ Commit early, commit often. Push only where you've set up a remote, and only whe
 ## The rules of thumb
 
 1. **Commit at every meaningful increment.** Not "every save" — every logical chunk of work that you'd want to be able to roll back to.
-2. **Commit before clearing the context window.** This is non-negotiable. If `/clear` happens with uncommitted work, you've made the next session's life harder.
+2. **Commit before clearing the context window.** Once your house has git, this is non-negotiable. If `/clear` happens with uncommitted work, you've made the next session's life harder.
 3. **Push only if you've set up a remote, and only with your yes.** A house built from the kit has no remotes: setup makes two local repos, one for the agent home and one for the HQ, and your commits are your safety net right there on your machine. If you add a remote later — for a backup, or for a project you share — your agent asks before it pushes.
 4. **Sync more often when collaborating.** If you share a repo with a remote and anyone else might be working on it, push (with your yes) as soon as you have something committed and want them to see it.
 
@@ -25,7 +25,7 @@ Every session log should be a commit. The standard close-of-session move:
 3. Push only if you have a remote and say so. The wrap-up skill never pushes on its own.
 4. `/clear`.
 
-This means git history reads as a sequence of session-shaped chunks. Each commit message can reference the session log: "session 2026-05-06-002: refactor auth flow." When you `git log` later, you can see the project's progression at the resolution of sessions, not arbitrary save-points.
+This means each session leaves a landmark in git history: the commit that carries its log. The commits in between stay small and frequent (rule 1); the log's commit message can name the session — "session 2026-05-06-002: refactor auth flow" — so when you `git log` later, you can find the project's progression session by session as well as change by change.
 
 ## Have Claude Code drive Git
 
@@ -49,29 +49,22 @@ Committing your hand edits under the agent's message would credit the agent with
 
 If others are working on the same repo (which means it has a remote):
 
-- **`git status` before pulling.** See if you have uncommitted work that needs to be stashed or committed first.
+- **`git status` before pulling.** See if you have uncommitted work.
+- **Commit, then pull.** Uncommitted work is cleaner to merge as a commit. Only if it isn't ready to be a commit: `git stash`, pull, `git stash pop`.
 - **Pull before pushing.** Use `git pull --rebase` to integrate others' changes cleanly. If push is rejected, pull and retry.
-- **Stash if needed.** Uncommitted work + need to pull = `git stash`, pull, `git stash pop`.
-- **Commit before pulling.** Staged changes are cleaner to merge as commits than as stashed state.
 - **Small frequent commits.** Logical units beat batched mega-commits. Easier to review, easier to revert.
 
-These rules show up almost verbatim in Pete's PKAI Founders shared CLAUDE.md, because they're what keeps a multi-user repo from becoming a mess.
+These are the rules that keep a multi-user repo from becoming a mess.
 
 ## What about .gitignore?
 
-The first time you `git init` a house or project, ask Claude Code to write a `.gitignore` for you:
+Use the kit's. When git arrives, your agent copies the kit's `.gitignore` into both folders of your house. It keeps out OS and editor clutter (`.DS_Store`, `Thumbs.db`, editor settings) and the agent home's `.desk/`, which is the desk lease: live session state, never history. Don't let an agent write a fresh one for the house; a homemade one can miss `.desk/`.
 
-> Initialize git here and create a .gitignore appropriate for a markdown project and Claude Code.
+For a repo of its own, start from the same file:
 
-Claude Code will produce something that excludes:
+> Initialize git here with the kit's .gitignore, and add whatever this project's tools need.
 
-- Editor-specific per-machine state (workspace files, local settings), if your editor leaves any.
-- The local `.claude/` directory if it contains per-machine state.
-- OS junk (`.DS_Store`, `Thumbs.db`).
-- Build artifacts, if any.
-- Common credentials and secrets patterns (`.env`, `*.pem`, etc.).
-
-Review the generated `.gitignore`. If your project has its own thing-not-to-commit (large binaries, generated files, raw transcripts, anything sensitive), add it.
+Then review it. If your project has its own thing-not-to-commit (build artifacts, large binaries, generated files, raw transcripts, credentials such as `.env` files), add it.
 
 A specific lesson worth flagging: **don't commit raw call transcripts, chat logs, or other artifacts from a private conversation** if the project might ever be made public. Adding them later and deleting later doesn't help — Git history keeps them. Get them in `.gitignore` from the first commit.
 
@@ -90,4 +83,4 @@ And the default is the same: in a kit house, nothing is pushed anywhere unless y
 
 - [Session Logs](Session%20Logs.md) — what gets committed at the end of each session.
 - [Session Rhythm](Session%20Rhythm.md) — how the commit cadence relates to `/clear`.
-- The [Git guide](../git-guide/README.md) on this shelf — Git for non-developers, if you want the full mental model.
+- The [Git guide](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/git-guide/README.md) in the PKAI benchmark — Git for non-developers, if you want the full mental model.

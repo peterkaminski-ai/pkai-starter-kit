@@ -58,20 +58,18 @@ Pete uses different ones depending on mood. Don't optimize the format; just writ
 
 ## Where the wish lives
 
-In the project folder, as a Markdown file. Common names:
+At the top of the project's `README.md`, in your own words, verbatim. In a house, a project folder holds two files to start:
 
-- `wish.md` (the most explicit)
-- `README.md` (then later evolves into a real readme)
-- `<project-name>.md` (e.g., `mortgage-calculator.md`)
-- An untitled note that you rename later
+- `README.md` — the wish, then a three-sentence version, then where things are. Later it grows into a real readme.
+- `<slug>.status.md` — where the project stands: current state, next actions, decisions and their reasons. Your agent keeps it current.
 
-It doesn't matter. Pick one and don't sweat it.
+That pair is the project's state. You don't need a separate wish file or plan file; the plan goes in the README, or a `PLAN.md` beside it if it gets long. If you just tell your agent the wish, its `start-a-project` skill writes it down as you said it and makes both files.
 
 ## Then: hand it off
 
-Open Claude Code in the project folder and say:
+In your agent's session, say:
 
-> Read `<filename>`. Write a project plan for it in the same folder.
+> Read the README in `projects/<slug>/` in the HQ. Write a project plan for it there.
 
 Now you're in step 3 of [The Iteration Loop](The%20Iteration%20Loop.md). Don't get attached to your wish prose — Claude Code's plan will read better than the wish. That's the point.
 

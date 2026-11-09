@@ -13,20 +13,25 @@ Together they are your **house**: the whole thing you build and live in. The two
 
 ```
 ~/  (your home folder)
-  My Agents/                    ← like My Documents, My Photos — the agents live here
-    <agent-name>/               ← the agent home
-      CLAUDE.md                 ← persona: who your agent is
-      memory/                   ← what it remembers, indexed by MEMORY.md
-      sessions/                 ← logs of your conversations
-      inbox/  outbox/           ← things arriving, drafts awaiting your review
-      .claude/skills/           ← the skills it has taken on
+  <AgentName> (agent)/          ← the agent home, at the top level, e.g. "Lain (agent)"
+    CLAUDE.md                   ← persona: who your agent is
+    memory/                     ← what it remembers, indexed by MEMORY.md
+    sessions/                   ← logs of your conversations
+    inbox/  outbox/             ← things arriving, drafts awaiting your review
+    .claude/skills/             ← the skills it has taken on
   Documents/
     <your-name>-hq/             ← the headquarters
       projects/                 ← one folder per thing you work on
       pkai-starter-kit/         ← this kit, kept as a reference library
 ```
 
-(Unix-comfortable people sometimes prefer `~/.agents/<name>/` over `~/My Agents/<name>/` — same idea, quieter address. And if you use git and your Documents folder is cloud-synced, the HQ moves to the top of your home folder instead — see `REQUIREMENTS.md`.)
+On Windows the agent home is `C:\Users\<you>\<AgentName> (agent)\`. Three rules hold the layout together:
+
+- **Side by side, never nested.** The agent home and the HQ are separate folders, and neither ever goes inside the other. A second agent is a sibling, `~/<Second> (agent)/`, never a folder inside the first; it can work in the same HQ. The desktop app labels each session by its folder, so agents in their own top-level folders are easy to tell apart.
+- **Out of cloud sync, always.** Git looks after both folders, and git and sync engines (iCloud, OneDrive, Dropbox, Google Drive) contend with each other. So neither folder goes in a cloud-synced place. If your Documents folder syncs (iCloud "Desktop & Documents", or OneDrive on many Windows machines), the HQ goes at the top of your home folder instead, beside the agent home.
+- **One repo each.** Each folder keeps its own private version history. If git isn't on your computer yet, your agent installs it and sets up the history when it arrives; you don't do anything.
+
+(Houses built from earlier kits keep their agents somewhere else — in a `My Agents` folder, or in `~/.agents` — and that's fine. Nothing about 4.0 asks them to move.)
 
 ## What to call it
 
@@ -34,7 +39,9 @@ This kit says **house**: the agent home and the HQ together, the whole thing you
 
 ## The daily geometry
 
-**You launch from the agent home.** Your launch command drops you there, your agent reads its persona and memory, and then it *walks around* to wherever the work is — your HQ, usually, but not only.
+**You start in the agent home.** In the Claude desktop app's Code tab, your agent has one **environment**, set on its agent home and given your HQ as well. You pick that environment and start a session; your agent reads its persona and memory, and then it *walks around* to wherever the work is — your HQ, usually, but not only. One environment per agent, and one live session per agent at a time.
+
+(A Claude app *Project* is a different thing from a project folder in your HQ. When this kit says "project," it means a folder.)
 
 **The HQ has no CLAUDE.md, ever.** It's a place, not a person. Your agent brings itself along when it works there.
 
@@ -55,11 +62,11 @@ Four places tell your agent how to behave, and they hold with different strength
 3. **Memory** — strongly advisory, not permanent. Good for facts about your world and how you like things done; too weak for rules that must never slip. It fails *silently*: a memory just stops being read one day.
 4. **The conversation** — what you say right now. Strongest in the moment, gone at `/clear`.
 
-One consequence worth knowing on day one: **a permission written in the charter or in memory is not a permission in the harness.** The classifier never reads those files. When your agent is blocked, the fix is a settings change you make by hand — never a workaround, and never switching a safety layer off.
+One consequence worth knowing on day one: **a permission written in the charter or in memory is not a permission in the harness.** The classifier never reads those files. When your agent is blocked, the way forward is something you do by hand: the action itself, a settings change, or — for a single action that auto mode blocked — switching to Manual mode, approving that one action yourself, and switching back. Never a workaround, and never switching a safety layer off.
 
 ## Skills
 
-A skill is a folder your agent can take on: one `SKILL.md` saying what it does and when it applies, plus whatever scripts or references it needs, plus its own lineage, licence and credits so it can travel alone. Skills live in the agent home, at `.claude/skills/<name>/`, because they belong to the agent, not the machine. The kit ships a handful; your agent can write more; you can trade them with other houses. They're seeds, not the lesson — a skill is the printed-book version of something better learned live — but they are the standard way to carry a lesson from one house to another. They are also the unit the kit itself improves by: because every part of V3 is a standalone folder or file, an improvement is one unit, offered back and taken by pull, and the kit can get a little better every week without anyone reinstalling anything.
+A skill is a folder your agent can take on: one `SKILL.md` saying what it does and when it applies, plus whatever scripts or references it needs, plus its own lineage, licence and credits so it can travel alone. Skills live in the agent home, at `.claude/skills/<name>/`, because they belong to the agent, not the machine. The kit ships a handful; your agent can write more; you can trade them with other houses. They're seeds, not the lesson — a skill is the printed-book version of something better learned live — but they are the standard way to carry a lesson from one house to another. They are also the unit the kit itself improves by: because every part of the kit (since V3) is a standalone folder or file, an improvement is one unit, offered back and taken by pull, and the kit can get a little better every week without anyone reinstalling anything.
 
 ## The stairs
 
@@ -67,6 +74,6 @@ People come to this in steps, and the steps are the person's, not the software's
 
 ## The growth path: a larger house
 
-Start with one agent and one HQ. As it earns trust, you widen what it may do on its own (its persona file has an authority table for exactly this). Later, if you want, the same shape scales: a second agent with a different temperament in the same `My Agents` folder; a **background** instance of your agent working a long job in its own scratch space while you keep talking to the **foreground** one; more projects inside and outside the HQ; the HQ steadily becoming the well-organized memory of your working life.
+Start with one agent and one HQ. As it earns trust, you widen what it may do on its own (its persona file has an authority table for exactly this). Later, if you want, the same shape scales: a second agent with a different temperament, in its own folder beside the first and its own environment; more projects inside and outside the HQ; the HQ steadily becoming the well-organized memory of your working life.
 
-When a house has grown that far — several agents, foreground and background, a body of accumulated knowledge that the agents keep and find their way around — it is still a house, just a larger one, and it needs a few conventions a small house doesn't. What grows is capacity, not only size: a larger house can hold more, do more, and stay coherent while it does. Nothing has to be redone to get there; the pattern this kit teaches is the small end of that. The **PKAI benchmark** (`LINEAGE.md` says where it lives) describes the whole of it; the `foreground-background` skill every house is built with, and the `your-house` book on the shelf, are the first two stairs up.
+When a house has grown that far — several agents working in parallel, a body of accumulated knowledge that the agents keep and find their way around — it is still a house, just a larger one, and it needs a few conventions a small house doesn't. What grows is capacity, not only size: a larger house can hold more, do more, and stay coherent while it does. Nothing has to be redone to get there; the pattern this kit teaches is the small end of that. The **PKAI benchmark** (`LINEAGE.md` says where it lives) describes the whole of it; the `your-house` book on the shelf is the first stair up.

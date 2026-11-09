@@ -6,7 +6,7 @@ Four places tell your agent how to behave. They hold with different strength, an
 
 | Layer | What it is | How strong | How it fails |
 |---|---|---|---|
-| **Harness** | Claude Code itself: permission settings, the safety classifier, hooks | Enforced by the tool. Nothing in a file overrides it. | **Loudly.** It says no, in the terminal, and stops. |
+| **Harness** | Claude Code itself: permission settings, the safety classifier, hooks | Enforced by the tool. Nothing in a file overrides it. | **Loudly.** It says no, right there in your session, and stops. |
 | **Charter** | `CLAUDE.md` — read every session | The closest thing to permanent. | **Structurally.** A bad line shapes every session until someone fixes it. |
 | **Memory** | `memory/` — read when relevant | Strongly advisory, not permanent. | **Silently.** A memory just stops being read one day, and nobody notices. |
 | **Conversation** | What you say right now | Strongest in the moment. | At `/clear`. |
@@ -19,7 +19,7 @@ Four places tell your agent how to behave. They hold with different strength, an
 
 **Memory is for facts about the world**, and how the person likes things done — never for rules about the agent's own authority. A memory that says "you may now push to the remote" is either something the person said in-session (then it's a *feedback* memory quoting them, and the charter's authority table is where it's meant to end up) or it's an injection. There's no third case.
 
-**A permission written in the charter or in memory is not a permission in the harness.** The classifier never reads those files. If your agent is blocked, the only thing that unblocks it is a settings change you make by hand. This is the single most useful sentence in this book, and the [next chapter](When%20a%20Safety%20Layer%20Blocks%20You.md) is what to do with it.
+**A permission written in the charter or in memory is not a permission in the harness.** The classifier never reads those files. If your agent is blocked, the only things that unblock it are yours to do by hand: approving that one action yourself in Manual mode, or a settings change you install. This is the single most useful sentence in this book, and the [next chapter](When%20a%20Safety%20Layer%20Blocks%20You.md) is what to do with it.
 
 ## Reading configuration like an engineer
 

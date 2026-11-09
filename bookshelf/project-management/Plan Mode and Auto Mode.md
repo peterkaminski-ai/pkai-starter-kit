@@ -1,19 +1,20 @@
 # Plan Mode and Auto Mode
 
-Claude Code has four permission modes, and a keyboard cycle to move between them. Knowing what each one does — and which one you should be in for the task at hand — keeps the loop smooth.
+Claude Code has four permission modes, and two ways to move between them: the desktop app's mode picker, and Shift+Tab. Knowing what each one does — and which one you should be in for the task at hand — keeps the loop smooth.
 
 ## The four modes
 
 In order of how aggressive Claude Code is allowed to be:
 
 1. **Plan mode.** Claude can think, read files, and propose plans. It cannot make edits, run commands, or take destructive action. Safest.
-2. **(No mode shown.)** Default-cautious. Claude prompts before reads/writes/commands.
+2. **Manual mode.** The cautious default. Claude asks before reads/writes/commands, and you approve each one.
 3. **Accept Edits.** Edits go through without a prompt. Other actions (commands, deletions) still ask permission.
 4. **Auto Mode.** Claude prompts only when the LLM decides the action is high-risk enough to warrant it. Most actions go through silently.
 
 ## How to switch
 
-**Shift-Tab** cycles through the modes. The current mode is shown above the prompt. Hit Shift-Tab a few times — it's safe — and watch the indicator change.
+Choose a mode in the desktop app's mode picker, or press **Shift+Tab** to cycle through them. Switching a few times to see them is safe.
+<!-- VERIFY(cold-start): where the mode picker sits in the Code tab, and what each mode is labelled there -->
 
 You can also enter plan mode with `/plan`.
 
@@ -23,8 +24,8 @@ You can also enter plan mode with `/plan`.
 |---|---|
 | Drafting / refining a plan | **Plan mode** |
 | Executing a known-safe loop | **Auto mode** |
-| Running something for the first time | **Accept Edits** or default |
-| Touching dangerous things (auth, prod, deletes) | Default cautious |
+| Running something for the first time | **Accept Edits** or **Manual** |
+| Touching dangerous things (auth, prod, deletes) | **Manual** |
 
 ## Auto mode in practice
 
@@ -32,7 +33,9 @@ Auto mode is what you'll use most of the time once you trust your project's guar
 
 > Pete's framing: it's not a panacea, but for routine work it's a big improvement over option-1-option-1-option-1.
 
-When something starts feeling off in auto mode — unfamiliar files, surprising commands, a direction you didn't sanction — Shift-Tab back to **Accept Edits** or **default**. You don't have to commit to a mode for the whole session.
+When something starts feeling off in auto mode — unfamiliar files, surprising commands, a direction you didn't sanction — switch back to **Accept Edits** or **Manual**. You don't have to commit to a mode for the whole session.
+
+If auto mode blocks something your agent was doing, your agent shows you the block word for word and offers a narrow way forward. One of them is Manual mode: switch to it, approve that one action yourself when it asks, and switch back. That moves the decision to you and leaves nothing permanent; it isn't turning a safety layer off. [When a Safety Layer Blocks You](../keeping-yourself-safe/When%20a%20Safety%20Layer%20Blocks%20You.md) has the rest.
 
 ## Plan mode in practice
 
@@ -40,35 +43,36 @@ Plan mode shines when you're at step 3 or step 4 of [The Iteration Loop](The%20I
 
 Pete: "Claude Code is biased to action, so if you're not careful about telling it 'hey, let's do a plan,' it'll just do stuff." Plan mode is the mechanical version of "let's do a plan."
 
-When the plan is good, Shift-Tab out of plan mode and let it execute.
+When the plan is good, switch out of plan mode and let it execute.
 
 ## The "yes for this folder" pattern
 
-When Claude Code asks permission, you typically have two options:
+When Claude Code asks permission, you typically have two kinds of yes:
 
-- **1.** Yes once. Ask me again next time.
-- **2.** Yes always (within this scope, e.g., "always read from this directory").
+- **Yes, once.** Ask me again next time.
+- **Yes, always** — within a scope, such as "always read from this folder".
+<!-- VERIFY(cold-start): the exact labels on a permission prompt in the Code tab -->
 
-For setup steps and routine work, **option 2** is usually right. You burn through fewer prompts, and the scoping (directory, command, etc.) keeps it tight.
+For setup steps and routine work, **yes, always** is usually right. You burn through fewer prompts, and the scoping (folder, command, etc.) keeps it tight.
 
-For one-off risky things — modifying a critical config, running an unfamiliar command — **option 1** keeps you in the loop.
+For one-off risky things — modifying a critical config, running an unfamiliar command — **yes, once** keeps you in the loop.
 
-Pete: "Hitting the 1 key or 2 key is faster than arrow-key-Enter if you need to answer lots of CC permission prompts fast." Tactical, but it adds up.
+Either way, read the prompt before you click. If you don't understand one, ask your agent; it can explain any prompt.
 
 ## What about `--dangerously-skip-permissions` (YOLO mode)?
 
-Yes, it exists. No, you shouldn't use it as a default. The reason permission prompts exist is that Claude Code is fast enough to do real damage in a few seconds.
+Yes, it exists, as a command-line flag. No, you shouldn't use it as a default. The reason permission prompts exist is that Claude Code is fast enough to do real damage in a few seconds.
 
-There are situations where YOLO mode is right (long-running batch work in a sandbox, scripted automation in CI). For everyday project work, auto mode is the right level of trust.
+There are situations where YOLO mode is right (long-running batch work in a sandbox, scripted automation in CI). For everyday project work, auto mode is the right level of trust. And it is never the answer to a block: when a safety layer stops your agent, your agent never suggests switching one off, and you shouldn't reach for this either.
 
 ## The mode-cycle as a discipline
 
-Pete uses Shift-Tab as a deliberate gear-shift, not just a key combo:
+Pete Kaminski, who wrote this book, uses the mode switch as a deliberate gear-shift, not just a key combo:
 
 - Starting a fresh project → plan mode.
-- Plan looks good → Shift-Tab to auto mode.
-- Something feels weird → Shift-Tab back to accept-edits.
-- Done → exit, commit.
+- Plan looks good → switch to auto mode.
+- Something feels weird → switch back to accept-edits or Manual.
+- Done → wrap up, commit, clear.
 
 That's the rhythm. Mode is a tool, not a setting.
 

@@ -1,88 +1,56 @@
 # Setting Up a Project
 
-You have a project — maybe it already has some files, maybe you're starting fresh. You want to turn it into a proper workspace: its own folder, its own Claude Code context, and a GitHub repo for backup and collaboration. A project like this is a repo — an isolated workspace with its own git history, separate from your agent home and HQ. Most projects don't need this — a folder under your HQ's `projects/` is the default (the `start-a-project` skill sets one up). This page is for the exception: a project that gets a repo of its own, because it will be shared or published. Nothing on this page touches your agent home, which is never pushed anywhere.
+You have a project — maybe it already has some files, maybe you're starting fresh. You want it to have a proper home. This page covers the two homes a project can have, and how to ask your agent for either.
 
-This guide assumes you already have Claude Code and a GitHub account set up. If not, start with the setup pages earlier in this book.
+You don't open anything special for a project. You always work through your agent: in the desktop app's Code tab, start or continue a session in your agent's environment, and tell it what you want. Your agent goes to the project; the project doesn't get its own session. (A Claude app *Project* is a different thing from a project folder in your HQ. This page is about the folder kind.)
 
-## Prerequisites
+## The usual home: a folder in your HQ
 
-- Claude Code installed and authenticated
-- A GitHub account
-- The `gh` CLI (GitHub's command-line tool) — Claude Code can install it for you if you don't have it
+Most projects are a folder in your HQ's `projects/` folder — `yourname-hq/projects/garden-plan/`, say. That's the default, and it's right for nearly all personal work. The project shares the HQ's git history, so it's version-controlled from the start, and your agent finds it without being told where to look.
 
-## 1. Choose a Location
+Ask your agent:
 
-Your project folder should **not** be inside iCloud, OneDrive, Dropbox, or any other cloud-synced folder. Git and cloud sync don't mix — you'll get conflicts and corrupted files.
+> Let's start a project: I want to plan next year's vegetable garden.
 
-A good location is a dedicated folder like `~/Projects/` (Mac), or `C:\Users\YourName\Projects\` (Windows).
+Your agent uses its `start-a-project` skill. It asks for the project in your own words, asks a few questions until it's clear, suggests the folder, and makes a `README.md` (what the project is) and a status file (where it stands). Then it writes a first plan and shows it to you before building anything.
 
-If you already have a project folder somewhere else, move it to a safe location first.
+There's no `CLAUDE.md` in a project folder in your HQ. Your agent brings itself along; its own charter is all it needs.
 
-## 2. Create or Move Your Project Folder
+## The exception: a repo of its own
 
-If you're starting fresh, create a new empty folder in your safe location and name it after your project.
+Some projects are better off in a git repository of their own, separate from your house:
 
-If you have existing files, move them into a folder in your safe location.
+- you'll share it with people who shouldn't see the rest of your HQ;
+- you'll publish it;
+- it has its own tools, or would clutter your HQ's history.
 
-## 3. Create a CLAUDE.md
+Your agent will suggest this when it fits; you decide. A project's own repo goes in a folder **outside** your HQ and outside your agent home. This book uses one example location throughout: a `repos` folder at the top of your home folder.
 
-This is an important step. CLAUDE.md tells Claude Code what your project is about, what conventions to follow, and what matters. Without it, Claude is flying blind.
+- **Mac:** `~/repos/garden-plan/`
+- **Windows:** `C:\Users\YourName\repos\garden-plan\`
 
-Ask Claude Code:
+Like your house, it must not be inside iCloud, OneDrive, Dropbox or any other cloud-synced folder.
 
-> Create a CLAUDE.md for this project. It's about [describe your project in a sentence or two].
+Ask your agent:
 
-Or write one yourself. Even a few lines make a big difference:
+> Let's start a project for the garden club's planting guide. It'll be shared with the club, so I think it needs its own repo in ~/repos.
 
-```markdown
-# CLAUDE.md
+Your agent creates the folder, sets up git there with its first commit, and makes the `README.md` and status file in the repo. Your HQ keeps a one-line pointer to it in `projects/README.md`, so your agent can always find it again. You keep working in your agent's environment; your agent walks over to `~/repos/garden-plan/` when the work is there. The first time it works there, the app may ask your permission, because the folder is outside your house; that's expected.
 
-This project is [what it is]. It's for [what you use it for].
+### A CLAUDE.md for a repo of its own
 
-## Structure
+A project in its own repo may carry its own `CLAUDE.md`, describing the project's conventions. It's for anyone who opens the repo without your agent — a collaborator, or their agent. Keep it about the project, never about your agent: your agent's persona stays in its agent home. Your agent can draft it for you.
 
-- [describe your folder layout, if any]
+### Putting it on GitHub
 
-## Conventions
+A repo of its own starts with no remote, like your house. If you want it on GitHub — to share it, or to keep a copy off your computer — you'll need a GitHub account (see [GitHub Account Setup](GitHub%20Account%20Setup.md)). Then ask:
 
-- [any rules you want Claude to follow]
-```
+> Create a private GitHub repo for the garden club project and push to it.
 
-## 4. Initialize Git
-
-Open Claude Code in the project folder and say:
-
-> Initialize a git repo here and create a .gitignore.
-
-Claude Code will run `git init` and create a `.gitignore` that excludes files that shouldn't be tracked.
-
-Then make the first commit:
-
-> Commit everything with the message "Initial commit"
-
-## 5. Create a GitHub Repository
-
-Ask Claude Code:
-
-> Create a private GitHub repo for this project and push to it.
-
-Creating a remote and pushing to it are things your agent asks you about first, every time; this line is your yes. Tell Claude whether you want the repo **private** (only you and people you invite can see it) or **public** (visible to everyone). Claude Code will use the `gh` CLI to create the repo and push.
-
-> [!tip]
-> If Claude Code says it can't find `gh`, install the GitHub CLI first. Mac: `brew install gh`. Windows: download from [cli.github.com](https://cli.github.com/).
-
-## 6. Verify Everything Works
-
-Test the full loop:
-
-1. Create or edit a file in the project
-2. Ask Claude Code: "Commit and push my changes"
-3. Visit your repository on github.com to confirm the files are there
-
-You now have a working project with version control and an AI agent that understands it.
+Creating a remote and pushing to it are things your agent asks you about first, every time; this line is your yes. Say whether you want the repo **private** (only you and people you invite can see it) or **public** (visible to everyone). Collaborators you invite on GitHub get a copy of the project only; nothing in your agent home or HQ goes with it.
 
 ## What's Next
 
-- **Add structure as you need it.** Don't over-organize upfront. Start with a flat folder of notes and add subfolders when a category has enough pages to justify one.
-- **Evolve CLAUDE.md as you go.** As your project develops conventions, add them so Claude stays current.
-- **Invite collaborators** on GitHub if others will work in the project. They clone the repo, open the folder, and they're in.
+- **Add structure as you need it.** Don't over-organize upfront. Start with a few notes and add subfolders when a category has enough pages to justify one.
+- **Keep the status file current.** Your agent updates it as things change, so "where does this stand?" always has an answer.
+- **Tell your agent your conventions.** As the project develops habits, say them; your agent saves them as memories so it stays current.

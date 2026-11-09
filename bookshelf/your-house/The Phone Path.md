@@ -1,15 +1,19 @@
 # The Phone Path
 
-Some people meet their agent through a phone and nothing else. No laptop open, no terminal, no review surface — the Claude app, a conversation, and an agent that remembers them. It works. One household in the PKAI network already runs this way, and the person on the phone gets an agent that remembers better and goes deeper than the chatbots she used before. But the setup is, in the words of the person who built it, "pretty fiddly and pretty weird," and it's worth writing down plainly.
+Some people meet their agent through a phone and nothing else. No laptop open, no review surface — the Claude app on the phone, a conversation, and an agent that remembers them. It works. One household in the PKAI network already runs this way, and the person on the phone gets an agent that remembers better and goes deeper than the chatbots she used before. But the setup is, in the words of the person who built it, "pretty fiddly and pretty weird," and it's worth writing down plainly.
 
 ## What's actually running
 
 The agent runs on a computer. On the phone path that computer is one of:
 
-- **The person's own laptop**, lid down, kept awake by a utility that stops it sleeping, with one terminal running the agent. They may open the lid twice a week; mostly they don't.
+- **The person's own laptop**, kept awake, with the Claude desktop app open and the agent's session in its Code tab. The desktop app can keep the computer awake itself (see [First Day in Desktop](../getting-started/First%20Day%20in%20Desktop.md)). They may sit down at it twice a week; mostly they don't.
 - **A computer someone else runs for them.** A spare laptop or a small server, run by someone in their network they trust — a family member, a friend, a house that hosts several. One machine can host several people's houses, each with its own agent home and HQ. Somewhere between two and a few dozen is realistic; it depends on the machine.
 
-The phone reaches that computer through **Remote Control**: in the Claude app, the person finds *the computer's name*, then their agent's folder, and continues the session running there — or starts a new one there, if the host has arranged a session to be started. The session lives on the computer; the phone is a window into it, and it works from anywhere in the world.
+The phone reaches that computer through **Remote Control**, which is a toggle in the desktop app. In the Claude app on the phone, the person finds *the computer's name*, then their agent's session, and continues it — or starts a new one there, if the host has arranged for that. The session lives on the computer; the phone is a window into it, and it works from anywhere in the world.
+<!-- VERIFY(cold-start): what the phone app shows for a Remote Control session (the computer's name, the agent's folder or environment name), and whether a new session can be started on the computer from the phone -->
+
+Remote Control only lasts as long as the desktop app is running. **Quitting the app turns it off**, and the phone loses the session until someone opens the app and turns it back on. The desktop app has a setting to start every session with Remote Control on; on the phone path, turn it on.
+<!-- VERIFY(cold-start): the name and location of the setting that starts every session with Remote Control on -->
 
 ## Two rules of the shared machine
 
@@ -36,4 +40,4 @@ The `phone-path` skill carries this for the agent, but the person should know it
 
 ## Setting someone up
 
-If you're the builder: install `phone-path` and `save-a-memory`; keep a session running on the host computer so there's always one to find; write the three-line card and put it where the phone will show it. Then have the first conversation *on the phone*, not at the keyboard, so the agent learns what the person actually sees. A version of the kit that makes this simpler — self-hosted surfaces, an app — is planned for V3.1; for V3.0, this is the path, and it's a real one.
+If you're the builder: install `phone-path` and `save-a-memory`; keep the desktop app open on the host computer, with Remote Control on and the computer kept awake, so there's always a session to find; write the three-line card and put it where the phone will show it. Then have the first conversation *on the phone*, not at the keyboard, so the agent learns what the person actually sees. A version of the kit that makes this simpler — self-hosted surfaces, an app — is planned for a later release; until then, this is the path, and it's a real one.

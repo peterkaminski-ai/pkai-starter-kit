@@ -1,6 +1,6 @@
 # Your First Commit
 
-Git uses three main actions — **commit**, **pull**, and **push**. Commit is the one your house uses every day: it saves your work on your computer. Pull and push only come in once you've added a remote, such as a GitHub repository, which is optional. You don't need to learn any Git commands. Claude Code handles all of it for you. You just use plain English.
+Git uses three main actions — **commit**, **pull**, and **push**. Commit is the one your house uses every day: it saves your work on your computer. Pull and push only come in once you've added a remote, such as a GitHub repository, which is optional. You don't need to learn any git commands. Your agent handles all of it for you. You just use plain English.
 
 ## The Three Actions
 
@@ -24,7 +24,7 @@ Uploads your committed changes to a remote such as GitHub, so there's a copy off
 
 ## The Daily Routine
 
-| When | What to tell Claude Code |
+| When | What to tell your agent |
 |------|--------------------------|
 | Finished a chunk of work | "Commit — updated the project notes" |
 | Taking a break | "Commit so nothing is lost" |
@@ -34,7 +34,7 @@ If you've added a remote, add "Pull the latest" at the start of a session and "p
 
 ## Saying It in Plain English
 
-You don't need to memorize specific phrases. Claude Code understands natural language. Here are some examples:
+You don't need to memorize specific phrases. Your agent understands natural language. Here are some examples:
 
 **Saving your work:**
 - "Commit everything"
@@ -55,21 +55,23 @@ You don't need to memorize specific phrases. Claude Code understands natural lan
 
 ## Try It Now
 
-If you set up your house in the previous step, try the full cycle:
+If you've set up your house, try the full cycle:
 
-1. Open Claude Code in your house folder
-2. Create or edit a file
+1. In the desktop app's Code tab, start or continue a session in your agent's environment
+2. Ask your agent to create or edit a file — say, a note in your HQ
 3. Say: **"Commit — my first commit"**
 4. Say: **"Show me the recent history"**
 
-Claude Code will save your changes as a commit on your computer, and the history will show it at the top.
+Your agent will save the change as a commit on your computer, and the history will show it at the top. Your house is two repositories, the agent home and the HQ, and your agent commits each one where the change was; you don't need to say which.
+
+If your agent says git is still installing, try this once it's done. See [Installing Git](Installing%20Git.md).
 
 ## If Something Goes Wrong
 
-Don't panic. Git keeps a complete history of everything, so nothing is truly lost. If you see an error or something looks weird, just describe the problem to Claude Code — it can usually sort it out.
+Don't panic. Git keeps a complete history of everything, so nothing is truly lost. If you see an error or something looks weird, just describe the problem to your agent — it can usually sort it out.
 
 Common situations:
 
-- **"Merge conflict"** — Two people edited the same part of the same file. Claude Code can help you resolve it. This is rare in solo work.
+- **"Merge conflict"** — Only happens with a remote: two people edited the same part of the same file. Your agent can help you resolve it. This is rare in solo work.
 - **"Nothing to commit"** — You haven't made any changes since your last commit. That's fine.
 - **"Push rejected"** — Only happens with a remote: someone else pushed changes while you were working. Pull first, then push again. (Saying "pull and push" avoids this.)

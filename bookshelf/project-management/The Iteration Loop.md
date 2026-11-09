@@ -1,6 +1,6 @@
 # The Iteration Loop
 
-The core practice. Six steps; the rest of this book is detail under one of them.
+The core practice. Six steps, then round again; the rest of this book is detail under one of them.
 
 ## The loop
 
@@ -15,13 +15,13 @@ Then iterate — usually back to step 5, sometimes back to step 4 if the plan ne
 
 ## Step 1 — Project as container
 
-Make a folder for the project. It can be a sub-folder of an existing house, or a brand-new repo. (See [Project as Repo](Project%20as%20Repo.md), [Starting a New Project](Starting%20a%20New%20Project.md).)
+Make a folder for the project. Usually that's a folder under `projects/` in your HQ; sometimes it's a repo of its own. (See [Project as Repo](Project%20as%20Repo.md), [Starting a New Project](Starting%20a%20New%20Project.md).)
 
 The discipline is to not work outside a project. "Quick experiments" tend to leave debris that rots into the next project. A folder is cheap; make one.
 
 ## Step 2 — The wish
 
-In the project folder, write a note that says what you want. Be sloppy. A sentence is fine. A page is fine. Use your own voice; don't pre-edit it for an LLM audience.
+Write a note that says what you want. It goes at the top of the project's `README.md`, which sits beside a `<slug>.status.md` that says where things stand (your agent's `start-a-project` skill makes both). Be sloppy. A sentence is fine. A page is fine. Use your own voice; don't pre-edit it for an LLM audience.
 
 The wish is for *both* of you — you're going to read it back to yourself in three weeks and remember why you started, and Claude Code is going to read it as the seed of step 3.
 
@@ -29,9 +29,9 @@ See [Writing the Wish](Writing%20the%20Wish.md) for what tends to land well in t
 
 ## Step 3 — Have Claude Code write a project plan
 
-Open Claude Code in the project folder. Tell it:
+Tell your agent which project, in the session you already have:
 
-> Read `wish.md` (or whatever you named it). Write a project plan in the same folder.
+> Read the README in `projects/<slug>/` in the HQ. Write a project plan there.
 
 Claude Code will guess at things you didn't say. It's good at project plans even from sparse input. You'll get a coherent skeleton with steps, sub-steps, sometimes architectural choices.
 
@@ -72,9 +72,9 @@ The session log captures:
 
 You and Claude Code are writing primarily to you, your future self, and the next Claude Code session, which will pick up the file with no other context. (See [Session Logs](Session%20Logs.md) for the file naming convention and a template.)
 
-## Step 7 — Iterate
+## Then — iterate
 
-The plan is a living document. As you execute and learn, the plan improves. The session logs accumulate. At some point you finish, or pivot, or merge this project into another.
+The plan is a living document. As you execute and learn, the plan improves, and the status file says where things stand. The session logs accumulate. At some point you finish, or pivot, or merge this project into another.
 
 The iteration loop is small turns. Many small turns beats one big plan you commit to and try to push through. You will discover things in execution that you couldn't have predicted in planning. Update the plan when that happens.
 
@@ -88,7 +88,7 @@ The whole value of the loop is in step 4. Don't skip it.
 
 ## Where the loop lives
 
-The loop applies whether you're using vanilla Claude Code or a personal agent (Freya, Robbie, HeyYou, etc.). The agent layer adds memory and personality, but the iteration loop runs underneath it the same way.
+The loop applies whether you're using vanilla Claude Code or a personal agent like the one your house runs. The agent layer adds memory and personality, but the iteration loop runs underneath it the same way.
 
 ## See also
 

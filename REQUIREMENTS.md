@@ -16,15 +16,15 @@ Requirements and strong recommendations, in plain terms. If the "basics" lists f
 
 A **Claude Pro or Max** account from Anthropic. Claude Code — the tool your agent runs on — is included with both. One person, one account: the terms of service say so, and a shared account also means a shared view of everyone's sessions.
 
-## Computer intermediate
+## The Claude desktop app
 
-- You can use a **terminal** — a simple, chat-like program on your computer. If you never have, that's genuinely fine: it's less scary than it looks, the getting-started book in this kit teaches it from zero, and the setup conversation checks your terminal is set up comfortably.
+The **Claude desktop app**, for Mac or Windows, from claude.ai/download, kept up to date. Your agent lives in its **Code** tab. You don't need a terminal, and you don't install anything else by hand: setup checks the app's version with you, and your agent takes care of the rest.
 
-## Version control (git): optional, strongly recommended
+## Version control (git): your agent installs it
 
-Git keeps quiet, safe snapshots of everything you and your agent make, so nothing can ever be lost. You don't need to learn it — your agent handles it — you only need to say yes to it during setup.
+Git keeps quiet, safe snapshots of everything you and your agent make, so nothing can ever be lost. Every house built from this kit uses it. You don't need to learn it, and you don't need to install it: if it isn't on your computer, your agent starts the install during setup (on a Mac you click **Install** in Apple's window) and sets everything up when it arrives.
 
-**One rule if you use git: keep git-managed folders out of OneDrive** (or any cloud-sync folder — Dropbox, Google Drive, iCloud Drive). Git and sync engines contend with each other and both lose. On Windows, Documents is often OneDrive-synced — in that case your headquarters goes at the top of your home folder instead. Setup checks this for you.
+**One rule: keep both of your house's folders out of cloud sync** — out of iCloud Drive (including iCloud's "Desktop & Documents"), OneDrive, Dropbox and Google Drive. Git and sync engines contend with each other and both lose. If your Documents folder syncs, your headquarters goes at the top of your home folder instead, beside your agent's folder. Setup checks this for you.
 
 ## The two surfaces
 
@@ -32,16 +32,15 @@ You'll work with your agent through two surfaces: a **chat surface** (where you 
 
 ### Chat surfaces
 
-- **A terminal** — the recommended path. Mac: Terminal.app works, and we strongly recommend upgrading to **iTerm2** (free and open source). Windows: **PowerShell** in **Windows Terminal**.
-- **The Claude app on your phone**, through **Remote Control** (`/rc`) — the same session, continued from your phone. If you'll reach your agent mostly from a phone, say so during setup: there's a chapter and a skill for that path (`bookshelf/your-house/The Phone Path.md`).
-- *Other option, not recommended:* Claude Desktop (or Web/Mobile — all the same) natively. The problem is getting files in and out, via clunky git branches.
+- **The Code tab of the Claude desktop app** — where you and your agent talk. Not the Chat tab: that's a chatbot, not your agent. (And a Claude app *Project* is a different thing from a project folder in your HQ.)
+- **The Claude app on your phone**, through **Remote Control** — a toggle in the desktop app that lets you continue the same session from your phone. If you'll reach your agent mostly from a phone, say so during setup: there's a chapter and a skill for that path (`bookshelf/your-house/The Phone Path.md`).
 - *Other option:* skip Claude Code and use Claude Cowork. We think that's harder.
 
 ### Review surfaces
 
 - **Typora** — https://typora.io — our current favorite. Inexpensive, one-time purchase.
 - **MarkText** — https://marktext.me — free and open source, same live-preview style.
-- **MeetingWords** — https://meetingwords.com — a shared pad made for people and agents working on the same document; also the surface for working with other houses. *(Disclosure: Pete Kaminski runs MeetingWords. Recommending it isn't intended as self-dealing; it's the current best understanding of what works. V3 uses the hosted service at meetingwords.com; self-hosting and an app version are planned for a later release.)*
+- **MeetingWords** — https://meetingwords.com — a shared pad made for people and agents working on the same document; also the surface for working with other houses. *(Disclosure: Pete Kaminski runs MeetingWords. Recommending it isn't intended as self-dealing; it's the current best understanding of what works. This kit uses the hosted service at meetingwords.com; self-hosting and an app version are planned for a later release.)*
 - **If you already use Obsidian or VS Code**, they're fine — keep them. The kit no longer teaches Obsidian, which is not the same as forbidding it.
 
 The full treatment is `bookshelf/getting-started/Viewing Your Files.md`.

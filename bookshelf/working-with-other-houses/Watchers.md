@@ -35,4 +35,13 @@ Pick the one your tool actually supports, and write down which one, because the 
 
 ## Scenes
 
-An agent watching a room is usually one window among several: the call, the pad, the heads-up, the terminal. A repeatable arrangement of those — for a jam, for a quiet writing session, for a review — is a **scene**, and it's worth a short card of its own: what it's for, which surfaces, where they go, what else is running, what's hidden, and what broke last time. A scene is not a venue card; the card for a room is about the room's terms, the scene is about your own screen.
+An agent watching a room is usually one window among several: the call, the pad, the heads-up, your agent's session. A repeatable arrangement of those — for a jam, for a quiet writing session, for a review — is a **scene**, and it's worth a short card of its own: what it's for, which surfaces, where they go, what else is running, what's hidden, and what broke last time. A scene is not a venue card; the card for a room is about the room's terms, the scene is about your own screen.
+
+## Where the scripts are
+
+This page gives the rules, not the code. Working watchers live in Player+, a public kit from the LIØNSBERG house that grows from this one, in its repo at https://github.com/Lionsberg/lionsberg-intelligence :
+
+- [Playing in a Jam](https://github.com/Lionsberg/lionsberg-intelligence/blob/main/player-plus/bookshelf/working-with-other-houses/Playing%20in%20a%20Jam.md) carries two watchers in full, inside the page: `room-watch.sh`, which follows a room's chat and transcript, and `pad-poller.sh`, which watches a MeetingWords pad's text and comment threads.
+- [`player-plus/scripts/`](https://github.com/Lionsberg/lionsberg-intelligence/tree/main/player-plus/scripts) holds `pad-write.sh` and `room-post.sh`, the narrow scripts Player+ uses for writing on a pad and posting in a room's chat.
+
+They're someone else's code, under their own licence. Read one with your agent before you run it, and keep to the rules above whichever you use.

@@ -26,7 +26,17 @@ The benchmark is at the `pull_from` address in `LINEAGE.md`. Same layout as the 
 
 ## What is identical in both
 
-`LICENSE.md`, `template/`, every skill folder, and every chapter of the shelf. `LINEAGE.md` differs only in `grows_from`; `CHANGES.md` is each artifact's own. Where the two differ in a shared file, the benchmark is right and the kit has drifted; say so in the report back.
+`LICENSE.md`, `template/`, every skill folder, and every chapter on the kit's shelf. (Since 4.0 the benchmark's shelf holds a few chapters the kit's doesn't; see below.) `LINEAGE.md` differs only in `grows_from`; `CHANGES.md` is each artifact's own. Where the two differ in a shared file, the benchmark is right and the kit has drifted; say so in the report back.
+
+## In 4.0: what the kit's shelf leaves out
+
+4.0 sets up a house entirely in the Claude desktop app and never teaches a terminal. Three kinds of chapter come off the kit's shelf for it. The benchmark keeps every one of them, as the fuller statement.
+
+| On the benchmark's shelf | Not on the kit's shelf, because |
+|---|---|
+| **`git-guide/`** — version control without the jargon | Git is always part of a 4.0 house, and the agent installs it and runs it; the person never drives it. The guide was written for people who would. |
+| **The getting-started pages whose whole subject is the terminal** — *Choosing Your Terminal*, for example | 4.0 doesn't install, open or teach a terminal. A page about one would describe a house the kit doesn't build. |
+| **`your-house/Foreground and Background.md`** | The desk machinery stays in every 4.0 house — a second session still becomes a guest, and the `foreground-background` skill stays installed because the guest's message points to it — but 4.0 doesn't teach foreground and background. A better way to work in parallel is planned for V5. |
 
 ## A note on direction
 

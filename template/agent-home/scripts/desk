@@ -196,7 +196,7 @@ guest_text() { # SID FOLDER WHY
 Desk: you are a GUEST in this house. $3 ($active), so this session must not change the house's shared state.
 - Your folder is $2/. Keep status.md there as you go; when you finish, write handoff.md (what you did, what the foreground should integrate) and then an empty DONE file. Follow the "If you are a guest" rules in the foreground-background skill.
 - Writes to memory/, CLAUDE.md and .claude/ are blocked for you; put what belongs there in your handoff instead.
-- Tell the person once, in one plain sentence, for example: "Another session is already working in this house — in another terminal, or in the Claude app — so I'll work here as a guest and leave notes for it." Then offer three choices: keep going as a guest (the default); switch to the other session; or take the desk, if the other session is closed or idle.
+- Tell the person once, in one plain sentence, for example: "Another session is already working in this house — in another session in the Claude app — so I'll work here as a guest and leave notes for it." Then offer three choices: keep going as a guest (the default); switch to the other session; or take the desk, if the other session is closed or idle.
 - To take the desk, when the person says so: sh scripts/desk take $1 (add --force only after the person confirms the other session is closed).
 EOF
 }

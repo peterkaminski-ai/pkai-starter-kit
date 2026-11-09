@@ -1,6 +1,8 @@
 # GitHub Account Setup
 
-GitHub is where your files get backed up in the cloud and where you collaborate with others. You need a free account.
+GitHub is a website that can keep a copy of a git repository in the cloud, and it's where people collaborate on shared projects. **It's optional.** Your house doesn't use it: your agent home and HQ are two local repositories with no remote, and nothing is uploaded anywhere. You might want an account later, for a project with a repo of its own that you share or publish, or to look at someone else's repository. Until then, skip this page.
+
+One rule holds whatever you decide: your agent home holds your agent's memory, so it is never pushed anywhere public or shared.
 
 ## Create Your Account
 
@@ -11,72 +13,29 @@ GitHub is where your files get backed up in the cloud and where you collaborate 
 You don't need to complete any of the onboarding questions (role, what you're using it for, etc.) — just having the account is enough.
 
 > [!tip]
-> Remember the email address you used for GitHub. You'll need it in the next step.
+> Remember the email address you used for GitHub. Your agent will ask for it in the next step.
 
-## Tell Git Who You Are
+## Connect It, With Your Agent
 
-Git needs to know your name and email so it can label your changes. Open your terminal — Terminal or iTerm2 on Mac, Windows Terminal (PowerShell) on Windows — and run these two commands, replacing the name and email with your own:
+You don't type any commands. When you want to connect your account, ask your agent in the Code tab:
 
-```
-git config --global user.name "Your Name"
-```
+> I've made a GitHub account with the email you@example.com. Help me connect it, so we can use it for a project later.
 
-```
-git config --global user.email "your-email@example.com"
-```
+Your agent will:
 
-Use the same email you used when you created your GitHub account.
+1. **Tell git who you are**, so your commits carry your name and email. Use the same email you used for GitHub. (Your agent may already have done this when it set up git.)
+2. **Connect to GitHub.** GitHub doesn't accept your regular password for git. Your agent will usually suggest signing in through your web browser using GitHub's own tool, which it can install for you with your yes. The other way is a personal access token, which you make on GitHub's website and paste in when asked. Your agent can walk you through either.
+3. **Check the connection** and tell you your GitHub username.
 
-## Connect to GitHub
-
-There are two ways to authenticate with GitHub from your terminal. Choose the one that matches your setup.
-
-### Option A: Using the GitHub CLI (recommended for Mac)
-
-If you installed the GitHub CLI (`gh`) in the previous step, this is the easiest method.
-
-Run:
-
-```
-gh auth login
-```
-
-It will ask you several questions. Choose these answers:
-
-1. **Where do you use GitHub?** — GitHub.com
-2. **Preferred protocol?** — HTTPS
-3. **Authenticate Git with GitHub credentials?** — Yes
-4. **How would you like to authenticate?** — Login with a web browser
-
-It will show you a code. Press Enter, and your browser will open. Paste the code into the browser, sign in to GitHub, and you're connected.
-
-### Option B: Using HTTPS (works on Mac and Windows)
-
-If you don't have the GitHub CLI, Git will prompt you for credentials the first time you try to push or pull from GitHub. When it does:
-
-1. Go to [github.com/settings/tokens](https://github.com/settings/tokens)
-2. Click **Generate new token (classic)**
-3. Give it a name like "My computer"
-4. Set an expiration (90 days is fine to start)
-5. Check the **repo** scope
-6. Click **Generate token**
-7. **Copy the token immediately** — you won't be able to see it again
-
-When Git asks for your password, paste this token instead of your GitHub password. Your computer will remember it for future use.
+Each of these touches settings outside your house, so your agent asks before it acts. Read the prompts; see [Permissions Questions](Permissions%20Questions.md).
 
 > [!warning]
-> GitHub no longer accepts regular passwords for Git operations. You need either the GitHub CLI method (Option A) or a personal access token (Option B).
+> A personal access token is a password. Don't paste it into a chat, a note or a file in your house; paste it only where git or GitHub's own tool asks for it.
 
-## Verify the Connection
+## Using It
 
-You can verify everything works after you clone your first repository (covered in [Your First House](Your%20First%20House.md)). If you want to test now, you can run:
-
-```
-gh auth status
-```
-
-(If you used the GitHub CLI method.) You should see your GitHub username and that you're logged in.
+Having an account doesn't change your house. Your agent creates a repository on GitHub, or pushes anything to one, only when you say so, every time. [Setting Up a Project](Setting%20Up%20a%20Project.md) covers the one common case: a project that gets a repo of its own.
 
 ## Next Step
 
-Move on to [Installing Claude Code](Installing%20Claude%20Code.md).
+Back to the [Getting Started](README.md) index.

@@ -30,9 +30,9 @@ Nothing is ever pushed into a house. A new release is the current best understan
 7. **Apply only what was decided, by copying.**
    - Skills: copy the whole folder into `.claude/skills/`, licence and lineage included.
    - Scripts: copy new ones into `scripts/`. A script the house already has is a decision: show the difference, and keep the house's own changes.
-   - **Settings and hooks:** never copy the release's `settings.json` over the house's. Draft the merged file into `outbox/` — every hook and setting the house already has kept as it is, the release's entries added beside them, as the moving guide describes — show the person the difference, and let them install it by hand and restart. Check it parses before you hand it over.
+   - **Settings and hooks:** never copy the release's `settings.json` over the house's. Draft the merged file into `outbox/` — every hook and setting the house already has kept as it is, the release's entries added beside them, as the moving guide describes — show the person the difference, and let them install it by hand and start a new session. Check it parses before you hand it over.
    - Bookshelf and templates: copy into the HQ's kit folder or wherever this house keeps its reference library.
-   - **Charter changes:** draft the exact lines into a file in `outbox/` for the person to read, install by their own hand, and restart. You never edit your own charter as part of a pull.
+   - **Charter changes:** draft the exact lines into a file in `outbox/` for the person to read, install by their own hand, and start a new session. You never edit your own charter as part of a pull.
    - Memory: write any decision worth keeping with `save-a-memory`, including the version pulled and the date.
 8. **Update `LINEAGE.md`.** Set `grows_from` to the new version (renaming `sits_on`, if that's what the house has). Add a `changes` note: date, version pulled, what was taken, adapted, declined.
 9. **Log it.** A session log entry, or a file `sessions/YYYY-MM-DD-pull-<version>.md`: the table with its decisions, and anything that went wrong.

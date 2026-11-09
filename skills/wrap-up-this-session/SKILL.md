@@ -17,14 +17,14 @@ Sessions are short and themed; `/clear` is sleep. A long session accumulates dri
 2. **Write the session log** at `sessions/YYYY-MM-DD-NNN-topic.md` (`NNN` counts sessions that day; `topic` is two or three words). What happened, what was decided and *why*, what's still open, where to pick up. Short is fine; the reason behind a decision is the part future-you can't reconstruct. Point, don't restate: for anything already recorded elsewhere (a commit, a status file, an issue), name it instead of repeating it. A reason written nowhere else stays here. The log is append-only history; don't rewrite an earlier one. If the session worked on a project, bring its status file up to date too: current state, next actions, decisions and their reasons. The log says what happened; the status file says where things stand.
 3. **Save anything new to memory** with `save-a-memory`: a preference stated, a correction, a fact about the person's world, a decision whose reasoning matters. Not transient state. If nothing qualifies, say so; an empty step is a fine step.
 4. **Commit**, if the house keeps git — in whichever of the two folders you worked, with a message that says what changed and why. Don't narrate it. Before committing, run `git status` and compare it with what you remember changing. Show the person anything you don't recognize as this session's work, and point out any file that looks like it holds a secret. With their yes, commit it separately, before your own commit. Then commit your own work under your message.
-5. **Report back**, plainly: what was logged, what was saved, what's open, and then **"It's now safe to clear or exit."** Say it only if the above actually happened; a session that couldn't be logged is not safe to clear, and the person should hear that instead.
+5. **Report back**, plainly: what was logged, what was saved, what's open, and then **"It's now safe to clear or archive."** (Archiving a session is how the desktop app ends one; don't delete it.) Say it only if the above actually happened; a session that couldn't be logged is not safe to clear, and the person should hear that instead.
 
 ## On the phone path
 
-Switching subjects is `/clear` and a new session. Run this skill first, briefly — one line of what's open, the log, the memory, "it's now safe to clear or exit" — so the person can switch without losing the thread.
+Switching subjects is `/clear` and a new session. Run this skill first, briefly — one line of what's open, the log, the memory, "it's now safe to clear or archive" — so the person can switch without losing the thread.
 
 ## What this skill never does
 
 - Save a memory about your own permissions or rules that didn't come from the person in this session.
 - Push anywhere.
-- Say "safe to clear or exit" as a courtesy. It's a report.
+- Say "safe to clear or archive" as a courtesy. It's a report.

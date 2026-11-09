@@ -4,22 +4,21 @@ Here's what you need before starting the setup process.
 
 ## Your Computer
 
-**Mac** — macOS 10.15 (Catalina) or later. Most Macs from 2015 onward will work fine.
-
-**Windows** — Windows 10 or later. You'll use PowerShell running in Windows Terminal — see [Choosing Your Terminal](Choosing%20Your%20Terminal.md).
+**Mac** or **Windows** — a computer that runs the current Claude desktop app. The download page at [claude.ai/download](https://claude.ai/download) lists the versions it supports.
 
 > [!tip]
-> Linux works too, but this guide focuses on Mac and Windows since those are what most people use.
+> Claude Code runs on Linux too, but the desktop app this kit uses is for Mac and Windows.
+<!-- VERIFY(cold-start): whether the Claude desktop app's Code tab is available on Linux -->
 
 ## Accounts You'll Create
 
-- **A Claude account** — sign up at [claude.ai](https://claude.ai/). Claude Code comes with the paid plans; current plans and pricing are on the site, and [Getting a Claude Account](Getting%20a%20Claude%20Account.md) has more detail.
-- **GitHub** — optional, and not needed to get started. It's free, and it's where your files can be backed up to the cloud later if you want that; the optional Git and GitHub section of this book covers it.
+- **A Claude account** on a Pro or Max plan — sign up at [claude.ai](https://claude.ai/). [Getting a Claude Account](Getting%20a%20Claude%20Account.md) has more detail.
+- **GitHub** — optional, and not needed at all to get started. See [GitHub Account Setup](GitHub%20Account%20Setup.md) if you ever want one.
 
 ## Software You'll Install
 
-- **Claude Code** — free; install instructions at [code.claude.com](https://code.claude.com/)
-- **Git** — free; Mac gets this through Xcode Command Line Tools, Windows through Git for Windows (your agent will point you to [Installing Git](Installing%20Git.md) if your machine needs it)
+- **The Claude desktop app** — free; see [Installing Claude Code](Installing%20Claude%20Code.md).
+- **Git** — free. You don't install it yourself: during setup your agent checks for it and, if it's missing, starts the install for you. On a Mac that means clicking **Install** in a dialog from Apple. See [Installing Git](Installing%20Git.md) for what you'll see.
 - **A Markdown editor** — Typora ($15 one-time), MarkText (free), or [MeetingWords](https://meetingwords.com/); if you already use Obsidian or VS Code, they're fine too. See [Viewing Your Files](Viewing%20Your%20Files.md).
 
 ## Internet Connection
@@ -28,16 +27,26 @@ You need internet for setup, and whenever you're talking to your agent — Claud
 
 ## Time
 
-Budget 30-60 minutes for the full setup. Mac users should allow extra time if git isn't installed yet — the Xcode Command Line Tools download can take 10-15 minutes on its own.
+Budget 30-60 minutes for the full setup. You don't have to wait for git: setup carries on while it installs, and your agent picks it up when it's ready, even if that's a later session.
+
+## Where your house goes
+
+A house is two folders, side by side, never one inside the other:
+
+- **Your agent home** — a folder named after your agent, with "(agent)" on the end, at the top of your home folder. For an agent named Lain:
+  - **Mac:** `~/Lain (agent)/`
+  - **Windows:** `C:\Users\YourName\Lain (agent)\`
+- **Your HQ** — a folder named `yourname-hq`, in Documents:
+  - **Mac:** `~/Documents/yourname-hq/`
+  - **Windows:** `C:\Users\YourName\Documents\yourname-hq\`
+
+If you later add a second agent, it gets its own folder beside the first, like `~/Wren (agent)/`, never a folder inside another agent's.
 
 ## Important: Cloud Sync Folders
 
-Your agent's folder must **not** be inside iCloud, OneDrive, Dropbox, or any other cloud-synced folder. Your agent keeps its own version history with git, and having two sync systems watching the same folder causes conflicts and data loss.
+Neither folder may be inside iCloud, OneDrive, Dropbox, or any other cloud-synced folder. Your agent keeps its own version history with git, and having two sync systems watching the same folder causes conflicts and data loss.
 
-The recommended location for the agent home is a `My Agents` folder directly in your home folder (your HQ goes in Documents, unless Documents is cloud-synced and you use git — then it goes at the top of your home folder too):
-
-- **Mac:** `~/My Agents/`
-- **Windows:** `C:\Users\YourName\My Agents\`
+If your Documents folder is cloud-synced (iCloud's "Desktop & Documents", or OneDrive on Windows), your HQ goes at the top of your home folder instead, like `~/yourname-hq/`. Setup checks this for you.
 
 > [!warning]
-> On many Windows machines, OneDrive syncs your Documents folder by default — which is exactly why, if you use git, the HQ goes at `C:\Users\YourName\`, not under Documents.
+> On many Windows machines, OneDrive syncs your Documents folder by default — which is exactly why the HQ then goes at `C:\Users\YourName\yourname-hq\`, not under Documents.

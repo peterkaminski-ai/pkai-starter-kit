@@ -9,10 +9,10 @@ You don't need a named agent to do good work. Vanilla Claude Code, run inside a 
 A personal agent is "Claude Code with a persona and a memory." Concretely:
 
 - A folder outside your project repos — the **agent home** — holding a charter (`CLAUDE.md`), memory, session logs, and the skills it has taken on.
-- A launch command — the agent's name — that opens a terminal in that folder and starts Claude Code there.
+- Its own environment in the Claude desktop app's Code tab, on that folder, so a session you start there is that agent.
 - Memory and session logs that accumulate over time, the way a project's would, but about *you* and across all your work.
 
-When you type the agent's name, you're running Claude Code, but it knows it's *that* agent — with its history, its conventions, its memory. This kit builds one for you; `START-HERE.md` at the kit root is the way in.
+When you start a session in the agent's environment, you're running Claude Code, but it knows it's *that* agent — with its history, its conventions, its memory. This kit builds one for you; `START-HERE.md` at the kit root is the way in.
 
 ## When vanilla is enough
 
@@ -38,7 +38,7 @@ Two questions are worth asking any new agent early, whatever the kit set up:
 
 > Get into a habit of session logs that you keep for yourself.
 
-From there, the agent and you build out conventions together. The `save-a-memory` skill is the kit's answer to the first; the persona's session-rhythm section is the answer to the second.
+From there, the agent and you build out conventions together. The `save-a-memory` skill is the kit's answer to the first; the charter's section on sessions ("Session structure" or "Session rhythm", depending on the persona) and the `wrap-up-this-session` skill are the answer to the second.
 
 ## Foreground and background
 
@@ -48,7 +48,7 @@ Once you have a persistent agent, you'll want to run a long task without blockin
 - **Background** — a second instance of the same agent, on one scoped job, with a scratch folder it may write to and nothing else. It reads freely; it never commits shared state, writes memory, or sends anything.
 - **The foreground integrates** — when the background is done it leaves a handoff; the foreground reads it and performs the writes the background couldn't, by copying.
 
-This works because the boundary is in the charter, not the tool. It's more than most people need on day one, which is why it's the *working* path in setup rather than the default. The full mechanism is [Foreground and Background](../your-house/Foreground%20and%20Background.md) on the shelf, and the `foreground-background` skill carries it for the agent.
+This works because the boundary is in the charter, not the tool. It's more than most people need on day one. Every house carries the machinery — the desk lease and the `foreground-background` skill — so a second session in the same house becomes a guest by itself and knows the rules, but the v4 starter kit doesn't teach the pattern; it's here for when you want it. The full mechanism is [Foreground and Background](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/your-house/Foreground%20and%20Background.md) on the shelf, and the `foreground-background` skill carries it for the agent.
 
 ## Sub-agents
 
@@ -58,11 +58,11 @@ A different thing from a background instance. A sub-agent has scope and lives in
 
 ### Other things Claude Code calls "agents"
 
-The word has more than one use in Claude Code itself. In this kit, an agent is an agent home with a `CLAUDE.md` that you launch Claude Code in. These are different things:
+The word has more than one use in Claude Code itself. In this kit, an agent is an agent home with a `CLAUDE.md` that you start sessions in. These are different things:
 
 - **`.claude/agents/<name>.md`** (and `--agents`, which defines them inline) — agent files: a name, a description, optionally a model and tools, and a body that becomes that agent's system prompt. This is the sub-agent mechanism above, not a way to define or launch your agent.
-- **`claude --agent <name>`** and the `agent` setting — start a whole session as one of those agent files. Your agent doesn't need either; you start it by launching Claude Code in its home.
-- **`claude agents`** — manages background sessions started with `claude --bg`. A related idea to a background instance, but Claude Code's own mechanism; the kit's background instance is your agent started by hand in a second terminal.
+- **`claude --agent <name>`** and the `agent` setting — start a whole session as one of those agent files. Your agent doesn't need either; you start it by starting a session in its environment.
+- **`claude agents`** — manages background sessions started with `claude --bg`. A related idea to a background instance, but Claude Code's own mechanism; the kit's background instance is your agent started by hand in a second session.
 
 ## Skills
 
@@ -80,7 +80,8 @@ The iteration loop is the same:
 4. Review and improve the plan.
 5. Execute.
 6. Session log.
-7. Iterate.
+
+Then round again.
 
 The difference is *who* you're talking to and *what they remember about you*. An agent that's worked with you for a month already knows your preferences, your common projects, your past decisions. The wish and the plan and the review are all faster because there's less to re-establish.
 

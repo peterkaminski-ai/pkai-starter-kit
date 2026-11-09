@@ -35,14 +35,14 @@ Examples:
 - `2026-05-06-002-memory-cleanup.md`
 - `2026-05-07-001-mortgage-calculator-plan.md`
 
-Pete's UTC convention for shared repos comes from the Founders Cohort wiki — multiple collaborators in different time zones means UTC avoids confusion. For solo projects, local time is fine; just be consistent.
+UTC suits a shared repo: with collaborators in different time zones, it avoids confusion. For your own house, local time is fine; just be consistent.
 
 ## Where session logs live
 
 In your agent home, in `sessions/` — one flat folder, dated, whatever project each session was about:
 
 ```
-<agent-name>/
+<Name> (agent)/
 ├── CLAUDE.md
 ├── memory/
 ├── sessions/
@@ -98,14 +98,13 @@ Both, mostly Claude.
 The pattern:
 
 1. You say "wrap up this session" (or whatever your trigger phrase is).
-2. The agent reviews the session, drafts the log.
-3. You glance at it. Edit if needed.
-4. Commit, if your house keeps git.
-5. `/clear`.
+2. The agent reviews the session and writes the log.
+3. It tells you what it logged, saved and left open, and commits, if your house keeps git.
+4. `/clear`.
 
-The agent writes a better session log than most humans will, because it has the whole conversation in working memory and can summarize it accurately. Your job is to glance and either approve or correct.
+The agent writes a better session log than most humans will, because it has the whole conversation in working memory and can summarize it accurately. It doesn't wait for your approval; your job is to read a log when you want to, and correct it when it's wrong.
 
-If the agent's draft is missing something important — a tricky decision, a near-miss, a "we almost broke X" moment — say so. The agent will revise.
+If a log is missing something important — a tricky decision, a near-miss, a "we almost broke X" moment — say so, and the agent will add it. A log is append-only history, so a correction is added, not a rewrite of what happened.
 
 ## What "wrap up this session" should do
 
@@ -115,13 +114,13 @@ Every house built from the kit has a `wrap-up-this-session` skill that does this
 2. Write a session log to `sessions/YYYY-MM-DD-NNN-topic.md`, and bring the project's status file up to date if the session worked on one.
 3. Save anything new to memory.
 4. Commit, if your house keeps git. It never pushes.
-5. Report back: "It's now safe to clear or exit."
+5. Report back: "It's now safe to clear or archive."
 
 There's nothing to write into your charter. Say "wrap up this session" (or "let's wrap," or "prep for clear") and the skill does it. If you'd like it done a little differently, tell your agent; it saves that as a memory.
 
 ## Frequency
 
-Once per session. If you're working in long stretches without `/clear`, you should write more session logs, not fewer. Multiple logs per day is normal.
+At least once per session. If you're working in long stretches without `/clear`, take that as the sign to wrap up and clear more often; each wrap-up writes a log. Multiple logs per day is normal.
 
 If you're going to skip writing one because "this session was small," err on the side of writing it anyway. The five-minute log is cheap; the moment three weeks from now when you can't reconstruct what you did is expensive.
 

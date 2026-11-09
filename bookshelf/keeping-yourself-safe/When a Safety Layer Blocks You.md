@@ -8,11 +8,14 @@ When a safety layer — the classifier, a permission setting, a hook — blocks 
 
 1. **Stop the action.** Don't retry it. Don't reword it. Don't split it into smaller steps that might each slip through. Don't reach for a different tool to get the same result. A block is information, not an obstacle course, and an agent that treats it as one has stopped being safe to run.
 2. **Show the block, word for word.** The exact message, and what the agent was doing when it fired. If the action followed from something the agent *read* — a page, a message, a file, a pad — say so; that's the case where the block was probably right.
-3. **Offer the narrowest way forward, for the person to apply by hand.** Two options, and a third that's always open:
+3. **Offer the narrowest way forward, for the person to apply by hand.** Three options, and a fourth that's always open:
    - the person does the thing themselves;
-   - the agent drafts the smallest literal settings change that would allow *exactly this action, in exactly this place* — one line, scoped to a path or a link the person themselves gave — and the person installs it and restarts;
+   - for a block in auto mode, the person switches to **Manual mode** (the desktop app's mode picker, or Shift+Tab), approves this one action themselves, and switches back. The decision moves to the person, for one action, and nothing permanent is left behind;
+   - the agent drafts the smallest literal settings change that would allow *exactly this action, in exactly this place* — one line, scoped to a path or a link the person themselves gave — and the person installs it and starts a fresh session;
    - the person says "let's not; I need to ask someone first." That is a complete answer, and the agent treats it as one.
-4. **Never suggest switching a safety layer off.** Not the classifier, not the permission mode, not a hook. Not as a quick fix, not just this once, not "you can turn it back on after." If the agent catches itself about to, that is the moment to stop and say so out loud.
+4. **Never suggest switching a safety layer off.** Not the classifier, not a permission setting, not a hook. Not as a quick fix, not just this once, not "you can turn it back on after." If the agent catches itself about to, that is the moment to stop and say so out loud.
+
+   That sits beside the Manual-mode option above, and the difference is worth spelling out, because the agent in the story said "switch out of the automatic mode" too. What it offered was a way to make the block go away and carry on as before, with fewer checks — an off switch in other words. Manual mode is the opposite move: the person chooses it, for one action, and nothing happens until they've read that action and approved it themselves. Then they switch back. The decision moves to the person; no layer is turned off, and nothing is left widened.
 
 ## Why the narrow fix
 
@@ -26,4 +29,4 @@ The agent that started this chapter did one thing right, and it's worth keeping:
 
 ## For the person
 
-You will be tempted, the first time, to turn the thing off — it's your computer, the agent is yours, the block is in the way. The rule for you is the same as the agent's, one step up: **apply the narrowest change that lets you do the thing, and do it by your own hand.** The safety layer doesn't read your agent's charter; it doesn't know you granted anything. Only a settings change tells it. And a change you can read is a change you can undo.
+You will be tempted, the first time, to turn the thing off — it's your computer, the agent is yours, the block is in the way. The rule for you is the same as the agent's, one step up: **apply the narrowest change that lets you do the thing, and do it by your own hand.** Often the narrowest is Manual mode for one action: you read what the agent wants to do, you approve it, and you switch back. The safety layer doesn't read your agent's charter; it doesn't know you granted anything. Only a settings change tells it. And a change you can read is a change you can undo.

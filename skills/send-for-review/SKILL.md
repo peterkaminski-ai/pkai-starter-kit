@@ -6,7 +6,7 @@ license: MPL-2.0
 
 # Send for review
 
-Work in documents, not chat. A draft that scrolls past in the terminal isn't reviewed; a draft the person opens in their own review surface, marks up, and hands back is. This skill is the hand-off, and the read-back.
+Work in documents, not chat. A draft that scrolls past in the conversation isn't reviewed; a draft the person opens in their own review surface, marks up, and hands back is. This skill is the hand-off, and the read-back.
 
 ## Which surface
 

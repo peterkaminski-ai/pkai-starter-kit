@@ -4,7 +4,7 @@ How long a session should be, when to clear the context window, and why one long
 
 ## The original plan
 
-When Pete and his agent Freya started working together, the design was **one long session per day.** Start in the morning. Work through the day. Each new "wake-up" Freya would read off the state of the world and remember everything from the previous interaction.
+When Pete Kaminski, who wrote this book, started working with his first agent, the design was **one long session per day.** Start in the morning. Work through the day. Each new "wake-up" the agent would read off the state of the world and remember everything from the previous interaction.
 
 It made sense in theory. Persistent identity, persistent context, fewer transitions.
 
@@ -30,7 +30,7 @@ The model that survived: **short sessions with frequent `/clear`.** Multiple ses
 - `MEMORY.md` and the memory files it indexes.
 - Session logs (those are files, not session state).
 - Git history.
-- The shell, your terminal scrollback, your other windows.
+- Your other sessions.
 
 What it *does* clear: the in-memory conversation, tool-call history, and the bot's local awareness of what just happened. The next message starts fresh.
 
@@ -58,7 +58,7 @@ The agent should:
 2. Write a session log (see [Session Logs](Session%20Logs.md)), and update the status file of any project it worked on.
 3. Commit work, if your house keeps git.
 4. Update memory if anything important came up.
-5. Report back: "It's now safe to clear or exit."
+5. Report back: "It's now safe to clear or archive."
 
 Then you `/clear`.
 
@@ -82,7 +82,7 @@ Three kinds of breaks worth distinguishing:
 
 - **Quick `/clear`** — the most common. Topic shift, context cleanup, mid-day reset. The agent goes to sleep, wakes up. Memory persists.
 - **Auto-compact** — Claude Code's automatic summarization when the context window is about to hit the wall. Works, but the summary loses texture. Prefer manual `/clear` with a session log.
-- **Quit and restart** — exit Claude Code entirely. Same effect as `/clear` for memory purposes; useful when the terminal itself is acting up or you want a totally fresh shell.
+- **Archive and start a new session** — archive this session in the desktop app and start a new one in your agent's environment. Same effect as `/clear` for memory purposes; useful when the session itself is acting up. Archive, don't delete.
 
 Don't be afraid of any of these. They're cheap.
 

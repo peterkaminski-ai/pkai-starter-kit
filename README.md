@@ -1,21 +1,21 @@
 # pkai-starter-kit
 
-A starter kit for building your own personal AI agent — a persistent, file-based agent you talk to through Claude Code, that lives in a **house** on your own computer.
+A starter kit for building your own personal AI agent — a persistent, file-based agent you talk to in the Code tab of the Claude desktop app, that lives in a **house** on your own computer.
 
 **Home page:** https://peterkaminski.ai/starter-kit
 
-This kit is a **reference library, not a house**. You don't move into it — you (and Claude Code, doing the heavy lifting) *read* it and build your own house from it: an **agent home** for your agent's persona and memory, and a **headquarters** for your projects and working files. The build takes one guided conversation.
+This kit is a **reference library, not a house**. You don't move into it — you (and Claude, doing the heavy lifting) *read* it and build your own house from it: an **agent home** for your agent's persona and memory, and a **headquarters** for your projects and working files. The build takes one guided conversation.
 
-This is **V3**. It is the *shaped* version of the **PKAI benchmark** — the fuller statement of what an agent could be — modified to be a better place to start. `LINEAGE.md` says where it came from and where the next version will be; `SHAPING.md` says what was left out and what was added. V3 sits beside V2 rather than replacing it; if you built from V2, read `MOVING-FROM-V2.md`.
+This is **V4.0**, and it is a **preview**: the first kit that sets up an agent entirely in the Claude desktop app, with no terminal, for **brand-new people**. If someone is walking you through it, go ahead; on your own, the steadier choice is to wait for 4.1 or later. **If you already have a house built from 3.x (or an earlier kit), stay put:** 4.0 is not an upgrade, and there's nothing to install. Keep your house and start using the desktop app with it.
 
-This is **V3.0**, and it is a **beta**: the first release with two artifacts, made fast, and built to be improved often. Minor releases — 3.1, 3.2 — will follow as improvements arrive from the houses using it; none is promised for any date, but a small release as often as every week is now practical, and that's the point: it's the design, not a caveat. Everything in V3 is a standalone unit — a skill is one folder, a chapter is one file, a safety section is one block in a persona — so an improvement is one unit, offered and taken by pull, and never a reinstall. `CONTRIBUTING.md` says how to offer one.
+It is the *shaped* version of the **PKAI benchmark** — the fuller statement of what an agent could be — modified to be a better place to start. `LINEAGE.md` says where it came from and where the next version will be; `SHAPING.md` says what was left out and what was added. Everything in it is a standalone unit — a skill is one folder, a chapter is one file, a safety section is one block in a persona — so an improvement is one unit, offered and taken by pull, and never a reinstall. `CONTRIBUTING.md` says how to offer one.
 
 ## If you're a person
 
 Don't start here — start with the home page, or go straight to **`START-HERE.md`**, the short instructions you'll drive. The shape of it:
 
-1. Check **`REQUIREMENTS.md`** — what you need before you begin (a Claude Pro or Max account, Claude Code installed, a couple of basics).
-2. Make an empty **headquarters** folder and start Claude Code in it.
+1. Check **`REQUIREMENTS.md`** — what you need before you begin (a Claude Pro or Max account, the Claude desktop app, a couple of basics).
+2. Open the desktop app's **Code** tab and make an empty **headquarters** folder in its folder picker.
 3. Paste in one kickoff message. Claude downloads this kit, reads it, asks you two questions about how you'll use your agent, and helps you build it — with you driving every step.
 
 ## If you're a Claude reading this
@@ -24,7 +24,7 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
 
 ## What's inside
 
-- **`LINEAGE.md`** — where this kit came from, three generations back, and where to pull the next version from. Every V3 artifact starts with one of these.
+- **`LINEAGE.md`** — where this kit came from, three generations back, and where to pull the next version from. Every artifact in this line, since V3, starts with one of these.
 - **`START-HERE.md`** — the setup instructions, addressed to the person. They drive; Claude does the heavy lifting.
 - **`BUILD.md`** — the build reference, addressed to the Claude doing the building.
 - **`REQUIREMENTS.md`** — what you need: account, computer basics, and the two *surfaces* (a chat surface and a review surface).
@@ -34,13 +34,12 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
 - **`skills/`** — self-contained skills your agent can take on, one folder each, each carrying its own lineage, licence and credits so it can travel alone. `skills/README.md` says which to install for which way of working.
 - **`template/`** — the folder skeletons the build instantiates: `agent-home/` and `hq/`.
 - **`bookshelf/`** — the small shelf of books that comes with your agent:
-  - `getting-started/` — Claude Code, terminals, reading your files, Git and GitHub from scratch
-  - `git-guide/` — version control without the jargon (optional reading; your agent handles git for you)
+  - `getting-started/` — your first day in the desktop app, reading your files, and the basics underneath
   - `project-management/` — project management, and working with your principal
-  - `your-house/` — a small house or a large one: the stairs, the two ways in, foreground and background
+  - `your-house/` — a small house or a large one: the stairs, the two ways in, the phone path
   - `working-with-other-houses/` — cooperating with other agents: jams, pads, and what to think about when you're invited into a room
   - `keeping-yourself-safe/` — safety and security first, then privacy
-- **`MOVING-FROM-V2.md`** — for houses built from V2. Nothing is reinstalled.
+- **`MOVING-FROM-V2.md`** — for houses built from V2 that want the 3.x pieces. Nothing is reinstalled. (No house needs 4.0; it's for brand-new people.)
 - **`CHANGES.md`** — what changed, dated, written for an agent to read.
 - **`WISHLIST.md`** — where we'd like this to grow; aspirational, undated.
 
@@ -56,7 +55,7 @@ This kit and everything in it — including the bookshelf and the skills — is 
 
 People ask, because a kit that is mostly prose looks like a Creative Commons thing. Five reasons, and lineage is the first:
 
-1. **It's the licence this line has always had.** `pkai-agent` was refounded under MPL-2.0 in May 2026, v2 kept it, and V3 keeps it. One licence up and down the lineage means a house can pull a newer skill into an older home, or hand a chapter back, without a compatibility check.
+1. **It's the licence this line has always had.** `pkai-agent` was refounded under MPL-2.0 in May 2026, v2 kept it, and V3 and V4 keep it. One licence up and down the lineage means a house can pull a newer skill into an older home, or hand a chapter back, without a compatibility check.
 2. **It's file-scoped.** MPL's share-alike stops at the file: if you change one of these files and pass it on, that file stays MPL and your changes to it are open, but your own files beside it — your charter, your memory, your house — are yours, under whatever terms you like. Creative Commons ShareAlike attaches to the *derivative work* as a whole, and a charter you adapted from a persona is a derivative work; we don't want a licence that reaches into your house.
 3. **Much of this runs.** A skill is executed by an agent; the hook is a script; the settings file is configuration. MPL is written for things that are edited, run and redistributed; Creative Commons is written for things that are read. A kit that ships both is on firmer ground under the software licence, and MPL covers the prose fine.
 4. **The waiver leans on it.** `WAIVER.md` points at MPL's Disclaimer of Warranty (§6) and Limitation of Liability (§7). Keeping one licence keeps the waiver true.

@@ -20,7 +20,7 @@ All three must hold, or this skill stops and surfaces:
 
 1. **Repeat it back** in one line — the action, the scope, any conditions — and get a yes. If they correct it, the correction is the grant.
 2. **Save a memory** (`save-a-memory`, type `feedback`): the grant in their words, quoted; the date; the scope; **How I know:** heard. This is what makes it durable across sessions.
-3. **Draft the charter change** into `outbox/`: the authority-table row as it reads now, and as it would read after — one row, no more. Include the date and the quoted words as a comment. If the grant touches the harness (a permission setting, a hook), say so and draft that separately, scoped as narrowly as the words allow; the person installs both and restarts.
+3. **Draft the charter change** into `outbox/`: the authority-table row as it reads now, and as it would read after — one row, no more. Include the date and the quoted words as a comment. If the grant touches the harness (a permission setting, a hook), say so and draft that separately, scoped as narrowly as the words allow; the person installs both and starts a new session.
 4. **Say what you did**, briefly: memory saved; charter draft ready for them to install.
 5. **Until the charter change is installed**, act on the memory — it's strongly advisory and it's what they said — but say so when it matters: "acting on the grant you gave on <date>; it's not in my charter yet."
 

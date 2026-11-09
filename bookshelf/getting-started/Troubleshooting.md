@@ -1,28 +1,46 @@
 # Troubleshooting
 
-Common problems and how to fix them. If you don't see your issue here, describe it to Claude Code — it can often diagnose and fix problems for you.
+Common problems and how to fix them. If you don't see your issue here, describe it to your agent in the Code tab — it can often diagnose and fix problems for you.
 
-## Installation Issues
+## The Desktop App
 
-### The Xcode tools dialogue disappeared (Mac)
+### I'm talking to Claude, but it doesn't know my house
 
-It's probably behind another window. Check all your displays and use Cmd+Tab to look for a "Software Update" or "Install" window.
+You're probably in the chat, not the Code tab. Switch to the **Code** tab and start or continue a session in your agent's environment. See [First Day in Desktop](First%20Day%20in%20Desktop.md).
 
-### The Xcode download time estimate is absurd (Mac)
+### My agent doesn't seem to be itself
 
-Ignore the initial estimate — it may say 16 hours. The actual download typically takes 10-15 minutes. The progress bar may restart about two-thirds of the way through. This is normal.
+Check which environment the session is in. Your agent's environment is on its agent home, the `<AgentName> (agent)` folder; a session started on some other folder is plain Claude Code, with no persona and no memory. Start a new session in your agent's environment.
 
-### Claude Code says it can't find Git
+### A session says it's a guest
 
-**Mac:** Make sure the Xcode Command Line Tools have finished installing. Open Terminal and run `git --version` to check.
+Another session for the same agent is still open. That's fine: the guest works normally and leaves its notes for the main session. If you meant to have just one, tell the other session you're shutting it down, and archive it.
 
-**Windows:** Install Git for Windows from [git-scm.com](https://git-scm.com/). Verify it in **Windows Terminal**, on a **PowerShell** tab, by running `git --version`.
+### I can't see a folder in the app's file pane
 
-### Windows: `git` is not recognized as an internal or external command
+Your agent can sometimes read a folder before the file pane shows it. Grant the folder to the app, or use "Show in Finder" to look at it outside the app.
 
-Git for Windows isn't installed, or you need a fresh PowerShell tab so it picks up the updated PATH. Install Git for Windows from [git-scm.com](https://git-scm.com/), then open a new PowerShell tab in Windows Terminal and try again.
+### My phone can't find my agent
 
-## GitHub Issues
+Remote Control turns off when you quit the desktop app. Open the app, open your agent's session, and turn Remote Control back on. Make sure your computer isn't asleep.
+
+## Installing Git
+
+### The Apple dialog for the Command Line Tools disappeared (Mac)
+
+It's probably behind another window. Check all your displays and use Cmd+Tab to look for an "Install" window. If it's really gone, tell your agent; it can start the install again.
+
+### The download time estimate is absurd (Mac)
+
+Ignore the first estimate — it may say 16 hours. It can take minutes, or an hour or more, and the progress bar may restart partway through. This is normal, and nothing is waiting on it: keep working with your agent.
+
+### My agent says git is still installing
+
+That's fine. Your agent checks again at the start of every session and sets up version control on its own once git appears. If a day has passed and it still isn't there, ask your agent to check what happened. See [Installing Git](Installing%20Git.md).
+
+## GitHub Issues (only if you use GitHub)
+
+A house doesn't need GitHub. These only come up if you've chosen to use it.
 
 ### I get a 404 when visiting a GitHub repository
 
@@ -35,23 +53,19 @@ If someone shared a repo link with you and you're getting a 404, make sure you'r
 
 ### Git asks for my password and rejects it
 
-GitHub no longer accepts regular passwords for Git operations. You need either:
-- The GitHub CLI (`gh auth login`) — see [GitHub Account Setup](GitHub%20Account%20Setup.md)
-- A personal access token — see [GitHub Account Setup](GitHub%20Account%20Setup.md), Option B
+GitHub no longer accepts regular passwords for git operations. Ask your agent to help you connect to GitHub; [GitHub Account Setup](GitHub%20Account%20Setup.md) has the background.
 
 ## Git and Sync Issues
 
 ### "Merge conflict" when pushing
 
-This happens when two people edited the same part of the same file. Describe the situation to Claude Code and it can help you resolve it. This is rare in solo work.
+This only happens with a remote, when two people edited the same part of the same file. Describe the situation to your agent and it can help you resolve it. This is rare in solo work.
 
 ### "Push rejected"
 
-Someone else pushed changes while you were working. Pull first, then push:
+Only happens with a remote: someone else pushed changes while you were working. Ask your agent:
 
 > Pull the latest, then push my changes
-
-Or use the habit of saying "pull and push" together to avoid this.
 
 ### "Nothing to commit"
 
@@ -59,7 +73,7 @@ You haven't made any changes since your last commit. This is fine — not an err
 
 ### Files I don't want are being tracked by Git
 
-Ask Claude Code to update your `.gitignore` file:
+Ask your agent to update your `.gitignore` file:
 
 > Add [filename or pattern] to .gitignore
 
@@ -67,6 +81,6 @@ Common things to exclude: `.DS_Store` (Mac), `Thumbs.db` (Windows), and any file
 
 ## General Tips
 
-- **When in doubt, describe the problem to Claude Code.** It can read error messages and usually knows what to do.
-- **Restart and retry.** Many first-launch issues resolve by closing and reopening the application.
-- **Git rarely loses anything.** Even if things look wrong, your history is intact. Ask Claude Code to help you recover.
+- **When in doubt, describe the problem to your agent.** It can read error messages and usually knows what to do.
+- **Restart and retry.** Many first-day issues resolve by quitting and reopening the desktop app. (Quitting turns Remote Control off; turn it back on afterwards if you use your phone.)
+- **Git rarely loses anything.** Even if things look wrong, your history is intact. Ask your agent to help you recover.

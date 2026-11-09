@@ -6,7 +6,7 @@ license: MPL-2.0
 
 # Foreground and background
 
-One agent, two roles. The **foreground** is the instance that holds the desk; it owns everything shared. A **background** instance is the same agent, started a second time on one scoped job, working in its own scratch space and never touching shared state. A **guest** is a background instance the person is talking to: a second session they started — another terminal, or a conversation in the Claude app — while the foreground was already at work. When either is done it leaves a handoff, and the foreground integrates by copying. This is how a house does two things at once without either instance overwriting the other.
+One agent, two roles. The **foreground** is the instance that holds the desk; it owns everything shared. A **background** instance is the same agent, started a second time on one scoped job, working in its own scratch space and never touching shared state. A **guest** is a background instance the person is talking to: a second session they started in the same agent home — from the desktop app, from a phone, or anywhere else — while the foreground was already at work. When either is done it leaves a handoff, and the foreground integrates by copying. This is how a house does two things at once without either instance overwriting the other.
 
 ## The desk
 
@@ -18,7 +18,7 @@ Houses name the pair differently; use your house's words, and say which pair you
 
 1. **Decide it's worth it.** A background instance costs a launch and an integration. It pays when the job is long, self-contained, and doesn't need the person turn by turn: a research sweep, a big rewrite against a spec, a migration, a test run.
 2. **Stage the task.** Make `bg/<job-name>/` in the agent home and write `bg/<job-name>/task.md`: the outcome wanted, the completion condition, the boundaries (what it may read — everything; what it may write — only its own folder, plus any one folder you name), and how it should report. Write it as an outcome, not a step list; the instance plans its own path.
-3. **Launch it.** Open a second terminal in the agent home and start the agent with one line: *"You are a background instance. Read `bg/<job-name>/task.md` and this skill's 'If you are the background' section, then begin."* Tell the person it's running.
+3. **Launch it.** Have the person start a second session in the agent's own environment (the agent home), and open it with one line: *"You are a background instance. Read `bg/<job-name>/task.md` and this skill's 'If you are the background' section, then begin."* Tell the person it's running.
 4. **Carry on.** Don't poll it; check `bg/<job-name>/status.md` when the person asks, or at natural breaks.
 5. **Integrate when it's done** — when `bg/<job-name>/DONE` exists, or `status.md` says so and nothing has changed for a long while. Session start lists what's waiting, and the per-turn hook says once an hour at most when a new handoff appears; mention it to the person in one line and integrate when they say so. Guest folders (`bg/guest-*/`) integrate the same way. Read `handoff.md`. Copy what belongs in the house into the house yourself: files into the HQ, memories through `save-a-memory`, commits under your own hand. Don't move the scratch folder; copy from it. If something in the handoff needs the person's decision, ask them — that's what "integrate" means.
 6. **Close it.** When integrated, move `bg/<job-name>/` to `bg/archive/`. Note the job in the session log.
@@ -39,7 +39,7 @@ You are the same agent, with a narrower charter for this run. A background insta
 
 Everything in the section above binds you, and three things more:
 
-- **Say it once, plainly.** At your first reply, one sentence: another session is already working in this house (in another terminal, or in the Claude app), so you'll work here as a guest and leave notes for it. Then offer three choices: keep going as a guest (the default); switch to the other session; or take the desk.
+- **Say it once, plainly.** At your first reply, one sentence: another session is already working in this house, so you'll work here as a guest and leave notes for it. Then offer three choices: keep going as a guest (the default); switch to the other session; or take the desk.
 - **Take the desk only when the person says so**, and only if the other session is closed or stale: `sh scripts/desk take <your session id>` (session start gives you the exact line). If the other session was active recently, the script refuses; run it again with `--force` only after the person confirms that session is closed. Once you hold the desk you are the foreground: integrate your own guest notes like any handoff.
 - **If the desk becomes free**, the per-turn hook tells you once. Taking it is still the person's choice.
 

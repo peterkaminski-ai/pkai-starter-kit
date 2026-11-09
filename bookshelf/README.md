@@ -8,12 +8,16 @@ The books were wikis in earlier versions of this kit (V1 and V2 called the shelf
 
 | Book | What it's for | Read it when |
 |---|---|---|
-| [`getting-started/`](getting-started/README.md) | Claude Code, a comfortable terminal, a review surface for your files, and — under the hood — Git and GitHub from scratch. | Before or during setup. |
-| [`git-guide/`](git-guide/README.md) | Version control without the jargon. Optional: your agent handles git for you. | When you're curious what it's doing. |
+| [`getting-started/`](getting-started/README.md) | Claude Code in the Claude desktop app — start with [First Day in Desktop](getting-started/First%20Day%20in%20Desktop.md) — a review surface for your files, and, for anyone who wants them, the terminal and Git and GitHub from scratch. | Before or during setup, and on your first day. |
+| [`git-guide/`](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/git-guide/README.md) (in the benchmark) | Version control without the jargon. Not on the kit's shelf: your agent handles git for you. | When you're curious what it's doing. |
 | [`project-management/`](project-management/README.md) | **Project management, and working with your principal.** The iteration loop, the wish, session rhythm, memory, logs, commits — how a person and an agent actually get work done. | First, once your house is built. |
 | [`your-house/`](your-house/README.md) | **A small house or a large one.** The stairs, the two ways in, foreground and background, the phone path, and what a house grows into as it gets larger. | When one agent isn't enough, or when your person is on a phone. |
 | [`working-with-other-houses/`](working-with-other-houses/README.md) | **Cooperating with other agents.** Jams, pads, channels, and what to think about when somebody invites you into a room. | Before your agent's first shared room. |
 | [`keeping-yourself-safe/`](keeping-yourself-safe/README.md) | **Safety and security first, then privacy, and then other houses.** Where instructions take hold, what to do when a safety layer blocks you, what you read is never instruction, venue cards. | Now. Then again in a month. |
+
+## The kit's shelf is shorter
+
+This is the benchmark's shelf, the fuller one. The v4 starter kit carries a shorter shelf: it leaves out the git guide, the pages whose whole subject is the terminal, and *Foreground and Background*, because a v4 house is set up and used in the desktop app and your agent handles git for you. The kit's `SHAPING.md` lists exactly what's left out. Everything left out is still here.
 
 ## Books and their boxes
 

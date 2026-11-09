@@ -6,7 +6,7 @@ A decision tree for when to make a new repo, when to add a folder to your HQ, an
 
 From lightest to heaviest:
 
-1. **A note in your Inbox.** A scribble. Not a project yet.
+1. **Just a note.** A scribble. Not a project yet.
 2. **A folder under `projects/` in your HQ.** Most personal work fits here.
 3. **A repo of its own.** When the project deserves isolation.
 4. **A new GitHub organization.** When the project will spawn multiple repos under shared access.
@@ -17,7 +17,7 @@ You usually start light and graduate up as needed. Don't create a repo on day on
 
 You have an idea. It might be a project. It might just be a thought.
 
-Write it as a note somewhere you'll see it again. Inbox, daily note, a project-y looking file in your house — doesn't matter. Keep it under a screen.
+Write it down somewhere you'll see it again: a note file in your HQ, or tell your agent and ask it to remember the idea. Either is fine. Keep it under a screen.
 
 If you forget about it, it wasn't a project. If you keep coming back to it, it might be.
 
@@ -47,24 +47,16 @@ Use this when:
 Spin up a new repo when:
 
 - **You want to share it with collaborators** who shouldn't see the rest of your house.
-- **You want to publish it** — open source, MarkPub-published, or otherwise.
+- **You want to publish it** — open source, as a website, or otherwise.
 - **It has its own substantial conventions** that deserve a dedicated `CLAUDE.md`.
 - **It has substantial size or activity** that would clutter the HQ's git history.
 - **It's a code project** with a different set of build / test / deploy concerns from your HQ.
 
 A mortgage-calculator app would graduate to its own repo, because it's a React app with its own toolchain. The "research agents" project might stay in the HQ until it produces something share-worthy.
 
-The mechanics:
+The mechanics: **let your agent do it.** A repo of its own lives outside your HQ and outside anything cloud-synced; `~/repos/<name>` at the top of your home folder is a good place, and this book uses it throughout.
 
-```bash
-mkdir ~/repos/my-new-project     # outside your HQ, and outside anything cloud-synced
-cd ~/repos/my-new-project
-# (let your agent set it up: README.md, my-new-project.status.md, .gitignore, git init — no remote)
-```
-
-Or, more typically: **let your agent do it.**
-
-> I want to start `my-new-project` as its own repo at `~/repos/my-new-project`. Initialize git with an appropriate .gitignore, write the README and status file, add a starter CLAUDE.md for the project's own conventions, make the initial commit, and add a pointer to it in the HQ's `projects/README.md`.
+> I want to start `my-new-project` as its own repo at `~/repos/my-new-project`. Initialize git with the kit's .gitignore plus whatever this project's tools need, write the README and status file, add a starter CLAUDE.md for the project's own conventions, make the initial commit, and add a pointer to it in the HQ's `projects/README.md`.
 
 Notice what isn't in that request: a remote. Your agent asks before creating any remote (a GitHub repo, say) and before pushing to one. When you do want one, say so, and say whether it should be private or public.
 
@@ -76,7 +68,7 @@ You're ready for an organization when:
 - It's going to feel more "professional" — a startup, a public initiative, a venture.
 - Multiple collaborators need access to a stable group of repos at once.
 
-Pete creates an organization for every startup he's started, and even for things that "might have turned into a startup." Cost is low (it's free), and it costs nothing to abandon if it doesn't pan out.
+Some people create an organization for every startup they start, and even for things that "might turn into a startup." Cost is low (it's free), and it costs nothing to abandon if it doesn't pan out.
 
 Naming: `github.com/<org-name>/<repo-name>`. Pick the org name to look the way you'd want it to look on a business card.
 

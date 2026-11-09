@@ -1,77 +1,35 @@
 # Installing Claude Code
 
-Claude Code is a command-line tool that runs in a terminal. It can read and write files on your computer, manage Git operations, and help you with all kinds of knowledge work. The terminal is the primary way you'll use it in this kit.
+Claude Code is the part of Claude that works with the files on your computer. This kit uses it through the **Claude desktop app**, in the app's **Code** tab. That's where your agent lives. You don't need a terminal.
 
-## Mac
+## Step 1: Install the Claude desktop app
 
-### Step 1: Install Claude Code
+In a browser, go to [claude.ai/download](https://claude.ai/download) and download the app for your computer (Mac or Windows). Install it the way you'd install any app: on a Mac, drag it into Applications; on Windows, run the installer.
 
-In a browser, go to [code.claude.com](https://code.claude.com/) — it may redirect you somewhere; that's expected. You'll see several options — choose the **Terminal** version (not VS Code, not the Desktop app, not Web). Copy the install command shown on the page.
+If the app is already installed, update it to the latest version before you go on. The kit expects a current app.
+<!-- VERIFY(cold-start): where the app shows its version, and how to check for an update on Mac and Windows -->
 
-Go to Terminal (or iTerm2 if you use it). Paste the command and — before hitting Enter — check that it looks right. Then hit Enter. The download may take a minute or two.
+## Step 2: Sign in
 
-> [!warning]
-> **Don't skip this step.** After the install finishes, the installer prints a block starting with `⚠ Setup notes` telling you that `~/.local/bin` isn't in your PATH yet, followed by a command to copy. On a fresh Mac, that command typically looks like this:
-> ```
-> echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
-> ```
-> Yours may differ slightly — always trust the exact line the installer shows you over this example. Copy that whole line and paste it into the **same** terminal window, then hit Enter. It will look like nothing happened — that's correct. You only need to do this once.
->
-> If you skip this step, typing `claude` will say "command not found" — even if you close Terminal and open a brand-new window.
+Open the app and sign in with your Claude account (see [Getting a Claude Account](Getting%20a%20Claude%20Account.md)). Use the same account you pay for your plan with.
 
-> [!tip]
-> As a general rule, never paste commands from the internet into your terminal without verifying them. In this case, you're trusting Anthropic's official install page.
+If what you see looks a little different from this description, that's normal; the app changes from time to time. Follow along and take the defaults.
 
-### Step 2: Run Claude Code for the First Time
+## Step 3: Find the Code tab
 
-Type `claude` and hit Enter. The first time you run it, it walks you through a short setup: you'll sign in with your Claude account in a browser tab (choose the subscription sign-in, not API billing), acknowledge a couple of notices, and land at a prompt where you can type.
+The app has more than one tab. The **Code** tab is small and easy to miss. Find it and click it.
 
-If what you see looks a little different from this description or from any screenshots you've come across, that's normal — setup changes from time to time. Follow along and take the defaults; they're fine.
+The rest of the app (the chat) is the Claude chatbot. It's useful, but it isn't your agent and can't see your house. Your agent is always in the Code tab.
 
-That's it — Claude Code is installed on your Mac.
-
----
-
-## Windows
-
-### Step 1: Install Claude Code
-
-Open **Windows Terminal** running **PowerShell** (not Command Prompt). In a browser, go to [code.claude.com](https://code.claude.com/) — it may redirect you somewhere; that's expected. Choose the **Terminal** version (not VS Code, not the Desktop app, not Web). Copy the PowerShell install command shown on the page.
-
-Paste it into your PowerShell window and hit Enter. The download may take a minute or two.
+That's it — Claude Code is ready on your computer.
 
 > [!tip]
-> **Windows may show a setup note** after the install finishes, saying the install folder isn't on your PATH yet. If it does, `claude` won't be found until you add it — the same three steps every time:
->
-> 1. Press the Windows key, type **environment**, and choose **Edit environment variables for your account**.
-> 2. In the top list (**User variables**), select **Path** → **Edit** → **New**, and enter `%USERPROFILE%\.local\bin`. Click **OK** all the way out.
-> 3. **Close every Windows Terminal window** — tabs opened after the change still have the old PATH — then open a new one and type `claude`.
+> **Windows: a "module is blocked from loading into the Local Security Authority" dialog** may pop up the first time something on your computer reaches the internet, naming `mdnsNSP.dll` under `Program Files\Bonjour`. It's harmless: Windows 11 is refusing to load Apple's Bonjour networking add-on (installed with iTunes, some Adobe installers and some printer software) into its security system, and whatever was running keeps going. Tick **Don't show this message again** and click **Cancel**. Don't change LSA protection. If it keeps appearing and you don't use Apple devices, uninstalling **Bonjour** from Settings → Apps makes it go away.
 
-> [!tip]
-> **A "module is blocked from loading into the Local Security Authority" dialog** may pop up the first time a command reaches the internet, naming `mdnsNSP.dll` under `Program Files\Bonjour`. It's harmless: Windows 11 is refusing to load Apple's Bonjour networking add-on (installed with iTunes, some Adobe installers and some printer software) into its security system, and whatever you were running keeps going. Tick **Don't show this message again** and click **Cancel**. Don't change LSA protection. If it keeps appearing and you don't use Apple devices, uninstalling **Bonjour** from Settings → Apps makes it go away.
+## Other ways to run Claude Code
 
-> [!tip]
-> As a general rule, never paste commands from the internet into your terminal without verifying them. In this case, you're trusting Anthropic's official install page.
-
-### Step 2: Run Claude Code for the First Time
-
-In your PowerShell window, type `claude` and hit Enter. The first time you run it, it walks you through a short setup: you'll sign in with your Claude account in a browser tab (choose the subscription sign-in, not API billing), acknowledge a couple of notices, and land at a prompt where you can type.
-
-If what you see looks a little different from this description or from any screenshots you've come across, that's normal — setup changes from time to time. Follow along and take the defaults; they're fine.
-
-That's it — Claude Code is installed on your Windows machine.
-
----
-
-## Other Ways to Run Claude Code
-
-This kit assumes you're using Claude Code in a terminal, but it also runs in a few other places, all optional:
-
-- **VS Code** — via the official Claude Code extension
-- **Desktop app** — a standalone app
-
-You can mix and match depending on where your focus is, but everything in this guide uses the terminal.
+Claude Code also runs in a terminal and in VS Code. The kit doesn't teach either. If you already love the terminal, you can use it with your house; the install command is on [code.claude.com](https://code.claude.com/), and [Choosing Your Terminal](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/getting-started/Choosing%20Your%20Terminal.md) is kept on this shelf for you. Everything else in this book assumes the desktop app.
 
 ## Next Step
 
-Move on to [Choosing Your Terminal](Choosing%20Your%20Terminal.md).
+Once your house is built, read [First Day in Desktop](First%20Day%20in%20Desktop.md). If you're still getting ready, move on to [Permissions Questions](Permissions%20Questions.md).

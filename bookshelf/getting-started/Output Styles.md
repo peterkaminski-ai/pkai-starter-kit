@@ -5,6 +5,7 @@ Claude Code has **output styles**: a setting that changes Claude's role, tone an
 ## What they are
 
 Besides Default, Claude Code ships four built-in styles: Proactive, Concise, Explanatory and Learning. You can also write your own as Markdown files. You pick one with `/output-style` or `/config`.
+<!-- VERIFY(cold-start): whether `/output-style` and `/config` work in the desktop app's Code tab, or where the desktop app sets an output style instead -->
 
 ## Where they meet your agent
 

@@ -37,7 +37,7 @@ The bad version: you tell Claude "go figure that out" with no file destination, 
 
 ### Keep an eye on it from your phone
 
-Claude Code has a built-in `/remote-control` (short form: `/rc`) that lets you check on a running session from your phone while your laptop or VPS keeps doing the work. See [Monitoring from Your Phone](Monitoring%20from%20Your%20Phone.md).
+Claude Code has a built-in Remote Control, turned on in the desktop app, that lets you check on a running session from your phone while your computer keeps doing the work. See [Monitoring from Your Phone](Monitoring%20from%20Your%20Phone.md).
 
 ## Hitting auto-compact instead of clearing
 
@@ -47,7 +47,7 @@ Auto-compact works. But it loses texture — the specific bug, the exact name, t
 
 **Fix:** notice when context is getting full (`/context` shows the gas gauge). Run "wrap up this session" deliberately, write your session log, commit, then `/clear`. You control the summary.
 
-## Ten thousand session logs
+## Two hundred session logs
 
 You diligently write a session log every time. After a month, you have 200 of them. You can't find anything. Future-you starts ignoring them.
 

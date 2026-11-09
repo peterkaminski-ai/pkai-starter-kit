@@ -78,7 +78,7 @@ You probably won't need to fork anything in this course, but it's good to know t
 ## Good collaboration habits
 
 - **Pull before you start working** on a shared project.
-- **Push when you're done** with a shared project. Don't leave uncommitted work sitting on your machine overnight.
+- **Push when you're done** with a shared project. Don't leave unpushed commits sitting on your machine overnight; your agent pushes when you say yes.
 - **Communicate about what you're working on.** If two people are editing the same file, a quick message ("I'm updating the budget doc") can prevent conflicts.
 - **Write clear commit messages.** "Updated the project timeline with new deadlines" helps your teammates understand what changed without opening the file.
 - **Don't worry about being perfect.** Everyone makes mistakes with Git. That's what the history is for.

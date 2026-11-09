@@ -22,7 +22,7 @@ Pages stand alone, but they were written in this order. If you're starting from 
 | Page                                                                      | What you'll learn                                                                                            |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | [Why Project Management Matters](Why%20Project%20Management%20Matters.md) | The 70-80% claim, and Pete's table-saw analogy for why guardrails matter.                                    |
-| [Project as Repo](Project%20as%20Repo.md)                                 | Your house's two folders, why every project gets a folder in the HQ, and when one gets a repo of its own.     |
+| [Project as Repo](Project%20as%20Repo.md)                                 | Your house's two folders, why most projects are a folder in the HQ, and when one gets a repo of its own.     |
 | [The Iteration Loop](The%20Iteration%20Loop.md)                           | The six-step cycle: wish, plan, review, execute, log, iterate.                                               |
 | [Writing the Wish](Writing%20the%20Wish.md)                               | What to put in the starting note, and why a sloppy paragraph beats no paragraph.                             |
 | [Plan Mode and Auto Mode](Plan%20Mode%20and%20Auto%20Mode.md)             | When to use which Claude Code permission mode, and the Shift-Tab cycle.                                      |

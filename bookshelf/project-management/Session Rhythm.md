@@ -68,7 +68,7 @@ This is the habit that makes short sessions work. Without it, you're losing cont
 
 You can usually pick up by saying something specific:
 
-> Continue working on the mortgage calculator. Read `projects/mortgage-calculator/README.md`, its status file, and the most recent session log to catch up.
+> Continue working on the research agents project. Read `projects/research-agents/README.md` in the HQ, its status file, and the most recent session log to catch up.
 
 Or, if you don't have a specific task and want a briefing:
 

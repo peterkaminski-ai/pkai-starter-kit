@@ -57,7 +57,7 @@ When you type a request to Claude Code, here's what happens:
 3. It responds with text, or makes the changes you asked for
 4. If it changed any files, you'll see the edits the next time you open them in your Markdown editor
 
-Claude Code works with the files on your computer directly. Your house stays on your local disk; nothing syncs it to the cloud. But whatever your agent reads in order to help you — a file, part of a file, the output of a command — goes to Anthropic as part of the conversation, the same as anything you type. That's how Claude can think about it. Keep that in mind for anything you'd rather Claude not see, and keep secrets out of files your agent reads.
+Claude Code works with the files on your computer directly. Your house stays on your local disk (unless the folder sits inside a cloud-synced location like iCloud or OneDrive, which setup checks for). But whatever your agent reads in order to help you — a file, part of a file, the output of a command — goes to Anthropic as part of the conversation, the same as anything you type. That's how Claude can think about it. Keep that in mind for anything you'd rather Claude not see, and keep secrets out of files your agent reads.
 
 ## Tips for Getting Good Results
 

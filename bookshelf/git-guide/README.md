@@ -17,8 +17,8 @@ Start at the top and work down. Each page builds on the one before it, but they 
 | [What Is Version Control](What%20Is%20Version%20Control.md) | Why this exists and what problem it solves |
 | [Git vs GitHub](Git%20vs%20GitHub.md) | The difference between the tool and the platform |
 | [Installing Git](Installing%20Git.md) | Getting Git on your Mac or Windows machine |
-| [Your GitHub Account](Your%20GitHub%20Account.md) | Creating an account, getting access, authentication |
-| [The Daily Cycle](The%20Daily%20Cycle.md) | Pull, work, commit, push -- the rhythm of collaboration |
+| [Your GitHub Account](Your%20GitHub%20Account.md) | Optional: creating an account, getting access, authentication |
+| [The Daily Cycle](The%20Daily%20Cycle.md) | Work, commit -- and pull and push once you add a remote |
 | [Talking to Git Through Claude Code](Talking%20to%20Git%20Through%20Claude%20Code.md) | A phrasebook for telling Claude Code what you want |
 | [What Is a Commit](What%20Is%20a%20Commit.md) | Snapshots, save points, and why commit messages matter |
 | [Branches](Branches.md) | Working on something without affecting the main version |

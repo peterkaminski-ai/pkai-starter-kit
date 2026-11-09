@@ -35,8 +35,8 @@ Your agent manages version control for you, so none of this is required. Read it
 
 - [Installing Git](Installing%20Git.md) — Mac and Windows instructions
 - [GitHub Account Setup](GitHub%20Account%20Setup.md) — Create your account, connect from the terminal
-- [Your First Commit](Your%20First%20Commit.md) — The daily cycle: pull, work, commit, push
-- [Your First House](Your%20First%20House.md) — Creating your house and connecting it to GitHub
+- [Your First Commit](Your%20First%20Commit.md) — The daily cycle: work, commit (pull and push once you add a remote)
+- [Your First House](Your%20First%20House.md) — Creating your house by hand: two folders, git, and your agent's charter
 - [Using Claude Code With Your House](Using%20Claude%20Code%20With%20Your%20House.md) — What you can ask it to do
 - [Setting Up a Project](Setting%20Up%20a%20Project.md) — Creating your own project workspace
 

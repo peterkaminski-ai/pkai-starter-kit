@@ -84,7 +84,7 @@ Even with a remote, hold off when:
 - You're about to do `git rebase` or other history rewriting that you don't want others to pull.
 - It's a "personal scratch" repo and pushing every five minutes feels noisy.
 
-And the default runs the other way: in a kit house, nothing is pushed anywhere unless you've set up a remote and said yes.
+And the default is the same: in a kit house, nothing is pushed anywhere unless you've set up a remote and said yes.
 
 ## See also
 

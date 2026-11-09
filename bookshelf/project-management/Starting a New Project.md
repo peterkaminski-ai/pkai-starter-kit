@@ -52,7 +52,7 @@ Spin up a new repo when:
 - **It has substantial size or activity** that would clutter the HQ's git history.
 - **It's a code project** with a different set of build / test / deploy concerns from your HQ.
 
-Pete's mortgage-calculator example from the call would graduate to its own repo, because it's a React app with its own toolchain. The "research agents" project might stay in the HQ until it produces something share-worthy.
+A mortgage-calculator app would graduate to its own repo, because it's a React app with its own toolchain. The "research agents" project might stay in the HQ until it produces something share-worthy.
 
 The mechanics:
 

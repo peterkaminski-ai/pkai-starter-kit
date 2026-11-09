@@ -2,6 +2,27 @@
 
 Written for an agent to read when it pulls a new release. Newest first. Each entry says what changed and why, so a house can decide what to take; nothing here installs itself.
 
+## 3.2.0 — 2026-11-09
+
+**The bookshelf tells the truth about the house.** The current kit. 3.2 changes no skill, persona, template or hook; it corrects pages in three books that were carried from the kit's first version (May 2026) and still described a different setup: one big repo per project with its own `CLAUDE.md`, a "push at least once a session" loop with GitHub as the default, and a five-file memory folder. Against the house this kit actually builds — two folders, git with no remotes, push only with your yes, one fact per memory file — those pages gave wrong advice. The books written for V3 (*keeping-yourself-safe*, *working-with-other-houses*, *your-house*) needed nothing. Released with `pkai-benchmark` 3.2.0, at the same version. A 3.0 or 3.1 house takes this by reading its own copy of the shelf again, or by asking its agent to pull 3.2 and compare.
+
+**Changed**
+
+- *Memory Across Sessions* and *Anti-Patterns*: the memory-hygiene test is overlap, not a file count. "Five files is plenty, ten is too many" contradicted `save-a-memory` (one fact, one file) and `review-and-prune` (review when the index passes about a hundred lines), and the two pages disagreed with each other (#41, Howardgr).
+- *Memory Across Sessions*: `CLAUDE.md` is your agent's charter, which you install and change by hand; the `CLAUDE-<email>.md` personalization file and the `~/.claude/CLAUDE.md` advice are gone (part of #4); preferences become memories.
+- *Session Logs*, *Session Rhythm*, *Memory Across Sessions*: session logs live in the agent home's `sessions/`, flat and dated, written by `wrap-up-this-session`; a project's state lives in its `<slug>.status.md`. The "session close protocol in your CLAUDE.md" block is replaced by the skill.
+- *Project as Repo*, *Starting a New Project*, the project-management README: rewritten around the two-folder house. A project is a folder in `hq/projects/<slug>/` by default; a repo of its own is the exception, lives outside the HQ, and only it may carry a `CLAUDE.md`. No `gh repo create` by default; your agent asks before creating any remote. Examples that were Pete's own setup are generalized.
+- *Commit Every Session*, *Anti-Patterns*, *Your First Commit*, *The Daily Cycle*, *Talking to Git Through Claude Code*, *Working With Others*, *Git Glossary*: the everyday cycle is commit. Pull and push apply only once you've added a remote, and your agent asks before pushing. "The default is push" and "pull first" are gone.
+- *Your First House*: no GitHub step and no public/private choice for the house — the agent home holds your agent's memory and is never pushed anywhere public or shared. `CLAUDE.md` is the charter made from a persona; after that you teach your agent by telling it. Names `BUILD.md` as the file that walks Claude through setup.
+- *Using Claude Code With Your House*, *Why This Stack*: "the only time your files leave your computer is when you push" was wrong. Your files stay on your disk, but whatever your agent reads goes to Anthropic as part of the conversation.
+- *Git vs GitHub*: git is optional but recommended; GitHub is optional.
+- *Setting Up a Project*: framed as the exception for a project with a repo of its own; creating a remote and pushing need your yes.
+- `START-HERE.md`: the kickoff names 3.2.0, and 3.2 is now the release `releases/latest` hands out.
+
+**Not in this release, known**
+
+- The same three books still carry smaller mismatches: Pete-specific examples in a few pages, `plan.md` and `wish.md` where the kit now uses `README.md` and a status file, and a `.gitignore` written by hand where the kit ships one. The full list is the audit behind this release; V4 takes the rest.
+
 ## 3.1.0 — 2026-10-17 — beta
 
 **One foreground per house, and a smoother first day.** The largest change is the desk: a house now notices when two sessions are open on the same agent and makes the second one a guest. The rest is the first round of fixes from houses that installed 3.0, most of them Windows installs. Numbers are the kit's GitHub issues and pull requests. A 3.0 house takes these by pull: `MOVING-FROM-V3.0.md` walks through each piece, and `MOVING-FROM-V2.md` now leads a V2 house straight here.

@@ -1,6 +1,6 @@
 # Working With Others
 
-Git is built for collaboration. This page covers the tools and workflows for working on a project with other people.
+Git is built for collaboration. This page covers the tools and workflows for working on a project with other people. It's the optional next step: everything here needs a remote, such as a shared GitHub repository, which your house doesn't have until you add one. Share a project repo this way, never your agent home -- it holds your agent's memory.
 
 ## The simplest model: shared main branch
 
@@ -77,8 +77,8 @@ You probably won't need to fork anything in this course, but it's good to know t
 
 ## Good collaboration habits
 
-- **Pull before you start working.** Always.
-- **Push when you're done.** Don't leave uncommitted work sitting on your machine overnight.
+- **Pull before you start working** on a shared project.
+- **Push when you're done** with a shared project. Don't leave uncommitted work sitting on your machine overnight.
 - **Communicate about what you're working on.** If two people are editing the same file, a quick message ("I'm updating the budget doc") can prevent conflicts.
 - **Write clear commit messages.** "Updated the project timeline with new deadlines" helps your teammates understand what changed without opening the file.
 - **Don't worry about being perfect.** Everyone makes mistakes with Git. That's what the history is for.

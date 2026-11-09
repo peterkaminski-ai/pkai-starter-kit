@@ -26,7 +26,7 @@ Quick-reference definitions for the terms you'll encounter when working with Git
 
 **Merge** -- Combining changes from one branch into another. Git does this automatically when there are no conflicts.
 
-**Pull** -- Downloading the latest changes from GitHub to your computer. The first thing you do when you sit down to work.
+**Pull** -- Downloading the latest changes from GitHub to your computer. If you've added a remote that others push to, it's the first thing you do when you sit down to work; without a remote, there's nothing to pull.
 
 **Pull Request (PR)** -- A request to merge changes from one branch into another, with an opportunity for review and discussion. See [Working With Others](Working%20With%20Others.md).
 

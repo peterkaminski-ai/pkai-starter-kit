@@ -2,15 +2,17 @@
 
 Working with Git has a rhythm. Once you get the hang of it, it becomes second nature -- like saving a document, but with a few extra steps that give you collaboration superpowers.
 
-The basic cycle is: **pull, work, commit, push.**
+The basic cycle is: **work, commit.** That's the whole thing for your house, which starts with git on your computer and no remote.
+
+Once you've added a remote, such as a GitHub repository you share with others, two more steps join in, and the cycle becomes: **pull, work, commit, push.** This page covers all four; skip the pull and push steps until you have a remote.
 
 ## The four steps
 
-### 1. Pull -- "Get the latest"
+### 1. Pull -- "Get the latest" (only with a remote)
 
 **What it does:** Downloads the latest changes from GitHub -- whatever your teammates have pushed since you last pulled.
 
-**When to do it:** Every time you sit down to work. Before you start editing, pull first. This keeps you in sync and avoids conflicts.
+**When to do it:** If you have a remote that others push to, pull when you sit down to work, before you start editing. This keeps you in sync and avoids conflicts. Without a remote, there's nothing to pull.
 
 **What to tell Claude Code:**
 - "Pull the latest"
@@ -34,11 +36,11 @@ Edit your files. Create new ones. Delete what's no longer needed. This is the pa
 
 The short description you add helps you (and your teammates) remember what changed and why.
 
-### 4. Push -- "Share with everyone"
+### 4. Push -- "Share with everyone" (only with a remote)
 
 **What it does:** Uploads your committed changes to GitHub so your teammates can see them.
 
-**When to do it:** After committing, when you're ready to share. You don't have to push after every single commit -- your checkpoints are saved safely on your computer even if you don't push right away. But pushing frequently is a good habit so your work is backed up and visible to others.
+**When to do it:** After committing, when you're ready to share. You don't have to push after every single commit -- your checkpoints are saved safely on your computer even if you don't push right away. Your agent asks before it pushes anywhere, and your agent home, which holds its memory, never goes to a public or shared remote.
 
 **What to tell Claude Code:**
 - "Push my changes"
@@ -51,15 +53,16 @@ Here's what a typical session looks like:
 
 | When | What to tell Claude Code |
 |------|--------------------------|
-| Starting your day | "Pull the latest" |
-| Finished a chunk of work | "Commit and push -- updated the project plan" |
-| Taking a break | "Commit and push so nothing is lost" |
-| Not sure what's going on | "What's changed?" or "What do we have that isn't pushed?" |
-| End of the day | "Is everything committed and pushed?" |
+| Finished a chunk of work | "Commit -- updated the project plan" |
+| Taking a break | "Commit so nothing is lost" |
+| Not sure what's going on | "What's changed?" |
+| End of the day | "Is everything committed?" |
+
+With a remote, add "Pull the latest" at the start of your day, and say "push" (or "commit and push") when you're ready to share. "What do we have that isn't pushed?" checks what hasn't gone up yet.
 
 ## The shortcut most people use
 
-In practice, you can combine steps. Saying **"commit and push"** does the save-and-share in one go. Saying **"pull and push"** grabs the latest and sends yours. You can even say **"pull, then commit and push everything"** to do the whole cycle at once.
+Once you have a remote, you can combine steps. Saying **"commit and push"** does the save-and-share in one go. Saying **"pull and push"** grabs the latest and sends yours. You can even say **"pull, then commit and push everything"** to do the whole cycle at once.
 
 Claude Code is flexible about how you phrase it. You don't need to use the exact words above -- just describe what you want.
 
@@ -81,7 +84,7 @@ Claude Code is flexible about how you phrase it. You don't need to use the exact
         └─────────────── next session ────────────────────────┘
 ```
 
-Each session starts with a pull and ends with a push. The cycle repeats.
+Without a remote, each session is work and commit, and the cycle repeats. With one, a session starts with a pull and ends with a push when you're ready to share.
 
 ## Next
 

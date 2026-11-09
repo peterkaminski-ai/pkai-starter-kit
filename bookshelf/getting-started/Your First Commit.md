@@ -1,68 +1,68 @@
 # Your First Commit
 
-Git uses three main actions — **commit**, **pull**, and **push** — to save your work and keep it synced with GitHub. You don't need to learn any Git commands. Claude Code handles all of it for you. You just use plain English.
+Git uses three main actions — **commit**, **pull**, and **push**. Commit is the one your house uses every day: it saves your work on your computer. Pull and push only come in once you've added a remote, such as a GitHub repository, which is optional. You don't need to learn any Git commands. Claude Code handles all of it for you. You just use plain English.
 
 ## The Three Actions
-
-### Pull — "Grab the latest"
-
-Downloads the latest changes from GitHub (anything that's been pushed since you last checked).
-
-**When to do it:** Every time you sit down to work. Pull first, then start editing.
 
 ### Commit — "Save a checkpoint"
 
 Saves a snapshot of your changes on your computer. Think of it as a named save point you can always come back to.
 
-**When to do it:** Often. Finished editing a page? Commit. About to take a break? Commit. The short description helps you (or someone else) remember what changed.
+**When to do it:** Often. Finished editing a page? Commit. About to take a break? Commit. The short description helps you (or someone else) remember what changed. Your agent also commits on its own at natural points, such as when you wrap up a session.
 
-### Push — "Send to GitHub"
+### Pull — "Grab the latest" (only with a remote)
 
-Uploads your committed changes to GitHub so they're backed up in the cloud and visible to collaborators.
+Downloads the latest changes from a remote such as GitHub (anything that's been pushed since you last checked). Your house starts with no remote, so there's nothing to pull until you add one.
 
-**When to do it:** After a commit, or after several commits. You can batch up a few commits and push them all at once.
+**When to do it:** If you've added a remote that someone else also pushes to, pull when you sit down to work, before you start editing.
+
+### Push — "Send to GitHub" (only with a remote)
+
+Uploads your committed changes to a remote such as GitHub, so there's a copy off your computer.
+
+**When to do it:** Only once you've added a remote, and only when you say so — your agent asks before it pushes anywhere. Your agent home holds your agent's memory, so never push it anywhere public or shared.
 
 ## The Daily Routine
 
 | When | What to tell Claude Code |
 |------|--------------------------|
-| Starting your session | "Pull the latest" |
-| Finished a chunk of work | "Commit and push — updated the project notes" |
-| Taking a break | "Commit and push so nothing is lost" |
+| Finished a chunk of work | "Commit — updated the project notes" |
+| Taking a break | "Commit so nothing is lost" |
 | Not sure what's going on | "What's changed?" |
+
+If you've added a remote, add "Pull the latest" at the start of a session and "push" when you want a copy sent, and your agent will check with you before pushing.
 
 ## Saying It in Plain English
 
 You don't need to memorize specific phrases. Claude Code understands natural language. Here are some examples:
 
 **Saving your work:**
-- "Commit everything and push"
-- "Save my work and send it to GitHub"
+- "Commit everything"
+- "Save my work"
 - "Checkpoint this — I updated the meeting notes"
-
-**Syncing with GitHub:**
-- "Pull and push"
-- "Pull and push everything, including new files"
-- "Is everything synced to GitHub?"
 
 **Checking status:**
 - "What's changed?"
+- "Show me the recent history"
+
+**Syncing, if you've added a remote:**
+- "Pull and push"
+- "Is everything synced to GitHub?"
 - "What do we have that isn't pushed?"
-- "Anything new from other people?"
 
 > [!tip]
-> A good habit: say **"pull and push"** together. This grabs the latest changes and sends yours in one go, which avoids sync conflicts.
+> If you do have a remote that others push to, say **"pull and push"** together. This grabs the latest changes and sends yours in one go, which avoids sync conflicts.
 
 ## Try It Now
 
 If you set up your house in the previous step, try the full cycle:
 
 1. Open Claude Code in your house folder
-2. Say: **"Pull the latest"**
-3. Create or edit a file
-4. Say: **"Commit and push — my first commit"**
+2. Create or edit a file
+3. Say: **"Commit — my first commit"**
+4. Say: **"Show me the recent history"**
 
-Claude Code will save your changes and upload them to GitHub. You can verify by visiting your repository on github.com — you should see your files there.
+Claude Code will save your changes as a commit on your computer, and the history will show it at the top.
 
 ## If Something Goes Wrong
 
@@ -72,4 +72,4 @@ Common situations:
 
 - **"Merge conflict"** — Two people edited the same part of the same file. Claude Code can help you resolve it. This is rare in solo work.
 - **"Nothing to commit"** — You haven't made any changes since your last commit. That's fine.
-- **"Push rejected"** — Someone else pushed changes while you were working. Pull first, then push again. (Saying "pull and push" avoids this.)
+- **"Push rejected"** — Only happens with a remote: someone else pushed changes while you were working. Pull first, then push again. (Saying "pull and push" avoids this.)

@@ -27,40 +27,41 @@ YYYY-MM-DD-NNN-brief-topic.md
 
 - **Date** in ISO format, UTC if you collaborate across time zones, local if you're solo and prefer it.
 - **NNN** — a sequence number for the day, in case you write multiple logs (you will).
-- **Brief topic** — three or four words, kebab-case.
+- **Brief topic** — two or three words, kebab-case.
 
 Examples:
 
-- `2026-05-06-001-asimov-bootstrap.md`
-- `2026-05-06-002-asimov-memory-discussion.md`
+- `2026-05-06-001-website-launch.md`
+- `2026-05-06-002-memory-cleanup.md`
 - `2026-05-07-001-mortgage-calculator-plan.md`
 
 Pete's UTC convention for shared repos comes from the Founders Cohort wiki — multiple collaborators in different time zones means UTC avoids confusion. For solo projects, local time is fine; just be consistent.
 
 ## Where session logs live
 
-Inside the project folder, in a `sessions/` directory at the root:
+In your agent home, in `sessions/` — one flat folder, dated, whatever project each session was about:
 
 ```
-my-project/
-├── README.md
+<agent-name>/
 ├── CLAUDE.md
-├── plan.md
+├── memory/
 ├── sessions/
-│   ├── 2026-05-06-001-asimov-bootstrap.md
-│   ├── 2026-05-06-002-asimov-memory.md
-│   └── 2026-05-07-001-test-suite.md
+│   ├── 2026-05-06-001-website-launch.md
+│   ├── 2026-05-06-002-memory-cleanup.md
+│   └── 2026-05-07-001-mortgage-calculator-plan.md
 └── ...
 ```
 
-These are committed to the repo. Anyone (including future-you) can read them.
+If your house keeps git, they're committed to the agent home's history, alongside memory. Future-you can read them any time.
+
+Where a project *stands* doesn't go in a log. Each project in your HQ has a `<slug>.status.md` beside its README: current state, next actions, decisions and their reasons. The log says what happened; the status file says where things stand. A session that worked on a project updates both.
 
 ## What goes in a session log
 
 Suggested skeleton:
 
 ```markdown
-# Session 2026-05-06-001 — Asimov bootstrap
+# Session 2026-05-06-001 — Website launch
 
 ## Goal
 
@@ -99,7 +100,7 @@ The pattern:
 1. You say "wrap up this session" (or whatever your trigger phrase is).
 2. The agent reviews the session, drafts the log.
 3. You glance at it. Edit if needed.
-4. Commit and push.
+4. Commit, if your house keeps git.
 5. `/clear`.
 
 The agent writes a better session log than most humans will, because it has the whole conversation in working memory and can summarize it accurately. Your job is to glance and either approve or correct.
@@ -108,28 +109,15 @@ If the agent's draft is missing something important — a tricky decision, a nea
 
 ## What "wrap up this session" should do
 
-A useful set of wrap-up actions, configurable per agent:
+Every house built from the kit has a `wrap-up-this-session` skill that does this:
 
 1. Note any open threads.
-2. Write a session log.
-3. Commit work to git (and push, if appropriate).
-4. Update memory if anything important came up.
+2. Write a session log to `sessions/YYYY-MM-DD-NNN-topic.md`, and bring the project's status file up to date if the session worked on one.
+3. Save anything new to memory.
+4. Commit, if your house keeps git. It never pushes.
 5. Report back: "It's now safe to clear or exit."
 
-You can encode this in your `CLAUDE.md` or your personalization file:
-
-```markdown
-## Session close protocol
-
-When I say "wrap up this session" or "ready to close," do the following:
-1. Check git status; flag uncommitted changes.
-2. Write a session log to `sessions/YYYY-MM-DD-NNN-topic.md`.
-3. Commit the session log and any related changes.
-4. Consolidate memory if anything new came up worth persisting.
-5. Tell me: it's now safe to clear or exit.
-```
-
-The agent will follow these instructions whenever you use the trigger.
+There's nothing to write into your charter. Say "wrap up this session" (or "let's wrap," or "prep for clear") and the skill does it. If you'd like it done a little differently, tell your agent; it saves that as a memory.
 
 ## Frequency
 

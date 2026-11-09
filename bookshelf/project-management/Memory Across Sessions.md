@@ -2,47 +2,36 @@
 
 What survives `/clear`. What lives where. How to keep the memory system useful instead of letting it become noise.
 
-## Three layers, one folder
+## Two layers, one home
 
-Memory in this stack lives in three places, all inside (or alongside) your project folder. **In a house built from the kit, the memory of record is your agent home's `memory/` folder, in git** — the house's settings turn off Claude Code's own auto memory, and the charter says `memory/` wins if the two ever disagree. The rest of this chapter describes Claude Code's defaults, which still apply in a project you open without your agent.
+What your agent carries from session to session lives in two places, both in your agent home: its charter, `CLAUDE.md`, and its `memory/` folder. **The memory of record is the agent home's `memory/` folder**, in git if your house keeps git — the house's settings turn off Claude Code's own auto memory, and the charter says `memory/` wins if the two ever disagree. Claude Code's defaults still apply in a folder you open without your agent; the table notes where they differ.
 
 | Layer | Where | Loaded when |
 |---|---|---|
-| `CLAUDE.md` | At the project root | Every session start |
-| Personalization (e.g., `CLAUDE-<email>.md`) | Project root, when shared | Every session start, if it exists |
+| `CLAUDE.md` | At the root of your agent home: your agent's charter | Every session start |
 | `MEMORY.md` and memory files | In a house: `memory/` in the agent home, in git. Claude Code's default elsewhere: `~/.claude/projects/<project-path>/memory/` (local-only auto memory) | Every session start, then individual files when relevant |
 
-When a session starts, Claude Code reads them in roughly this order: shared `CLAUDE.md`, your personalization file, then `MEMORY.md` and whichever memory files it references. By the time you type your first message, the agent already knows the project conventions, your personal preferences, and whatever you've asked it to remember from past sessions.
+When a session starts, your agent reads its charter, then `MEMORY.md` and whichever memory files are relevant. By the time you type your first message, the agent already knows who it is, how you like to work, and whatever you've asked it to remember from past sessions.
 
-## `CLAUDE.md` — the shared brain
+## `CLAUDE.md` — your agent's charter
 
-Project-wide instructions. Conventions. Vocabulary. Things every collaborator (human or agent) should know.
+In a house, `CLAUDE.md` is your agent's charter: its persona. Setup copied it into the agent home from the persona you chose and filled it in. It's yours: you install it, and you change it, by hand. Your agent never edits its own charter; when it thinks something belongs there, it drafts the change for you to read and install yourself (`review-and-prune` does this).
 
 Common contents:
 
-- What this project is, in one paragraph.
-- Folder layout.
-- Any rules: "use UTC dates," "always run tests before committing," "don't modify `_generated/` by hand."
-- Pointers: "see `docs/architecture.md` for the design," "see `Conventions/` for shared norms."
+- Who your agent is, and how it works with you.
+- Where the work lives: your HQ and its `projects/`.
+- What it may do on its own, and what needs your yes.
+- The safety sections, which stay as written.
+- Any rule that must hold every session — the kind memory is too weak for.
 
 Keep it short. CLAUDE.md is loaded at the start of every session, so it costs context window every time. A 200-line CLAUDE.md is fine. A 2,000-line one is leaking.
 
-When CLAUDE.md needs to grow beyond a few screens, link out to other files. The structure of the project should be the structure of its documentation; CLAUDE.md is the index, not the encyclopedia.
+When CLAUDE.md needs to grow beyond a few screens, link out to other files. CLAUDE.md is the index, not the encyclopedia.
 
-## Personalization files
+Your preferences ("I prefer terse responses," "always use British English spelling") don't need a file of their own. Tell your agent, and it saves them as memories.
 
-In a multi-user project (a shared course wiki, a team repo), each collaborator can keep their own preferences in a `CLAUDE-<email>.md` file at the root. The shared `CLAUDE.md` checks for this file at session start.
-
-Use it for things like:
-
-- "I prefer terse responses."
-- "Always use British English spelling."
-- "When I say 'post,' I mean post to the microblog."
-- "Run a status check before any push."
-
-These files are committed to the repo and visible to everyone in the project. That's intentional — in collaborative settings, seeing how others configure their agents is useful.
-
-For truly private preferences, put them in `~/.claude/CLAUDE.md` on your local machine. That file applies to all your Claude Code sessions across all projects, and never syncs anywhere.
+A project with a repo of its own — the exception, not the default (see [Starting a New Project](Starting%20a%20New%20Project.md)) — may carry its own `CLAUDE.md`, scoped to that project: what it is, its folder layout, rules like "always run tests before committing," for anyone who opens it without your agent. Keep it to the project, never your agent's persona. The HQ, and every project folder inside it, never gets one; your agent brings itself along.
 
 ## `MEMORY.md` and memory files — the persistent context
 
@@ -110,8 +99,8 @@ Two different things, easy to confuse:
 | | Memory | Session logs |
 |---|---|---|
 | **What** | Persistent facts, preferences, project state | A record of what happened in a session |
-| **Where** | `memory/` in the agent home (in a house); `~/.claude/.../memory/` (elsewhere, local) | In the project folder, committed to git |
-| **When written** | Whenever something worth persisting comes up | At the end of each session |
+| **Where** | `memory/` in the agent home (in a house); `~/.claude/.../memory/` (elsewhere, local) | `sessions/` in the agent home, flat and dated, in git if your house keeps git |
+| **When written** | Whenever something worth persisting comes up | At the end of each session (`wrap-up-this-session`) |
 | **Audience** | Future-you and future-agent, indefinitely | Future-you and next-session-agent, near term |
 | **Lifecycle** | Updated and consolidated | Append-only |
 
@@ -121,4 +110,4 @@ You want both. Memory carries continuity of identity and project state across al
 
 - [Session Logs](Session%20Logs.md) — the per-session counterpart to memory.
 - [Session Rhythm](Session%20Rhythm.md) — when memory is loaded and saved.
-- [Project as Repo](Project%20as%20Repo.md) — where CLAUDE.md and personalization files live.
+- [Project as Repo](Project%20as%20Repo.md) — where projects live, and which ones carry their own CLAUDE.md.

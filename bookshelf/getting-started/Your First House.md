@@ -1,77 +1,51 @@
 # Your First House
 
-A house is the folder where your agent lives: its agent home (with CLAUDE.md, memory, and session logs) together with HQ, the folder where your projects and working files live. START-HERE.md at the root of this kit walks Claude Code through building one for you, but this page covers the same ground by hand, for when you're curious how it's built or want to set one up yourself.
+A house is where your agent lives and works: its agent home (with CLAUDE.md, memory, and session logs) together with HQ, the folder where your projects and working files live. BUILD.md at the root of this kit walks Claude Code through building one for you (START-HERE.md is the page for you), but this page covers the same ground by hand, for when you're curious how it's built or want to set one up yourself.
 
-## Step 1: Create a Folder
+## Step 1: Create the Folders
 
-Create a new folder on your computer for your house. Remember: this folder must **not** be inside iCloud, OneDrive, Dropbox, or any cloud-synced folder.
+A house is two folders: the agent home and HQ. Create both on your computer. Remember: if you'll use git, neither folder may be inside iCloud, OneDrive, Dropbox, or any cloud-synced folder.
 
 Good locations:
 
-- **Mac:** `~/My Agents/my-agent/`
-- **Windows:** `C:\Users\YourName\My Agents\my-agent\`
+- **Mac:** `~/My Agents/my-agent/` for the agent home, and `~/Documents/yourname-hq/` for HQ
+- **Windows:** `C:\Users\YourName\My Agents\my-agent\` for the agent home, and `C:\Users\YourName\Documents\yourname-hq\` for HQ
 
-Name it whatever makes sense — many people name it after their agent.
+Name them whatever makes sense — many people name the agent home after their agent. (If your Documents folder is cloud-synced, put HQ at the top of your home folder instead.)
 
 ## Step 2: Ask Your Agent to Set Up Git
 
-Open Claude Code inside the folder and ask it:
+Git is optional, but recommended: it keeps a private history of everything, so nothing can be lost. Open Claude Code in each folder in turn and ask it:
 
-> Initialize a git repo here and create a .gitignore.
+> Initialize a git repo here and copy in the kit's .gitignore.
 
 Then make the first commit:
 
 > Commit everything with the message "Initial commit"
 
-## Step 3: Connect to GitHub (Optional but Recommended)
+That's two local repos, one per folder, with no remote. Your history lives on your computer, and nothing is uploaded anywhere.
 
-If you want your house backed up and shareable, connect it to a GitHub repository. Ask Claude Code:
+## Step 3: GitHub (Optional)
 
-> Create a private GitHub repo for this project and push to it.
+You don't need GitHub for your house. If you later want an off-machine copy, that's a separate decision, and your agent pushes nowhere without your yes. One rule holds whatever you decide: the agent home holds your agent's memory, so it must never be public and never be shared with anyone else. A project that lives in its own repo is the place for collaborators, not your house (see [Setting Up a Project](Setting%20Up%20a%20Project.md)).
 
-Claude Code will use the `gh` CLI to create the repository and push your files. Tell it whether you want the repo **private** (only you can see it) or **public** (visible to everyone).
+## Step 4: Your Agent's CLAUDE.md
 
-> [!tip]
-> If Claude Code says it can't find `gh`, you may need to install the GitHub CLI first. On Mac: `brew install gh`. On Windows: download from [cli.github.com](https://cli.github.com/).
+CLAUDE.md is your agent's charter: who it is, how it works, and what it may do on its own. It lives in the agent home, and only there — HQ never gets a CLAUDE.md. Your agent brings itself along when it works in HQ. Setup makes the charter by copying one of the kit's persona files (in `personas/`) into the agent home as `CLAUDE.md` and filling in your details.
 
-## Step 4: Create a CLAUDE.md
-
-CLAUDE.md is a special file that tells Claude Code about your house — what it's for, how it's organized, and what conventions to follow. Without it, Claude has no context about your project.
-
-Ask Claude Code:
-
-> Create a CLAUDE.md for this project. It's about [describe your house briefly].
-
-Or write one yourself:
-
-```markdown
-# CLAUDE.md
-
-This house is [what it is]. It's for [what you use it for].
-
-## Structure
-
-- [describe your folder layout, if any]
-
-## Conventions
-
-- [any rules you want Claude to follow]
-```
-
-Even a few lines make a big difference in how well Claude Code understands your house.
+After that, you don't need to edit it to teach your agent things. Tell your agent what you want — "I like short summaries", "the budget lives in the finance project" — and it saves a memory. When something should become a permanent rule in the charter, your agent drafts the change for you to read and install by hand; it never edits its own charter. See [Testing a Charter Edit](../your-house/Testing%20a%20Charter%20Edit.md).
 
 ## Step 5: Verify Everything Works
 
 Test the full loop:
 
-1. Create a new file — even just "Hello, world!"
-2. Say to Claude Code: "Commit and push my changes"
-3. Visit your repository on github.com to confirm the files are there
+1. Create a new file in HQ — even just "Hello, world!"
+2. Say to Claude Code: "Commit my changes"
+3. Say: "Show me the recent history" to confirm the commit is there
 
 If that works, you have a fully functional house with version control and an AI agent that understands it.
 
 ## What's Next
 
 - **Start writing.** Don't over-organize upfront. Start with a flat folder of notes and add subfolders when you have enough related pages to justify them.
-- **Evolve your CLAUDE.md as you go.** As your house develops conventions, add them so Claude stays current.
-- **Invite collaborators** on GitHub if others will work in your house. They clone the repo, open the folder, and they're in.
+- **Tell your agent as you go.** As your house develops conventions, say them; your agent saves them as memories so it stays current.

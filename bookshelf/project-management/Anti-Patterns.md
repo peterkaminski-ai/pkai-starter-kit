@@ -51,7 +51,7 @@ Auto-compact works. But it loses texture — the specific bug, the exact name, t
 
 You diligently write a session log every time. After a month, you have 200 of them. You can't find anything. Future-you starts ignoring them.
 
-**Fix:** organize logs by project, not by date alone. Use descriptive filenames (`2026-05-06-001-asimov-bootstrap.md`, not `session-200.md`). Periodically consolidate — extract the durable lessons into memory or into a project's main `plan.md`, then archive old logs into a `sessions/archive/` folder.
+**Fix:** keep logs in one flat, dated folder and let the names do the finding. Use descriptive filenames (`2026-05-06-001-website-launch.md`, not `session-200.md`), and ask your agent to search them when you need something (the `find-it-again` skill does this, if your house has it). Periodically consolidate — extract the durable lessons into memory, and where a project stands into its `<slug>.status.md`. Leave the logs themselves where they are; they're append-only history.
 
 ## Twenty memory files about the same topic
 
@@ -59,11 +59,11 @@ You ask Claude to "remember" things over time. Six months later, you have `proje
 
 **Fix:** memory hygiene. Update existing files rather than creating new ones. Periodically ask Claude to consolidate. Delete what's stale. Keep `MEMORY.md` short enough to read rather than skim. What matters is overlap, not the count: if two files cover the same topic, merge them.
 
-## Pushing without committing during the session
+## Committing only at session end
 
-You finish a session, you push, you walk away. Tomorrow you discover the push was a one-shot at the end and the work isn't broken into reviewable commits — it's all one mega-commit. Future-you can't `git bisect` to find when something broke. Collaborators can't review piece by piece.
+You finish a session, make one commit of everything, and walk away. Tomorrow you discover the work isn't broken into reviewable commits — it's all one mega-commit. Future-you can't `git bisect` to find when something broke. Collaborators can't review piece by piece.
 
-**Fix:** commit at every meaningful increment, not just at session end. Push at session end (or more often). Lots of small commits beats one big one.
+**Fix:** commit at every meaningful increment, not just at session end. Lots of small commits beats one big one.
 
 ## Not committing call artifacts to `.gitignore` from the start
 
@@ -95,7 +95,7 @@ You ask Claude something it can't actually know. ("Will this approach work in pr
 
 You start using memory files for short-term task tracking. "Remind me to send this email." "Remember we're in step 3 of the migration." Memory grows fast and stale-rate spikes.
 
-**Fix:** memory is for things that should persist across sessions and remain true. Short-term task tracking belongs in your in-session task list, or in a project's `plan.md`, or in a TODO file you periodically prune. Don't conflate.
+**Fix:** memory is for things that should persist across sessions and remain true. Short-term task tracking belongs in your in-session task list, or in a project's `<slug>.status.md`, or in a TODO file you periodically prune. Don't conflate.
 
 ## See also
 

@@ -28,7 +28,7 @@ The model that survived: **short sessions with frequent `/clear`.** Multiple ses
 - Files on disk.
 - `CLAUDE.md`.
 - `MEMORY.md` and the memory files it indexes.
-- Project session logs (those are files, not session state).
+- Session logs (those are files, not session state).
 - Git history.
 - The shell, your terminal scrollback, your other windows.
 
@@ -55,8 +55,8 @@ Don't just hit `/clear`. Tell the agent first:
 The agent should:
 
 1. Note any open threads.
-2. Write a session log (see [Session Logs](Session%20Logs.md)).
-3. Commit work to git.
+2. Write a session log (see [Session Logs](Session%20Logs.md)), and update the status file of any project it worked on.
+3. Commit work, if your house keeps git.
 4. Update memory if anything important came up.
 5. Report back: "It's now safe to clear or exit."
 
@@ -68,13 +68,13 @@ This is the habit that makes short sessions work. Without it, you're losing cont
 
 You can usually pick up by saying something specific:
 
-> Continue working on the mortgage calculator. Read `Projects/MortgageCalc/plan.md` and the most recent session log to catch up.
+> Continue working on the mortgage calculator. Read `projects/mortgage-calculator/README.md`, its status file, and the most recent session log to catch up.
 
 Or, if you don't have a specific task and want a briefing:
 
 > Good morning. What's the state of things?
 
-A persistent agent (Asimov, Freya) will run a morning routine and tell you. Vanilla Claude Code will read whatever it can find and orient itself.
+A persistent agent, like the one your house runs, will run its session-start routine and tell you. Vanilla Claude Code will read whatever it can find and orient itself.
 
 ## Sessions, naps, and `/clear`
 
@@ -90,7 +90,7 @@ Don't be afraid of any of these. They're cheap.
 
 The temptation, when you're deep in a problem, is to keep going. *I'll just figure this one thing out, then I'll log.* The session goes long. The context fills. You auto-compact. You lose nuance. Tomorrow you re-read the auto-compact summary and it's not enough to pick up where you were.
 
-The habit pays off because you're not relying on heroism. Short sessions, wrap up this session, session log, commit, push when ready. Repeat.
+The habit pays off because you're not relying on heroism. Short sessions, wrap up this session, session log, commit. Repeat.
 
 ## See also
 

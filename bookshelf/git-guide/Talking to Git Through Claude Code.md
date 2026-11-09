@@ -8,14 +8,17 @@ None of this needs to be memorized. Claude Code understands natural language, so
 
 When you've made changes and want to save them:
 
-- **"Commit my changes"** -- saves a snapshot of your work locally.
+- **"Commit my changes"** -- saves a snapshot of your work locally. This is the everyday one.
+- **"Commit everything, including new files"** -- picks up any brand-new files you created, too.
+
+If you've added a remote:
+
 - **"Commit everything and push"** -- saves all your changes and uploads them to GitHub.
 - **"Commit but don't push"** -- saves a checkpoint locally without sharing it yet. Useful when you want to save your progress but aren't ready for others to see it.
-- **"Commit everything, including new files, then push"** -- picks up any brand-new files you created and sends everything to GitHub.
 
 ## Syncing with GitHub
 
-Your computer and GitHub can get out of sync -- you've made changes locally, or someone else has pushed changes. These phrases keep things lined up:
+This section applies once you've added a remote; your house starts without one. Your computer and GitHub can get out of sync -- you've made changes locally, or someone else has pushed changes. These phrases keep things lined up:
 
 - **"Pull the latest"** -- downloads recent changes from GitHub.
 - **"Pull and push"** -- grabs the latest changes, then uploads yours. A good habit because it makes sure you have the newest version before sharing.
@@ -25,8 +28,8 @@ Your computer and GitHub can get out of sync -- you've made changes locally, or 
 ## Checking what's changed
 
 - **"What's changed?"** or **"What's the status?"** -- shows what files you've modified since the last commit. Completely safe -- it doesn't change anything.
-- **"What do we have that isn't pushed?"** -- shows what you've committed locally but haven't sent to GitHub yet.
-- **"Pull and tell me what's new"** -- downloads recent changes and summarizes what other people have been working on.
+- **"What do we have that isn't pushed?"** -- with a remote, shows what you've committed locally but haven't sent to GitHub yet.
+- **"Pull and tell me what's new"** -- with a remote, downloads recent changes and summarizes what other people have been working on.
 
 ## Tagging milestones
 
@@ -57,8 +60,8 @@ Git keeps a history of every change, which means you can always go back:
 
 ## Tips
 
-- **You don't need exact wording.** Claude Code understands intent. "Save my work and send it to the cloud" works just as well as "commit and push."
-- **When in doubt, say "commit and push."** It's the most common thing you'll need.
+- **You don't need exact wording.** Claude Code understands intent. "Save my work" works just as well as "commit."
+- **When in doubt, say "commit."** It's the most common thing you'll need. Push only comes in once you have a remote, and your agent asks before it pushes anywhere.
 - **"What's changed?" is always safe.** It just looks; it doesn't touch anything.
 - **If something goes wrong, describe the problem.** Claude Code can usually fix it. Git rarely loses anything permanently.
 

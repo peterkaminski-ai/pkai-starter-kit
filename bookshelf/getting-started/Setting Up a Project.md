@@ -1,6 +1,6 @@
 # Setting Up a Project
 
-You have a project — maybe it already has some files, maybe you're starting fresh. You want to turn it into a proper workspace: its own folder, its own Claude Code context, and a GitHub repo for backup and collaboration. Unlike your house, a project is a repo — an isolated workspace with its own git history, separate from your agent home and HQ.
+You have a project — maybe it already has some files, maybe you're starting fresh. You want to turn it into a proper workspace: its own folder, its own Claude Code context, and a GitHub repo for backup and collaboration. A project like this is a repo — an isolated workspace with its own git history, separate from your agent home and HQ. Most projects don't need this — a folder under your HQ's `projects/` is the default (the `start-a-project` skill sets one up). This page is for the exception: a project that gets a repo of its own, because it will be shared or published. Nothing on this page touches your agent home, which is never pushed anywhere.
 
 This guide assumes you already have Claude Code and a GitHub account set up. If not, start with the setup pages earlier in this book.
 
@@ -66,7 +66,7 @@ Ask Claude Code:
 
 > Create a private GitHub repo for this project and push to it.
 
-Tell Claude whether you want the repo **private** (only you and people you invite can see it) or **public** (visible to everyone). Claude Code will use the `gh` CLI to create the repo and push.
+Creating a remote and pushing to it are things your agent asks you about first, every time; this line is your yes. Tell Claude whether you want the repo **private** (only you and people you invite can see it) or **public** (visible to everyone). Claude Code will use the `gh` CLI to create the repo and push.
 
 > [!tip]
 > If Claude Code says it can't find `gh`, install the GitHub CLI first. Mac: `brew install gh`. Windows: download from [cli.github.com](https://cli.github.com/).

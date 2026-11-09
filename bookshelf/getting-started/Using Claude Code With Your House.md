@@ -34,10 +34,11 @@ Claude Code can help you draft, revise, and improve your writing.
 
 This is covered in detail in [Your First Commit](Your%20First%20Commit.md), but here's a quick reference:
 
-- "Pull the latest" — download new changes from GitHub
-- "Commit and push" — save and upload your work
+- "Commit my changes" — save a checkpoint of your work on your computer
 - "What's changed?" — see what's been modified
-- "What's new from other people?" — pull and summarize recent activity
+- "Show me the recent history" — see your recent commits
+
+If you've added a remote such as GitHub, "Pull the latest" and "push" work too; your agent asks before pushing anywhere.
 
 ## Asking Questions
 
@@ -56,7 +57,7 @@ When you type a request to Claude Code, here's what happens:
 3. It responds with text, or makes the changes you asked for
 4. If it changed any files, you'll see the edits the next time you open them in your Markdown editor
 
-Claude Code works with the files on your computer directly. It doesn't upload your house to the cloud — it reads files from your local disk. The only time your files leave your computer is when you explicitly push to GitHub.
+Claude Code works with the files on your computer directly. Your house stays on your local disk; nothing syncs it to the cloud. But whatever your agent reads in order to help you — a file, part of a file, the output of a command — goes to Anthropic as part of the conversation, the same as anything you type. That's how Claude can think about it. Keep that in mind for anything you'd rather Claude not see, and keep secrets out of files your agent reads.
 
 ## Tips for Getting Good Results
 
@@ -66,7 +67,7 @@ Claude Code works with the files on your computer directly. It doesn't upload yo
 
 **Review changes.** Claude Code is helpful but not perfect. When it edits your files, glance at the changes to make sure they're what you wanted. You can always ask it to undo or revise.
 
-**Use CLAUDE.md.** The more context you put in your house's CLAUDE.md file, the better Claude Code understands your project. If you notice it making wrong assumptions, add a note to CLAUDE.md.
+**Tell your agent.** The more context your agent has, the better it understands your work. If you notice it making wrong assumptions, correct it and ask it to remember; it saves a memory. If something should become a permanent rule, your agent drafts a charter change for you to install by hand (see [Testing a Charter Edit](../your-house/Testing%20a%20Charter%20Edit.md)).
 
 > [!tip]
 > You can always ask Claude Code "what can you do?" or "help me with [vague goal]" and it will suggest specific approaches. It's a conversation — you don't need to know the exact right thing to say.

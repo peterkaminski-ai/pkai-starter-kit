@@ -57,7 +57,7 @@ You diligently write a session log every time. After a month, you have 200 of th
 
 You ask Claude to "remember" things over time. Six months later, you have `project_foo.md`, `project_foo_v2.md`, `feedback_foo.md`, `feedback_foo_revised.md`. Some contradict each other. Claude's behavior is unpredictable because it's drawing on conflicting memories.
 
-**Fix:** memory hygiene. Update existing files rather than creating new ones. Periodically ask Claude to consolidate. Delete what's stale. Keep `MEMORY.md` short — five files is plenty, ten is too many.
+**Fix:** memory hygiene. Update existing files rather than creating new ones. Periodically ask Claude to consolidate. Delete what's stale. Keep `MEMORY.md` short enough to read rather than skim. What matters is overlap, not the count: if two files cover the same topic, merge them.
 
 ## Pushing without committing during the session
 

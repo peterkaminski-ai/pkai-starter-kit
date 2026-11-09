@@ -78,26 +78,30 @@ The agent figures out which file to update, or whether to create a new one, or w
 
 ## Memory hygiene
 
-The goal: a small number of files, each on a clear topic, kept up to date.
+The goal: memory you can read rather than skim, with each fact in exactly one place, kept up to date. What goes wrong is overlap, not the number of files: two files on the same topic, some of them contradicting each other.
 
+- **One fact, one file.** A house built from the kit saves each durable fact as one small file with one index line (`save-a-memory`). A busy house passes ten files in its first weeks, and that's healthy: many small files on different topics are fine; two files on the same topic are the problem.
 - **Organize by topic, not by date.** `project_my_website.md` beats `memory_2026-03-10.md`, `memory_2026-03-11.md`, `memory_2026-03-12.md`.
 - **Update, don't accumulate.** When something changes, update the existing file. Don't create a new one for the same topic.
 - **Delete what's stale.** Finished a project? Remove or archive its memory file. Changed a preference? Update the old file, don't add a contradictory new one.
-- **Keep the index small.** `MEMORY.md` should be a short list, one line per file. If it's getting long, consolidate.
-- **Consolidate periodically.** At the end of a big work session, ask the agent to consolidate what it learned.
+- **Keep the index readable.** `MEMORY.md` is one line per file, each under about 150 characters. When it passes about a hundred lines, or gets long enough that you skim it instead of reading it, it's time to review and prune.
+- **Review periodically.** Every week or two for a new agent, monthly after that, ask the agent to review its memory: merge overlaps, delete what's stale or wrong, tighten the index (`review-and-prune`).
 
-A typical memory folder looks like this:
+A memory folder a few weeks in looks something like this:
 
 ```
 memory/
-  MEMORY.md              # short index
-  user_profile.md        # who you are, how you work
-  feedback_style.md      # corrections and preferences
-  project_foo.md         # active project context
-  reference_external.md  # pointers outside the house
+  MEMORY.md                       # the index: one line per file
+  user_profile.md                 # who you are, how you work
+  user_working_hours.md
+  feedback_short_answers.md       # a correction you gave
+  feedback_ask_before_sending.md
+  project_website.md              # active project context
+  reference_bank_portal.md        # a pointer outside the house
+  ...
 ```
 
-Five files is plenty. Ten is probably too many.
+It grows with the house. The test is overlap, not count.
 
 ## Memory vs. session logs
 

@@ -13,7 +13,7 @@ Your agent has one environment in the app, set up on its agent home (the folder 
 
 ## Folder access
 
-Your agent works in two folders: its agent home and your HQ. Your agent can sometimes read a folder before the app's file pane shows it to you. If you can't see a folder there, grant that folder to the app, or use "Show in Finder" to look at it outside the app.
+Your agent works in two folders: its agent home and your HQ. Your agent can sometimes read a folder before the app's file pane shows it to you. If you can't see a folder there, grant that folder to your agent's environment, or use "Show in Finder" to look at it outside the app.
 <!-- VERIFY(cold-start): the exact label for granting a second folder; where "Show in Finder" appears, and its Windows wording -->
 
 ## One live session per agent
@@ -22,6 +22,7 @@ Your agent works best with one session going at a time.
 
 - If you see no sessions, click **+ New**.
 - If you see one, use it; type `/clear` in it to start fresh.
+<!-- VERIFY(cold-start): that slash commands the kit names (`/clear`, `/context`, `/plan`) work when typed in the Code tab -->
 - If you see two, tell one of them you're shutting it down, and archive it.
 
 If you do open a second session while the first is still going, it notices and becomes a guest by itself: it tells you so in one sentence and works without changing your agent's memory or charter. That's fine, and nothing to fix.
@@ -54,6 +55,7 @@ You can rename a session and pin it, so your agent's main session is easy to fin
 ## Log retention
 
 The app keeps session history for 30 days by default. That's a setting, if you want it kept longer or shorter. Your agent's own record (its memory and session logs) lives in its agent home and isn't affected.
+<!-- VERIFY(cold-start): that the desktop app keeps session history for 30 days by default, and where that setting is -->
 
 ## Connectors
 

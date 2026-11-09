@@ -14,9 +14,9 @@ Ask once, then remember (`save-a-memory`): what does the person read markdown in
 
 ## Steps
 
-1. **Commit first**, if the house keeps git: the draft as it stands, with a message that says what it is. This is what makes the person's edits visible afterward as a clean diff instead of a guess. (No git: copy the file to `<name>.before.md` beside it, and delete the copy after the read-back.)
+1. **Commit first**, once git has arrived: the draft as it stands, with a message that says what it is. This is what makes the person's edits visible afterward as a clean diff instead of a guess. (No git: copy the file to `<name>.before.md` beside it, and delete the copy after the read-back.)
 2. **Put it in front of them.**
-   - **On the computer:** open the file in their review app (`open` on Mac, `start` on Windows, or the app's own command). Say the path in one line, in case the window opened behind something.
+   - **On the computer:** open the file in their review app: ask the operating system to open it (on a Mac, `open`; on Windows, File Explorer or `cmd.exe /c start "" "<path>"`), or use the app's own command. Say the path in one line, in case the window opened behind something.
    - **On a phone:** put the document on a shared pad and give the link. Say in one line what the pad is for and that the link is shareable — anything on it should be fit to share. Never put anything on a pad that the house's disclosure rules keep home.
    - **Long document, short screen:** offer the part that matters first, then the link.
 3. **Say what you'd like from them**, in one sentence: "mark anything up; I'll read the diff." Then wait. Don't narrate while they read.

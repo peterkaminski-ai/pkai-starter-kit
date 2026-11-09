@@ -45,7 +45,7 @@ Memory is what makes this agent *this person's* agent. One fact, one file, one i
    The *How I know* line is provenance. A thing the person told you outranks a thing you read; a thing you read and they confirmed is best of all. Dates are absolute (`2026-09-22`), never "yesterday".
 3. **Add one index line** to `memory/MEMORY.md`: `- [Title](<slug>.md) — short hook`. Under about 150 characters. The index is an index, never a memory.
 4. **Say so, briefly** — "noted" or one line — unless they asked you not to narrate.
-5. **Commit**, if this house keeps git, at the next natural point.
+5. **Commit** at the next natural point (once git has arrived, if it was still installing).
 
 ## Keeping it honest
 

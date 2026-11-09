@@ -18,9 +18,9 @@ All of these help:
 - Big architectural rewrites without talking first. If you have a major change in mind, please open an issue (or email — see below) to discuss before doing a lot of work.
 - Adding dependencies, new tools, or external services without discussion. The template tries to stay small.
 
-## Offering an improvement to V3
+## Offering an improvement to the kit
 
-V3 is built to take improvements one small unit at a time, and the beta will bump its minor version often. The units are:
+The kit is built to take improvements one small unit at a time, and it will bump its minor version often. The units are:
 
 - **a skill** — one folder under `skills/`, with its own `SKILL.md`, `LINEAGE.md` and `LICENSE.md`;
 - **a chapter** — one file in a book under `bookshelf/`;
@@ -69,7 +69,7 @@ If any of that was a foreign language, **use option 1 or 2 instead** — there's
 
 ## A few practical notes
 
-- **Be specific.** "The git section is unclear" is harder to act on than "The third paragraph of `bookshelf/git-guide/Branches.md` says to do X but doesn't say where."
+- **Be specific.** "The git section is unclear" is harder to act on than "The third paragraph of `bookshelf/getting-started/Installing Git.md` says to do X but doesn't say where."
 - **One thing at a time.** Smaller changes are easier to review and easier to land. If you have five ideas, that's better as five issues or five PRs, not one big one.
 - **Your agent can help.** If you set up a personal agent from this kit, you can ask them to help you write the issue, draft the PR description, or even make the file edit. That's what they're here for.
 

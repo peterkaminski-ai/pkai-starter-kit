@@ -1,5 +1,7 @@
 # Moving from V2
 
+> **For upgrading an existing V2 house only; a 4.0 setup never uses this.**
+
 V3 sits beside V2; it doesn't replace it. If you built your house from the V2 kit, **nothing is reinstalled and nothing you have stops working.** This note says what changed and what, if anything, you might want to take. A V2 house can go straight to the newest release: take the V3 pieces below, then the 3.1 pieces in `MOVING-FROM-V3.0.md` (step 5 below says which).
 
 ## What changed in words

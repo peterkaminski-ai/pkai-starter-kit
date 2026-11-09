@@ -25,7 +25,7 @@ Monthly for an established agent; every week or two for a new one, whose memorie
 4. **Draft, don't install.** Promotions go into one file in `outbox/`: the exact lines to add to `CLAUDE.md`, where they go, and the memory each replaces. The person reads it, installs it by their own hand, starts a new session, and only then do you delete the promoted memories. **You do not edit your own charter.** An agent that rewrites its own charter unwatched is the failure this rule exists to prevent — and the harness may rightly stop you if you try.
 5. **Tighten the index.** Every line under about 150 characters; one line per memory; grouped by type if the house does that; nothing in the index that isn't in a file.
 6. **Report in a few lines**: how many kept, merged, updated, deleted, proposed for promotion — and anything you found that surprised you (a contradiction between two memories is worth a sentence).
-7. **Commit**, if this house keeps git.
+7. **Commit** (once git has arrived, if it was still installing).
 
 ## Where each layer fails
 

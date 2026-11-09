@@ -9,17 +9,17 @@ A house is two folders: your **agent home** and your **HQ**. They sit side by si
 - **The agent home** is where your agent lives: its charter (`CLAUDE.md`), its memory, its session logs, its inbox and outbox, its skills and settings. It's named after your agent, with "(agent)" on the end, at the top of your home folder:
   - **Mac:** `~/Lain (agent)/`
   - **Windows:** `C:\Users\YourName\Lain (agent)\`
-- **The HQ** is where your projects and working files live. It's named after you, in Documents:
-  - **Mac:** `~/Documents/yourname-hq/`
-  - **Windows:** `C:\Users\YourName\Documents\yourname-hq\`
+- **The HQ** is where your projects and working files live. It's named after you, at the top of your home folder too, right beside the agent home:
+  - **Mac:** `~/yourname-hq/`
+  - **Windows:** `C:\Users\YourName\yourname-hq\`
 
-If your Documents folder is cloud-synced (iCloud or OneDrive), the HQ goes at the top of your home folder instead. Neither folder is ever inside iCloud, OneDrive, Dropbox or any other cloud-synced folder, because git and cloud sync fighting over the same files causes conflicts and data loss.
+Not in Documents or on the Desktop, which iCloud and OneDrive often sync. Neither folder is ever inside iCloud, OneDrive, Dropbox or any other cloud-synced folder, because git and cloud sync fighting over the same files causes conflicts and data loss.
 
 A second agent, if you ever want one, gets its own agent home beside the first — `~/Wren (agent)/` — and shares the same HQ. Agents are never nested inside each other.
 
 ## Your agent's environment
 
-In the Claude desktop app, your agent has one environment, set up on its agent home. That's where every session with your agent starts. Your agent also works in the HQ, so the app is granted that folder too. Your agent brings itself along when it works there; the HQ is a place, not an agent.
+In the Claude desktop app, your agent has one environment, set up on its agent home. That's where every session with your agent starts. Your agent also works in the HQ, so that folder is granted to the environment too. Your agent brings itself along when it works there; the HQ is a place, not an agent.
 
 ## Git: two repositories, no remote
 

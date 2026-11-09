@@ -14,7 +14,7 @@ Links to official documentation, learning materials, and community resources for
 
 - [Git](https://git-scm.com/) — git's home page (your agent installs git for you; see [Installing Git](Installing%20Git.md))
 - [GitHub](https://github.com/) — create an account, if you ever want one
-- [GitHub CLI](https://cli.github.com/) — the `gh` command-line tool
+- [GitHub CLI](https://cli.github.com/) — the `gh` command-line tool, for the terminal; you won't type it, though your agent may use it
 - [Git Documentation](https://git-scm.com/doc) — official reference (technical)
 - [GitHub Docs: Getting Started](https://docs.github.com/en/get-started) — GitHub's beginner guides
 

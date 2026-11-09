@@ -48,7 +48,7 @@ Once you have a persistent agent, you'll want to run a long task without blockin
 - **Background** — a second instance of the same agent, on one scoped job, with a scratch folder it may write to and nothing else. It reads freely; it never commits shared state, writes memory, or sends anything.
 - **The foreground integrates** — when the background is done it leaves a handoff; the foreground reads it and performs the writes the background couldn't, by copying.
 
-This works because the boundary is in the charter, not the tool. It's more than most people need on day one. Every house carries the machinery — the desk lease and the `foreground-background` skill — so a second session in the same house becomes a guest by itself and knows the rules, but the v4 starter kit doesn't teach the pattern; it's here for when you want it. The full mechanism is [Foreground and Background](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/your-house/Foreground%20and%20Background.md) on the shelf, and the `foreground-background` skill carries it for the agent.
+This works because the boundary is in the charter, not the tool. It's more than most people need on day one. Every house carries the machinery — the desk lease and the `foreground-background` skill — so a second session in the same house becomes a guest by itself and knows the rules, but the v4 starter kit doesn't teach the pattern; it's here for when you want it. The full mechanism is [Foreground and Background](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/your-house/Foreground%20and%20Background.md) in the PKAI benchmark, and the `foreground-background` skill carries it for the agent.
 
 ## Sub-agents
 
@@ -58,7 +58,7 @@ A different thing from a background instance. A sub-agent has scope and lives in
 
 ### Other things Claude Code calls "agents"
 
-The word has more than one use in Claude Code itself. In this kit, an agent is an agent home with a `CLAUDE.md` that you start sessions in. These are different things:
+The word has more than one use in Claude Code itself. In this kit, an agent is an agent home with a `CLAUDE.md` that you start sessions in. These are different things (the commands are for the terminal; you won't type them):
 
 - **`.claude/agents/<name>.md`** (and `--agents`, which defines them inline) — agent files: a name, a description, optionally a model and tools, and a body that becomes that agent's system prompt. This is the sub-agent mechanism above, not a way to define or launch your agent.
 - **`claude --agent <name>`** and the `agent` setting — start a whole session as one of those agent files. Your agent doesn't need either; you start it by starting a session in its environment.

@@ -30,16 +30,17 @@ Most permission prompts boil down to one of a few shapes. Here's how to think ab
 
 ## "Always allow" choices
 
-Many of these prompts offer to remember your answer, so you won't be asked again for the same kind of action. For routine actions inside your house — the kind your agent does constantly, like writing session logs or updating its own memory — choosing "always allow" is reasonable, and it cuts down on future interruptions quite a bit.
+Many of these prompts offer to remember your answer, so you won't be asked again for the same kind of action. For routine edits inside your house — the kind your agent does constantly, like writing session logs or updating its own memory — choosing "always allow" for edits in that folder is reasonable, and it cuts down on future interruptions quite a bit.
 
-For anything outbound (leaving your computer) or outside your two folders, it's better to keep answering one at a time rather than setting up a standing "always allow." Those are exactly the actions where you want a chance to notice if something looks off, and a blanket approval takes that chance away.
+For commands, anything outbound (leaving your computer), or anything outside your two folders, it's better to keep answering one at a time rather than setting up a standing "always allow." Those are exactly the actions where you want a chance to notice if something looks off, and a blanket approval takes that chance away.
 
 ## A note on modes
 
-The desktop app has a mode picker that changes how often your agent asks permission at all. Three are worth knowing:
+The desktop app has a mode picker that changes how often your agent asks permission at all. There are four:
 
-- **Manual mode** — your agent asks before each action, and you approve it yourself. Choose it any time you want to see every step; you can switch to it in the mode picker, or by pressing Shift+Tab.
 - **Plan mode** — your agent lays out its intended steps before doing anything.
+- **Manual mode** — your agent asks before each action, and you approve it yourself. Choose it any time you want to see every step; you can switch to it in the mode picker, or by pressing Shift+Tab.
+- **Accept Edits** — edits go through without a prompt; commands and anything else still ask.
 - **Auto mode** — your agent proceeds without asking each time, with a safety layer checking its actions.
 
 Use whichever mode your setup left you in, and switch to Manual whenever you want a closer look. If a safety layer ever blocks your agent in auto mode, one of the ways forward is to switch to Manual mode, approve that one action yourself, and switch back. That leaves nothing permanent behind; see [When a Safety Layer Blocks You](../keeping-yourself-safe/When%20a%20Safety%20Layer%20Blocks%20You.md). The project-management book in this starter kit has a page that covers plan mode and auto mode in more depth.

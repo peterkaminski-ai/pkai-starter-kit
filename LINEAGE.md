@@ -1,11 +1,11 @@
 # Lineage
 
-Every PKAI V3 artifact starts with this file. It says what the artifact is, what it grows from, where it came from, and where to pull the next version from. An agent reads the block; a person reads the notes under it. If you take this artifact and make your own, copy this file first, set `name`, `version` and `grows_from` to your own, and move this artifact's entry to the top of `lineage`, keeping at least three generations below you.
+Every PKAI artifact since V3 starts with this file. It says what the artifact is, what it grows from, where it came from, and where to pull the next version from. An agent reads the block; a person reads the notes under it. If you take this artifact and make your own, copy this file first, set `name`, `version` and `grows_from` to your own, and move this artifact's entry to the top of `lineage`, keeping at least three generations below you.
 
 ```yaml
 name: pkai-starter-kit
-version: 3.2.0
-grows_from: pkai-benchmark 3.2.0         # the kit is the benchmark, shaped for a first house
+version: 4.0.0
+grows_from: pkai-benchmark 4.0.0         # the kit is the benchmark, shaped for a first house
 lineage:                                  # newest first; at least three generations
   - pkai-starter-kit v3.0.0 · 2026-09-22 · Peter Kaminski, with Saga (his agent) · read
   - pkai-starter-kit v2.0.0 · 2026-08-24 · Peter Kaminski, with Saga (his agent) · read

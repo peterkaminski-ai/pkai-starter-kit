@@ -26,7 +26,7 @@ Skills are seeds, not the lesson. Each one is the printed-book version of someth
 | `choose-a-version-scheme` | Semver when software depends on it; integers when people say it aloud; dates or date+serial for snapshots; always a `v`; VERSION, tags, CHANGES; don't pin the future. | `CHANGES.md` |
 | `assign-an-id` | A stable handle that survives renames: `yymmdd-aa` for household things, short random for public posts, namespaced numbers for registries, codenames for instances. | — |
 | **A larger house** | | |
-| `foreground-background` | A second instance on a long job in its own scratch space; task → status → handoff → done; the foreground integrates by copying. | your-house · Foreground and Background |
+| `foreground-background` | A second instance on a long job in its own scratch space; task → status → handoff → done; the foreground integrates by copying. | [Foreground and Background](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/your-house/Foreground%20and%20Background.md), in the PKAI benchmark |
 | `heads-up` | A private three-part note during a busy room: the room · waiting on you (with draft answers) · live log. | working-with-other-houses · Jams, Watchers |
 | `phone-path` | Serves a person who reaches the agent through the Claude app on a phone, with the agent on a computer they may not be at. | your-house · The Phone Path |
 | `import-chatgpt-history` | Brings an exported ChatGPT history home: the export, where it goes, one file per conversation, a privacy pass, then memories with consent. | your-house · A Larger House |

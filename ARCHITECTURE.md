@@ -15,20 +15,24 @@ Together they are your **house**: the whole thing you build and live in. The two
 ~/  (your home folder)
   <AgentName> (agent)/          ← the agent home, at the top level, e.g. "Lain (agent)"
     CLAUDE.md                   ← persona: who your agent is
+    LINEAGE.md                  ← where your house came from, and where to pull the next version
     memory/                     ← what it remembers, indexed by MEMORY.md
     sessions/                   ← logs of your conversations
     inbox/  outbox/             ← things arriving, drafts awaiting your review
+    bg/                         ← where a second session works, if one opens
+    scripts/                    ← the clock and the desk: small scripts that run each turn
+    venues.md                   ← the cards that say where your agent may speak outside the house
+    .claude/settings.json       ← the hooks that run those scripts
     .claude/skills/             ← the skills it has taken on
-  Documents/
-    <your-name>-hq/             ← the headquarters
-      projects/                 ← one folder per thing you work on
-      pkai-starter-kit/         ← this kit, kept as a reference library
+  <your-name>-hq/               ← the headquarters, right beside it
+    projects/                   ← one folder per thing you work on
+    pkai-starter-kit/           ← this kit, kept as a reference library
 ```
 
-On Windows the agent home is `C:\Users\<you>\<AgentName> (agent)\`. Three rules hold the layout together:
+On Windows the two folders are `C:\Users\<you>\<AgentName> (agent)\` and `C:\Users\<you>\<your-name>-hq\`. Three rules hold the layout together:
 
 - **Side by side, never nested.** The agent home and the HQ are separate folders, and neither ever goes inside the other. A second agent is a sibling, `~/<Second> (agent)/`, never a folder inside the first; it can work in the same HQ. The desktop app labels each session by its folder, so agents in their own top-level folders are easy to tell apart.
-- **Out of cloud sync, always.** Git looks after both folders, and git and sync engines (iCloud, OneDrive, Dropbox, Google Drive) contend with each other. So neither folder goes in a cloud-synced place. If your Documents folder syncs (iCloud "Desktop & Documents", or OneDrive on many Windows machines), the HQ goes at the top of your home folder instead, beside the agent home.
+- **Out of cloud sync, always.** Git looks after both folders, and git and sync engines (iCloud, OneDrive, Dropbox, Google Drive) contend with each other. So neither folder goes in a cloud-synced place, and that's why both sit at the top of your home folder rather than in Documents or on the Desktop, which iCloud ("Desktop & Documents") and OneDrive often sync.
 - **One repo each.** Each folder keeps its own private version history. If git isn't on your computer yet, your agent installs it and sets up the history when it arrives; you don't do anything.
 
 (Houses built from earlier kits keep their agents somewhere else — in a `My Agents` folder, or in `~/.agents` — and that's fine. Nothing about 4.0 asks them to move.)
@@ -47,9 +51,9 @@ This kit says **house**: the agent home and the HQ together, the whole thing you
 
 **The HQ is the hub, not the only destination.** Think of it as the switching center and the growing knowledge base — but it's completely in bounds for your agent to help with projects *outside* it. In practice: smaller projects live inside `hq/projects/`; bigger ones (a book, an app, anything with its own life) get their own folder or repo elsewhere, and the HQ keeps a pointer and the notes.
 
-## Everything is markdown
+## Everything is plain text
 
-Everything your agent knows and makes — persona, memory, session logs, project notes — is ordinary markdown files you can read in any text editor, audit at will, and take with you anywhere. No databases, no opaque state, no lock-in. This is a principle, not an implementation detail: **if you can't read it, it doesn't belong in your agent.**
+Everything your agent knows and makes — persona, memory, session logs, project notes — is plain text you can read in any text editor, audit at will, and take with you anywhere: markdown, plus a few small scripts (the clock and the desk, in the agent home's `scripts/`) that run on your computer at each turn. No databases, no opaque state, no lock-in. This is a principle, not an implementation detail: **if you can't read it, it doesn't belong in your agent.**
 
 Memory deserves a special word, because it's what makes your agent *yours*: each memory is one small file holding one fact, and `memory/MEMORY.md` is the index your agent reads at the start of every session. Teach it something once and it's there for good — and you can open the folder and read (or fix) everything it remembers.
 

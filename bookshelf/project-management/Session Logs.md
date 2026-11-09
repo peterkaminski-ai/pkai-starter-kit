@@ -52,7 +52,7 @@ In your agent home, in `sessions/` — one flat folder, dated, whatever project 
 └── ...
 ```
 
-If your house keeps git, they're committed to the agent home's history, alongside memory. Future-you can read them any time.
+They're committed to the agent home's history, alongside memory. Future-you can read them any time.
 
 Where a project *stands* doesn't go in a log. Each project in your HQ has a `<slug>.status.md` beside its README: current state, next actions, decisions and their reasons. The log says what happened; the status file says where things stand. A session that worked on a project updates both.
 
@@ -99,7 +99,7 @@ The pattern:
 
 1. You say "wrap up this session" (or whatever your trigger phrase is).
 2. The agent reviews the session and writes the log.
-3. It tells you what it logged, saved and left open, and commits, if your house keeps git.
+3. It tells you what it logged, saved and left open, and commits.
 4. `/clear`.
 
 The agent writes a better session log than most humans will, because it has the whole conversation in working memory and can summarize it accurately. It doesn't wait for your approval; your job is to read a log when you want to, and correct it when it's wrong.
@@ -113,7 +113,7 @@ Every house built from the kit has a `wrap-up-this-session` skill that does this
 1. Note any open threads.
 2. Write a session log to `sessions/YYYY-MM-DD-NNN-topic.md`, and bring the project's status file up to date if the session worked on one.
 3. Save anything new to memory.
-4. Commit, if your house keeps git. It never pushes.
+4. Commit (once git has arrived, if it was still installing). It never pushes.
 5. Report back: "It's now safe to clear or archive."
 
 There's nothing to write into your charter. Say "wrap up this session" (or "let's wrap," or "prep for clear") and the skill does it. If you'd like it done a little differently, tell your agent; it saves that as a memory.

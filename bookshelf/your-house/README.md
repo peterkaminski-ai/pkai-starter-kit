@@ -8,9 +8,9 @@ A **house** is an agent home and a headquarters, together. A **larger house** is
 |---|---|
 | [The Stairs](The%20Stairs.md) | The steps people actually take toward working with an agent, and why the software should meet you on the one you're standing on. |
 | [Two Ways In](Two%20Ways%20In.md) | The two questions setup asks — how much history, computer or phone — and what each answer changes. |
-| [Foreground and Background](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/your-house/Foreground%20and%20Background.md) | Running a second instance of your agent on a long job, in its own scratch space, without either instance overwriting the other. The v4 kit doesn't teach it; the page is kept as the fuller statement. |
+| [Foreground and Background](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/your-house/Foreground%20and%20Background.md) | Running a second instance of your agent on a long job, in its own scratch space, without either instance overwriting the other. The v4 kit doesn't teach it; the page is in the PKAI benchmark, as the fuller statement. |
 | [The Phone Path](The%20Phone%20Path.md) | A person who reaches their agent only through the Claude app on a phone, with the agent running in the desktop app on a computer that may not be theirs. |
 | [A Larger House](A%20Larger%20House.md) | What changes when there are several agents and a lot of accumulated knowledge — and what deliberately doesn't. |
 | [Testing a Charter Edit](Testing%20a%20Charter%20Edit.md) | Three cheap tests for whether a line in your agent's charter is doing any work. |
 
-The skills that go with this book: `foreground-background` (in every house), `phone-path`, and the information suite — `save-a-memory`, `find-it-again`, `review-and-prune`.
+The skills that go with this book: `foreground-background` (in every house), `phone-path` and `send-for-review`, and the information suite — `save-a-memory`, `find-it-again`, `review-and-prune`, `import-chatgpt-history`, `fair-copy-a-transcript`.

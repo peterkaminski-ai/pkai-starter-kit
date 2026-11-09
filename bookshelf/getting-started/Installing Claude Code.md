@@ -28,7 +28,7 @@ That's it — Claude Code is ready on your computer.
 
 ## Other ways to run Claude Code
 
-Claude Code also runs in a terminal and in VS Code. The kit doesn't teach either. If you already love the terminal, you can use it with your house; the install command is on [code.claude.com](https://code.claude.com/), and [Choosing Your Terminal](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/getting-started/Choosing%20Your%20Terminal.md) is kept on this shelf for you. Everything else in this book assumes the desktop app.
+Claude Code also runs in a terminal and in VS Code. The kit doesn't teach either. If you already love the terminal, you can use it with your house; the install command is on [code.claude.com](https://code.claude.com/), and [Choosing Your Terminal](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/getting-started/Choosing%20Your%20Terminal.md) is in the PKAI benchmark for you. Everything else in this book assumes the desktop app.
 
 ## Next Step
 

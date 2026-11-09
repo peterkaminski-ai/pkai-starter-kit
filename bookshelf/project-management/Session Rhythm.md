@@ -56,8 +56,8 @@ The agent should:
 
 1. Note any open threads.
 2. Write a session log (see [Session Logs](Session%20Logs.md)), and update the status file of any project it worked on.
-3. Commit work, if your house keeps git.
-4. Update memory if anything important came up.
+3. Update memory if anything important came up.
+4. Commit, so the memory you just wrote is in the history too.
 5. Report back: "It's now safe to clear or archive."
 
 Then you `/clear`.

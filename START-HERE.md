@@ -1,6 +1,6 @@
 # Setting up your agent
 
-These are the short instructions, addressed to **you**, the person. You drive the setup; Claude does the heavy lifting at each step. The whole thing is one conversation in the Claude desktop app, maybe twenty minutes.
+These are the short instructions, addressed to **you**, the person. You drive the setup; Claude does the heavy lifting at each step. The whole thing is one conversation in the Claude desktop app, about half an hour, longer if git has to install.
 
 **4.0 is a preview, for brand-new people.** It sets up your first agent entirely in the Claude desktop app. If someone is walking you through it, go ahead; if you're on your own, the steadier choice is to wait for 4.1 or later. **If you already have a house built from 3.x (or an earlier kit), you don't need 4.0:** keep your house, and just start using the desktop app with it.
 
@@ -14,6 +14,9 @@ Read **`REQUIREMENTS.md`** (or the "what you need" section on the home page). Th
 
 Download it from **claude.ai/download**, install it, and sign in. If it's already installed, update it to the newest version.
 
+**On Windows:** if the Code tab says it needs Git for Windows before it will start, install it from https://git-scm.com/downloads/win (the default choices are fine), then come back.
+<!-- VERIFY(cold-start): whether the desktop app's Code tab on a fresh Windows 11 needs Git for Windows before a session can start -->
+
 ## Step 2 — Open the Code tab
 
 The desktop app has more than one tab, and the one you want is **Code**. It's small and easy to miss. **Chat** is a different thing: it's a chatbot, not your agent, and setup won't work there.
@@ -24,7 +27,7 @@ The desktop app has more than one tab, and the one you want is **Code**. It's sm
 
 Your **headquarters** ("HQ") is where your projects and working files will live — a folder named like `johnsmith-hq` (use your own name).
 
-In the Code tab, open the folder picker, make a new folder named `<yourname>-hq` in your **Documents** folder, and choose it. If your Documents folder syncs to iCloud or OneDrive, make it at the top of your home folder instead. When in doubt, just make it in Documents: Claude checks this with you during setup and sorts it out.
+In the Code tab, open the folder picker, make a new folder named `<yourname>-hq` in your **home folder**, and choose it. On a Mac, your home folder is the one with the house icon and your name; on Windows, it's `C:\Users\<you>`. Not in Documents or on the Desktop: those often sync to iCloud or OneDrive, and your house stays out of cloud sync. Your agent's own folder will sit right beside this one.
 <!-- VERIFY(cold-start): where the Code tab's folder picker is, and that it offers "New Folder" on Mac and Windows -->
 
 If the app asks whether you trust this folder, say yes: it's the folder you just made.
@@ -48,7 +51,7 @@ Claude takes it from there, one step at a time, and you say yes, no, or "wait, e
 3. **A light health check.** Is the desktop app up to date; is git on your computer (if not, Claude starts the install and carries on — you may see a window asking you to approve it); and do you have a way to read markdown documents (see the review surfaces in `REQUIREMENTS.md`).
 4. **Names.** Your agent needs a name — Claude offers possibilities, or you invent one. And it asks yours, and what you'd like to call your house.
 5. **A persona.** Claude introduces the three personas in `personas/` — different temperaments for your agent. Pick one, blend these, or describe your own.
-6. **The build.** Claude creates the **agent home** — a folder named `<AgentName> (agent)` at the top of your home folder — with the persona, a memory system, session logs, and the skills your answers called for, all plain markdown you can read anytime. Your HQ gets its skeleton too. Both folders get private version history, quietly, as soon as git is there.
+6. **The build.** Claude creates the **agent home** — a folder named `<AgentName> (agent)` at the top of your home folder — with the persona, a memory system, session logs, and the skills your answers called for, all plain text you can read anytime: markdown, plus a few small scripts. Your HQ gets its skeleton too. Both folders get private version history, quietly, as soon as git is there.
 7. **The hand-over.** The setup session is Claude doing the building, not your agent. At the end, Claude walks you through three moves: make your agent's **environment** in the desktop app, on its agent home, and give it your HQ too; **archive** the setup session (archive, don't delete); and start a **new session** in your agent's environment and say hi. The app asks once more whether you trust the folder — that's your agent's home, and yes is the answer.
 8. **Orientation.** Claude introduces the bookshelf (in `bookshelf/`), how the two folders make a house, and *First Day in Desktop*, the short page of things worth knowing in your first hour.
 

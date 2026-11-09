@@ -39,7 +39,7 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
   - `your-house/` — a small house or a large one: the stairs, the two ways in, the phone path
   - `working-with-other-houses/` — cooperating with other agents: jams, pads, and what to think about when you're invited into a room
   - `keeping-yourself-safe/` — safety and security first, then privacy
-- **`MOVING-FROM-V2.md`** — for houses built from V2 that want the 3.x pieces. Nothing is reinstalled. (No house needs 4.0; it's for brand-new people.)
+- **`MOVING-FROM-V3.0.md`** and **`MOVING-FROM-V2.md`** — for upgrading an existing 3.0 or V2 house to the 3.x pieces. Nothing is reinstalled. A 4.0 setup never uses them; no existing house needs 4.0, which is for brand-new people.
 - **`CHANGES.md`** — what changed, dated, written for an agent to read.
 - **`WISHLIST.md`** — where we'd like this to grow; aspirational, undated.
 

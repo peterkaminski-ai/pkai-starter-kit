@@ -4,7 +4,7 @@ Your agent's whole world — memory, notes, projects, everything — lives in or
 
 ## The app's file pane
 
-The desktop app can show your files in a pane beside the conversation, so you can glance at what your agent wrote without leaving the app. It's handy for a quick look. It only shows folders you've granted to the app, so if a folder you expect is missing, grant it, or use "Show in Finder" to look at it outside the app (see [First Day in Desktop](First%20Day%20in%20Desktop.md)).
+The desktop app can show your files in a pane beside the conversation, so you can glance at what your agent wrote without leaving the app. It's handy for a quick look. It only shows folders you've granted to your agent's environment, so if a folder you expect is missing, grant it, or use "Show in Finder" to look at it outside the app (see [First Day in Desktop](First%20Day%20in%20Desktop.md)).
 <!-- VERIFY(cold-start): what the file pane is called, how to open it, and whether it can edit a file or only show it -->
 
 For real reading and editing, a dedicated Markdown app is more comfortable. Three review surfaces are recommended. They do different jobs, and plenty of people end up with two of them open.
@@ -20,13 +20,13 @@ What makes it right for this: Typora shows Markdown as formatted text **while yo
 
 ## MarkText (free)
 
-If you'd rather not pay, [MarkText](https://www.marktext.app/) is a free, open-source app in the same live-preview style — no split view, formatted text as you type. It's a bit rougher around the edges than Typora, but it's a solid free option.
+If you'd rather not pay, [MarkText](https://marktext.me/) is a free, open-source app in the same live-preview style — no split view, formatted text as you type. It's a bit rougher around the edges than Typora, but it's a solid free option.
 
 ## MeetingWords (shared)
 
 [MeetingWords](https://meetingwords.com/) is a shared pad: a Markdown document on the web that several people — and several agents — can read and write at the same time. Your agent can put a document on a pad for you to read on your phone, mark it up, and hand it back; and when you work with other houses, a pad is the room you meet in. It's the one surface here that isn't on your computer, so use it for what's meant to be shared, not for what's meant to stay home.
 
-*Disclosure: Pete Kaminski, who wrote this kit, runs MeetingWords. Recommending it isn't intended as self-dealing — it's the current best understanding of what works for people and agents on one document. V3 of this kit uses the hosted service at meetingwords.com; self-hosting and an app version are planned for a later release.*
+*Disclosure: Pete Kaminski, who wrote this kit, runs MeetingWords. Recommending it isn't intended as self-dealing — it's the current best understanding of what works for people and agents on one document. This kit uses the hosted service at meetingwords.com; self-hosting and an app version are planned for a later release.*
 
 ## Already using Obsidian or VS Code?
 

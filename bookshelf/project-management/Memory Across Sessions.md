@@ -99,7 +99,7 @@ Two different things, easy to confuse:
 | | Memory | Session logs |
 |---|---|---|
 | **What** | Persistent facts, preferences, project state | A record of what happened in a session |
-| **Where** | `memory/` in the agent home (in a house); `~/.claude/.../memory/` (elsewhere, local) | `sessions/` in the agent home, flat and dated, in git if your house keeps git |
+| **Where** | `memory/` in the agent home (in a house); `~/.claude/.../memory/` (elsewhere, local) | `sessions/` in the agent home, flat and dated, in git |
 | **When written** | Whenever something worth persisting comes up | At the end of each session (`wrap-up-this-session`) |
 | **Audience** | Future-you and future-agent, indefinitely | Future-you and next-session-agent, near term |
 | **Lifecycle** | Updated and consolidated | Append-only |

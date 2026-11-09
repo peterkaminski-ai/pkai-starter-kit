@@ -11,7 +11,7 @@ Your agent handles the more technical machinery (like git version control) quiet
 
 ## How to Use This Book
 
-If your house is already built, start with **First Day in Desktop**. If you're still getting ready, work through the core path in order; most people are set up in under half an hour.
+If your house is already built, start with **First Day in Desktop**. If you're still getting ready, work through the core path in order. Setup itself takes about half an hour, longer if git has to install.
 
 ### Your first day
 
@@ -51,4 +51,4 @@ Your agent manages version control for you, so none of this is required. Read it
 
 The kit doesn't teach the terminal, but it's still there for people who love it.
 
-- [Choosing Your Terminal](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/getting-started/Choosing%20Your%20Terminal.md) — Which terminal app, and how to make it readable
+- [Choosing Your Terminal](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/getting-started/Choosing%20Your%20Terminal.md), in the PKAI benchmark — Which terminal app, and how to make it readable

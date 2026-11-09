@@ -1,6 +1,6 @@
 ---
 name: pull-from-benchmark
-description: Reads a new release of the PKAI benchmark or starter kit — its CHANGES.md and LINEAGE.md — and proposes, item by item, what this house should take, adapt, or decline, with reasons; records the person's decision; then drafts the report back (what we valued, what we thought, where we diverged and did better). Use when a new benchmark or kit release is announced, when the person says "a new version is out", "should we upgrade", "pull from the benchmark", "what's in V3.1", or when this house's LINEAGE.md `pull_from` points at a version newer than `grows_from` (or `sits_on`, its name before 3.1).
+description: Reads a new release of the PKAI benchmark or starter kit — its CHANGES.md and LINEAGE.md — and proposes, item by item, what this house should take, adapt, or decline, with reasons; records the person's decision; then drafts the report back (what we valued, what we thought, where we diverged and did better). Use when a new benchmark or kit release is announced, when the person says "a new version is out", "should we upgrade", "pull from the benchmark", "what's in the new release", or when this house's LINEAGE.md `pull_from` points at a version newer than `grows_from` (or `sits_on`, its name before 3.1).
 license: MPL-2.0
 ---
 

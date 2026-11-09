@@ -19,7 +19,7 @@ Passwords, keys, tokens, anything that lets a holder act as you: these live in a
 The reason isn't that your agent would misuse them. It's three other things:
 
 - **Your agent reads everything in the house.** That's its job. A secret in a file it reads is a secret in every conversation that touches that file, and in the session logs, and possibly in whatever a background instance copied for its scratch work.
-- **Anything an agent reads can be asked for.** The [previous chapter](What%20You%20Read%20Is%20Information.md) is about text trying to get your agent to send things. The most valuable thing to send is a secret. A house with no secrets in it has nothing to exfiltrate.
+- **Anything an agent reads can be asked for.** The [chapter on what you read](What%20You%20Read%20Is%20Information.md) is about text trying to get your agent to send things. The most valuable thing to send is a secret. A house with no secrets in it has nothing to exfiltrate.
 - **Files travel.** Session logs get shared, pads get linked, a folder gets zipped for a friend. A secret in a file goes with it.
 
 When your agent needs to use a secret — an API key for a tool, a login — the pattern is: the secret lives outside the house in a place made for it, and the agent is given the narrowest access to it that does the job, by you, when it's needed. If you don't know how to do that for a particular tool, ask your agent; it will know, and it's a good conversation to have before you need it rather than after.

@@ -24,7 +24,7 @@ The **Claude desktop app**, for Mac or Windows, from claude.ai/download, kept up
 
 Git keeps quiet, safe snapshots of everything you and your agent make, so nothing can ever be lost. Every house built from this kit uses it. You don't need to learn it, and you don't need to install it: if it isn't on your computer, your agent starts the install during setup (on a Mac you click **Install** in Apple's window) and sets everything up when it arrives.
 
-**One rule: keep both of your house's folders out of cloud sync** — out of iCloud Drive (including iCloud's "Desktop & Documents"), OneDrive, Dropbox and Google Drive. Git and sync engines contend with each other and both lose. If your Documents folder syncs, your headquarters goes at the top of your home folder instead, beside your agent's folder. Setup checks this for you.
+**One rule: keep both of your house's folders out of cloud sync** — out of iCloud Drive (including iCloud's "Desktop & Documents"), OneDrive, Dropbox and Google Drive. Git and sync engines contend with each other and both lose. That's why both folders go at the top of your home folder, side by side, and not in Documents or on the Desktop, which often sync. Setup checks this for you.
 
 ## The two surfaces
 

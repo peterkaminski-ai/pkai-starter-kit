@@ -2,7 +2,7 @@
 
 How to work on projects with Claude Code and an agent of your own — as Pete Kaminski, who wrote it, has worked them out — and, read from the other side, how an agent works with its principal, the person it belongs to.
 
-This is one book on the shelf that comes with the PKAI starter kit. The other books on the shelf cover individual tools — Git, Claude Code itself, the integrated stack. This one covers the **practice** of using them together to actually get work done.
+This is one book on the shelf that comes with the PKAI starter kit. The other books on the shelf cover the tools — Claude Code in the desktop app, your house, other houses, safety — and the git guide is in the PKAI benchmark. This one covers the **practice** of using them together to actually get work done.
 
 The bet of this stack is that working with agentic AI is mostly project management. The model does the work; you organize it. Claude Code is powerful enough to make a mess if you don't keep it on rails — and structured enough to be transformatively useful if you do.
 

@@ -2,12 +2,12 @@
 
 When you're new to this stack, house and repo and project sound like they might be the same thing. They aren't, and keeping them straight makes everything else easier.
 
-Your **house** is two folders. The **agent home** is where your agent lives: its charter (`CLAUDE.md`), its memory, its session logs, its skills. The **HQ** is where the work lives. A **project** is a folder in the HQ, at `projects/<slug>/`. A **repo** is a folder with a git history: if your house keeps git, the agent home and the HQ are one repo each, and a project gets a repo of its own only when it needs one.
+Your **house** is two folders. The **agent home** is where your agent lives: its charter (`CLAUDE.md`), its memory, its session logs, its skills. The **HQ** is where the work lives. A **project** is a folder in the HQ, at `projects/<slug>/`. A **repo** is a folder with a git history: the agent home and the HQ are one repo each, and a project gets a repo of its own only when it needs one.
 
 The container for a project is a folder. That folder is, simultaneously:
 
 - A **place for the work** — its files, its README, its status file.
-- A **slice of git history** — for free, from the HQ's own repo, if your house keeps git.
+- A **slice of git history** — for free, from the HQ's own repo.
 - A **working directory for your agent** — it starts in its home and walks over to work here.
 
 These aren't different things laid on top of each other. They're roles of the same folder.
@@ -39,7 +39,7 @@ Most work doesn't need its own repo. The default is a folder under `projects/` i
 
 ```
 <your-name>-hq/                          # your HQ
-├── .git/                                # if your house keeps git
+├── .git/                                # the HQ's own history
 ├── projects/
 │   ├── README.md                        # one line per project, including any that live elsewhere
 │   ├── research-agents/
@@ -81,7 +81,7 @@ What doesn't live there: memory and session logs. Those stay in your agent home,
 
 ## Where the folders go
 
-Your agent home and HQ are wherever setup put them: the agent home at the top of your home folder, as `<Name> (agent)`, and the HQ in Documents, or at the top of your home folder if Documents is synced. Neither is ever inside the other. A project with its own repo goes outside the HQ, and wherever it goes, **don't put it inside iCloud, OneDrive, Dropbox, or any cloud-synced directory.** Git and cloud sync collide and produce conflicts and corruption.
+Your agent home and HQ are wherever setup put them: the agent home at the top of your home folder, as `<Name> (agent)`, and the HQ right beside it, as `<yourname>-hq`. Neither is ever inside the other. A project with its own repo goes outside the HQ, and wherever it goes, **don't put it inside iCloud, OneDrive, Dropbox, or any cloud-synced directory.** Git and cloud sync collide and produce conflicts and corruption.
 
 On a Mac, `~/Documents` is often synced to iCloud, and on Windows, OneDrive often syncs Documents, so a folder near the top of your home folder is the safer choice. This book uses `~/repos/<name>/` for a repo of its own.
 

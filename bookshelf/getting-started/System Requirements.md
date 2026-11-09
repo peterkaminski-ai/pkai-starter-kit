@@ -27,7 +27,7 @@ You need internet for setup, and whenever you're talking to your agent — Claud
 
 ## Time
 
-Budget 30-60 minutes for the full setup. You don't have to wait for git: setup carries on while it installs, and your agent picks it up when it's ready, even if that's a later session.
+Setup takes about half an hour, longer if git has to install. You don't have to wait for git: setup carries on while it installs, and your agent picks it up when it's ready, even if that's a later session.
 
 ## Where your house goes
 
@@ -36,9 +36,9 @@ A house is two folders, side by side, never one inside the other:
 - **Your agent home** — a folder named after your agent, with "(agent)" on the end, at the top of your home folder. For an agent named Lain:
   - **Mac:** `~/Lain (agent)/`
   - **Windows:** `C:\Users\YourName\Lain (agent)\`
-- **Your HQ** — a folder named `yourname-hq`, in Documents:
-  - **Mac:** `~/Documents/yourname-hq/`
-  - **Windows:** `C:\Users\YourName\Documents\yourname-hq\`
+- **Your HQ** — a folder named `yourname-hq`, also at the top of your home folder, right beside it:
+  - **Mac:** `~/yourname-hq/`
+  - **Windows:** `C:\Users\YourName\yourname-hq\`
 
 If you later add a second agent, it gets its own folder beside the first, like `~/Wren (agent)/`, never a folder inside another agent's.
 
@@ -46,7 +46,7 @@ If you later add a second agent, it gets its own folder beside the first, like `
 
 Neither folder may be inside iCloud, OneDrive, Dropbox, or any other cloud-synced folder. Your agent keeps its own version history with git, and having two sync systems watching the same folder causes conflicts and data loss.
 
-If your Documents folder is cloud-synced (iCloud's "Desktop & Documents", or OneDrive on Windows), your HQ goes at the top of your home folder instead, like `~/yourname-hq/`. Setup checks this for you.
+That's why both folders go at the top of your home folder, not in Documents or on the Desktop: iCloud's "Desktop & Documents" and OneDrive often sync those. Setup checks this for you.
 
 > [!warning]
-> On many Windows machines, OneDrive syncs your Documents folder by default — which is exactly why the HQ then goes at `C:\Users\YourName\yourname-hq\`, not under Documents.
+> On many Windows machines, OneDrive syncs your Documents folder by default — which is exactly why the HQ goes at `C:\Users\YourName\yourname-hq\`, not under Documents.

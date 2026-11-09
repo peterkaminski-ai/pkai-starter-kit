@@ -1,6 +1,6 @@
 # An agent home
 
-This folder is the home of a personal AI agent — its persona (`CLAUDE.md`), its memory (`memory/`), the logs of its conversations (`sessions/`), its skills (`.claude/skills/`), and its lineage (`LINEAGE.md`). Everything in it is plain markdown, readable in any text editor.
+This folder is the home of a personal AI agent — its persona (`CLAUDE.md`), its memory (`memory/`), the logs of its conversations (`sessions/`), its skills (`.claude/skills/`), and its lineage (`LINEAGE.md`). Everything in it is plain text, readable in any text editor — markdown, plus a few small scripts in `scripts/` that run at each turn.
 
 If you're the person it belongs to: this is your agent's mind. You can read anything here, and edit anything — though for changes, the friendliest path is usually just telling your agent.
 

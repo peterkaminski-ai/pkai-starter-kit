@@ -7,7 +7,7 @@ Claude Code has four permission modes, and two ways to move between them: the de
 In order of how aggressive Claude Code is allowed to be:
 
 1. **Plan mode.** Claude can think, read files, and propose plans. It cannot make edits, run commands, or take destructive action. Safest.
-2. **Manual mode.** The cautious default. Claude asks before reads/writes/commands, and you approve each one.
+2. **Manual mode.** The cautious one. Claude asks before reads/writes/commands, and you approve each one.
 3. **Accept Edits.** Edits go through without a prompt. Other actions (commands, deletions) still ask permission.
 4. **Auto Mode.** Claude prompts only when the LLM decides the action is high-risk enough to warrant it. Most actions go through silently.
 
@@ -53,15 +53,15 @@ When Claude Code asks permission, you typically have two kinds of yes:
 - **Yes, always** — within a scope, such as "always read from this folder".
 <!-- VERIFY(cold-start): the exact labels on a permission prompt in the Code tab -->
 
-For setup steps and routine work, **yes, always** is usually right. You burn through fewer prompts, and the scoping (folder, command, etc.) keeps it tight.
+For routine edits inside your house's folders, **yes, always, for edits in this folder** is usually right. You burn through fewer prompts, and the folder scope keeps it tight.
 
-For one-off risky things — modifying a critical config, running an unfamiliar command — **yes, once** keeps you in the loop.
+For commands, and for one-off risky things — modifying a critical config, running an unfamiliar command — **yes, once** keeps you in the loop. A standing "always" for a command reaches further than it looks.
 
 Either way, read the prompt before you click. If you don't understand one, ask your agent; it can explain any prompt.
 
 ## What about `--dangerously-skip-permissions` (YOLO mode)?
 
-Yes, it exists, as a command-line flag. No, you shouldn't use it as a default. The reason permission prompts exist is that Claude Code is fast enough to do real damage in a few seconds.
+Yes, it exists, as a command-line flag for the terminal; you won't type it in the desktop app. No, you shouldn't use it as a default. The reason permission prompts exist is that Claude Code is fast enough to do real damage in a few seconds.
 
 There are situations where YOLO mode is right (long-running batch work in a sandbox, scripted automation in CI). For everyday project work, auto mode is the right level of trust. And it is never the answer to a block: when a safety layer stops your agent, your agent never suggests switching one off, and you shouldn't reach for this either.
 
@@ -72,7 +72,7 @@ Pete Kaminski, who wrote this book, uses the mode switch as a deliberate gear-sh
 - Starting a fresh project → plan mode.
 - Plan looks good → switch to auto mode.
 - Something feels weird → switch back to accept-edits or Manual.
-- Done → wrap up, commit, clear.
+- Done → wrap up (the log, then memory, then commit), clear.
 
 That's the rhythm. Mode is a tool, not a setting.
 

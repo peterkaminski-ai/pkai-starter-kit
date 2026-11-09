@@ -33,7 +33,7 @@ When the idea has enough shape to warrant its own attention, ask your agent to s
         └── my-new-idea.status.md      # where it stands; your agent keeps it current
 ```
 
-Most projects can live their entire lives here. You don't need a separate repo. If your house keeps git, you get version control "for free" because the HQ is already a git repo.
+Most projects can live their entire lives here. You don't need a separate repo. You get version control "for free" because the HQ is already a git repo.
 
 Use this when:
 

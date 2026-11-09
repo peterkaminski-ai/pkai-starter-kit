@@ -25,8 +25,8 @@ If your Mac already has the tools, your agent sees that and nothing appears at a
 
 ## On Windows
 
-On Windows, your agent installs **Git for Windows** using Windows' own installer tool. You may see an installer window or a prompt asking for permission to make changes; say yes. When it's done, your agent checks for git again.
-<!-- VERIFY(cold-start): whether winget is present on a fresh Windows 11, and what the person sees while `winget install --id Git.Git -e` runs -->
+On Windows, your agent installs **Git for Windows** using Windows' own installer tool. You may see an installer window or a prompt asking for permission to make changes; say yes. A freshly installed git usually isn't visible to the session that started the install until the app restarts. That's expected: your agent's next session sees it and finishes the setup. (If the Code tab asked you to install Git for Windows before your first session, you've already done this part.)
+<!-- VERIFY(cold-start): whether winget is present on a fresh Windows 11, and what the person sees while `winget install --id Git.Git -e --accept-source-agreements --accept-package-agreements` runs -->
 
 Git for Windows also brings along a program called Git Bash. You won't use it yourself, but your house's hooks (small checks your agent runs automatically) use it behind the scenes, so leave it installed.
 

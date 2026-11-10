@@ -1,6 +1,6 @@
 # Plan for v4.0.0-rc.3
 
-*Plan version 1.0 · 2026-11-10 · status: in progress, not yet published. Built from [run 1](../runs/run-1-2026-11-10-mac.md).*
+*Plan version 1.0 · 2026-11-10 · status: published as [v4.0.0-rc.3](https://github.com/peterkaminski-ai/pkai-starter-kit/releases/tag/v4.0.0-rc.3) on 2026-11-10. Built from [run 1](../runs/run-1-2026-11-10-mac.md).*
 
 Ideas for rc.3 or later are welcome: [open an issue](https://github.com/peterkaminski-ai/pkai-starter-kit/issues), open a pull request, or email kaminski@istori.com or freya@istori.com.
 

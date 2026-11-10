@@ -57,7 +57,7 @@ You don't need to memorize specific phrases. Your agent understands natural lang
 
 If you've set up your house, try the full cycle:
 
-1. In the desktop app's Code tab, start or continue a session in your agent's environment
+1. In the Desktop app's Code tab, start or continue a session in your agent's environment
 2. Ask your agent to create or edit a file — say, a note in your HQ
 3. Say: **"Commit — my first commit"**
 4. Say: **"Show me the recent history"**

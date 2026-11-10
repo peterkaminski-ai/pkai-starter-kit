@@ -81,11 +81,11 @@ What doesn't live there: memory and session logs. Those stay in your agent home,
 
 ## Where the folders go
 
-Your agent home and HQ are wherever setup put them: the agent home at the top of your home folder, as `<Name> (agent)`, and the HQ right beside it, as `<yourname>-hq`. Neither is ever inside the other. A project with its own repo goes outside the HQ, and wherever it goes, **don't put it inside iCloud, OneDrive, Dropbox, or any cloud-synced directory.** Git and cloud sync collide and produce conflicts and corruption.
+Your agent home and HQ are wherever setup put them: the agent home at the top of your home folder, as `<Name> (agent)`, and the HQ in Documents as `<yourname>-hq` (or beside the agent home, if Documents is synced). Neither is ever inside the other. A project with its own repo goes outside the HQ, and wherever it goes, **don't put it inside iCloud, OneDrive, Dropbox, or any cloud-synced directory.** Git and cloud sync collide and produce conflicts and corruption.
 
 On a Mac, `~/Documents` is often synced to iCloud, and on Windows, OneDrive often syncs Documents, so a folder near the top of your home folder is the safer choice. This book uses `~/repos/<name>/` for a repo of its own.
 
-Your agent can work in that folder from its usual environment. If you want to see the folder in the desktop app's file pane too, grant it to your agent's environment, the way setup granted the HQ.
+Your agent can work in that folder from its usual environment. If you want to see the folder in the Desktop app's file pane too, grant it to your agent's environment, the way setup granted the HQ.
 <!-- VERIFY(cold-start): the exact label for granting another folder to an environment -->
 
 ## See also

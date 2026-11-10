@@ -4,7 +4,7 @@ Welcome! This book walks you through the toolkit your house runs on, from scratc
 
 By the end, you'll have:
 
-- **The Claude desktop app** — where your agent lives, in its Code tab
+- **The Claude Desktop app** — where your agent lives, in its Code tab
 - **A Markdown editor** — for reading and writing your files alongside your agent
 
 Your agent handles the more technical machinery (like git version control) quietly on your behalf. There are optional sections below if you ever want to look under the hood.
@@ -15,14 +15,14 @@ If your house is already built, start with **First Day in Desktop**. If you're s
 
 ### Your first day
 
-- [First Day in Desktop](First%20Day%20in%20Desktop.md) — The small things that trip people up in the first hour with the desktop app
+- [First Day in Desktop](First%20Day%20in%20Desktop.md) — The small things that trip people up in the first hour with the Desktop app
 
 ### The core path (do these in order)
 
 1. [Why This Stack](Why%20This%20Stack.md) — What these tools are and why they work together
 2. [System Requirements](System%20Requirements.md) — What you need before starting, and where your house's folders go
 3. [Getting a Claude Account](Getting%20a%20Claude%20Account.md) — Sign up for a Claude plan
-4. [Installing Claude Code](Installing%20Claude%20Code.md) — Install the Claude desktop app and find its Code tab
+4. [Installing Claude Code](Installing%20Claude%20Code.md) — Install the Claude Desktop app and find its Code tab
 5. [Permissions Questions](Permissions%20Questions.md) — What the app asks before your agent acts, and how to answer
 6. [Viewing Your Files](Viewing%20Your%20Files.md) — The app's file pane, Typora, TextEdit or Notepad, and friends
 7. [Basic Markdown](Basic%20Markdown.md) — Headers, links, lists — enough to get going

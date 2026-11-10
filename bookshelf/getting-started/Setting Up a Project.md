@@ -2,7 +2,7 @@
 
 You have a project — maybe it already has some files, maybe you're starting fresh. You want it to have a proper home. This page covers the two homes a project can have, and how to ask your agent for either.
 
-You don't open anything special for a project. You always work through your agent: in the desktop app's Code tab, start or continue a session in your agent's environment, and tell it what you want. Your agent goes to the project; the project doesn't get its own session. (A Claude app *Project* is a different thing from a project folder in your HQ. This page is about the folder kind.)
+You don't open anything special for a project. You always work through your agent: in the Desktop app's Code tab, start or continue a session in your agent's environment, and tell it what you want. Your agent goes to the project; the project doesn't get its own session. (A Claude app *Project* is a different thing from a project folder in your HQ. This page is about the folder kind.)
 
 ## The usual home: a folder in your HQ
 

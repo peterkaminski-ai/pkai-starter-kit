@@ -9,7 +9,7 @@ You don't need a named agent to do good work. Vanilla Claude Code, run inside a 
 A personal agent is "Claude Code with a persona and a memory." Concretely:
 
 - A folder outside your project repos — the **agent home** — holding a charter (`CLAUDE.md`), memory, session logs, and the skills it has taken on.
-- Its own environment in the Claude desktop app's Code tab, on that folder, so a session you start there is that agent.
+- Its own environment in the Claude Desktop app's Code tab, on that folder, so a session you start there is that agent.
 - Memory and session logs that accumulate over time, the way a project's would, but about *you* and across all your work.
 
 When you start a session in the agent's environment, you're running Claude Code, but it knows it's *that* agent — with its history, its conventions, its memory. This kit builds one for you; `START-HERE.md` at the kit root is the way in.

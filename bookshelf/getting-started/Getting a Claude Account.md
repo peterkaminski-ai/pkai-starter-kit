@@ -1,6 +1,6 @@
 # Getting a Claude Account
 
-Claude is an AI assistant made by Anthropic. You'll use it in two ways, both in the same Claude desktop app: as a chatbot (for conversations and questions) and as Claude Code, in the app's Code tab, where your agent works with files on your computer.
+Claude is an AI assistant made by Anthropic. You'll use it in two ways, both in the same Claude Desktop app: as a chatbot (for conversations and questions) and as Claude Code, in the app's Code tab, where your agent works with files on your computer.
 
 ## Sign Up for a Claude Plan
 
@@ -13,7 +13,7 @@ Claude is an AI assistant made by Anthropic. You'll use it in two ways, both in 
 
 ## Start with the Chatbot
 
-Before you set up your house, spend some time using Claude as a regular chatbot at [claude.ai](https://claude.ai/) or in the desktop app. Ask it questions, have it explain things, get comfortable with how it thinks and responds.
+Before you set up your house, spend some time using Claude as a regular chatbot at [claude.ai](https://claude.ai/) or in the Desktop app. Ask it questions, have it explain things, get comfortable with how it thinks and responds.
 
 This isn't just warm-up — the chatbot is genuinely useful on its own. You can ask it to:
 
@@ -26,10 +26,10 @@ When you're ready, move on to installing the app. Claude Code uses the same unde
 
 ## What You're Paying For
 
-A Pro or Max plan gives you:
+A Pro, Max or Ultra plan gives you:
 
-- **Claude chatbot** — conversations in your browser at claude.ai, or in the desktop app
-- **Claude Code** — the desktop app's Code tab, which works with your local files
+- **Claude chatbot** — conversations in your browser at claude.ai, or in the Desktop app
+- **Claude Code** — the Desktop app's Code tab, which works with your local files
 - **Higher usage limits** than the free tier
 
 You don't need to pay for anything else. No API keys, no separate billing for Claude Code — it's all included in your plan.

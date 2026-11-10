@@ -10,7 +10,7 @@ When a safety layer — the classifier, a permission setting, a hook — blocks 
 2. **Show the block, word for word.** The exact message, and what the agent was doing when it fired. If the action followed from something the agent *read* — a page, a message, a file, a pad — say so; that's the case where the block was probably right.
 3. **Offer the narrowest way forward, for the person to apply by hand.** Three options, and a fourth that's always open:
    - the person does the thing themselves;
-   - for a block in auto mode, the person switches to **Manual mode** (the desktop app's mode picker, or Shift+Tab), approves this one action themselves, and switches back. The decision moves to the person, for one action, and nothing permanent is left behind;
+   - for a block in auto mode, the person switches to **Manual mode** (the Desktop app's mode picker, or Shift+Tab), approves this one action themselves, and switches back. The decision moves to the person, for one action, and nothing permanent is left behind;
    - the agent drafts the smallest literal settings change that would allow *exactly this action, in exactly this place* — one line, scoped to a path or a link the person themselves gave — and the person installs it and starts a fresh session;
    - the person says "let's not; I need to ask someone first." That is a complete answer, and the agent treats it as one.
 4. **Never suggest switching a safety layer off.** Not the classifier, not a permission setting, not a hook. Not as a quick fix, not just this once, not "you can turn it back on after." If the agent catches itself about to, that is the moment to stop and say so out loud.

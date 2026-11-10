@@ -1,6 +1,6 @@
 # Permissions Questions
 
-While you're working with your agent in the desktop app, it will regularly stop and ask you something like "may I run this command?" or "may I edit this file?" This page explains what those prompts mean and gives you a simple, honest way to answer them.
+While you're working with your agent in the Desktop app, it will regularly stop and ask you something like "may I run this command?" or "may I edit this file?" This page explains what those prompts mean and gives you a simple, honest way to answer them.
 
 ## Why the questions exist
 
@@ -14,7 +14,7 @@ Claude Code asks before it does things that touch your computer — running a co
 The first time you start a session on a folder, the app asks whether you trust the files in it. This is a general Claude Code safety check for any folder — some folders are ones you'd never want an AI assistant running around in unsupervised.
 
 You'll see it during setup, for your HQ, and again when you start your first session in your agent's own environment, on its agent home. A second trust prompt there is expected. For your own agent's folders the answer is yes: you set them up, you're the one running your agent, and trusting them is what lets it do its job.
-<!-- VERIFY(cold-start): the wording of the desktop app's folder-trust prompt, and whether it appears again for the HQ when the agent first works there from its own environment -->
+<!-- VERIFY(cold-start): the wording of the Desktop app's folder-trust prompt, and whether it appears again for the HQ when the agent first works there from its own environment -->
 
 ## The plain-language rule
 
@@ -36,7 +36,7 @@ For commands, anything outbound (leaving your computer), or anything outside you
 
 ## A note on modes
 
-The desktop app has a mode picker that changes how often your agent asks permission at all. There are four:
+The Desktop app has a mode picker that changes how often your agent asks permission at all. There are four:
 
 - **Plan mode** — your agent lays out its intended steps before doing anything.
 - **Manual mode** — your agent asks before each action, and you approve it yourself. Choose it any time you want to see every step; you can switch to it in the mode picker, or by pressing Shift+Tab.
@@ -44,11 +44,11 @@ The desktop app has a mode picker that changes how often your agent asks permiss
 - **Auto mode** — your agent proceeds without asking each time, with a safety layer checking its actions.
 
 Use whichever mode your setup left you in, and switch to Manual whenever you want a closer look. If a safety layer ever blocks your agent in auto mode, one of the ways forward is to switch to Manual mode, approve that one action yourself, and switch back. That leaves nothing permanent behind; see [When a Safety Layer Blocks You](../keeping-yourself-safe/When%20a%20Safety%20Layer%20Blocks%20You.md). The project-management book in this starter kit has a page that covers plan mode and auto mode in more depth.
-<!-- VERIFY(cold-start): the desktop app's mode names as shown in the mode picker, which mode a new house starts in, and that Shift+Tab cycles them in the Code tab -->
+<!-- VERIFY(cold-start): the Desktop app's mode names as shown in the mode picker, which mode a new house starts in, and that Shift+Tab cycles them in the Code tab -->
 
 > [!warning]
 > **Windows users:** on a Mac, Claude Code runs commands inside a macOS sandbox — a protective layer that limits what any single command is allowed to touch on your computer, even before you answer a permission prompt. **Windows doesn't have this sandboxing.** That means on Windows, your answers to these permission prompts are doing more of the safety work themselves. The guidance above still applies — it just matters a little more that you actually read the prompt before answering, especially for anything outbound or outside your house.
-<!-- VERIFY(cold-start): whether the macOS sandbox applies to commands run from the desktop app's Code tab, and whether Windows still has none -->
+<!-- VERIFY(cold-start): whether the macOS sandbox applies to commands run from the Desktop app's Code tab, and whether Windows still has none -->
 
 ## The reassurance
 

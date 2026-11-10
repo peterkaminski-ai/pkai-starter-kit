@@ -6,7 +6,7 @@ license: MPL-2.0
 
 # Foreground and background
 
-One agent, two roles. The **foreground** is the instance that holds the desk; it owns everything shared. A **background** instance is the same agent, started a second time on one scoped job, working in its own scratch space and never touching shared state. A **guest** is a background instance the person is talking to: a second session they started in the same agent home — from the desktop app, from a phone, or anywhere else — while the foreground was already at work. When either is done it leaves a handoff, and the foreground integrates by copying. This is how a house does two things at once without either instance overwriting the other.
+One agent, two roles. The **foreground** is the instance that holds the desk; it owns everything shared. A **background** instance is the same agent, started a second time on one scoped job, working in its own scratch space and never touching shared state. A **guest** is a background instance the person is talking to: a second session they started in the same agent home — from the Desktop app, from a phone, or anywhere else — while the foreground was already at work. When either is done it leaves a handoff, and the foreground integrates by copying. This is how a house does two things at once without either instance overwriting the other.
 
 ## The desk
 

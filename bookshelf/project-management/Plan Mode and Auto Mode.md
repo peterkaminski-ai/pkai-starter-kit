@@ -1,6 +1,6 @@
 # Plan Mode and Auto Mode
 
-Claude Code has four permission modes, and two ways to move between them: the desktop app's mode picker, and Shift+Tab. Knowing what each one does — and which one you should be in for the task at hand — keeps the loop smooth.
+Claude Code has four permission modes, and two ways to move between them: the Desktop app's mode picker, and Shift+Tab. Knowing what each one does — and which one you should be in for the task at hand — keeps the loop smooth.
 
 ## The four modes
 
@@ -13,7 +13,7 @@ In order of how aggressive Claude Code is allowed to be:
 
 ## How to switch
 
-Choose a mode in the desktop app's mode picker, or press **Shift+Tab** to cycle through them. Switching a few times to see them is safe.
+Choose a mode in the Desktop app's mode picker, or press **Shift+Tab** to cycle through them. Switching a few times to see them is safe.
 <!-- VERIFY(cold-start): where the mode picker sits in the Code tab, and what each mode is labelled there -->
 
 You can also enter plan mode with `/plan`.
@@ -61,7 +61,7 @@ Either way, read the prompt before you click. If you don't understand one, ask y
 
 ## What about `--dangerously-skip-permissions` (YOLO mode)?
 
-Yes, it exists, as a command-line flag for the terminal; you won't type it in the desktop app. No, you shouldn't use it as a default. The reason permission prompts exist is that Claude Code is fast enough to do real damage in a few seconds.
+Yes, it exists, as a command-line flag for the terminal; you won't type it in the Desktop app. No, you shouldn't use it as a default. The reason permission prompts exist is that Claude Code is fast enough to do real damage in a few seconds.
 
 There are situations where YOLO mode is right (long-running batch work in a sandbox, scripted automation in CI). For everyday project work, auto mode is the right level of trust. And it is never the answer to a block: when a safety layer stops your agent, your agent never suggests switching one off, and you shouldn't reach for this either.
 

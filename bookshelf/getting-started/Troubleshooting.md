@@ -22,7 +22,7 @@ Your agent can sometimes read a folder before the file pane shows it. Grant the 
 
 ### My phone can't find my agent
 
-Remote Control turns off when you quit the desktop app. Open the app, open your agent's session, and turn Remote Control back on. Make sure your computer isn't asleep.
+Remote Control turns off when you quit the Desktop app. Open the app, open your agent's session, and turn Remote Control back on. Make sure your computer isn't asleep.
 
 ## Installing Git
 
@@ -82,5 +82,5 @@ Common things to exclude: `.DS_Store` (Mac), `Thumbs.db` (Windows), and any file
 ## General Tips
 
 - **When in doubt, describe the problem to your agent.** It can read error messages and usually knows what to do.
-- **Restart and retry.** Many first-day issues resolve by quitting and reopening the desktop app. (Quitting turns Remote Control off; turn it back on afterwards if you use your phone.)
+- **Restart and retry.** Many first-day issues resolve by quitting and reopening the Desktop app. (Quitting turns Remote Control off; turn it back on afterwards if you use your phone.)
 - **Git rarely loses anything.** Even if things look wrong, your history is intact. Ask your agent to help you recover.

@@ -37,7 +37,7 @@ The bad version: you tell Claude "go figure that out" with no file destination, 
 
 ### Keep an eye on it from your phone
 
-Claude Code has a built-in Remote Control, turned on in the desktop app, that lets you check on a running session from your phone while your computer keeps doing the work. See [Monitoring from Your Phone](Monitoring%20from%20Your%20Phone.md).
+Claude Code has a built-in Remote Control, turned on in the Desktop app, that lets you check on a running session from your phone while your computer keeps doing the work. See [Monitoring from Your Phone](Monitoring%20from%20Your%20Phone.md).
 
 ## Hitting auto-compact instead of clearing
 

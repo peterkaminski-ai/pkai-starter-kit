@@ -2,13 +2,13 @@
 
 How to work on projects with Claude Code and an agent of your own — as Pete Kaminski, who wrote it, has worked them out — and, read from the other side, how an agent works with its principal, the person it belongs to.
 
-This is one book on the shelf that comes with the PKAI starter kit. The other books on the shelf cover the tools — Claude Code in the desktop app, your house, other houses, safety — and the git guide is in the PKAI benchmark. This one covers the **practice** of using them together to actually get work done.
+This is one book on the shelf that comes with the PKAI starter kit. The other books on the shelf cover the tools — Claude Code in the Desktop app, your house, other houses, safety — and the git guide is in the PKAI benchmark. This one covers the **practice** of using them together to actually get work done.
 
 The bet of this stack is that working with agentic AI is mostly project management. The model does the work; you organize it. Claude Code is powerful enough to make a mess if you don't keep it on rails — and structured enough to be transformatively useful if you do.
 
 ## Who this is for
 
-People who already have a house running in the Claude desktop app, and want to know what to *do* with it. If that's still ahead of you, start on the same shelf:
+People who already have a house running in the Claude Desktop app, and want to know what to *do* with it. If that's still ahead of you, start on the same shelf:
 
 - [Getting started](../getting-started/README.md) — get to a working setup, and [First Day in Desktop](../getting-started/First%20Day%20in%20Desktop.md) for the first hour in the app.
 - [Git guide](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/git-guide/README.md) — Git for non-developers, if you want to understand what your agent does with it.
@@ -33,7 +33,7 @@ Pages stand alone, but they were written in this order. If you're starting from 
 | [Working With Agents](Working%20With%20Agents.md)                         | Vanilla Claude Code vs. a personal agent like yours; sub-agents; foreground and background instances.       |
 | [Starting a New Project](Starting%20a%20New%20Project.md)                 | Decision tree: just a note, a folder in your HQ, or a repo of its own?                                       |
 | [Pair Programming with AI](Pair%20Programming%20with%20AI.md)             | The driver-and-navigator pattern, and why you stay the navigator.                                         |
-| [Monitoring from Your Phone](Monitoring%20from%20Your%20Phone.md)         | Remote Control, from the desktop app, for keeping an eye on your agent while you're away from the laptop.    |
+| [Monitoring from Your Phone](Monitoring%20from%20Your%20Phone.md)         | Remote Control, from the Desktop app, for keeping an eye on your agent while you're away from the laptop.    |
 | [Anti-Patterns](Anti-Patterns.md)                                         | Common ways this goes wrong (the disengaged-driver pattern being the canonical case).                        |
 
 ## Credits

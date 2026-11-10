@@ -4,20 +4,20 @@ Here's what you need before starting the setup process.
 
 ## Your Computer
 
-**Mac** or **Windows** — a computer that runs the current Claude desktop app. The download page at [claude.ai/download](https://claude.ai/download) lists the versions it supports.
+**Mac** or **Windows** — a computer that runs the current Claude Desktop app. The download page at [claude.ai/download](https://claude.ai/download) lists the versions it supports.
 
 > [!tip]
-> Claude Code runs on Linux too, but the desktop app this kit uses is for Mac and Windows.
-<!-- VERIFY(cold-start): whether the Claude desktop app's Code tab is available on Linux -->
+> Claude Code runs on Linux too, but the Desktop app this kit uses is for Mac and Windows.
+<!-- VERIFY(cold-start): whether the Claude Desktop app's Code tab is available on Linux -->
 
 ## Accounts You'll Create
 
-- **A Claude account** on a Pro or Max plan — sign up at [claude.ai](https://claude.ai/). [Getting a Claude Account](Getting%20a%20Claude%20Account.md) has more detail.
+- **A Claude account** on a Pro, Max or Ultra plan — sign up at [claude.ai](https://claude.ai/). [Getting a Claude Account](Getting%20a%20Claude%20Account.md) has more detail.
 - **GitHub** — optional, and not needed at all to get started. See [GitHub Account Setup](GitHub%20Account%20Setup.md) if you ever want one.
 
 ## Software You'll Install
 
-- **The Claude desktop app** — free; see [Installing Claude Code](Installing%20Claude%20Code.md).
+- **The Claude Desktop app** — free; see [Installing Claude Code](Installing%20Claude%20Code.md).
 - **Git** — free. You don't install it yourself: during setup your agent checks for it and, if it's missing, starts the install for you. On a Mac that means clicking **Install** in a dialog from Apple. See [Installing Git](Installing%20Git.md) for what you'll see.
 - **A Markdown editor** — Typora ($15 one-time, with a 15-day free trial), TextEdit (Mac) or Notepad (Windows) as a free fallback, or [MeetingWords](https://meetingwords.com/); if you already use Obsidian or VS Code, they're fine too. See [Viewing Your Files](Viewing%20Your%20Files.md).
 

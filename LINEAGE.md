@@ -23,7 +23,7 @@ credits:
   - 3.1's improvements to start-a-project and wrap-up-this-session (his pull requests), and several of the issues 3.1 answers, from Christopher Allen · read
 pull_from: https://github.com/peterkaminski-ai/pkai-benchmark   # read its CHANGES.md; take what you and your person judge good
 offered_at: stair 3 — "I'm ready to try a starter kit"
-needs: the Claude desktop app (its Code tab), a Claude Pro or Max account, a review surface for markdown
+needs: the Claude Desktop app (its Code tab), a Claude Pro, Max or Ultra account, a review surface for markdown
 changes: CHANGES.md                       # dated, written for an agent to read when it pulls
 thanks_to: https://peterkaminski.ai       # a practice, never a debt
 ```

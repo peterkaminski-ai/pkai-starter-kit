@@ -31,8 +31,8 @@ Together they are your **house**: the whole thing you build and live in. The two
 
 On Windows the two folders are `C:\Users\<you>\<AgentName> (agent)\` and `C:\Users\<you>\<your-name>-hq\`. Three rules hold the layout together:
 
-- **Side by side, never nested.** The agent home and the HQ are separate folders, and neither ever goes inside the other. A second agent is a sibling, `~/<Second> (agent)/`, never a folder inside the first; it can work in the same HQ. The desktop app labels each session by its folder, so agents in their own top-level folders are easy to tell apart.
-- **Out of cloud sync, always.** Git looks after both folders, and git and sync engines (iCloud, OneDrive, Dropbox, Google Drive) contend with each other. So neither folder goes in a cloud-synced place, and that's why both sit at the top of your home folder rather than in Documents or on the Desktop, which iCloud ("Desktop & Documents") and OneDrive often sync.
+- **Side by side, never nested.** The agent home and the HQ are separate folders, and neither ever goes inside the other. A second agent is a sibling, `~/<Second> (agent)/`, never a folder inside the first; it can work in the same HQ. The Desktop app labels each session by its folder, so agents in their own top-level folders are easy to tell apart.
+- **Out of cloud sync, always.** Git looks after both folders, and git and sync engines (iCloud, OneDrive, Dropbox, Google Drive) contend with each other. So neither folder goes in a cloud-synced place. The agent home sits at the top of your home folder; the HQ goes in Documents, unless Documents is synced — iCloud ("Desktop & Documents") and OneDrive often sync it — in which case it sits at the top of your home folder too.
 - **One repo each.** Each folder keeps its own private version history. If git isn't on your computer yet, your agent installs it and sets up the history when it arrives; you don't do anything.
 
 (Houses built from earlier kits keep their agents somewhere else — in a `My Agents` folder, or in `~/.agents` — and that's fine. Nothing about 4.0 asks them to move.)
@@ -43,7 +43,7 @@ This kit says **house**: the agent home and the HQ together, the whole thing you
 
 ## The daily geometry
 
-**You start in the agent home.** In the Claude desktop app's Code tab, your agent has one **environment**, set on its agent home and given your HQ as well. You pick that environment and start a session; your agent reads its persona and memory, and then it *walks around* to wherever the work is — your HQ, usually, but not only. One environment per agent, and one live session per agent at a time.
+**You start in the agent home.** In the Claude Desktop app's Code tab, your agent has one **environment**, set on its agent home and given your HQ as well. You pick that environment and start a session; your agent reads its persona and memory, and then it *walks around* to wherever the work is — your HQ, usually, but not only. One environment per agent, and one live session per agent at a time.
 
 (A Claude app *Project* is a different thing from a project folder in your HQ. When this kit says "project," it means a folder.)
 
@@ -74,7 +74,7 @@ A skill is a folder your agent can take on: one `SKILL.md` saying what it does a
 
 ## The stairs
 
-People come to this in steps, and the steps are the person's, not the software's: you watch someone else use an agent → you read about it → you try a starter kit, or buy an agent in a box → you run an agent on your own machine → you find it isn't going to hurt you, and you chat with it → and then you do real work with it. This kit is offered at the third step. The two questions the setup asks you (`START-HERE.md`) are about where you're starting from.
+People come to this in steps, and the steps are the person's, not the software's: you watch someone else use an agent → you read about it → you try a starter kit, or buy an agent in a box → you run an agent on your own machine → you find it isn't going to hurt you, and you chat with it → and then you do real work with it. This kit is offered at the third step.
 
 ## The growth path: a larger house
 

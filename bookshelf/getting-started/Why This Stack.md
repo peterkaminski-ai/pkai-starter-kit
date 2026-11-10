@@ -4,7 +4,7 @@ You're about to set up a small system of tools that work together. Here's what e
 
 ## Claude Code — Your AI Agent
 
-Claude Code is an AI tool made by Anthropic. You use it in the Claude desktop app's Code tab: you type to it, it types back, and it reads and writes ordinary files on your computer directly. This kit turns it into a persistent personal agent: a name, a memory that carries across sessions, and a home folder where it keeps its notes about you and your work.
+Claude Code is an AI tool made by Anthropic. You use it in the Claude Desktop app's Code tab: you type to it, it types back, and it reads and writes ordinary files on your computer directly. This kit turns it into a persistent personal agent: a name, a memory that carries across sessions, and a home folder where it keeps its notes about you and your work.
 
 The Code tab is where you talk to it. You type what you want, in plain English, and your agent does it. No commands to learn, and no terminal.
 
@@ -16,7 +16,7 @@ Everything your agent works with — its own memory, your notes, your projects �
 
 You can read Markdown files in any text editor, but a dedicated Markdown editor makes them pleasant to work in: headers look like headers, bold looks bold, lists look like lists, with no raw `##` or `**` cluttering the screen.
 
-[Typora](https://typora.io/) (recommended, a one-time $15 purchase), TextEdit or Notepad (free, already on your computer, though they show the Markdown as written), or [MeetingWords](https://meetingwords.com/) all do this well, shown side by side with the desktop app — the app for talking to your agent, the editor for looking at what it wrote. And if you already use Obsidian or VS Code, they're fine too — keep them.
+[Typora](https://typora.io/) (recommended, a one-time $15 purchase), TextEdit or Notepad (free, already on your computer, though they show the Markdown as written), or [MeetingWords](https://meetingwords.com/) all do this well, shown side by side with the Desktop app — the app for talking to your agent, the editor for looking at what it wrote. And if you already use Obsidian or VS Code, they're fine too — keep them.
 
 > [!tip]
 > See [Viewing Your Files](Viewing%20Your%20Files.md) for the full comparison and setup details.

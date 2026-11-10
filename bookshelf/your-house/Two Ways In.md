@@ -1,6 +1,6 @@
 # Two Ways In
 
-Setup asks you two questions before it builds anything. There are no wrong answers, and every answer can be changed later without rebuilding. But each one changes what gets built, so here is what they mean.
+Up to 4.0.0-rc.1, setup asked you two questions before it built anything: how much history you're bringing, and whether you'll mostly use a computer or a phone. From rc.3 on it doesn't ask; every house gets the skills for both, because the questions were hard to answer on day one and the skills cost nothing to have. This page still says what each path means for you, since how you'll actually use your agent shapes what's worth reading next.
 
 Earlier versions asked a third question first, *exploring or working?*, and only a *working* house got the skills for running more than one instance of your agent at once. Every house now has a desk and can have guests — start a second session in your agent's environment while one is going, and the second becomes a guest by itself — so every house gets those skills, and the question is gone. The v4 kit doesn't teach running background instances; [Foreground and Background](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/your-house/Foreground%20and%20Background.md), in the PKAI benchmark, is the fuller statement.
 
@@ -14,9 +14,9 @@ The point of asking isn't the size of the pile. It's that a house with a lot of 
 
 ## Mostly a computer, or mostly a phone?
 
-**Mostly a computer.** The default. You'll work in the Claude desktop app's Code tab with a review surface beside it, and you can always continue the same session from your phone: turn on Remote Control in the desktop app, and find the session in the Claude app on your phone. Quitting the desktop app turns Remote Control off.
+**Mostly a computer.** The default. You'll work in the Claude Desktop app's Code tab with a review surface beside it, and you can always continue the same session from your phone: turn on Remote Control in the Desktop app, and find the session in the Claude app on your phone. Quitting the Desktop app turns Remote Control off.
 
-**Mostly a phone.** Some people will reach their agent only through the Claude app on a phone. The agent still runs in the desktop app on a computer — yours, kept awake, or one that someone in your network runs for you — with Remote Control on, but the way it serves you has to change: short replies, nothing that says "open the file", one subject per session, and a warning about one button. Setup adds the `phone-path` and `send-for-review` skills and points at [The Phone Path](The%20Phone%20Path.md). Your first conversation with the agent should happen on the phone, not at the keyboard, so that it learns what you actually see.
+**Mostly a phone.** Some people will reach their agent only through the Claude app on a phone. The agent still runs in the Desktop app on a computer — yours, kept awake, or one that someone in your network runs for you — with Remote Control on, but the way it serves you has to change: short replies, nothing that says "open the file", one subject per session, and a warning about one button. Setup adds the `phone-path` and `send-for-review` skills and points at [The Phone Path](The%20Phone%20Path.md). Your first conversation with the agent should happen on the phone, not at the keyboard, so that it learns what you actually see.
 
 ## Changing your mind
 

@@ -8,7 +8,7 @@ The books were wikis in earlier versions of this kit (V1 and V2 called the shelf
 
 | Book | What it's for | Read it when |
 |---|---|---|
-| [`getting-started/`](getting-started/README.md) | Claude Code in the Claude desktop app — start with [First Day in Desktop](getting-started/First%20Day%20in%20Desktop.md) — a review surface for your files, and, for anyone curious, what git and GitHub do under the hood. | Before or during setup, and on your first day. |
+| [`getting-started/`](getting-started/README.md) | Claude Code in the Claude Desktop app — start with [First Day in Desktop](getting-started/First%20Day%20in%20Desktop.md) — a review surface for your files, and, for anyone curious, what git and GitHub do under the hood. | Before or during setup, and on your first day. |
 | [`git-guide/`](https://github.com/peterkaminski-ai/pkai-benchmark/blob/main/bookshelf/git-guide/README.md) (in the benchmark) | Version control without the jargon. Not on the kit's shelf: your agent handles git for you. | When you're curious what it's doing. |
 | [`project-management/`](project-management/README.md) | **Project management, and working with your principal.** The iteration loop, the wish, session rhythm, memory, logs, commits — how a person and an agent actually get work done. | First, once your house is built. |
 | [`your-house/`](your-house/README.md) | **A small house or a large one.** The stairs, the two ways in, the phone path, and what a house grows into as it gets larger. | When one agent isn't enough, or when your person is on a phone. |
@@ -17,7 +17,7 @@ The books were wikis in earlier versions of this kit (V1 and V2 called the shelf
 
 ## The kit's shelf is shorter
 
-This is the kit's shelf, the shorter one. The PKAI benchmark carries the fuller shelf; this one leaves out the git guide, the pages whose whole subject is the terminal, and *Foreground and Background*, because a v4 house is set up and used in the desktop app and your agent handles git for you. The kit's `SHAPING.md` lists exactly what's left out. Everything left out is in the PKAI benchmark, and the books link to it where it matters.
+This is the kit's shelf, the shorter one. The PKAI benchmark carries the fuller shelf; this one leaves out the git guide, the pages whose whole subject is the terminal, and *Foreground and Background*, because a v4 house is set up and used in the Desktop app and your agent handles git for you. The kit's `SHAPING.md` lists exactly what's left out. Everything left out is in the PKAI benchmark, and the books link to it where it matters.
 
 ## Books and their boxes
 

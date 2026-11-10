@@ -1,12 +1,12 @@
 # pkai-starter-kit
 
-A starter kit for building your own personal AI agent — a persistent, file-based agent you talk to in the Code tab of the Claude desktop app, that lives in a **house** on your own computer.
+A starter kit for building your own personal AI agent — a persistent, file-based agent you talk to in the Code tab of the Claude Desktop app, that lives in a **house** on your own computer.
 
 **Home page:** https://peterkaminski.ai/starter-kit
 
 This kit is a **reference library, not a house**. You don't move into it — you (and Claude, doing the heavy lifting) *read* it and build your own house from it: an **agent home** for your agent's persona and memory, and a **headquarters** for your projects and working files. The build takes one guided conversation.
 
-This is **V4.0**, and it is a **preview**: the first kit that sets up an agent entirely in the Claude desktop app, with no terminal, for **brand-new people**. If someone is walking you through it, go ahead; on your own, the steadier choice is to wait for 4.1 or later. **If you already have a house built from 3.x (or an earlier kit), stay put:** 4.0 is not an upgrade, and there's nothing to install. Keep your house and start using the desktop app with it.
+This is **V4.0**, and it is a **preview**: the first kit that sets up an agent entirely in the Claude Desktop app, with no terminal, for **brand-new people**. If someone is walking you through it, go ahead; on your own, the steadier choice is to wait for 4.1 or later. **If you already have a house built from 3.x (or an earlier kit), stay put:** 4.0 is not an upgrade, and there's nothing to install. Keep your house and start using the Desktop app with it.
 
 It is the *shaped* version of the **PKAI benchmark** — the fuller statement of what an agent could be — modified to be a better place to start. `LINEAGE.md` says where it came from and where the next version will be; `SHAPING.md` says what was left out and what was added. Everything in it is a standalone unit — a skill is one folder, a chapter is one file, a safety section is one block in a persona — so an improvement is one unit, offered and taken by pull, and never a reinstall. `CONTRIBUTING.md` says how to offer one.
 
@@ -14,9 +14,9 @@ It is the *shaped* version of the **PKAI benchmark** — the fuller statement of
 
 Don't start here — start with the home page, or go straight to **`START-HERE.md`**, the short instructions you'll drive. The shape of it:
 
-1. Check **`REQUIREMENTS.md`** — what you need before you begin (a Claude Pro or Max account, the Claude desktop app, a couple of basics).
-2. Open the desktop app's **Code** tab and make an empty **headquarters** folder in its folder picker.
-3. Paste in one kickoff message. Claude downloads this kit, reads it, asks you two questions about how you'll use your agent, and helps you build it — with you driving every step.
+1. Check **`REQUIREMENTS.md`** — what you need before you begin (a Claude Pro, Max or Ultra account, the Claude Desktop app, a couple of basics).
+2. Open the Desktop app's **Code** tab and make an empty **headquarters** folder in its folder picker.
+3. Paste in one kickoff message. Claude downloads this kit, reads it, asks your names and a temperament, and helps you build it — with you driving every step.
 
 ## If you're a Claude reading this
 
@@ -34,7 +34,7 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
 - **`skills/`** — self-contained skills your agent can take on, one folder each, each carrying its own lineage, licence and credits so it can travel alone. `skills/README.md` says which to install for which way of working.
 - **`template/`** — the folder skeletons the build instantiates: `agent-home/` and `hq/`.
 - **`bookshelf/`** — the small shelf of books that comes with your agent:
-  - `getting-started/` — your first day in the desktop app, reading your files, and the basics underneath
+  - `getting-started/` — your first day in the Desktop app, reading your files, and the basics underneath
   - `project-management/` — project management, and working with your principal
   - `your-house/` — a small house or a large one: the stairs, the two ways in, the phone path
   - `working-with-other-houses/` — cooperating with other agents: jams, pads, and what to think about when you're invited into a room

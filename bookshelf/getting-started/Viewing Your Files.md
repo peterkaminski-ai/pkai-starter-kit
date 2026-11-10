@@ -1,10 +1,10 @@
 # Viewing Your Files
 
-Your agent's whole world — memory, notes, projects, everything — lives in ordinary Markdown files on your computer. You'll want a comfortable way to read and edit those files alongside the desktop app. The app's Code tab for talking to your agent, a review surface for looking at what it wrote: that's the working setup this kit assumes.
+Your agent's whole world — memory, notes, projects, everything — lives in ordinary Markdown files on your computer. You'll want a comfortable way to read and edit those files alongside the Desktop app. The app's Code tab for talking to your agent, a review surface for looking at what it wrote: that's the working setup this kit assumes.
 
 ## The app's file pane
 
-The desktop app can show your files in a pane beside the conversation, so you can glance at what your agent wrote without leaving the app. It's handy for a quick look. It only shows folders you've granted to your agent's environment, so if a folder you expect is missing, grant it, or use "Show in Finder" to look at it outside the app (see [First Day in Desktop](First%20Day%20in%20Desktop.md)).
+The Desktop app can show your files in a pane beside the conversation, so you can glance at what your agent wrote without leaving the app. It's handy for a quick look. It only shows folders you've granted to your agent's environment, so if a folder you expect is missing, grant it, or use "Show in Finder" to look at it outside the app (see [First Day in Desktop](First%20Day%20in%20Desktop.md)).
 <!-- VERIFY(cold-start): what the file pane is called, how to open it, and whether it can edit a file or only show it -->
 
 For real reading and editing, a dedicated Markdown app is more comfortable. Three review surfaces are recommended. They do different jobs, and plenty of people end up with two of them open.
@@ -34,7 +34,7 @@ Keep them. Both read and write the same Markdown files, and if one is already yo
 
 ## A practical habit
 
-Put the desktop app and your review surface side by side on screen — two windows, one view. And remember you can ask your agent to open files for you directly. Try something like:
+Put the Desktop app and your review surface side by side on screen — two windows, one view. And remember you can ask your agent to open files for you directly. Try something like:
 
 ```
 open today's session log in Typora

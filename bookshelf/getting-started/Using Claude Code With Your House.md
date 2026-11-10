@@ -4,7 +4,7 @@ Your agent can do a lot more than git. It can read your files, help you write, o
 
 ## Where you talk to it
 
-You always work *through your agent*. In the desktop app's Code tab, start or continue a session in your agent's environment, on its agent home. From there your agent goes to the work: your HQ, a project folder, a repo somewhere else on your computer. Just tell it where.
+You always work *through your agent*. In the Desktop app's Code tab, start or continue a session in your agent's environment, on its agent home. From there your agent goes to the work: your HQ, a project folder, a repo somewhere else on your computer. Just tell it where.
 
 Don't start a session on a project folder or on your HQ to work there. A session started on any folder other than your agent home is plain Claude Code: it doesn't have your agent's charter, memory or skills, and doesn't know who you are. Start in your agent's environment and say "let's work in the garden project" instead.
 

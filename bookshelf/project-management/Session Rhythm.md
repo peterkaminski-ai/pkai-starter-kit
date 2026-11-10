@@ -82,7 +82,7 @@ Three kinds of breaks worth distinguishing:
 
 - **Quick `/clear`** — the most common. Topic shift, context cleanup, mid-day reset. The agent goes to sleep, wakes up. Memory persists.
 - **Auto-compact** — Claude Code's automatic summarization when the context window is about to hit the wall. Works, but the summary loses texture. Prefer manual `/clear` with a session log.
-- **Archive and start a new session** — archive this session in the desktop app and start a new one in your agent's environment. Same effect as `/clear` for memory purposes; useful when the session itself is acting up. Archive, don't delete.
+- **Archive and start a new session** — archive this session in the Desktop app and start a new one in your agent's environment. Same effect as `/clear` for memory purposes; useful when the session itself is acting up. Archive, don't delete.
 
 Don't be afraid of any of these. They're cheap.
 

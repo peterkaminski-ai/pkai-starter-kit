@@ -1,13 +1,13 @@
 # Monitoring from Your Phone
 
-Claude Code has a built-in feature that lets you check on a running session — and message it — from your phone. It's called **Remote Control**, and you turn it on in the Claude desktop app: for one session, or with a setting that starts every session with it on.
+Claude Code has a built-in feature that lets you check on a running session — and message it — from your phone. It's called **Remote Control**, and you turn it on in the Claude Desktop app: for one session, or with a setting that starts every session with it on.
 <!-- VERIFY(cold-start): the name and place of the Remote Control toggle, and of the setting that turns it on for every session -->
 
 This is what makes "walk away while Claude works on it" a real pattern instead of a wish.
 
 ## What it does
 
-You start a session in the desktop app on your laptop. At some point in the session — usually before you walk away — you turn Remote Control on, if it isn't on already. Then, from the Claude app on your phone, you find your computer's name and the session, and you can:
+You start a session in the Desktop app on your laptop. At some point in the session — usually before you walk away — you turn Remote Control on, if it isn't on already. Then, from the Claude app on your phone, you find your computer's name and the session, and you can:
 
 - See what Claude Code is doing right now.
 - Check the recent conversation.
@@ -18,8 +18,8 @@ It's not screen-sharing and it's not a clone. It's a thin remote interface to th
 
 ## What it requires
 
-- **Your computer has to be on, and awake.** Claude Code is running locally; the phone is just a window into it. Sleep your laptop and the session stops. The desktop app's Keep Computer Awake helps while your agent works; turn it off before you unplug and travel.
-- **The desktop app has to stay open.** Quitting the app turns Remote Control off.
+- **Your computer has to be on, and awake.** Claude Code is running locally; the phone is just a window into it. Sleep your laptop and the session stops. The Desktop app's Keep Computer Awake helps while your agent works; turn it off before you unplug and travel.
+- **The Desktop app has to stay open.** Quitting the app turns Remote Control off.
 - **A running session.** Remote Control attaches to a session; from the phone, look for your computer's name, not the app's big new-session button, which starts a session somewhere else entirely (see the `phone-path` skill).
 
 ## When to use it
@@ -58,7 +58,7 @@ The reason isn't that it doesn't work — it does. The reason is that Anthropic'
 
 If you're going to run Claude Code somewhere other than your laptop, the cleaner path is **a computer you control** — a spare laptop kept awake, or a small server — with your phone reaching it through Remote Control. That's the advanced version of this pattern, and the [Phone Path](../your-house/The%20Phone%20Path.md) page says more.
 
-For most people, "the desktop app on a laptop, monitored from a phone through Remote Control" is the right setup.
+For most people, "the Desktop app on a laptop, monitored from a phone through Remote Control" is the right setup.
 
 ## See also
 

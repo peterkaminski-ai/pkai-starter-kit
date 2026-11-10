@@ -17,12 +17,11 @@ The benchmark is at the `pull_from` address in `LINEAGE.md`. Same layout as the 
 
 | In the kit | Not in the benchmark, because |
 |---|---|
-| **`START-HERE.md`** and **`BUILD.md`** — the guided build, the two questions, the kickoff message | The benchmark isn't installed; it's read. It has no setup path, on purpose. |
+| **`START-HERE.md`** and **`BUILD.md`** — the guided build, the kickoff message | The benchmark isn't installed; it's read. It has no setup path, on purpose. |
 | **`WAIVER.md`**, as the first gate of setup | The benchmark asks nothing of anyone. |
 | **`personas/`** — three temperaments, ready to personalize | Shaped from `CHARTER.md`: each persona is the spine plus one voice, minus the larger-house sections other than rooms and their cards. |
 | **`template/`** — the folder skeletons the build instantiates | The benchmark describes the shape; the kit ships the empty folders. |
 | **`REQUIREMENTS.md`**, the getting-started book's install pages, and the *Moving from V2* note | Onboarding. The benchmark assumes a house exists. |
-| **The two questions** — history, computer/phone | The benchmark has no first day. |
 
 ## What is identical in both
 
@@ -30,7 +29,7 @@ The benchmark is at the `pull_from` address in `LINEAGE.md`. Same layout as the 
 
 ## In 4.0: what the kit's shelf leaves out
 
-4.0 sets up a house entirely in the Claude desktop app and never teaches a terminal. Three kinds of chapter come off the kit's shelf for it. The benchmark keeps every one of them, as the fuller statement.
+4.0 sets up a house entirely in the Claude Desktop app and never teaches a terminal. Three kinds of chapter come off the kit's shelf for it. The benchmark keeps every one of them, as the fuller statement.
 
 | On the benchmark's shelf | Not on the kit's shelf, because |
 |---|---|

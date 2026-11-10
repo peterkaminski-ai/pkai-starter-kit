@@ -1,15 +1,15 @@
 # First Day in Desktop
 
-Your house is built, and you'll meet your agent in the Claude desktop app. Here are the small things that trip people up in the first hour. Every one of them has happened to someone already, so if one happens to you, you're in good company.
+Your house is built, and you'll meet your agent in the Claude Desktop app. Here are the small things that trip people up in the first hour. Every one of them has happened to someone already, so if one happens to you, you're in good company.
 
 ## The Code tab, not Chat
 
-The desktop app has more than one tab, and the Code tab is small and easy to miss. Your agent lives in the Code tab. Anywhere else in the app you're talking to the Claude chatbot, which is useful, but it isn't your agent and doesn't know your house.
+The Desktop app has more than one tab, and the Code tab is small and easy to miss. Your agent lives in the Code tab. Anywhere else in the app you're talking to the Claude chatbot, which is useful, but it isn't your agent and doesn't know your house.
 
 ## Your agent's environment
 
 Your agent has one environment in the app, set up on its agent home (the folder named `<AgentName> (agent)` at the top of your home folder). Keep it selected when you start a session. Don't make extra environments for the same agent; one is all it needs.
-<!-- VERIFY(cold-start): the desktop app's word for an environment, and where you pick it when starting a session -->
+<!-- VERIFY(cold-start): the Desktop app's word for an environment, and where you pick it when starting a session -->
 
 ## Folder access
 
@@ -31,7 +31,7 @@ Archive sessions you're done with; don't delete them. Archiving keeps the histor
 
 ## Remote Control
 
-Remote Control lets you continue a session from the Claude app on your phone. It's a toggle in the desktop app, and quitting the app turns it off. There's a setting to start every session with Remote Control on, if you want your phone to always find your agent.
+Remote Control lets you continue a session from the Claude app on your phone. It's a toggle in the Desktop app, and quitting the app turns it off. There's a setting to start every session with Remote Control on, if you want your phone to always find your agent.
 <!-- VERIFY(cold-start): where the Remote Control toggle is, and the name of the setting that turns it on for every session -->
 
 ## Keep Computer Awake
@@ -55,7 +55,7 @@ You can rename a session and pin it, so your agent's main session is easy to fin
 ## Log retention
 
 The app keeps session history for 30 days by default. That's a setting, if you want it kept longer or shorter. Your agent's own record (its memory and session logs) lives in its agent home and isn't affected.
-<!-- VERIFY(cold-start): that the desktop app keeps session history for 30 days by default, and where that setting is -->
+<!-- VERIFY(cold-start): that the Desktop app keeps session history for 30 days by default, and where that setting is -->
 
 ## Connectors
 
@@ -63,7 +63,7 @@ The app may offer to connect your Google account or other accounts. Hold off unt
 
 ## The look
 
-If you came from using Claude Code in a terminal, the desktop app's look takes a few days to get used to. That's normal.
+If you came from using Claude Code in a terminal, the Desktop app's look takes a few days to get used to. That's normal.
 
 ## Claude app Projects are not your HQ's projects
 

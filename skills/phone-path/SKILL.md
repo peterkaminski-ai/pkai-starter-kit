@@ -11,8 +11,8 @@ Some people meet their agent through a phone and nothing else. It works — a ho
 ## What's actually running
 
 - **The agent runs on a computer** — a laptop with the lid down and something keeping it awake, or a small server. That computer can be the person's own, or one that someone they trust in their network runs for them; a spare laptop can host several people's houses, each with its own agent home and HQ, as long as everyone on it understands the others' agents could see their files. Nothing secret goes in a house on a shared machine.
-- **The phone reaches it through Remote Control.** Remote Control is turned on in the Claude desktop app on the computer — per session, or by a setting that starts every session with it on. Quitting the desktop app turns it off, so the app stays open. In the Claude app on the phone, the person finds *their computer's name*, then the agent's folder, and continues or starts a session there. The session lives on the computer; the phone is a window into it. It works from anywhere.
-<!-- VERIFY(cold-start): the name and place of the desktop app's Remote Control toggle, and of the setting that turns it on for every session -->
+- **The phone reaches it through Remote Control.** Remote Control is turned on in the Claude Desktop app on the computer — per session, or by a setting that starts every session with it on. Quitting the Desktop app turns it off, so the app stays open. In the Claude app on the phone, the person finds *their computer's name*, then the agent's folder, and continues or starts a session there. The session lives on the computer; the phone is a window into it. It works from anywhere.
+<!-- VERIFY(cold-start): the name and place of the Desktop app's Remote Control toggle, and of the setting that turns it on for every session -->
 - **One person, one account.** The service's terms say so, and a shared account shows everyone every session anyway.
 
 ## The button not to press
@@ -30,4 +30,4 @@ In the Claude app there is a large **New Session** button. It does **not** start
 
 ## Setting someone up on the phone path
 
-If you're the builder (see the kit's `BUILD.md`), the answers to "mostly a phone" mean: install this skill; install `save-a-memory`; have them turn on the desktop app's setting that starts every session with Remote Control on, keep the app open and the computer awake, and keep a session running so there is always one to find; write the person a three-line card — *find the computer's name; find your agent; don't press New Session* — and put it where they'll see it on the phone. Then have their first conversation with them there, not at the keyboard.
+If you're the builder (see the kit's `BUILD.md`), the answers to "mostly a phone" mean: install this skill; install `save-a-memory`; have them turn on the Desktop app's setting that starts every session with Remote Control on, keep the app open and the computer awake, and keep a session running so there is always one to find; write the person a three-line card — *find the computer's name; find your agent; don't press New Session* — and put it where they'll see it on the phone. Then have their first conversation with them there, not at the keyboard.

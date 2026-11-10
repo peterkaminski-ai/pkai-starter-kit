@@ -46,7 +46,7 @@ If you later add a second agent, it gets its own folder beside the first, like `
 
 Neither folder may be inside iCloud, OneDrive, Dropbox, or any other cloud-synced folder. Your agent keeps its own version history with git, and having two sync systems watching the same folder causes conflicts and data loss.
 
-That's why both folders go at the top of your home folder, not in Documents or on the Desktop: iCloud's "Desktop & Documents" and OneDrive often sync those. Setup checks this for you.
+So your agent's home goes at the top of your home folder, and your HQ goes in Documents unless Documents is synced (iCloud's "Desktop & Documents" and OneDrive's folder backup often sync it); then the HQ goes at the top of your home folder too. Setup checks this for you.
 
 > [!warning]
 > On many Windows machines, OneDrive syncs your Documents folder by default — which is exactly why the HQ goes at `C:\Users\YourName\yourname-hq\`, not under Documents.

@@ -9,11 +9,11 @@ A house is two folders: your **agent home** and your **HQ**. They sit side by si
 - **The agent home** is where your agent lives: its charter (`CLAUDE.md`), its memory, its session logs, its inbox and outbox, its skills and settings. It's named after your agent, with "(agent)" on the end, at the top of your home folder:
   - **Mac:** `~/Lain (agent)/`
   - **Windows:** `C:\Users\YourName\Lain (agent)\`
-- **The HQ** is where your projects and working files live. It's named after you, at the top of your home folder too, right beside the agent home:
-  - **Mac:** `~/yourname-hq/`
-  - **Windows:** `C:\Users\YourName\yourname-hq\`
+- **The HQ** is where your projects and working files live. It's named after you, and it goes in your Documents folder:
+  - **Mac:** `~/Documents/yourname-hq/`
+  - **Windows:** `C:\Users\YourName\Documents\yourname-hq\`
 
-Not in Documents or on the Desktop, which iCloud and OneDrive often sync. Neither folder is ever inside iCloud, OneDrive, Dropbox or any other cloud-synced folder, because git and cloud sync fighting over the same files causes conflicts and data loss.
+The exception is a synced Documents folder (iCloud's "Desktop & Documents" on a Mac, or OneDrive's folder backup on Windows): then the HQ goes at the top of your home folder, beside the agent home. Neither folder is ever inside iCloud, OneDrive, Dropbox or any other cloud-synced folder, because git and cloud sync fighting over the same files causes conflicts and data loss.
 
 A second agent, if you ever want one, gets its own agent home beside the first — `~/Wren (agent)/` — and shares the same HQ. Agents are never nested inside each other.
 

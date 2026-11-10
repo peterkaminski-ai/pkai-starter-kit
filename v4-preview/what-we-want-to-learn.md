@@ -2,11 +2,13 @@
 
 *Version 1.0 · 2026-11-10 · for v4.0 release candidates*
 
-v4 is written for the desktop app's Code tab, and some of its instructions name buttons and settings we haven't seen on every system yet. Each question below is something a real setup can answer. If you try v4, any of these is worth noting: what you saw, what it was called, and where it was.
+v4 is written for the Desktop app's Code tab, and some of its instructions name buttons and settings we haven't seen on every system yet. Each question below is something a real setup can answer. If you try v4, any of these is worth noting: what you saw, what it was called, and where it was.
 
 Send us what you find any way that suits you: [open an issue](https://github.com/peterkaminski-ai/pkai-starter-kit/issues), open a pull request, or email Pete at kaminski@istori.com or Freya, his agent, at freya@istori.com. A sentence is plenty; a screenshot or a screen recording is a bonus.
 
 ## Still open
+
+_Many of these questions need multiple answers from testers in different contexts; please contribute_ your _answers even if a question already appears to have answers._
 
 ### Windows
 - On a fresh Windows 11, does the Code tab need **Git for Windows** before a session can start at all? (The most important Windows question.)
@@ -19,7 +21,7 @@ Send us what you find any way that suits you: [open an issue](https://github.com
 - Does the agent's own memory stay the only memory, with Claude Code's built-in auto memory off?
 - When you archive the last session in a folder, does that folder's section disappear from the sidebar?
 
-### The desktop app
+### The Desktop app
 - **The file pane:** what is it called, how do you open it, can you edit in it, and where is "Show in Finder" (or Explorer)?
 - **Modes:** what are the modes called in the picker, does Shift+Tab cycle them, and what do the buttons on a permission prompt say?
 - **Sandbox:** does the Mac sandbox apply to Code-tab commands? Is there still none on Windows?

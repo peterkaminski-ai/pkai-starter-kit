@@ -43,6 +43,7 @@ The most useful report says where you got stuck or confused, roughly when, and w
 
 ## In this folder
 
+- [`ANNOUNCEMENT.md`](ANNOUNCEMENT.md): a short announcement to share.
 - [`what-we-want-to-learn.md`](what-we-want-to-learn.md): the open questions, and the ones runs have answered.
 - [`runs/`](runs/): one report per test run.
 - [`plans/`](plans/): the plan for each release candidate.

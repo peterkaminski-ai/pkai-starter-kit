@@ -13,7 +13,7 @@ Ideas for rc.3 or later are welcome: [open an issue](https://github.com/peterkam
 6. **A stable preview link.** A standing `v4-preview` pre-release will always hold the newest release candidate's zip.
 
 ## Changes
-- **START-HERE:** the HQ in Documents; where to download the app; first-launch notes for a new Mac; signing in to the desktop app; the new hand-over.
+- **START-HERE:** the HQ in Documents; where to download the app; first-launch notes for a new Mac; signing in to the Desktop app; the new hand-over.
 - **BUILD:** you can always type your own answer; ask again on a hedged waiver; drop the two skills questions; plain words for git and the small helper scripts; tell people Apple's window may be hidden behind the app and how to find it; Typora's cost stated plainly, TextEdit or Notepad as the fallback; names in the new order; the exact steps and labels for making the agent's environment, renaming and archiving a session; the one-way hand-over.
 - **The three personas:** a missing "git is installing" note is normal, and never stops the agent's first wake-up.
 - **REQUIREMENTS:** folders, per decision 1.

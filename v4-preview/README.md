@@ -2,7 +2,7 @@
 
 This folder is the public working page for **version 4** of the starter kit while it's in testing. It says where v4 stands, what we still want to learn, and what each test run found. It isn't part of the kit itself, and it's left out of the kit's release zips.
 
-**v4 in one line:** you build your agent entirely in the **Code tab of the Claude desktop app**, with no Terminal, and the agent does the rest of the install for you, including git.
+**v4 in one line:** you build your agent entirely in the **Code tab of the Claude Desktop app**, with no Terminal, and the agent does the rest of the install for you, including git.
 
 ## Where v4 stands
 
@@ -17,17 +17,17 @@ This folder is the public working page for **version 4** of the starter kit whil
 
 ## Roadmap
 
-**v4.x is mostly for new people.** It helps them get started in the desktop app instead of Terminal. If you already have an agent from v2 or v3, v4 is neither a required nor a recommended upgrade. Instead, I'd suggest starting to use the desktop app with your existing agent sometimes, then more and more, and helping us document it for v4.1.
+**v4.x is mostly for new people.** It helps them get started in the Desktop app instead of Terminal. If you already have an agent from v2 or v3, v4 is neither a required nor a recommended upgrade. Instead, I'd suggest starting to use the Desktop app with your existing agent sometimes, then more and more, and helping us document it for v4.1.
 
-- **v4.0 release candidates: out now** (rc.1 since November 9). They help a person set up an agent. They don't yet help much with the details of *using* the desktop app, which has new concepts and some fiddly UI.
-- **v4.1: planned for December.** Bug fixes and, more importantly, more documentation and help with using the desktop app. It'll draw on everybody's reports of how they're using it: tips and tricks, workarounds, gotchas.
+- **v4.0 release candidates: out now** (rc.1 since November 9). They help a person set up an agent. They don't yet help much with the details of *using* the Desktop app, which has new concepts and some fiddly UI.
+- **v4.1: planned for December.** Bug fixes and, more importantly, more documentation and help with using the Desktop app. It'll draw on everybody's reports of how they're using it: tips and tricks, workarounds, gotchas.
 - **v5: notional and unscheduled.** Bigger upgrades for your agent and your house, like a new way to manage agents and sessions running in parallel. I've started brainstorming it, and I think there'll be other good things in it too.
 
 — Pete
 
 ## Try it
 
-You need a Claude Pro or Max account and the Claude desktop app (claude.ai/download), on a Mac or Windows computer. A computer, or a user account, that has never had an agent set up gives the most useful test.
+You need a Claude Pro or Max account and the Claude Desktop app (claude.ai/download), on a Mac or Windows computer. A computer, or a user account, that has never had an agent set up gives the most useful test.
 
 Follow `START-HERE.md` from the release you download, and paste this kickoff into a new Code-tab session:
 
@@ -45,7 +45,7 @@ The most useful report says where you got stuck or confused, roughly when, and w
 
 - [`ANNOUNCEMENT.md`](ANNOUNCEMENT.md): a short announcement to share.
 - [`what-we-want-to-learn.md`](what-we-want-to-learn.md): the open questions, and the ones runs have answered.
-- [`desktop-tips.md`](desktop-tips.md): tips, workarounds and gotchas for the Claude desktop app, collecting for v4.1.
+- [`desktop-tips.md`](desktop-tips.md): tips, workarounds and gotchas for the Claude Desktop app, collecting for v4.1.
 - [`runs/`](runs/): one report per test run.
 - [`plans/`](plans/): the plan for each release candidate.
 

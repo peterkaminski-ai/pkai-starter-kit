@@ -18,8 +18,13 @@ here=$(dirname "$0")
 payload=$(cat 2>/dev/null)
 
 # Day and hour without leading zeros, without %-d and %-I, which POSIX date lacks.
-stamp=$(date "+%A, %B %d, %Y — %I:%M %p %Z" 2>/dev/null |
+zone=$(date "+%Z" 2>/dev/null)
+offset=$(date "+%z" 2>/dev/null)
+# Git Bash on Windows can name any zone "UTC" while keeping the offset right.
+[ "$zone" = "UTC" ] && [ -n "$offset" ] && [ "$offset" != "+0000" ] && zone="UTC$offset"
+stamp=$(date "+%A, %B %d, %Y — %I:%M %p" 2>/dev/null |
   sed 's/ 0\([0-9]\),/ \1,/; s/— 0\([0-9]\):/— \1:/')
+[ -n "$stamp" ] && stamp="$stamp $zone"
 utc=$(date -u "+%Y-%m-%dT%H:%MZ" 2>/dev/null)
 
 text=""

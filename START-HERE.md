@@ -18,8 +18,7 @@ Download it from **claude.ai/download**, install it, and sign in. If it's alread
 - **The Desktop app asks you to sign in on its own,** even if you're signed in on the web. If you're using two computers and a sign-in code screen won't go away, **Sign in here instead** clears it.
 - **On a brand-new Mac,** Spotlight and the Apps view can be empty for a while; open Finder → Applications (Shift-Command-A) and double-click Claude. The first time, macOS asks whether to open an app downloaded from the internet: click **Open**.
 
-**On Windows:** if the Code tab says it needs Git for Windows before it will start, install it from https://git-scm.com/downloads/win (the default choices are fine), then come back.
-<!-- VERIFY(cold-start): whether the Desktop app's Code tab on a fresh Windows 11 needs Git for Windows before a session can start -->
+**On Windows:** in testing, the Code tab started without Git for Windows, and Claude installs it for you during setup. Only if the app itself says it needs it, install it from https://git-scm.com/downloads/win (the default choices are fine), then come back.
 
 ## Step 2 — Open the Code tab
 
@@ -55,7 +54,7 @@ Claude takes it from there, one step at a time, and you say yes, no, or "wait, e
 4. **A persona.** Claude introduces the three personas in `personas/` — different temperaments for your agent — and recommends Chief of Staff, with a Companion's warmth. Pick one, blend them, or describe your own.
 5. **The build.** Claude creates the **agent home** — a folder named `<AgentName> (agent)` at the top of your home folder — with the persona, a memory system, session logs, and its skills, all plain text you can read anytime: markdown, plus a few small helpers. Your HQ gets its skeleton too. Both folders get private version history, quietly, as soon as git is there.
 6. **Orientation.** Claude introduces the bookshelf (in `bookshelf/`), how the two folders make a house, and *First Day in Desktop*, the short page of things worth knowing in your first hour.
-7. **The hand-over.** The setup session is Claude doing the building, not your agent. Claude helps you make your agent's **environment** in the Desktop app, on its agent home, with your HQ too. Then you start a **new session** in your agent's environment and say hi — the app asks once more whether you trust the folder; that's your agent's home, and yes is the answer. Once your agent has answered, come back to the setup session one last time and **archive** it (archive, don't delete).
+7. **The hand-over.** The setup session is Claude doing the building, not your agent. Claude helps you make your agent's **environment** in the Desktop app, on its agent home, with your HQ too. On Windows, if git was installed during setup, Claude will ask you to quit and reopen the app first. Then you start a **new session** in your agent's environment and say hi — the app asks once more whether you trust the folder; that's your agent's home, and yes is the answer. Once your agent has answered, come back to the setup session one last time and **archive** it (archive, don't delete).
 
 ## Afterward — daily life
 

@@ -37,7 +37,7 @@ When rc.3 is out we plan to add a **preview link that doesn't change** from one 
 
 ## Tell us what happened
 
-The most useful report says where you got stuck or confused, roughly when, and what you expected instead. If you can record your screen while you set up, even better. [Open an issue](https://github.com/peterkaminski-ai/pkai-starter-kit/issues), open a pull request, or email Pete at kaminski@istori.com or Freya, his agent, at freya@istori.com.
+The most useful report says where you got stuck or confused, roughly when, and what you expected instead. If you can record your screen while you set up, even better. [Open an issue](https://github.com/peterkaminski-ai/pkai-starter-kit/issues), open a pull request, or email Pete at kaminski@istori.com or Freya, his agent, at freya@istori.com. Issues have a **v4 test report** template that asks the useful questions for you.
 
 [`what-we-want-to-learn.md`](what-we-want-to-learn.md) lists the questions we most want answered, if you'd like something to look for.
 
@@ -45,6 +45,7 @@ The most useful report says where you got stuck or confused, roughly when, and w
 
 - [`ANNOUNCEMENT.md`](ANNOUNCEMENT.md): a short announcement to share.
 - [`what-we-want-to-learn.md`](what-we-want-to-learn.md): the open questions, and the ones runs have answered.
+- [`desktop-tips.md`](desktop-tips.md): tips, workarounds and gotchas for the Claude desktop app, collecting for v4.1.
 - [`runs/`](runs/): one report per test run.
 - [`plans/`](plans/): the plan for each release candidate.
 

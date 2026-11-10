@@ -15,6 +15,16 @@ This folder is the public working page for **version 4** of the starter kit whil
 - **Tested so far:** one cold start on a Mac ([run 1](runs/run-1-2026-11-10-mac.md)).
 - **Not tested yet:** Windows, using your agent from your phone, and the first day after setup.
 
+## Roadmap
+
+**v4.x is mostly for new people.** It helps them get started in the desktop app instead of Terminal. If you already have an agent from v2 or v3, v4 is neither a required nor a recommended upgrade. Instead, I'd suggest starting to use the desktop app with your existing agent sometimes, then more and more, and helping us document it for v4.1.
+
+- **v4.0 release candidates: out now** (rc.1 since November 9). They help a person set up an agent. They don't yet help much with the details of *using* the desktop app, which has new concepts and some fiddly UI.
+- **v4.1: planned for December.** Bug fixes and, more importantly, more documentation and help with using the desktop app. It'll draw on everybody's reports of how they're using it: tips and tricks, workarounds, gotchas.
+- **v5: notional and unscheduled.** Bigger upgrades for your agent and your house, like a new way to manage agents and sessions running in parallel. I've started brainstorming it, and I think there'll be other good things in it too.
+
+— Pete
+
 ## Try it
 
 You need a Claude Pro or Max account and the Claude desktop app (claude.ai/download), on a Mac or Windows computer. A computer, or a user account, that has never had an agent set up gives the most useful test.

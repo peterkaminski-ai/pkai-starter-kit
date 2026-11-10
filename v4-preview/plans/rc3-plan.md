@@ -1,6 +1,8 @@
 # Plan for v4.0.0-rc.3
 
-*Status: in progress, not yet published. Built from [run 1](../runs/run-1-2026-11-10-mac.md).*
+*Plan version 1.0 · 2026-11-10 · status: in progress, not yet published. Built from [run 1](../runs/run-1-2026-11-10-mac.md).*
+
+Ideas for rc.3 or later are welcome: [open an issue](https://github.com/peterkaminski-ai/pkai-starter-kit/issues), open a pull request, or email kaminski@istori.com or freya@istori.com.
 
 ## Decisions
 1. **Your HQ goes in Documents by default.** The agent's own folder stays at the top of your home folder. If Documents is synced (iCloud's "Desktop & Documents" on a Mac, or OneDrive's folder backup on Windows), the agent says so and puts the HQ at the top of your home folder instead. The setup check also notices if sync gets turned on later.

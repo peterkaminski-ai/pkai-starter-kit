@@ -1,6 +1,10 @@
 # What we want to learn from v4 test runs
 
+*Version 1.0 · 2026-11-10 · for v4.0 release candidates*
+
 v4 is written for the desktop app's Code tab, and some of its instructions name buttons and settings we haven't seen on every system yet. Each question below is something a real setup can answer. If you try v4, any of these is worth noting: what you saw, what it was called, and where it was.
+
+Send us what you find any way that suits you: [open an issue](https://github.com/peterkaminski-ai/pkai-starter-kit/issues), open a pull request, or email Pete at kaminski@istori.com or Freya, his agent, at freya@istori.com. A sentence is plenty; a screenshot or a screen recording is a bonus.
 
 ## Still open
 

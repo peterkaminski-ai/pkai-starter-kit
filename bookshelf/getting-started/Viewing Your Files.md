@@ -13,9 +13,9 @@ What makes it right for this: Typora shows Markdown as formatted text **while yo
 > [!tip]
 > Cmd-S (Mac) or Ctrl-S (Windows) saves your file. A small dot or asterisk next to the filename in the title bar means you have unsaved changes — save before closing.
 
-## MarkText (free)
+## TextEdit or Notepad (free, already on your computer)
 
-If you'd rather not pay, [MarkText](https://www.marktext.app/) is a free, open-source app in the same live-preview style — no split view, formatted text as you type. It's a bit rougher around the edges than Typora, but it's a solid free option.
+If you'd rather not pay after Typora's trial, or just want to start right now, the plain-text editor that came with your computer works: **TextEdit** on a Mac, **Notepad** on Windows. You'll see the Markdown as written — the `##` and `**` show — but it's the same file, and everything still works. (On a Mac, if TextEdit shows a blank formatted page instead, use Format → Make Plain Text.)
 
 ## MeetingWords (shared)
 

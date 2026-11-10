@@ -21,7 +21,7 @@ Start at the top and work through the core path in order. Most people can get se
 3. [Getting a Claude Account](Getting%20a%20Claude%20Account.md) — Sign up for a Claude plan
 4. [Installing Claude Code](Installing%20Claude%20Code.md) — Install and authenticate (terminal version)
 5. [Choosing Your Terminal](Choosing%20Your%20Terminal.md) — Which terminal app, and how to make it readable
-6. [Viewing Your Files](Viewing%20Your%20Files.md) — Typora, MarkText, and friends
+6. [Viewing Your Files](Viewing%20Your%20Files.md) — Typora, TextEdit or Notepad, and friends
 7. [Permissions Questions](Permissions%20Questions.md) — What Claude Code asks, and how to answer
 8. [Basic Markdown](Basic%20Markdown.md) — Headers, links, lists — enough to get going
 

@@ -39,8 +39,8 @@ You'll work with your agent through two surfaces: a **chat surface** (where you 
 
 ### Review surfaces
 
-- **Typora** — https://typora.io — our current favorite. Inexpensive, one-time purchase.
-- **MarkText** — https://marktext.me — free and open source, same live-preview style.
+- **Typora** — https://typora.io — our current favorite. Start with its 15-day free trial; after that, a one-time purchase (about $15).
+- **TextEdit** (Mac) or **Notepad** (Windows) — already on your computer, free. They show the Markdown as written rather than formatted, but they work, and they're a fine fallback after Typora's trial.
 - **MeetingWords** — https://meetingwords.com — a shared pad made for people and agents working on the same document; also the surface for working with other houses. *(Disclosure: Pete Kaminski runs MeetingWords. Recommending it isn't intended as self-dealing; it's the current best understanding of what works. V3 uses the hosted service at meetingwords.com; self-hosting and an app version are planned for a later release.)*
 - **If you already use Obsidian or VS Code**, they're fine — keep them. The kit no longer teaches Obsidian, which is not the same as forbidding it.
 

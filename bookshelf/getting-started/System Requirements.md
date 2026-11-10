@@ -20,7 +20,7 @@ Here's what you need before starting the setup process.
 
 - **Claude Code** — free; install instructions at [code.claude.com](https://code.claude.com/)
 - **Git** — free; Mac gets this through Xcode Command Line Tools, Windows through Git for Windows (your agent will point you to [Installing Git](Installing%20Git.md) if your machine needs it)
-- **A Markdown editor** — Typora ($15 one-time), MarkText (free), or [MeetingWords](https://meetingwords.com/); if you already use Obsidian or VS Code, they're fine too. See [Viewing Your Files](Viewing%20Your%20Files.md).
+- **A Markdown editor** — Typora ($15 one-time, with a 15-day free trial), TextEdit (Mac) or Notepad (Windows) as a free fallback, or [MeetingWords](https://meetingwords.com/); if you already use Obsidian or VS Code, they're fine too. See [Viewing Your Files](Viewing%20Your%20Files.md).
 
 ## Internet Connection
 

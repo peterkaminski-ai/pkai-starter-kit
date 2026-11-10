@@ -10,7 +10,7 @@ Work in documents, not chat. A draft that scrolls past in the terminal isn't rev
 
 ## Which surface
 
-Ask once, then remember (`save-a-memory`): what does the person read markdown in? On a computer: Typora, MarkText, Obsidian, VS Code, whatever they already use. On a phone: a shared pad — MeetingWords or its like — because a phone can't open a file on the computer. The kit's *Viewing Your Files* chapter is the list if they have nothing yet.
+Ask once, then remember (`save-a-memory`): what does the person read markdown in? On a computer: Typora, TextEdit or Notepad, Obsidian, VS Code, whatever they already use. On a phone: a shared pad — MeetingWords or its like — because a phone can't open a file on the computer. The kit's *Viewing Your Files* chapter is the list if they have nothing yet.
 
 ## Steps
 

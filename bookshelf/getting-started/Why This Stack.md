@@ -16,7 +16,7 @@ Everything your agent works with — its own memory, your notes, your projects �
 
 You can read Markdown files in any text editor, but a dedicated Markdown editor makes them pleasant to work in: headers look like headers, bold looks bold, lists look like lists, with no raw `##` or `**` cluttering the screen.
 
-[Typora](https://typora.io/) (recommended, a one-time $15 purchase), [MarkText](https://www.marktext.app/) (free), or [MeetingWords](https://meetingwords.com/) all do this well, shown side by side with your terminal — terminal for talking to your agent, editor for looking at what it wrote. And if you already use Obsidian or VS Code, they're fine too — keep them.
+[Typora](https://typora.io/) (recommended, a one-time $15 purchase), TextEdit or Notepad (free, already on your computer, though they show the Markdown as written), or [MeetingWords](https://meetingwords.com/) all do this well, shown side by side with your terminal — terminal for talking to your agent, editor for looking at what it wrote. And if you already use Obsidian or VS Code, they're fine too — keep them.
 
 > [!tip]
 > See [Viewing Your Files](Viewing%20Your%20Files.md) for the full comparison and setup details.

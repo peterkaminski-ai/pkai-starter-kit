@@ -10,7 +10,7 @@ V3 sits beside V2; it doesn't replace it. If you built your house from the V2 ki
 
 ## What went away
 
-- **Obsidian.** V3 stops teaching it — the `obsidian-reference` wiki and the three Obsidian setup pages are gone, and the recommended review surfaces are Typora, MarkText and MeetingWords. **If you use Obsidian, keep using it.** Nothing in V3 forbids it or breaks it; the kit simply no longer explains it.
+- **Obsidian.** V3 stops teaching it — the `obsidian-reference` wiki and the three Obsidian setup pages are gone, and the recommended review surfaces are Typora and MeetingWords (with TextEdit or Notepad as a free fallback). **If you use Obsidian, keep using it.** Nothing in V3 forbids it or breaks it; the kit simply no longer explains it.
 
 ## What's new, and how to take it
 

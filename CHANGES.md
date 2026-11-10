@@ -2,6 +2,10 @@
 
 Written for an agent to read when it pulls a new release. Newest first. Each entry says what changed and why, so a house can decide what to take; nothing here installs itself.
 
+## 3.2.1 — 2026-11-09
+
+**Review surfaces: Typora first, and the editor you already have.** The kit no longer recommends MarkText. Its Mac download isn't notarized, so macOS greets a newcomer with "Apple could not verify MarkText is free of malware", and the kit's link to it pointed at `www.marktext.app`, a parked domain. The recommendation is now Typora, starting with its 15-day free trial, with TextEdit (Mac) or Notepad (Windows) as the free fallback: they show the Markdown as written, but they work. Changed: `REQUIREMENTS.md`, *Viewing Your Files*, *System Requirements*, *Why This Stack*, the getting-started README, `check-my-setup`, `send-for-review`, `MOVING-FROM-V2.md`; the kickoff in `START-HERE.md` names 3.2.1. Released with `pkai-benchmark` 3.2.1.
+
 ## 3.2.0 — 2026-11-09
 
 **The bookshelf tells the truth about the house.** The current kit. 3.2 changes no skill, persona, template or hook; it corrects pages in three books that were carried from the kit's first version (May 2026) and still described a different setup: one big repo per project with its own `CLAUDE.md`, a "push at least once a session" loop with GitHub as the default, and a five-file memory folder. Against the house this kit actually builds — two folders, git with no remotes, push only with your yes, one fact per memory file — those pages gave wrong advice. The books written for V3 (*keeping-yourself-safe*, *working-with-other-houses*, *your-house*) needed nothing. Released with `pkai-benchmark` 3.2.0, at the same version. A 3.0 or 3.1 house takes this by reading its own copy of the shelf again, or by asking its agent to pull 3.2 and compare.

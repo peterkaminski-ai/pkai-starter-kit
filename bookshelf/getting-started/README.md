@@ -24,7 +24,7 @@ If your house is already built, start with **First Day in Desktop**. If you're s
 3. [Getting a Claude Account](Getting%20a%20Claude%20Account.md) — Sign up for a Claude plan
 4. [Installing Claude Code](Installing%20Claude%20Code.md) — Install the Claude desktop app and find its Code tab
 5. [Permissions Questions](Permissions%20Questions.md) — What the app asks before your agent acts, and how to answer
-6. [Viewing Your Files](Viewing%20Your%20Files.md) — The app's file pane, Typora, MarkText, and friends
+6. [Viewing Your Files](Viewing%20Your%20Files.md) — The app's file pane, Typora, TextEdit or Notepad, and friends
 7. [Basic Markdown](Basic%20Markdown.md) — Headers, links, lists — enough to get going
 
 ### Optional: Output styles

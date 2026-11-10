@@ -19,7 +19,7 @@ Here's what you need before starting the setup process.
 
 - **The Claude desktop app** — free; see [Installing Claude Code](Installing%20Claude%20Code.md).
 - **Git** — free. You don't install it yourself: during setup your agent checks for it and, if it's missing, starts the install for you. On a Mac that means clicking **Install** in a dialog from Apple. See [Installing Git](Installing%20Git.md) for what you'll see.
-- **A Markdown editor** — Typora ($15 one-time), MarkText (free), or [MeetingWords](https://meetingwords.com/); if you already use Obsidian or VS Code, they're fine too. See [Viewing Your Files](Viewing%20Your%20Files.md).
+- **A Markdown editor** — Typora ($15 one-time, with a 15-day free trial), TextEdit (Mac) or Notepad (Windows) as a free fallback, or [MeetingWords](https://meetingwords.com/); if you already use Obsidian or VS Code, they're fine too. See [Viewing Your Files](Viewing%20Your%20Files.md).
 
 ## Internet Connection
 

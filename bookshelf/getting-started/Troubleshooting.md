@@ -18,7 +18,7 @@ Another session for the same agent is still open. That's fine: the guest works n
 
 ### I can't see a folder in the app's file pane
 
-Your agent can sometimes read a folder before the file pane shows it. Grant the folder to your agent's environment, or use "Show in Finder" to look at it outside the app.
+The file pane only shows your agent's environment folder, its agent home. To look at anything else, including your HQ, use "Show in Finder" (on Windows, open the folder in File Explorer).
 
 ### My phone can't find my agent
 

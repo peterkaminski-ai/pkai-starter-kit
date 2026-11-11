@@ -19,7 +19,7 @@ A second agent, if you ever want one, gets its own agent home beside the first â
 
 ## Your agent's environment
 
-In the Claude Desktop app, your agent has one environment, set up on its agent home. That's where every session with your agent starts. Your agent also works in the HQ, so that folder is granted to the environment too. Your agent brings itself along when it works there; the HQ is a place, not an agent.
+In the Claude Desktop app, your agent has one environment, set up on its agent home. That's where every session with your agent starts. Your agent also works in the HQ; the environment holds only the agent home, and the app asks your permission the first time it works there. Your agent brings itself along when it works there; the HQ is a place, not an agent.
 
 ## Git: two repositories, no remote
 

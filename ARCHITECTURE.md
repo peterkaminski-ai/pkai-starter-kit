@@ -43,7 +43,7 @@ This kit says **house**: the agent home and the HQ together, the whole thing you
 
 ## The daily geometry
 
-**You start in the agent home.** In the Claude Desktop app's Code tab, your agent has one **environment**, set on its agent home and given your HQ as well. You pick that environment and start a session; your agent reads its persona and memory, and then it *walks around* to wherever the work is — your HQ, usually, but not only. One environment per agent, and one live session per agent at a time.
+**You start in the agent home.** In the Claude Desktop app's Code tab, your agent has one **environment**, set on its agent home and nothing else. You pick that environment and start a session; your agent reads its persona and memory, and then it *walks around* to wherever the work is — your HQ, usually, but not only. One environment per agent, and one live session per agent at a time.
 
 (A Claude app *Project* is a different thing from a project folder in your HQ. When this kit says "project," it means a folder.)
 

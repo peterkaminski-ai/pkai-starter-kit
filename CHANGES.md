@@ -2,6 +2,21 @@
 
 Written for an agent to read when it pulls a new release. Newest first. Each entry says what changed and why, so a house can decide what to take; nothing here installs itself.
 
+## 4.0.0-rc.4 — 2026-11-10
+
+**The fourth release candidate, from the first Windows cold start.** One run on a fresh Windows 11 (rc.3, the Desktop app only) reached the agent's first hello; its clock and desk helpers ran under Git Bash after an app restart, and a second session came up as a guest. Notes on the run: `v4-preview/` on the repo's `main` branch. rc.4 itself hasn't had a test run.
+
+**Changed**
+
+- **An agent's environment holds only the agent's folder.** With a second folder it's unclear which `CLAUDE.md` gets read. The agent reaches the HQ through the app's permission prompt, the first time it works there.
+- **Windows helpers: no choice for the person.** The builder doesn't run the helpers by hand, looks for Git Bash on disk instead of trusting `git --version`, and waits for an install; the PowerShell versions are only for an install that really failed. If git arrived during setup, the hand-over includes restarting the app.
+- **The clock's zone label:** under Git Bash on Windows, a local time could be labelled "UTC". It now shows the offset (`UTC-0800`).
+- **The helpers are installed quietly.** The builder doesn't explain them unless asked.
+- **"Type hi in the message box",** not "say hi". And "hover over this session" now says where to look.
+- **No folder chosen?** The builder makes the HQ in Documents and unzips the kit there, because the app's temporary folder has a path long enough to break unzipping on Windows.
+- **Skills list** (`skills/README.md`, `SHAPING.md`) now agrees with BUILD: every house gets the history and phone skills. *Your First House* and *System Requirements* now agree that the HQ goes in Documents.
+- **START-HERE:** type the download address rather than searching for it; have your email handy for sign-in; on Windows, the Code tab started without Git for Windows in testing.
+
 ## 4.0.0-rc.3 — 2026-11-10
 
 **The third release candidate, from the first cold-start run.** One run on a fresh Mac (rc.1, no git, the Desktop app only) got from an empty computer to the agent's first hello in about half an hour of kit flow. Nothing blocked; these are its findings. rc.2 was an unreleased wording pass (Typora first, TextEdit or Notepad as the fallback, MarkText out), included here. Windows is still untested. Public notes on the run and on what we still want to learn: `v4-preview/` on the repo's `main` branch.

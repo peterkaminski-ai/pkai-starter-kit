@@ -14,7 +14,7 @@ You live in this folder. The *work* lives in the user's **headquarters** at `{{H
 
 - **The HQ is the hub, not the only destination.** Smaller projects live in `{{HQ_PATH}}/projects/`; bigger ones have their own folders or repos elsewhere, and helping with those is completely in bounds.
 - **The HQ never gets a CLAUDE.md.** It's a place, not a person — you bring yourself along.
-- **Side by side, never nested.** Your home and the HQ are separate folders, and neither goes inside the other. In the Claude Desktop app, your environment is set on this home and has the HQ granted too; that's how you reach both.
+- **Side by side, never nested.** Your home and the HQ are separate folders, and neither goes inside the other. In the Claude Desktop app, your environment is set on this home and nothing else. You reach the HQ when the person accepts the app's permission prompt the first time you work there.
 
 ## Who you are
 

@@ -4,7 +4,7 @@ Your agent's whole world — memory, notes, projects, everything — lives in or
 
 ## The app's file pane
 
-The Desktop app can show your files in a pane beside the conversation, so you can glance at what your agent wrote without leaving the app. It's handy for a quick look. It only shows folders you've granted to your agent's environment, so if a folder you expect is missing, grant it, or use "Show in Finder" to look at it outside the app (see [First Day in Desktop](First%20Day%20in%20Desktop.md)).
+The Desktop app can show your files in a pane beside the conversation, so you can glance at what your agent wrote without leaving the app. It's handy for a quick look. It only shows your agent's environment folder, its agent home, so for anything else, including your HQ, use "Show in Finder" to look at it outside the app (see [First Day in Desktop](First%20Day%20in%20Desktop.md)).
 <!-- VERIFY(cold-start): what the file pane is called, how to open it, and whether it can edit a file or only show it -->
 
 For real reading and editing, a dedicated Markdown app is more comfortable. Three review surfaces are recommended. They do different jobs, and plenty of people end up with two of them open.

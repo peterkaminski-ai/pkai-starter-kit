@@ -13,8 +13,8 @@ Your agent has one environment in the app, set up on its agent home (the folder 
 
 ## Folder access
 
-Your agent works in two folders: its agent home and your HQ. Your agent can sometimes read a folder before the app's file pane shows it to you. If you can't see a folder there, grant that folder to your agent's environment, or use "Show in Finder" to look at it outside the app.
-<!-- VERIFY(cold-start): the exact label for granting a second folder; where "Show in Finder" appears, and its Windows wording -->
+Your agent works in two folders: its agent home and your HQ. Its environment holds only the agent home, so that it's always clear which instructions it reads. The first time it works in your HQ, the app asks your permission; yes is the answer. The app's file pane only shows the environment's folder, so to look at your HQ, use "Show in Finder" (on Windows, open the folder in File Explorer).
+<!-- VERIFY(cold-start): where "Show in Finder" appears, and its Windows wording -->
 
 ## One live session per agent
 

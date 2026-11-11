@@ -1,6 +1,6 @@
 # What we want to learn from v4 test runs
 
-*Version 1.0 · 2026-11-10 · for v4.0 release candidates*
+*Version 1.1 · 2026-11-10 · for v4.0 release candidates*
 
 v4 is written for the Desktop app's Code tab, and some of its instructions name buttons and settings we haven't seen on every system yet. Each question below is something a real setup can answer. If you try v4, any of these is worth noting: what you saw, what it was called, and where it was.
 
@@ -11,15 +11,14 @@ Send us what you find any way that suits you: [open an issue](https://github.com
 _Many of these questions need multiple answers from testers in different contexts; please contribute_ your _answers even if a question already appears to have answers._
 
 ### Windows
-- On a fresh Windows 11, does the Code tab need **Git for Windows** before a session can start at all? (The most important Windows question.)
-- Is **winget** there on a fresh Windows 11? What do you see while the agent installs git with it, and what happens if winget is missing?
+- What do you see while the agent installs git with **winget**, and what happens if winget is missing?
+- Does an Intel or AMD (x86-64) Windows machine behave the same as the ARM64 one we tested?
+- What are the Windows labels for the app's version and update check?
 - If your Documents folder is backed up to **OneDrive** (often on by default), does the agent notice and put your HQ somewhere else?
 
 ### The house after setup
-- Does the clock line (the date and time the agent sees) appear on every turn?
-- If you open a second session while the first is running, does the second one say it's a guest?
 - Does the agent's own memory stay the only memory, with Claude Code's built-in auto memory off?
-- When you archive the last session in a folder, does that folder's section disappear from the sidebar?
+- After installing git on Windows, is restarting the app enough, or does it take restarting the computer?
 
 ### The Desktop app
 - **The file pane:** what is it called, how do you open it, can you edit in it, and where is "Show in Finder" (or Explorer)?
@@ -42,5 +41,11 @@ From [run 1](runs/run-1-2026-11-10-mac.md), on a Mac:
 - **Folder trust:** the prompt shows the folder and "Execution allowed by .claude/settings.json", with a **Trust workspace** button. It appears again for the agent's own folder.
 - **Git on a Mac:** a Code-tab session can start Apple's developer-tools install, and Apple's window does appear, but it can open *behind* other windows. Clicking the blue installer icon in the Dock brings it forward. The install took about three minutes, though its time estimate jumped around.
 - **After git arrives:** the agent sets up version history in both folders and makes a first save, using a placeholder name and email if you like.
-- **Making the agent's environment:** New → Choose Environment → + New Environment → Local, then name it, add the agent's folder (and the HQ), and Create environment. The form may open already filled in with the setup session's temporary environment. That's expected; rename it.
+- **Making the agent's environment:** New → Choose Environment → + New Environment → Local, then name it, use only the agent's folder, and Create environment. The form may open already filled in with the setup session's temporary environment. That's expected; rename it.
 - **Permission mode:** a new house starts in **Auto** mode; the app says so in a banner.
+
+From [run 2](runs/run-2-2026-11-10-windows.md), on Windows 11 (ARM64):
+
+- **Git for Windows** wasn't needed before a session could start, and **winget** was present.
+- **The clock and desk helpers** ran under Git Bash after an app restart, and a second session came up as a guest.
+- **The sidebar:** archiving the last session in a folder makes that folder's section go away.

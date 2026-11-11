@@ -19,8 +19,12 @@ Add to it: [open an issue](https://github.com/peterkaminski-ai/pkai-starter-kit/
 ## Sessions and folders
 - **The sidebar groups sessions by folder name,** not by environment name.
 - **Rename a session:** hover over it, click the ⋯ menu, and choose Rename. New sessions start out called "New Session".
-- **Archive, don't delete:** hover over the session → ⋯ → **Archive**.
-- **Environments:** New → Choose Environment → + New Environment → Local. The form may open already filled in with a temporary environment. Rename it and set its folders.
+- **Archive, don't delete:** hover over the session → ⋯ → **Archive**. Archiving the last session in a folder makes that folder's section go away from the sidebar.
+- **Environments:** New → Choose Environment → + New Environment → Local. The form may open already filled in with a temporary environment. Rename it, and keep only your agent's folder in it.
+
+## On Windows
+- **After installing something from inside the app** (git, say), the app may not see it until it restarts. Closing the window may not be enough; restarting the computer does it.
+- **Pick a folder before you start.** The app's temporary folder has a long path that can break unzipping.
 
 ## Installers that hide
 - **Apple's developer-tools window can open behind the app.** If you're waiting on it, click the blue installer icon in the Dock to bring it forward. Its time estimate jumps around; leave it running.

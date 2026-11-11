@@ -4,7 +4,7 @@ A starter kit for building your own personal AI agent — a persistent, file-bas
 
 **Home page:** https://peterkaminski.ai/starter-kit
 
-This kit is a **reference library, not a house**. You don't move into it — you (and Claude, doing the heavy lifting) *read* it and build your own house from it: an **agent home** for your agent's persona and memory, and a **headquarters** for your projects and working files. The build takes one guided conversation.
+This kit is a **reference, not a house**. You don't move into it — you (and Claude, doing the heavy lifting) *read* it and build your own house from it: an **agent home** for your agent's persona and memory, and a **headquarters** for your projects and working files. The build takes one guided conversation.
 
 This is **V4.0**, and it is a **preview**: the first kit that sets up an agent entirely in the Claude Desktop app, with no terminal, for **brand-new people**. If someone is walking you through it, go ahead; on your own, the steadier choice is to wait for 4.1 or later. **If you already have a house built from 3.x (or an earlier kit), stay put:** 4.0 is not an upgrade, and there's nothing to install. Keep your house and start using the Desktop app with it.
 
@@ -33,7 +33,7 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
 - **`personas/`** — three ready-to-personalize personas, showing the range of what an agent can be like. Pick one, blend, or invent.
 - **`skills/`** — self-contained skills your agent can take on, one folder each, each carrying its own lineage, licence and credits so it can travel alone. `skills/README.md` says which to install for which way of working.
 - **`template/`** — the folder skeletons the build instantiates: `agent-home/` and `hq/`.
-- **`bookshelf/`** — the small shelf of books that comes with your agent:
+- **`library/pkai/`** — the small shelf of books that comes with your agent (setup moves the library into your HQ, at `<HQ>/library/pkai/`; other bookshelves can sit beside it later):
   - `getting-started/` — your first day in the Desktop app, reading your files, and the basics underneath
   - `project-management/` — project management, and working with your principal
   - `your-house/` — a small house or a large one: the stairs, the two ways in, the phone path
@@ -49,7 +49,7 @@ You've been asked to help a person set up their own agent. **Read `BUILD.md`** �
 
 ## License
 
-This kit and everything in it — including the bookshelf and the skills — is licensed under the [Mozilla Public License 2.0](LICENSE.md), © 2026 Peter Kaminski. See `LICENSE.md` for the full text, including the Disclaimer of Warranty (Section 6) and Limitation of Liability (Section 7). Each skill folder carries its own copy of the licence, so a skill stays licensed when it travels.
+This kit and everything in it — including the library and the skills — is licensed under the [Mozilla Public License 2.0](LICENSE.md), © 2026 Peter Kaminski. See `LICENSE.md` for the full text, including the Disclaimer of Warranty (Section 6) and Limitation of Liability (Section 7). Each skill folder carries its own copy of the licence, so a skill stays licensed when it travels.
 
 ### Why MPL-2.0, and not a Creative Commons licence
 

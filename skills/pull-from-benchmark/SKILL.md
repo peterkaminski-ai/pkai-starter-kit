@@ -19,7 +19,7 @@ Nothing is ever pushed into a house. A new release is the current best understan
 1. **Find out what we have.** Read this house's `LINEAGE.md`: `grows_from` is what we have (a house built before 3.1 calls the field `sits_on`; read it the same way). A house with no `LINEAGE.md` was built from V2 or earlier; `memory/origin.md` names the kit version it was built from.
 2. **Get the release.** `pull_from` is where the new one is. Download or open it read-only (a zip into a scratch folder, or the repo in the browser — never into the agent home). Read its `LINEAGE.md`, then its `CHANGES.md` from the newest entry down to the version we have.
 3. **Find the moving guide.** If the release has a guide for our version, read it before anything else: `MOVING-FROM-V3.0.md` for a house that has 3.0.x, `MOVING-FROM-V2.md` for a V2 house (it leads into the 3.0 guide in turn). A guide is written for that jump, item by item, including the steps that touch a live house — scripts, settings and hooks, the charter, memory — and how to take each without losing what the house already has. Its items are your rows, in its order; `CHANGES.md` fills in anything the guide leaves out. No guide for our version: work from `CHANGES.md` alone.
-4. **List the items.** Every guide item, and every "Added / Changed / Removed" bullet since our version, becomes one row. For each, say what it would touch here: the charter (`CLAUDE.md`), memory, a skill folder, the bookshelf, a template, or nothing.
+4. **List the items.** Every guide item, and every "Added / Changed / Removed" bullet since our version, becomes one row. For each, say what it would touch here: the charter (`CLAUDE.md`), memory, a skill folder, the library, a template, or nothing.
 5. **Propose a disposition for each row** — one of:
    - **take** — copy it in as is, and why it fits;
    - **adapt** — take the idea, in this house's words or shape, and what would change;
@@ -31,7 +31,7 @@ Nothing is ever pushed into a house. A new release is the current best understan
    - Skills: copy the whole folder into `.claude/skills/`, licence and lineage included.
    - Scripts: copy new ones into `scripts/`. A script the house already has is a decision: show the difference, and keep the house's own changes.
    - **Settings and hooks:** never copy the release's `settings.json` over the house's. Draft the merged file into `outbox/` — every hook and setting the house already has kept as it is, the release's entries added beside them, as the moving guide describes — show the person the difference, and let them install it by hand and start a new session. Check it parses before you hand it over.
-   - Bookshelf and templates: copy into the HQ's kit folder or wherever this house keeps its reference library.
+   - The library and templates: a book goes in `<HQ>/library/pkai/` (an older house may keep it in the HQ's kit folder, as `bookshelf/`; keep to what this house does). Templates go in the HQ's kit folder.
    - **Charter changes:** draft the exact lines into a file in `outbox/` for the person to read, install by their own hand, and start a new session. You never edit your own charter as part of a pull.
    - Memory: write any decision worth keeping with `save-a-memory`, including the version pulled and the date.
 8. **Update `LINEAGE.md`.** Set `grows_from` to the new version (renaming `sits_on`, if that's what the house has). Add a `changes` note: date, version pulled, what was taken, adapted, declined.

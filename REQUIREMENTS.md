@@ -33,7 +33,7 @@ You'll work with your agent through two surfaces: a **chat surface** (where you 
 ### Chat surfaces
 
 - **The Code tab of the Claude Desktop app** — where you and your agent talk. Not the Chat tab: that's a chatbot, not your agent. (And a Claude app *Project* is a different thing from a project folder in your HQ.)
-- **The Claude app on your phone**, through **Remote Control** — a toggle in the Desktop app that lets you continue the same session from your phone. If you'll reach your agent mostly from a phone, say so during setup: there's a chapter and a skill for that path (`bookshelf/your-house/The Phone Path.md`).
+- **The Claude app on your phone**, through **Remote Control** — a toggle in the Desktop app that lets you continue the same session from your phone. If you'll reach your agent mostly from a phone, say so during setup: there's a chapter and a skill for that path (`library/pkai/your-house/The Phone Path.md`).
 - *Other option:* skip Claude Code and use Claude Cowork. We think that's harder.
 
 ### Review surfaces
@@ -43,7 +43,7 @@ You'll work with your agent through two surfaces: a **chat surface** (where you 
 - **MeetingWords** — https://meetingwords.com — a shared pad made for people and agents working on the same document; also the surface for working with other houses. *(Disclosure: Pete Kaminski runs MeetingWords. Recommending it isn't intended as self-dealing; it's the current best understanding of what works. This kit uses the hosted service at meetingwords.com; self-hosting and an app version are planned for a later release.)*
 - **If you already use Obsidian or VS Code**, they're fine — keep them. The kit no longer teaches Obsidian, which is not the same as forbidding it.
 
-The full treatment is `bookshelf/getting-started/Viewing Your Files.md`.
+The full treatment is `library/pkai/getting-started/Viewing Your Files.md`.
 
 ## Where to get help
 

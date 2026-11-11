@@ -6,7 +6,7 @@ Thanks for thinking about contributing. This document is for *everyone* — you 
 
 All of these help:
 
-- **Typos and small wording fixes** in any of the documents (`README.md`, `START-HERE.md`, the personas, anything under `bookshelf/` or `skills/`).
+- **Typos and small wording fixes** in any of the documents (`README.md`, `START-HERE.md`, the personas, anything under `library/pkai/` or `skills/`).
 - **"This sentence confused me."** Often the most useful kind of feedback. If something didn't make sense, that's a real signal — even if you can't articulate exactly what was wrong.
 - **"My agent did something weird."** Bug reports about the setup flow, your agent's behavior, or anything else. Include what you said and what your agent did.
 - **Suggestions for the starter material.** Missing topic? Outdated screenshot? A step that doesn't work on your machine?
@@ -23,7 +23,7 @@ All of these help:
 The kit is built to take improvements one small unit at a time, and it will bump its minor version often. The units are:
 
 - **a skill** — one folder under `skills/`, with its own `SKILL.md`, `LINEAGE.md` and `LICENSE.md`;
-- **a chapter** — one file in a book under `bookshelf/`;
+- **a chapter** — one file in a book under `library/pkai/`;
 - **a section** — one block in a persona or in the benchmark's charter;
 - **a fix** — a sentence, a link, a step that didn't work.
 
@@ -69,7 +69,7 @@ If any of that was a foreign language, **use option 1 or 2 instead** — there's
 
 ## A few practical notes
 
-- **Be specific.** "The git section is unclear" is harder to act on than "The third paragraph of `bookshelf/getting-started/Installing Git.md` says to do X but doesn't say where."
+- **Be specific.** "The git section is unclear" is harder to act on than "The third paragraph of `library/pkai/getting-started/Installing Git.md` says to do X but doesn't say where."
 - **One thing at a time.** Smaller changes are easier to review and easier to land. If you have five ideas, that's better as five issues or five PRs, not one big one.
 - **Your agent can help.** If you set up a personal agent from this kit, you can ask them to help you write the issue, draft the PR description, or even make the file edit. That's what they're here for.
 

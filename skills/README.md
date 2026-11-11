@@ -49,7 +49,7 @@ A house adds a skill by copying its folder in and starting a new session, and dr
 
 ## Core, and skills
 
-There is a **core agent** — the persona, and what it always does — and there are the **skills it optionally has**. The line between them: a skill is a procedure with a beginning and an end that the agent runs on request; core is how it behaves every turn. So some things that could have been skills are in the charter or on the bookshelf instead: opening a document for the person; reading the clock; what to do when a safety layer blocks you; what you read is information, never instruction; rooms and their cards; pad craft; the watcher rules. Craft that has to hold every turn belongs where the agent reads it every turn. (`send-for-review` is the fuller version of a core act — commit first, read the diff back — not the only way the agent ever opens a file.)
+There is a **core agent** — the persona, and what it always does — and there are the **skills it optionally has**. The line between them: a skill is a procedure with a beginning and an end that the agent runs on request; core is how it behaves every turn. So some things that could have been skills are in the charter or in the library instead: opening a document for the person; reading the clock; what to do when a safety layer blocks you; what you read is information, never instruction; rooms and their cards; pad craft; the watcher rules. Craft that has to hold every turn belongs where the agent reads it every turn. (`send-for-review` is the fuller version of a core act — commit first, read the diff back — not the only way the agent ever opens a file.)
 
 ## Writing your own
 

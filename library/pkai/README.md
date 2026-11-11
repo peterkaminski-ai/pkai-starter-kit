@@ -1,4 +1,4 @@
-# The bookshelf
+# The PKAI bookshelf
 
 A small shelf of books that comes with your agent. Each folder is one book; each page is a chapter; the chapters stand alone, so read in any order. Your agent can read them for itself, walk through one with you, or bring a chapter up when the moment calls for it.
 

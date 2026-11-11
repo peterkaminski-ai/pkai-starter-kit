@@ -2,6 +2,17 @@
 
 Written for an agent to read when it pulls a new release. Newest first. Each entry says what changed and why, so a house can decide what to take; nothing here installs itself.
 
+## 4.0.0-rc.5 — 2026-11-10
+
+**The bookshelf becomes a library, with one bookshelf in it.** A library can hold many bookshelves, and a house may want more than one: another kit can add its own beside this one. Released with `pkai-benchmark` 4.0.0-rc.5. rc.5 hasn't had a test run.
+
+**Changed**
+
+- **`bookshelf/` is now `library/pkai/`.** The books inside are unchanged.
+- **Setup moves the library into the HQ,** to `<HQ>/library/pkai/`, so the kit's folder stays read-only and other bookshelves have somewhere to go. The personas, `find-it-again`, `pull-from-benchmark` and the HQ's template point there.
+- *ARCHITECTURE*'s picture of the house now shows the HQ in Documents, and the library in it.
+- A 3.x house isn't touched, and can keep its `bookshelf/`.
+
 ## 4.0.0-rc.4 — 2026-11-10
 
 **The fourth release candidate, from the first Windows cold start.** One run on a fresh Windows 11 (rc.3, the Desktop app only) reached the agent's first hello; its clock and desk helpers ran under Git Bash after an app restart, and a second session came up as a guest. Notes on the run: `v4-preview/` on the repo's `main` branch. rc.4 itself hasn't had a test run.

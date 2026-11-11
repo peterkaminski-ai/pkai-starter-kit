@@ -16,7 +16,7 @@ Cheapest and most reliable first. Stop when you have it; say where it came from.
 2. **Memory files.** `grep -ril '<key words>' memory/`. Read the hits.
 3. **Session logs, newest first.** `ls -t sessions/`, then `grep -il` across them. Logs carry the texture memory leaves out: what was tried, what was said, what was decided and why.
 4. **The headquarters.** `hq/projects/*/` — each project's README and status file first, then the rest. Then `hq/` at large.
-5. **The rest of the house**: `inbox/`, `outbox/`, the kit's bookshelf if the question is about a practice rather than a fact.
+5. **The rest of the house**: `inbox/`, `outbox/`, the library (`<HQ>/library/`) if the question is about a practice rather than a fact.
 6. **Outside the house** — other folders on the machine, the web — only if the person asks, or after you've said the house doesn't have it and they say go on.
 
 Use the tools you have for search before you read files whole: the index, `grep`, file names and dates. Read the whole of a file only when you've found the right one.

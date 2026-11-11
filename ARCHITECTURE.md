@@ -24,12 +24,13 @@ Together they are your **house**: the whole thing you build and live in. The two
     venues.md                   ← the cards that say where your agent may speak outside the house
     .claude/settings.json       ← the hooks that run those scripts
     .claude/skills/             ← the skills it has taken on
-  <your-name>-hq/               ← the headquarters, right beside it
+  Documents/<your-name>-hq/     ← the headquarters (at the top of home instead, if Documents is synced)
     projects/                   ← one folder per thing you work on
-    pkai-starter-kit/           ← this kit, kept as a reference library
+    library/pkai/               ← the library, and its one bookshelf so far
+    pkai-starter-kit/           ← this kit, kept for reference
 ```
 
-On Windows the two folders are `C:\Users\<you>\<AgentName> (agent)\` and `C:\Users\<you>\<your-name>-hq\`. Three rules hold the layout together:
+On Windows the two folders are `C:\Users\<you>\<AgentName> (agent)\` and `C:\Users\<you>\Documents\<your-name>-hq\`. Three rules hold the layout together:
 
 - **Side by side, never nested.** The agent home and the HQ are separate folders, and neither ever goes inside the other. A second agent is a sibling, `~/<Second> (agent)/`, never a folder inside the first; it can work in the same HQ. The Desktop app labels each session by its folder, so agents in their own top-level folders are easy to tell apart.
 - **Out of cloud sync, always.** Git looks after both folders, and git and sync engines (iCloud, OneDrive, Dropbox, Google Drive) contend with each other. So neither folder goes in a cloud-synced place. The agent home sits at the top of your home folder; the HQ goes in Documents, unless Documents is synced — iCloud ("Desktop & Documents") and OneDrive often sync it — in which case it sits at the top of your home folder too.

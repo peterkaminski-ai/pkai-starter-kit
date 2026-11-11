@@ -53,11 +53,11 @@ Claude takes it from there, one step at a time, and you say yes, no, or "wait, e
 3. **Names, with a little story.** Your name; then what your *house* is, and what you'd like to call it; then your agent's name — Claude offers possibilities, or you invent one.
 4. **A persona.** Claude introduces the three personas in `personas/` — different temperaments for your agent — and recommends Chief of Staff, with a Companion's warmth. Pick one, blend them, or describe your own.
 5. **The build.** Claude creates the **agent home** — a folder named `<AgentName> (agent)` at the top of your home folder — with the persona, a memory system, session logs, and its skills, all plain text you can read anytime. Your HQ gets its skeleton too. Both folders get private version history, quietly, as soon as git is there.
-6. **Orientation.** Claude introduces the bookshelf (in `bookshelf/`), how the two folders make a house, and *First Day in Desktop*, the short page of things worth knowing in your first hour.
+6. **Orientation.** Claude introduces your library (in your HQ, at `library/pkai/`), how the two folders make a house, and *First Day in Desktop*, the short page of things worth knowing in your first hour.
 7. **The hand-over.** The setup session is Claude doing the building, not your agent. Claude helps you make your agent's **environment** in the Desktop app, on its agent home and nothing else. On Windows, if git was installed during setup, Claude will ask you to restart the app first. Then you start a **new session** in your agent's environment and type hi in the message box — the app asks once more whether you trust the folder; that's your agent's home, and yes is the answer. Once your agent has answered, come back to the setup session one last time and **archive** it (archive, don't delete).
 
 ## Afterward — daily life
 
-Open the Desktop app, go to the Code tab, pick your agent's environment, and type hi in the message box. Your agent starts in its own home, remembers you, and *walks over* to your HQ — or any other project folder — to work. Keep one session going per agent; `bookshelf/getting-started/First Day in Desktop.md` says how, and how to reach the same session from your phone with Remote Control.
+Open the Desktop app, go to the Code tab, pick your agent's environment, and type hi in the message box. Your agent starts in its own home, remembers you, and *walks over* to your HQ — or any other project folder — to work. Keep one session going per agent; `library/pkai/getting-started/First Day in Desktop.md` says how, and how to reach the same session from your phone with Remote Control.
 
 Something went sideways mid-setup? Just tell Claude where things stopped — `BUILD.md` covers picking up partway through.

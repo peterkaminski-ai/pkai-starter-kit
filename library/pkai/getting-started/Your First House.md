@@ -31,7 +31,7 @@ You don't need GitHub for your house. If you ever want an off-machine copy, that
 
 `CLAUDE.md` is your agent's charter: who it is, how it works, and what it may do on its own. It lives in the agent home, and only there — the HQ never gets a `CLAUDE.md`. Setup makes the charter from one of the kit's persona files, filled in with your details.
 
-After that, you don't need to edit it to teach your agent things. Tell your agent what you want — "I like short summaries", "the budget lives in the finance project" — and it saves a memory. When something should become a permanent rule in the charter, your agent drafts the change for you to read and install by hand; it never edits its own charter. See [Testing a Charter Edit](../your-house/Testing%20a%20Charter%20Edit.md).
+After that, you don't need to edit it to teach your agent things. Tell your agent what you want — "I like short summaries", "the budget lives in the finance project" — and it saves a memory. When something should become a permanent rule in the charter, your agent drafts the change for you to read. Then you say yes and it makes the edit, or you install it by hand; it never edits its own charter unasked. See [Testing a Charter Edit](../your-house/Testing%20a%20Charter%20Edit.md).
 
 ## See it for yourself
 

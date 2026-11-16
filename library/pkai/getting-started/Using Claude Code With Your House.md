@@ -73,7 +73,7 @@ Your agent works with the files on your computer directly. Your house stays on y
 
 **Review changes.** Your agent is helpful but not perfect. When it edits your files, glance at the changes to make sure they're what you wanted. You can always ask it to undo or revise.
 
-**Tell your agent.** The more context your agent has, the better it understands your work. If you notice it making wrong assumptions, correct it and ask it to remember; it saves a memory. If something should become a permanent rule, your agent drafts a charter change for you to install by hand (see [Testing a Charter Edit](../your-house/Testing%20a%20Charter%20Edit.md)).
+**Tell your agent.** The more context your agent has, the better it understands your work. If you notice it making wrong assumptions, correct it and ask it to remember; it saves a memory. If something should become a permanent rule, your agent drafts a charter change and shows it to you; you say yes and it makes the edit, or you install it by hand (see [Testing a Charter Edit](../your-house/Testing%20a%20Charter%20Edit.md)).
 
 > [!tip]
 > You can always ask your agent "what can you do?" or "help me with [vague goal]" and it will suggest specific approaches. It's a conversation — you don't need to know the exact right thing to say.

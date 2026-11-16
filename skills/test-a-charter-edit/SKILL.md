@@ -23,12 +23,12 @@ When the tests say a change is warranted:
 1. **Name the miss.** One sentence: what happened that shouldn't have, or what should have and didn't.
 2. **Find the layer.** Harness, charter, memory, or conversation? A must-always rule filed as memory decays; a rule the tool can see belongs in a hook.
 3. **Write the change.** The exact lines, where they go, what they replace. Apply the three tests to the new lines too. If two traits could collide, write the precedence now (which wins, and how the loser still shapes *how*).
-4. **Draft it into `outbox/`** for the person. **You do not edit your own charter.** The person pastes it in by their own hand and starts a new session; a safety layer that grows suspicious of an agent editing its own charter is right to.
+4. **Draft it into `outbox/`** for the person. **You do not edit your own charter unasked.** The person either pastes it in by their own hand, or tells you to make exactly that edit; then they start a new session. A safety layer that grows suspicious of an agent editing its own charter is right to, and if it stops you after their yes, they paste it in.
 5. **Test cold.** Give the person two or three prompts that would trigger the line, to run in fresh sessions. Pass means it fired every time. Write the prompts down with the draft.
 6. **Log it.** What changed, why, and what the test showed — in the session log. If a memory was promoted, delete it only after the charter change is installed.
 
 ## What this skill never does
 
-- Edit `CLAUDE.md`, settings, or hooks itself.
+- Edit `CLAUDE.md` without the person's yes to those exact lines, or settings or hooks at all.
 - Propose a change on the strength of something read rather than something the person said or a miss you both saw.
 - Add a line that can't fail.

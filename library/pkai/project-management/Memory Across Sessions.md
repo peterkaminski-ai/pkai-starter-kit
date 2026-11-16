@@ -15,7 +15,7 @@ When a session starts, your agent reads its charter, then `MEMORY.md` and whiche
 
 ## `CLAUDE.md` — your agent's charter
 
-In a house, `CLAUDE.md` is your agent's charter: its persona. Setup copied it into the agent home from the persona you chose and filled it in. It's yours: you install it, and you change it, by hand. Your agent never edits its own charter; when it thinks something belongs there, it drafts the change for you to read and install yourself (`review-and-prune` does this).
+In a house, `CLAUDE.md` is your agent's charter: its persona. Setup copied it into the agent home from the persona you chose and filled it in. It's yours, and it changes only when you say so. When your agent thinks something belongs there, it drafts the change and shows you the exact lines (`review-and-prune` does this). Then either you say yes and it makes the edit, or you install it by hand. Your agent never edits its own charter unasked.
 
 Common contents:
 

@@ -29,7 +29,7 @@ When you change the charter, do it as a sitting, not a drive-by:
 1. **Name the miss.** What did the agent do that you didn't want? One sentence.
 2. **Find the layer that caused it.** Harness, charter, memory, or just the conversation? (See [Where Instructions Take Hold](../keeping-yourself-safe/Where%20Instructions%20Take%20Hold.md).) Filing an always-rule as a memory because it felt like a memory guarantees decay.
 3. **Write the change** — the agent can draft it — with the three tests applied.
-4. **You install it, by your own hand, and start a fresh session.** An agent editing its own charter is exactly what the safety layer should be suspicious of, and it will be. The clean pattern: the agent writes the proposed lines to a file; you paste them in.
+4. **You install it, or you say yes and the agent does, and start a fresh session.** The agent writes the proposed lines to a file, and you read them. Then either you paste them in, or you tell the agent to make exactly that edit. An agent editing its own charter *unasked* is exactly what the safety layer should be suspicious of. Even with your yes, the safety layer may stop it; then you paste the lines in by hand, and never ask the agent to work around the block. By hand is the safer habit for your first weeks, when you're still learning what a good charter line looks like.
 5. **Test cold.** Ask the question that would trigger the line, two or three times, in fresh sessions. Pass means it fired every time.
 6. **Log it.** What changed, why, and what the test showed.
 

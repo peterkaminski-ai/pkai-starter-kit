@@ -2,6 +2,15 @@
 
 Written for an agent to read when it pulls a new release. Newest first. Each entry says what changed and why, so a house can decide what to take; nothing here installs itself.
 
+## Unreleased
+
+**A charter change can be made on your yes.** Until now the kit said only you install a charter change, by hand. Now there are two ways. Your agent drafts the lines and shows them to you, and then either you say yes and it makes the edit, or you install it by hand. The edit is still watched: you read the exact lines first, and git keeps the change. Settings and hooks stay by hand only, and a pull never installs anything by itself. By hand is the safer habit for your first weeks.
+
+**Changed**
+
+- *MOVING-FROM-V2*, *MOVING-FROM-V3.0*, *Memory Across Sessions*, *Testing a Charter Edit*, *Using Claude Code With Your House*, *Your First House*, *Where Instructions Take Hold*: two ways to install a charter change.
+- `review-and-prune`, `test-a-charter-edit`, `pull-from-benchmark`, `widen-a-boundary`: an agent edits its charter only on the person's yes to the exact lines; settings and hooks never.
+
 ## 4.0.0-rc.5 — 2026-11-10
 
 **The bookshelf becomes a library, with one bookshelf in it.** A library can hold many bookshelves, and a house may want more than one: another kit can add its own beside this one. Released with `pkai-benchmark` 4.0.0-rc.5. rc.5 hasn't had a test run.

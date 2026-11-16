@@ -4,7 +4,7 @@
 
 If your house was built from the 3.0 kit, **nothing is reinstalled and nothing you have stops working.** This note says what changed in 3.1 and how to take each piece, one at a time. It's written for your agent to read with you, and the `pull-from-benchmark` skill uses it as its list.
 
-3.1 is pull, not push, like every release: your agent proposes, you decide, and anything that touches the charter, the settings or the hooks is drafted for **you** to install by hand, followed by a restart (type `/exit`, then the launch word). An agent never edits its own charter or hooks as part of a pull.
+3.1 is pull, not push, like every release: your agent proposes, you decide, and anything that touches the charter, the settings or the hooks is drafted for **you** to read first, followed by a restart (type `/exit`, then the launch word). Settings and hooks you install by hand. A charter change, you either install by hand or say yes and your agent makes it. A pull never installs anything by itself.
 
 ## What changed, in words
 

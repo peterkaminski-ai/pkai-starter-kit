@@ -1,6 +1,6 @@
 ---
 name: test-a-charter-edit
-description: Runs three cheap tests on a proposed or existing charter (CLAUDE.md) line — the rename test (is it identity-bearing?), "names a check that can come back no" (is it behavior-bearing?), and default/target/why (is it needed at all?) — then drafts the edit for the person to install by hand and a cold test to prove it took. Use when the person says "should this go in your charter", "is this line doing anything", "tune your charter", "test this edit", "why did you do X" after a miss, or during a memory review when a memory looks like it has become a rule.
+description: Runs three cheap tests on a proposed or existing charter (CLAUDE.md) line — the rename test (is it identity-bearing?), "names a check that can come back no" (is it behavior-bearing?), and default/target/why (is it needed at all?) — then drafts the edit for the person to install, by hand or on their yes, and a cold test to prove it took. Use when the person says "should this go in your charter", "is this line doing anything", "tune your charter", "test this edit", "why did you do X" after a miss, or during a memory review when a memory looks like it has become a rule.
 license: MPL-2.0
 ---
 

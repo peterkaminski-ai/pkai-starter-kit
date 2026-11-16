@@ -1,6 +1,6 @@
 ---
 name: review-and-prune
-description: Reviews this agent's memory and session logs on a rhythm — monthly, or every week or two for a new agent — merging overlapping memories, deleting stale or wrong ones, tightening the index, and proposing which memories have quietly become rules that belong in the charter instead (drafted for the person to install by hand, never installed by the agent). Use when the person says "clean up your memory", "what do you remember about me", "is your memory getting messy", "consolidate", when MEMORY.md passes about a hundred lines, or at a natural break after a busy stretch.
+description: Reviews this agent's memory and session logs on a rhythm — monthly, or every week or two for a new agent — merging overlapping memories, deleting stale or wrong ones, tightening the index, and proposing which memories have quietly become rules that belong in the charter instead (drafted for the person to read, then installed by hand or on their yes, never by the agent unasked). Use when the person says "clean up your memory", "what do you remember about me", "is your memory getting messy", "consolidate", when MEMORY.md passes about a hundred lines, or at a natural break after a busy stretch.
 license: MPL-2.0
 ---
 

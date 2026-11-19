@@ -2,7 +2,11 @@
 
 Written for an agent to read when it pulls a new release. Newest first. Each entry says what changed and why, so a house can decide what to take; nothing here installs itself.
 
-## Unreleased
+## 4.1.0-rc.1 — 2026-11-19
+
+**The first 4.1 preview: sessions on Desktop and on the phone.** Released with `pkai-benchmark` 4.1.0-rc.1. The 4.1 release candidates are known together as **v4.1-preview**. rc.1 hasn't had a test run.
+
+**A new book, *Sessions on Desktop and Phone*** (`library/pkai/getting-started/`), after *First Day in Desktop*. It covers living with more than one session, the sidebar, quitting and restarting the app safely, and reaching your agent from your phone. It includes the two lists you keep the same by hand: Desktop's environments, and the folders under Settings → Code → Remote Control, which are the only places the phone can start a session.
 
 **On the phone, New Session is fine; cloud environments aren't.** Until now the phone guidance said never to press **New Session**. Now that New Session can start a session on the person's own computer, in a folder on its Remote Control list, the warning moves: never pick a **cloud environment** (a small cloud icon, often named **Default**), which runs on Anthropic's computers with none of the person's files. Changed in *The Phone Path* and the `phone-path` skill, and in `BUILD.md`'s phone warning and card.
 

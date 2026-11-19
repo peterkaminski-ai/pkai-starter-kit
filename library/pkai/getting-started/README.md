@@ -16,6 +16,7 @@ If your house is already built, start with **First Day in Desktop**. If you're s
 ### Your first day
 
 - [First Day in Desktop](First%20Day%20in%20Desktop.md) — The small things that trip people up in the first hour with the Desktop app
+- [Sessions on Desktop and Phone](Sessions%20on%20Desktop%20and%20Phone.md) — Many sessions, the sidebar, quitting and restarting the app, and reaching your agent from your phone
 
 ### The core path (do these in order)
 

@@ -21,11 +21,11 @@ Remote Control only lasts as long as the Desktop app is running. **Quitting the 
 
 **Nothing secret on a shared machine.** An agent on a shared computer *could* wander into another person's HQ. Among friends who trust each other that's acceptable, on the understanding that the super-secret things live somewhere else. Say this out loud when you set someone up; don't let them find it out.
 
-## The button not to press
+## The choice not to make
 
-In the Claude app there is a large **New Session** button. It does **not** start a session on the person's computer. It starts one on the provider's computer, tied to a GitHub repository and a branch, with none of the person's files, on a machine that isn't persistent — and everything done there has to be negotiated back through git, on a branch nobody wanted. A person who presses it by accident ends up somewhere that looks like their agent and isn't.
+In the Claude app, **New Session** works: pick the person's computer, then their agent's folder, and the agent wakes there. The same screen also offers **cloud environments**, marked with a small cloud icon and often named **Default**. Those do **not** start a session on the person's computer. They start one on the provider's computer, tied to a GitHub repository and a branch, with none of the person's files, on a machine that isn't persistent — and everything done there has to be negotiated back through git, on a branch nobody wanted. A person who picks one by accident ends up somewhere that looks like their agent and isn't.
 
-So the card a phone-path person needs is three lines: *find the computer's name; find your agent; don't press New Session.* The host arranges things so there is always a session to find.
+So the card a phone-path person needs is three lines: *New Session; pick your computer; pick your agent, never a cloud one.* The host makes sure the agent's folder is on the computer's Remote Control list, so there is always an agent to pick.
 
 ## What the agent does differently
 

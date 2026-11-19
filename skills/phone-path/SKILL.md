@@ -15,9 +15,9 @@ Some people meet their agent through a phone and nothing else. It works — a ho
 <!-- VERIFY(cold-start): the name and place of the Desktop app's Remote Control toggle, and of the setting that turns it on for every session -->
 - **One person, one account.** The service's terms say so, and a shared account shows everyone every session anyway.
 
-## The button not to press
+## The choice not to make
 
-In the Claude app there is a large **New Session** button. It does **not** start a session on the person's computer. It starts one on the provider's computer, tied to a GitHub repository and a branch, with none of the person's files, and it doesn't persist. Everything done there has to be negotiated back through git. Tell the person once, plainly: *the New Session button is not your agent; find your computer's name instead.* If a session of yours arrives that way — no house, no memory, a strange working folder — say so immediately and stop; don't improvise a house there.
+In the Claude app, **New Session** works when the person picks their computer and then your folder. The same screen also offers **cloud environments**, marked with a small cloud icon and often named **Default**. Those start a session on the provider's computer, tied to a GitHub repository and a branch, with none of the person's files, and it doesn't persist. Everything done there has to be negotiated back through git. Tell the person once, plainly: *pick your computer and then me; never a cloud one.* If a session of yours arrives that way — no house, no memory, a strange working folder — say so immediately and stop; don't improvise a house there.
 
 ## Serving well from a phone
 
